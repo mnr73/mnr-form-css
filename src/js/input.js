@@ -3,6 +3,8 @@
 // 	mnrfObj = {}
 // }
 // let test
+pointer_is_fine = matchMedia('(pointer:fine)').matches
+
 mnrfObj = typeof mnrfObj == "undefined" ? {} : mnrfObj;
 mnrfObj.inputs = $(".mnrf-input");
 // var orig = mnrfObj.inputs
@@ -15,13 +17,15 @@ $.each(mnrfObj.inputs,function (index, value) {
 
 console.log(mnrfObj);
 
-mnrfObj.inputs
-	.mouseover(function () {
-		$(this).addClass("state-hover");
-	})
-	.mouseout(function () {
-		$(this).removeClass("state-hover");
-	});
+if(pointer_is_fine){
+	mnrfObj.inputs
+		.mouseover(function () {
+			$(this).addClass("state-hover");
+		})
+		.mouseout(function () {
+			$(this).removeClass("state-hover");
+		});
+}
 
 mnrfObj.inputs.find(".sub-header").click(function () {
 	if ($(this).parent().is(".sub-block")) {

@@ -19,7 +19,7 @@
   display: block;
   color: #0EA5E9;
   padding: 2px 0;
-  font-size: 1.15em;
+  font-size: 1.2em;
 }
 .mnrf-input .sub-frame {
   display: block;
@@ -32,7 +32,7 @@
 .mnrf-input .sub-frame .sub-header {
   display: block;
   line-height: 10px;
-  padding: 0.4em 0.5em;
+  padding: 0.4em 0.7em;
   font-size: 0.9em;
   margin-bottom: -0.6em;
   color: #38BDF8;
@@ -53,11 +53,16 @@
   fill: currentColor;
   color: #38BDF8;
 }
-.mnrf-input .sub-icon.sub-pr-0 {
-  padding-right: 0;
+.mnrf-input .sub-pr-0 {
+  padding-right: 0 !important;
 }
-.mnrf-input .sub-icon.sub-pl-0 {
-  padding-left: 0;
+.mnrf-input .sub-pl-0 {
+  padding-left: 0 !important;
+}
+.mnrf-input .sub-psfix {
+  padding: 0.7em;
+  color: #38BDF8;
+  display: inline-block;
 }
 .mnrf-input input {
   border: none;
@@ -67,7 +72,7 @@
   margin: 0;
   background-color: rgba(0, 0, 0, 0);
   color: #555;
-  padding: 0.5em;
+  padding: 0.7em;
   cursor: inherit;
 }
 .mnrf-input input::placeholder {

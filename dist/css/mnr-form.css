@@ -722,7 +722,7 @@
   display: block;
   color: #0ea5e9;
   padding: 2px 0;
-  font-size: 1.15em
+  font-size: 1.2em
 }
 .mnrf-input .sub-frame {
   display: block;
@@ -733,7 +733,7 @@
 .mnrf-input .sub-frame .sub-header {
   display: block;
   line-height: 10px;
-  padding: .4em .5em;
+  padding: .4em .7em;
   font-size: .9em;
   margin-bottom: -.6em;
   color: #38bdf8
@@ -754,11 +754,16 @@
   fill: currentColor;
   color: #38bdf8
 }
-.mnrf-input .sub-icon.sub-pr-0 {
-  padding-right: 0
+.mnrf-input .sub-pr-0 {
+  padding-right: 0!important
 }
-.mnrf-input .sub-icon.sub-pl-0 {
-  padding-left: 0
+.mnrf-input .sub-pl-0 {
+  padding-left: 0!important
+}
+.mnrf-input .sub-psfix {
+  padding: .7em;
+  color: #38bdf8;
+  display: inline-block
 }
 .mnrf-input input {
   border: none;
@@ -768,7 +773,7 @@
   margin: 0;
   background-color: rgba(0,0,0,0);
   color: #555;
-  padding: .5em;
+  padding: .7em;
   cursor: inherit
 }
 .mnrf-input input::-moz-placeholder {

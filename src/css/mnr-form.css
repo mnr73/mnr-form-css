@@ -1,0 +1,1268 @@
+.mnrf-radio-slider .sub-box, .mnrf-check-slider .sub-box, .mnrf-checkbox .sub-box, .mnrf-radio .sub-box {
+  margin: 2px;
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.mnrf-checkbox.opt-sm .sub-box, .mnrf-radio.opt-sm .sub-box {
+  width: 18px;
+  height: 18px;
+}
+
+.mnrf-checkbox .sub-box, .mnrf-checkbox.opt-md .sub-box, .mnrf-radio .sub-box, .mnrf-radio.opt-md .sub-box {
+  width: 20px;
+  height: 20px;
+}
+
+.mnrf-checkbox.opt-lg .sub-box, .mnrf-radio.opt-lg .sub-box {
+  width: 22px;
+  height: 22px;
+}
+
+.mnrf-checkbox.opt-em .sub-box, .mnrf-radio.opt-em .sub-box {
+  width: 1.46em;
+  height: 1.46em;
+}
+
+.mnrf-radio-slider.opt-sm .sub-box, .mnrf-check-slider.opt-sm .sub-box {
+  width: 31.5px;
+}
+
+.mnrf-radio-slider.opt-md .sub-box, .mnrf-radio-slider .sub-box, .mnrf-check-slider.opt-md .sub-box, .mnrf-check-slider .sub-box {
+  width: 35px;
+}
+
+.mnrf-radio-slider.opt-lg .sub-box, .mnrf-check-slider.opt-lg .sub-box {
+  width: 38.5px;
+}
+
+.mnrf-radio-slider.opt-em .sub-box, .mnrf-check-slider.opt-em .sub-box {
+  width: 2.555em;
+}
+
+.mnrf-radio-key label, .mnrf-radio-key, .mnrf-radio-slider .sub-box, .mnrf-check-slider .sub-box, .mnrf-radio .sub-box, .mnrf-radio-slider .sub-box::before, .mnrf-check-slider .sub-box::before, .mnrf-radio .sub-box::before {
+  border-radius: 1000px;
+}
+
+.mnrf-radio-slider .sub-box::before, .mnrf-check-slider .sub-box::before, .mnrf-radio .sub-box::before {
+  content: "";
+  display: block;
+}
+
+.mnrf-radio-key, .mnrf-radio-key *:not(svg) > * > *, .mnrf-radio-key *::after, .mnrf-radio-key *::before, .mnrf-radio-slider, .mnrf-radio-slider *:not(svg) > * > *, .mnrf-radio-slider *::after, .mnrf-radio-slider *::before, .mnrf-check-slider, .mnrf-check-slider *:not(svg) > * > *, .mnrf-check-slider *::after, .mnrf-check-slider *::before, .mnrf-checkbox, .mnrf-checkbox *:not(svg) > * > *, .mnrf-checkbox *::after, .mnrf-checkbox *::before, .mnrf-radio, .mnrf-radio *:not(svg) > * > *, .mnrf-radio *::after, .mnrf-radio *::before {
+  transition: all 0.3s;
+}
+
+.mnrf-radio-slider .sub-box::before, .mnrf-check-slider .sub-box::before {
+  position: relative;
+  left: 1px;
+  width: 55%;
+}
+
+.mnrf-radio-key, .mnrf-radio-slider, .mnrf-check-slider, .mnrf-checkbox, .mnrf-radio, .mnrf-radio-key *, .mnrf-radio-slider *, .mnrf-check-slider *, .mnrf-checkbox *, .mnrf-radio * {
+  cursor: pointer;
+}
+
+.mnrf-radio-key input:disabled + label, .mnrf-radio-slider input:disabled ~ *, .mnrf-check-slider input:disabled ~ *, .mnrf-checkbox input:disabled ~ *, .mnrf-radio input:disabled ~ * {
+  cursor: no-drop;
+}
+
+.mnrf-radio-key input, .mnrf-radio-slider input, .mnrf-check-slider input, .mnrf-checkbox input, .mnrf-radio input {
+  display: none;
+}
+
+.mnrf-radio-slider.opt-block, .mnrf-check-slider.opt-block, .mnrf-checkbox.opt-block, .mnrf-radio.opt-block {
+  display: block;
+}
+
+.mnrf-radio-slider.color-red input:disabled:checked + .sub-box, .mnrf-check-slider.color-red input:disabled:checked + .sub-box, .mnrf-radio.color-red input:disabled:checked + .sub-box, .mnrf-radio.color-red input:disabled + .sub-box::before, .mnrf-radio.color-red .sub-box::before, .mnrf-checkbox.color-red input:disabled:checked + .sub-box {
+  background-color: #FEE2E2;
+}
+
+.mnrf-checkbox.color-red input:disabled + .sub-box .sub-check, .mnrf-checkbox.color-red .sub-box .sub-check {
+  fill: #FEE2E2;
+}
+
+.mnrf-radio-key.color-red input:checked:enabled + label, .mnrf-radio-key.color-red input:hover:enabled + label {
+  color: #FEE2E2;
+}
+
+.mnrf-radio-slider.color-red input:disabled + .sub-box::before, .mnrf-radio-slider.color-red input:disabled + .sub-box, .mnrf-check-slider.color-red input:disabled + .sub-box, .mnrf-radio.color-red input:disabled + .sub-box, .mnrf-checkbox.color-red input:disabled + .sub-box {
+  border-color: #FECACA;
+}
+
+.mnrf-radio-key.color-red input:disabled + label, .mnrf-check-slider.color-red input:disabled + .sub-box::before {
+  background-color: #FECACA;
+}
+
+.mnrf-radio-key.color-red label, .mnrf-radio-slider.color-red input:checked:enabled + .sub-box, .mnrf-check-slider.color-red input:checked:enabled + .sub-box, .mnrf-radio.color-red input:checked:enabled + .sub-box, .mnrf-checkbox.color-red input:checked:enabled + .sub-box {
+  background-color: #FCA5A5;
+}
+
+.mnrf-radio-key.color-red input:disabled + label {
+  color: #FCA5A5;
+}
+
+.mnrf-radio-slider.color-red input:disabled:checked + .sub-box::before, .mnrf-radio-slider.color-red .sub-box::before, .mnrf-radio-slider.color-red .sub-box, .mnrf-check-slider.color-red .sub-box, .mnrf-radio.color-red .sub-box, .mnrf-checkbox.color-red .sub-box {
+  border-color: #F87171;
+}
+
+.mnrf-radio-key.color-red, .mnrf-check-slider.color-red input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-red .sub-box::before, .mnrf-radio.color-red input:disabled:checked + .sub-box::before {
+  background-color: #F87171;
+}
+
+.mnrf-checkbox.color-red input:disabled:checked + .sub-box .sub-check {
+  fill: #F87171;
+}
+
+.mnrf-radio-key.color-red input:disabled:checked + label, .mnrf-radio-key.color-red input:hover:enabled + label {
+  background-color: #EF4444;
+}
+
+.mnrf-radio-slider.color-red input:checked:enabled + .sub-box::before, .mnrf-radio-slider.color-red input:checked:enabled + .sub-box, .mnrf-check-slider.color-red input:checked:enabled + .sub-box, .mnrf-radio.color-red input:checked:enabled + .sub-box, .mnrf-checkbox.color-red input:checked:enabled + .sub-box {
+  border-color: #DC2626;
+}
+
+.mnrf-radio-key.color-red input:checked:enabled + label, .mnrf-check-slider.color-red input:checked:enabled + .sub-box::before, .mnrf-radio.color-red input:checked:enabled + .sub-box::before {
+  background-color: #DC2626;
+}
+
+.mnrf-checkbox.color-red input:checked:enabled + .sub-box .sub-check {
+  fill: #DC2626;
+}
+
+.mnrf-radio-key.color-red input:disabled:checked + label, .mnrf-radio-key.color-red label {
+  color: #DC2626;
+}
+
+.mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-radio.color-yellow input:disabled:checked + .sub-box, .mnrf-radio.color-yellow input:disabled + .sub-box::before, .mnrf-radio.color-yellow .sub-box::before, .mnrf-checkbox.color-yellow input:disabled:checked + .sub-box {
+  background-color: #FEF9C3;
+}
+
+.mnrf-checkbox.color-yellow input:disabled + .sub-box .sub-check, .mnrf-checkbox.color-yellow .sub-box .sub-check {
+  fill: #FEF9C3;
+}
+
+.mnrf-radio-key.color-yellow input:checked:enabled + label, .mnrf-radio-key.color-yellow input:hover:enabled + label {
+  color: #FEF9C3;
+}
+
+.mnrf-radio-slider.color-yellow input:disabled + .sub-box::before, .mnrf-radio-slider.color-yellow input:disabled + .sub-box, .mnrf-check-slider.color-yellow input:disabled + .sub-box, .mnrf-radio.color-yellow input:disabled + .sub-box, .mnrf-checkbox.color-yellow input:disabled + .sub-box {
+  border-color: #FEF08A;
+}
+
+.mnrf-radio-key.color-yellow input:disabled + label, .mnrf-check-slider.color-yellow input:disabled + .sub-box::before {
+  background-color: #FEF08A;
+}
+
+.mnrf-radio-key.color-yellow label, .mnrf-radio-slider.color-yellow input:checked:enabled + .sub-box, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box, .mnrf-radio.color-yellow input:checked:enabled + .sub-box, .mnrf-checkbox.color-yellow input:checked:enabled + .sub-box {
+  background-color: #FDE047;
+}
+
+.mnrf-radio-key.color-yellow input:disabled + label {
+  color: #FDE047;
+}
+
+.mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box::before, .mnrf-radio-slider.color-yellow .sub-box::before, .mnrf-radio-slider.color-yellow .sub-box, .mnrf-check-slider.color-yellow .sub-box, .mnrf-radio.color-yellow .sub-box, .mnrf-checkbox.color-yellow .sub-box {
+  border-color: #FACC15;
+}
+
+.mnrf-radio-key.color-yellow, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-yellow .sub-box::before, .mnrf-radio.color-yellow input:disabled:checked + .sub-box::before {
+  background-color: #FACC15;
+}
+
+.mnrf-checkbox.color-yellow input:disabled:checked + .sub-box .sub-check {
+  fill: #FACC15;
+}
+
+.mnrf-radio-key.color-yellow input:disabled:checked + label, .mnrf-radio-key.color-yellow input:hover:enabled + label {
+  background-color: #EAB308;
+}
+
+.mnrf-radio-slider.color-yellow input:checked:enabled + .sub-box::before, .mnrf-radio-slider.color-yellow input:checked:enabled + .sub-box, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box, .mnrf-radio.color-yellow input:checked:enabled + .sub-box, .mnrf-checkbox.color-yellow input:checked:enabled + .sub-box {
+  border-color: #CA8A04;
+}
+
+.mnrf-radio-key.color-yellow input:checked:enabled + label, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box::before, .mnrf-radio.color-yellow input:checked:enabled + .sub-box::before {
+  background-color: #CA8A04;
+}
+
+.mnrf-checkbox.color-yellow input:checked:enabled + .sub-box .sub-check {
+  fill: #CA8A04;
+}
+
+.mnrf-radio-key.color-yellow input:disabled:checked + label, .mnrf-radio-key.color-yellow label {
+  color: #CA8A04;
+}
+
+.mnrf-radio-slider.color-green input:disabled:checked + .sub-box, .mnrf-check-slider.color-green input:disabled:checked + .sub-box, .mnrf-radio.color-green input:disabled:checked + .sub-box, .mnrf-radio.color-green input:disabled + .sub-box::before, .mnrf-radio.color-green .sub-box::before, .mnrf-checkbox.color-green input:disabled:checked + .sub-box {
+  background-color: #D1FAE5;
+}
+
+.mnrf-checkbox.color-green input:disabled + .sub-box .sub-check, .mnrf-checkbox.color-green .sub-box .sub-check {
+  fill: #D1FAE5;
+}
+
+.mnrf-radio-key.color-green input:checked:enabled + label, .mnrf-radio-key.color-green input:hover:enabled + label {
+  color: #D1FAE5;
+}
+
+.mnrf-radio-slider.color-green input:disabled + .sub-box::before, .mnrf-radio-slider.color-green input:disabled + .sub-box, .mnrf-check-slider.color-green input:disabled + .sub-box, .mnrf-radio.color-green input:disabled + .sub-box, .mnrf-checkbox.color-green input:disabled + .sub-box {
+  border-color: #A7F3D0;
+}
+
+.mnrf-radio-key.color-green input:disabled + label, .mnrf-check-slider.color-green input:disabled + .sub-box::before {
+  background-color: #A7F3D0;
+}
+
+.mnrf-radio-key.color-green label, .mnrf-radio-slider.color-green input:checked:enabled + .sub-box, .mnrf-check-slider.color-green input:checked:enabled + .sub-box, .mnrf-radio.color-green input:checked:enabled + .sub-box, .mnrf-checkbox.color-green input:checked:enabled + .sub-box {
+  background-color: #6EE7B7;
+}
+
+.mnrf-radio-key.color-green input:disabled + label {
+  color: #6EE7B7;
+}
+
+.mnrf-radio-slider.color-green input:disabled:checked + .sub-box::before, .mnrf-radio-slider.color-green .sub-box::before, .mnrf-radio-slider.color-green .sub-box, .mnrf-check-slider.color-green .sub-box, .mnrf-radio.color-green .sub-box, .mnrf-checkbox.color-green .sub-box {
+  border-color: #34D399;
+}
+
+.mnrf-radio-key.color-green, .mnrf-check-slider.color-green input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-green .sub-box::before, .mnrf-radio.color-green input:disabled:checked + .sub-box::before {
+  background-color: #34D399;
+}
+
+.mnrf-checkbox.color-green input:disabled:checked + .sub-box .sub-check {
+  fill: #34D399;
+}
+
+.mnrf-radio-key.color-green input:disabled:checked + label, .mnrf-radio-key.color-green input:hover:enabled + label {
+  background-color: #10B981;
+}
+
+.mnrf-radio-slider.color-green input:checked:enabled + .sub-box::before, .mnrf-radio-slider.color-green input:checked:enabled + .sub-box, .mnrf-check-slider.color-green input:checked:enabled + .sub-box, .mnrf-radio.color-green input:checked:enabled + .sub-box, .mnrf-checkbox.color-green input:checked:enabled + .sub-box {
+  border-color: #059669;
+}
+
+.mnrf-radio-key.color-green input:checked:enabled + label, .mnrf-check-slider.color-green input:checked:enabled + .sub-box::before, .mnrf-radio.color-green input:checked:enabled + .sub-box::before {
+  background-color: #059669;
+}
+
+.mnrf-checkbox.color-green input:checked:enabled + .sub-box .sub-check {
+  fill: #059669;
+}
+
+.mnrf-radio-key.color-green input:disabled:checked + label, .mnrf-radio-key.color-green label {
+  color: #059669;
+}
+
+.mnrf-radio-slider input:disabled:checked + .sub-box, .mnrf-check-slider input:disabled:checked + .sub-box, .mnrf-radio input:disabled:checked + .sub-box, .mnrf-radio input:disabled + .sub-box::before, .mnrf-radio .sub-box::before, .mnrf-checkbox input:disabled:checked + .sub-box {
+  background-color: #E0F2FE;
+}
+
+.mnrf-checkbox input:disabled + .sub-box .sub-check, .mnrf-checkbox .sub-box .sub-check {
+  fill: #E0F2FE;
+}
+
+.mnrf-radio-key input:checked:enabled + label, .mnrf-radio-key input:hover:enabled + label {
+  color: #E0F2FE;
+}
+
+.mnrf-radio-slider input:disabled + .sub-box::before, .mnrf-radio-slider input:disabled + .sub-box, .mnrf-check-slider input:disabled + .sub-box, .mnrf-radio input:disabled + .sub-box, .mnrf-checkbox input:disabled + .sub-box {
+  border-color: #BAE6FD;
+}
+
+.mnrf-radio-key input:disabled + label, .mnrf-check-slider input:disabled + .sub-box::before {
+  background-color: #BAE6FD;
+}
+
+.mnrf-radio-key label, .mnrf-radio-slider input:checked:enabled + .sub-box, .mnrf-check-slider input:checked:enabled + .sub-box, .mnrf-radio input:checked:enabled + .sub-box, .mnrf-checkbox input:checked:enabled + .sub-box {
+  background-color: #7DD3FC;
+}
+
+.mnrf-radio-key input:disabled + label {
+  color: #7DD3FC;
+}
+
+.mnrf-radio-slider input:disabled:checked + .sub-box::before, .mnrf-radio-slider .sub-box::before, .mnrf-radio-slider .sub-box, .mnrf-check-slider .sub-box, .mnrf-radio .sub-box, .mnrf-checkbox .sub-box {
+  border-color: #38BDF8;
+}
+
+.mnrf-radio-key, .mnrf-check-slider input:disabled:checked + .sub-box::before, .mnrf-check-slider .sub-box::before, .mnrf-radio input:disabled:checked + .sub-box::before {
+  background-color: #38BDF8;
+}
+
+.mnrf-checkbox input:disabled:checked + .sub-box .sub-check {
+  fill: #38BDF8;
+}
+
+.mnrf-radio-key input:disabled:checked + label, .mnrf-radio-key input:hover:enabled + label {
+  background-color: #0EA5E9;
+}
+
+.mnrf-radio-slider input:checked:enabled + .sub-box::before, .mnrf-radio-slider input:checked:enabled + .sub-box, .mnrf-check-slider input:checked:enabled + .sub-box, .mnrf-radio input:checked:enabled + .sub-box, .mnrf-checkbox input:checked:enabled + .sub-box {
+  border-color: #0284C7;
+}
+
+.mnrf-radio-key input:checked:enabled + label, .mnrf-check-slider input:checked:enabled + .sub-box::before, .mnrf-radio input:checked:enabled + .sub-box::before {
+  background-color: #0284C7;
+}
+
+.mnrf-checkbox input:checked:enabled + .sub-box .sub-check {
+  fill: #0284C7;
+}
+
+.mnrf-radio-key input:disabled:checked + label, .mnrf-radio-key label {
+  color: #0284C7;
+}
+
+.mnrf-checkbox {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.mnrf-checkbox .sub-box {
+  border-radius: 2px;
+}
+@media (pointer: fine) {
+  .mnrf-checkbox input:enabled + .sub-box::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0%;
+    height: 0%;
+    z-index: 1;
+    border-radius: 1000px;
+  }
+  .mnrf-checkbox input:hover:enabled + .sub-box::after {
+    width: 220%;
+    height: 220%;
+  }
+}
+.mnrf-radio {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.mnrf-radio .sub-box {
+  padding: 3px;
+}
+.mnrf-radio .sub-box::before {
+  width: 100%;
+  height: 100%;
+}
+@media (pointer: fine) {
+  .mnrf-radio input:enabled + .sub-box::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0%;
+    height: 0%;
+    z-index: 1;
+    border-radius: 1000px;
+  }
+  .mnrf-radio input:hover:enabled + .sub-box::after {
+    width: 220%;
+    height: 220%;
+  }
+}
+@media (pointer: fine) {
+  .mnrf-checkbox input:hover:enabled + .sub-box {
+    border-color: #0EA5E9;
+  }
+  .mnrf-checkbox input:hover:enabled + .sub-box .sub-check {
+    fill: #7DD3FC;
+  }
+  .mnrf-checkbox input:hover:enabled + .sub-box::after {
+    background-color: rgba(14, 165, 233, 0.2);
+  }
+}
+@media (pointer: fine) {
+  .mnrf-radio input:hover:enabled + .sub-box {
+    border-color: #0EA5E9;
+  }
+  .mnrf-radio input:hover:enabled + .sub-box::before {
+    background-color: #7DD3FC;
+  }
+  .mnrf-radio input:hover:enabled + .sub-box::after {
+    background-color: rgba(14, 165, 233, 0.2);
+  }
+}
+@media (pointer: fine) {
+  .mnrf-checkbox.color-red input:hover:enabled + .sub-box {
+    border-color: #EF4444;
+  }
+  .mnrf-checkbox.color-red input:hover:enabled + .sub-box .sub-check {
+    fill: #FCA5A5;
+  }
+  .mnrf-checkbox.color-red input:hover:enabled + .sub-box::after {
+    background-color: rgba(239, 68, 68, 0.2);
+  }
+}
+@media (pointer: fine) {
+  .mnrf-radio.color-red input:hover:enabled + .sub-box {
+    border-color: #EF4444;
+  }
+  .mnrf-radio.color-red input:hover:enabled + .sub-box::before {
+    background-color: #FCA5A5;
+  }
+  .mnrf-radio.color-red input:hover:enabled + .sub-box::after {
+    background-color: rgba(239, 68, 68, 0.2);
+  }
+}
+@media (pointer: fine) {
+  .mnrf-checkbox.color-yellow input:hover:enabled + .sub-box {
+    border-color: #EAB308;
+  }
+  .mnrf-checkbox.color-yellow input:hover:enabled + .sub-box .sub-check {
+    fill: #FDE047;
+  }
+  .mnrf-checkbox.color-yellow input:hover:enabled + .sub-box::after {
+    background-color: rgba(234, 179, 8, 0.2);
+  }
+}
+@media (pointer: fine) {
+  .mnrf-radio.color-yellow input:hover:enabled + .sub-box {
+    border-color: #EAB308;
+  }
+  .mnrf-radio.color-yellow input:hover:enabled + .sub-box::before {
+    background-color: #FDE047;
+  }
+  .mnrf-radio.color-yellow input:hover:enabled + .sub-box::after {
+    background-color: rgba(234, 179, 8, 0.2);
+  }
+}
+@media (pointer: fine) {
+  .mnrf-checkbox.color-green input:hover:enabled + .sub-box {
+    border-color: #10B981;
+  }
+  .mnrf-checkbox.color-green input:hover:enabled + .sub-box .sub-check {
+    fill: #6EE7B7;
+  }
+  .mnrf-checkbox.color-green input:hover:enabled + .sub-box::after {
+    background-color: rgba(16, 185, 129, 0.2);
+  }
+}
+@media (pointer: fine) {
+  .mnrf-radio.color-green input:hover:enabled + .sub-box {
+    border-color: #10B981;
+  }
+  .mnrf-radio.color-green input:hover:enabled + .sub-box::before {
+    background-color: #6EE7B7;
+  }
+  .mnrf-radio.color-green input:hover:enabled + .sub-box::after {
+    background-color: rgba(16, 185, 129, 0.2);
+  }
+}
+.mnrf-checkbox .sub-box, .mnrf-radio .sub-box, .mnrf-check-slider .sub-box, .mnrf-radio-slider .sub-box {
+  margin: 2px;
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.mnrf-checkbox.opt-sm .sub-box, .mnrf-radio.opt-sm .sub-box {
+  width: 18px;
+  height: 18px;
+}
+
+.mnrf-checkbox .sub-box, .mnrf-checkbox.opt-md .sub-box, .mnrf-radio .sub-box, .mnrf-radio.opt-md .sub-box {
+  width: 20px;
+  height: 20px;
+}
+
+.mnrf-checkbox.opt-lg .sub-box, .mnrf-radio.opt-lg .sub-box {
+  width: 22px;
+  height: 22px;
+}
+
+.mnrf-checkbox.opt-em .sub-box, .mnrf-radio.opt-em .sub-box {
+  width: 1.46em;
+  height: 1.46em;
+}
+
+.mnrf-check-slider.opt-sm .sub-box, .mnrf-radio-slider.opt-sm .sub-box {
+  width: 31.5px;
+}
+
+.mnrf-check-slider .sub-box, .mnrf-check-slider.opt-md .sub-box, .mnrf-radio-slider .sub-box, .mnrf-radio-slider.opt-md .sub-box {
+  width: 35px;
+}
+
+.mnrf-check-slider.opt-lg .sub-box, .mnrf-radio-slider.opt-lg .sub-box {
+  width: 38.5px;
+}
+
+.mnrf-check-slider.opt-em .sub-box, .mnrf-radio-slider.opt-em .sub-box {
+  width: 2.555em;
+}
+
+.mnrf-radio-key label, .mnrf-radio-key, .mnrf-radio .sub-box, .mnrf-check-slider .sub-box, .mnrf-radio-slider .sub-box, .mnrf-radio .sub-box::before, .mnrf-check-slider .sub-box::before, .mnrf-radio-slider .sub-box::before {
+  border-radius: 1000px;
+}
+
+.mnrf-radio .sub-box::before, .mnrf-check-slider .sub-box::before, .mnrf-radio-slider .sub-box::before {
+  content: "";
+  display: block;
+}
+
+.mnrf-radio-key, .mnrf-radio-key *:not(svg) > * > *, .mnrf-radio-key *::after, .mnrf-radio-key *::before, .mnrf-checkbox, .mnrf-checkbox *:not(svg) > * > *, .mnrf-checkbox *::after, .mnrf-checkbox *::before, .mnrf-radio, .mnrf-radio *:not(svg) > * > *, .mnrf-radio *::after, .mnrf-radio *::before, .mnrf-check-slider, .mnrf-check-slider *:not(svg) > * > *, .mnrf-check-slider *::after, .mnrf-check-slider *::before, .mnrf-radio-slider, .mnrf-radio-slider *:not(svg) > * > *, .mnrf-radio-slider *::after, .mnrf-radio-slider *::before {
+  transition: all 0.3s;
+}
+
+.mnrf-check-slider .sub-box::before, .mnrf-radio-slider .sub-box::before {
+  position: relative;
+  left: 1px;
+  width: 55%;
+}
+
+.mnrf-radio-key, .mnrf-checkbox, .mnrf-radio, .mnrf-check-slider, .mnrf-radio-slider, .mnrf-radio-key *, .mnrf-checkbox *, .mnrf-radio *, .mnrf-check-slider *, .mnrf-radio-slider * {
+  cursor: pointer;
+}
+
+.mnrf-radio-key input:disabled + label, .mnrf-checkbox input:disabled ~ *, .mnrf-radio input:disabled ~ *, .mnrf-check-slider input:disabled ~ *, .mnrf-radio-slider input:disabled ~ * {
+  cursor: no-drop;
+}
+
+.mnrf-radio-key input, .mnrf-checkbox input, .mnrf-radio input, .mnrf-check-slider input, .mnrf-radio-slider input {
+  display: none;
+}
+
+.mnrf-checkbox.opt-block, .mnrf-radio.opt-block, .mnrf-check-slider.opt-block, .mnrf-radio-slider.opt-block {
+  display: block;
+}
+
+.mnrf-radio-slider.color-red input:disabled:checked + .sub-box, .mnrf-check-slider.color-red input:disabled:checked + .sub-box, .mnrf-checkbox.color-red input:disabled:checked + .sub-box, .mnrf-radio.color-red .sub-box::before, .mnrf-radio.color-red input:disabled + .sub-box::before, .mnrf-radio.color-red input:disabled:checked + .sub-box {
+  background-color: #FEE2E2;
+}
+
+.mnrf-checkbox.color-red .sub-box .sub-check, .mnrf-checkbox.color-red input:disabled + .sub-box .sub-check {
+  fill: #FEE2E2;
+}
+
+.mnrf-radio-key.color-red input:checked:enabled + label, .mnrf-radio-key.color-red input:hover:enabled + label {
+  color: #FEE2E2;
+}
+
+.mnrf-radio-slider.color-red input:disabled + .sub-box::before, .mnrf-radio-slider.color-red input:disabled + .sub-box, .mnrf-check-slider.color-red input:disabled + .sub-box, .mnrf-checkbox.color-red input:disabled + .sub-box, .mnrf-radio.color-red input:disabled + .sub-box {
+  border-color: #FECACA;
+}
+
+.mnrf-radio-key.color-red input:disabled + label, .mnrf-check-slider.color-red input:disabled + .sub-box::before {
+  background-color: #FECACA;
+}
+
+.mnrf-radio-key.color-red label, .mnrf-radio-slider.color-red input:checked:enabled + .sub-box, .mnrf-check-slider.color-red input:checked:enabled + .sub-box, .mnrf-checkbox.color-red input:checked:enabled + .sub-box, .mnrf-radio.color-red input:checked:enabled + .sub-box {
+  background-color: #FCA5A5;
+}
+
+.mnrf-radio-key.color-red input:disabled + label {
+  color: #FCA5A5;
+}
+
+.mnrf-radio-slider.color-red input:disabled:checked + .sub-box::before, .mnrf-radio-slider.color-red .sub-box::before, .mnrf-radio-slider.color-red .sub-box, .mnrf-check-slider.color-red .sub-box, .mnrf-checkbox.color-red .sub-box, .mnrf-radio.color-red .sub-box {
+  border-color: #F87171;
+}
+
+.mnrf-radio-key.color-red, .mnrf-check-slider.color-red input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-red .sub-box::before, .mnrf-radio.color-red input:disabled:checked + .sub-box::before {
+  background-color: #F87171;
+}
+
+.mnrf-checkbox.color-red input:disabled:checked + .sub-box .sub-check {
+  fill: #F87171;
+}
+
+.mnrf-radio-key.color-red input:disabled:checked + label, .mnrf-radio-key.color-red input:hover:enabled + label {
+  background-color: #EF4444;
+}
+
+.mnrf-radio-slider.color-red input:checked:enabled + .sub-box::before, .mnrf-radio-slider.color-red input:checked:enabled + .sub-box, .mnrf-check-slider.color-red input:checked:enabled + .sub-box, .mnrf-checkbox.color-red input:checked:enabled + .sub-box, .mnrf-radio.color-red input:checked:enabled + .sub-box {
+  border-color: #DC2626;
+}
+
+.mnrf-radio-key.color-red input:checked:enabled + label, .mnrf-check-slider.color-red input:checked:enabled + .sub-box::before, .mnrf-radio.color-red input:checked:enabled + .sub-box::before {
+  background-color: #DC2626;
+}
+
+.mnrf-checkbox.color-red input:checked:enabled + .sub-box .sub-check {
+  fill: #DC2626;
+}
+
+.mnrf-radio-key.color-red input:disabled:checked + label, .mnrf-radio-key.color-red label {
+  color: #DC2626;
+}
+
+.mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-checkbox.color-yellow input:disabled:checked + .sub-box, .mnrf-radio.color-yellow .sub-box::before, .mnrf-radio.color-yellow input:disabled + .sub-box::before, .mnrf-radio.color-yellow input:disabled:checked + .sub-box {
+  background-color: #FEF9C3;
+}
+
+.mnrf-checkbox.color-yellow .sub-box .sub-check, .mnrf-checkbox.color-yellow input:disabled + .sub-box .sub-check {
+  fill: #FEF9C3;
+}
+
+.mnrf-radio-key.color-yellow input:checked:enabled + label, .mnrf-radio-key.color-yellow input:hover:enabled + label {
+  color: #FEF9C3;
+}
+
+.mnrf-radio-slider.color-yellow input:disabled + .sub-box::before, .mnrf-radio-slider.color-yellow input:disabled + .sub-box, .mnrf-check-slider.color-yellow input:disabled + .sub-box, .mnrf-checkbox.color-yellow input:disabled + .sub-box, .mnrf-radio.color-yellow input:disabled + .sub-box {
+  border-color: #FEF08A;
+}
+
+.mnrf-radio-key.color-yellow input:disabled + label, .mnrf-check-slider.color-yellow input:disabled + .sub-box::before {
+  background-color: #FEF08A;
+}
+
+.mnrf-radio-key.color-yellow label, .mnrf-radio-slider.color-yellow input:checked:enabled + .sub-box, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box, .mnrf-checkbox.color-yellow input:checked:enabled + .sub-box, .mnrf-radio.color-yellow input:checked:enabled + .sub-box {
+  background-color: #FDE047;
+}
+
+.mnrf-radio-key.color-yellow input:disabled + label {
+  color: #FDE047;
+}
+
+.mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box::before, .mnrf-radio-slider.color-yellow .sub-box::before, .mnrf-radio-slider.color-yellow .sub-box, .mnrf-check-slider.color-yellow .sub-box, .mnrf-checkbox.color-yellow .sub-box, .mnrf-radio.color-yellow .sub-box {
+  border-color: #FACC15;
+}
+
+.mnrf-radio-key.color-yellow, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-yellow .sub-box::before, .mnrf-radio.color-yellow input:disabled:checked + .sub-box::before {
+  background-color: #FACC15;
+}
+
+.mnrf-checkbox.color-yellow input:disabled:checked + .sub-box .sub-check {
+  fill: #FACC15;
+}
+
+.mnrf-radio-key.color-yellow input:disabled:checked + label, .mnrf-radio-key.color-yellow input:hover:enabled + label {
+  background-color: #EAB308;
+}
+
+.mnrf-radio-slider.color-yellow input:checked:enabled + .sub-box::before, .mnrf-radio-slider.color-yellow input:checked:enabled + .sub-box, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box, .mnrf-checkbox.color-yellow input:checked:enabled + .sub-box, .mnrf-radio.color-yellow input:checked:enabled + .sub-box {
+  border-color: #CA8A04;
+}
+
+.mnrf-radio-key.color-yellow input:checked:enabled + label, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box::before, .mnrf-radio.color-yellow input:checked:enabled + .sub-box::before {
+  background-color: #CA8A04;
+}
+
+.mnrf-checkbox.color-yellow input:checked:enabled + .sub-box .sub-check {
+  fill: #CA8A04;
+}
+
+.mnrf-radio-key.color-yellow input:disabled:checked + label, .mnrf-radio-key.color-yellow label {
+  color: #CA8A04;
+}
+
+.mnrf-radio-slider.color-green input:disabled:checked + .sub-box, .mnrf-check-slider.color-green input:disabled:checked + .sub-box, .mnrf-checkbox.color-green input:disabled:checked + .sub-box, .mnrf-radio.color-green .sub-box::before, .mnrf-radio.color-green input:disabled + .sub-box::before, .mnrf-radio.color-green input:disabled:checked + .sub-box {
+  background-color: #D1FAE5;
+}
+
+.mnrf-checkbox.color-green .sub-box .sub-check, .mnrf-checkbox.color-green input:disabled + .sub-box .sub-check {
+  fill: #D1FAE5;
+}
+
+.mnrf-radio-key.color-green input:checked:enabled + label, .mnrf-radio-key.color-green input:hover:enabled + label {
+  color: #D1FAE5;
+}
+
+.mnrf-radio-slider.color-green input:disabled + .sub-box::before, .mnrf-radio-slider.color-green input:disabled + .sub-box, .mnrf-check-slider.color-green input:disabled + .sub-box, .mnrf-checkbox.color-green input:disabled + .sub-box, .mnrf-radio.color-green input:disabled + .sub-box {
+  border-color: #A7F3D0;
+}
+
+.mnrf-radio-key.color-green input:disabled + label, .mnrf-check-slider.color-green input:disabled + .sub-box::before {
+  background-color: #A7F3D0;
+}
+
+.mnrf-radio-key.color-green label, .mnrf-radio-slider.color-green input:checked:enabled + .sub-box, .mnrf-check-slider.color-green input:checked:enabled + .sub-box, .mnrf-checkbox.color-green input:checked:enabled + .sub-box, .mnrf-radio.color-green input:checked:enabled + .sub-box {
+  background-color: #6EE7B7;
+}
+
+.mnrf-radio-key.color-green input:disabled + label {
+  color: #6EE7B7;
+}
+
+.mnrf-radio-slider.color-green input:disabled:checked + .sub-box::before, .mnrf-radio-slider.color-green .sub-box::before, .mnrf-radio-slider.color-green .sub-box, .mnrf-check-slider.color-green .sub-box, .mnrf-checkbox.color-green .sub-box, .mnrf-radio.color-green .sub-box {
+  border-color: #34D399;
+}
+
+.mnrf-radio-key.color-green, .mnrf-check-slider.color-green input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-green .sub-box::before, .mnrf-radio.color-green input:disabled:checked + .sub-box::before {
+  background-color: #34D399;
+}
+
+.mnrf-checkbox.color-green input:disabled:checked + .sub-box .sub-check {
+  fill: #34D399;
+}
+
+.mnrf-radio-key.color-green input:disabled:checked + label, .mnrf-radio-key.color-green input:hover:enabled + label {
+  background-color: #10B981;
+}
+
+.mnrf-radio-slider.color-green input:checked:enabled + .sub-box::before, .mnrf-radio-slider.color-green input:checked:enabled + .sub-box, .mnrf-check-slider.color-green input:checked:enabled + .sub-box, .mnrf-checkbox.color-green input:checked:enabled + .sub-box, .mnrf-radio.color-green input:checked:enabled + .sub-box {
+  border-color: #059669;
+}
+
+.mnrf-radio-key.color-green input:checked:enabled + label, .mnrf-check-slider.color-green input:checked:enabled + .sub-box::before, .mnrf-radio.color-green input:checked:enabled + .sub-box::before {
+  background-color: #059669;
+}
+
+.mnrf-checkbox.color-green input:checked:enabled + .sub-box .sub-check {
+  fill: #059669;
+}
+
+.mnrf-radio-key.color-green input:disabled:checked + label, .mnrf-radio-key.color-green label {
+  color: #059669;
+}
+
+.mnrf-radio-slider input:disabled:checked + .sub-box, .mnrf-check-slider input:disabled:checked + .sub-box, .mnrf-checkbox input:disabled:checked + .sub-box, .mnrf-radio .sub-box::before, .mnrf-radio input:disabled + .sub-box::before, .mnrf-radio input:disabled:checked + .sub-box {
+  background-color: #E0F2FE;
+}
+
+.mnrf-checkbox .sub-box .sub-check, .mnrf-checkbox input:disabled + .sub-box .sub-check {
+  fill: #E0F2FE;
+}
+
+.mnrf-radio-key input:checked:enabled + label, .mnrf-radio-key input:hover:enabled + label {
+  color: #E0F2FE;
+}
+
+.mnrf-radio-slider input:disabled + .sub-box::before, .mnrf-radio-slider input:disabled + .sub-box, .mnrf-check-slider input:disabled + .sub-box, .mnrf-checkbox input:disabled + .sub-box, .mnrf-radio input:disabled + .sub-box {
+  border-color: #BAE6FD;
+}
+
+.mnrf-radio-key input:disabled + label, .mnrf-check-slider input:disabled + .sub-box::before {
+  background-color: #BAE6FD;
+}
+
+.mnrf-radio-key label, .mnrf-radio-slider input:checked:enabled + .sub-box, .mnrf-check-slider input:checked:enabled + .sub-box, .mnrf-checkbox input:checked:enabled + .sub-box, .mnrf-radio input:checked:enabled + .sub-box {
+  background-color: #7DD3FC;
+}
+
+.mnrf-radio-key input:disabled + label {
+  color: #7DD3FC;
+}
+
+.mnrf-radio-slider input:disabled:checked + .sub-box::before, .mnrf-radio-slider .sub-box::before, .mnrf-radio-slider .sub-box, .mnrf-check-slider .sub-box, .mnrf-checkbox .sub-box, .mnrf-radio .sub-box {
+  border-color: #38BDF8;
+}
+
+.mnrf-radio-key, .mnrf-check-slider input:disabled:checked + .sub-box::before, .mnrf-check-slider .sub-box::before, .mnrf-radio input:disabled:checked + .sub-box::before {
+  background-color: #38BDF8;
+}
+
+.mnrf-checkbox input:disabled:checked + .sub-box .sub-check {
+  fill: #38BDF8;
+}
+
+.mnrf-radio-key input:disabled:checked + label, .mnrf-radio-key input:hover:enabled + label {
+  background-color: #0EA5E9;
+}
+
+.mnrf-radio-slider input:checked:enabled + .sub-box::before, .mnrf-radio-slider input:checked:enabled + .sub-box, .mnrf-check-slider input:checked:enabled + .sub-box, .mnrf-checkbox input:checked:enabled + .sub-box, .mnrf-radio input:checked:enabled + .sub-box {
+  border-color: #0284C7;
+}
+
+.mnrf-radio-key input:checked:enabled + label, .mnrf-check-slider input:checked:enabled + .sub-box::before, .mnrf-radio input:checked:enabled + .sub-box::before {
+  background-color: #0284C7;
+}
+
+.mnrf-checkbox input:checked:enabled + .sub-box .sub-check {
+  fill: #0284C7;
+}
+
+.mnrf-radio-key input:disabled:checked + label, .mnrf-radio-key label {
+  color: #0284C7;
+}
+
+.mnrf-check-slider {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.mnrf-check-slider .sub-box {
+  padding: 1px;
+}
+.mnrf-check-slider .sub-box::before {
+  padding-top: 55%;
+}
+.mnrf-check-slider input:checked + .sub-box::before {
+  left: calc(45% - 1px);
+}
+.mnrf-check-slider input:disabled + .sub-box {
+  background-color: white;
+}
+.mnrf-radio-slider {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.mnrf-radio-slider .sub-box {
+  padding: 1px;
+}
+.mnrf-radio-slider .sub-box::before {
+  border-width: 4px;
+  border-style: solid;
+  box-sizing: border-box;
+  padding: calc(27.5% - 4px);
+}
+.mnrf-radio-slider input:checked + .sub-box::before {
+  left: calc(45% - 1px);
+}
+.mnrf-radio-slider input:disabled + .sub-box {
+  background-color: white;
+}
+@media (pointer: fine) {
+  .mnrf-check-slider input:hover:enabled + .sub-box {
+    border-color: #0EA5E9;
+    background-color: #E0F2FE;
+  }
+  .mnrf-check-slider input:hover:enabled + .sub-box::before {
+    background-color: #0EA5E9;
+    box-shadow: 0 0 0 0.7em rgba(14, 165, 233, 0.3);
+  }
+}
+@media (pointer: fine) {
+  .mnrf-radio-slider input:hover:enabled + .sub-box {
+    border-color: #0EA5E9;
+    background-color: #E0F2FE;
+  }
+  .mnrf-radio-slider input:hover:enabled + .sub-box::before {
+    border-color: #0EA5E9;
+    box-shadow: 0 0 0 0.7em rgba(14, 165, 233, 0.3);
+  }
+}
+@media (pointer: fine) {
+  .mnrf-check-slider.color-red input:hover:enabled + .sub-box {
+    border-color: #EF4444;
+    background-color: #FEE2E2;
+  }
+  .mnrf-check-slider.color-red input:hover:enabled + .sub-box::before {
+    background-color: #EF4444;
+    box-shadow: 0 0 0 0.7em rgba(239, 68, 68, 0.3);
+  }
+}
+@media (pointer: fine) {
+  .mnrf-radio-slider.color-red input:hover:enabled + .sub-box {
+    border-color: #EF4444;
+    background-color: #FEE2E2;
+  }
+  .mnrf-radio-slider.color-red input:hover:enabled + .sub-box::before {
+    border-color: #EF4444;
+    box-shadow: 0 0 0 0.7em rgba(239, 68, 68, 0.3);
+  }
+}
+@media (pointer: fine) {
+  .mnrf-check-slider.color-yellow input:hover:enabled + .sub-box {
+    border-color: #EAB308;
+    background-color: #FEF9C3;
+  }
+  .mnrf-check-slider.color-yellow input:hover:enabled + .sub-box::before {
+    background-color: #EAB308;
+    box-shadow: 0 0 0 0.7em rgba(234, 179, 8, 0.3);
+  }
+}
+@media (pointer: fine) {
+  .mnrf-radio-slider.color-yellow input:hover:enabled + .sub-box {
+    border-color: #EAB308;
+    background-color: #FEF9C3;
+  }
+  .mnrf-radio-slider.color-yellow input:hover:enabled + .sub-box::before {
+    border-color: #EAB308;
+    box-shadow: 0 0 0 0.7em rgba(234, 179, 8, 0.3);
+  }
+}
+@media (pointer: fine) {
+  .mnrf-check-slider.color-green input:hover:enabled + .sub-box {
+    border-color: #10B981;
+    background-color: #D1FAE5;
+  }
+  .mnrf-check-slider.color-green input:hover:enabled + .sub-box::before {
+    background-color: #10B981;
+    box-shadow: 0 0 0 0.7em rgba(16, 185, 129, 0.3);
+  }
+}
+@media (pointer: fine) {
+  .mnrf-radio-slider.color-green input:hover:enabled + .sub-box {
+    border-color: #10B981;
+    background-color: #D1FAE5;
+  }
+  .mnrf-radio-slider.color-green input:hover:enabled + .sub-box::before {
+    border-color: #10B981;
+    box-shadow: 0 0 0 0.7em rgba(16, 185, 129, 0.3);
+  }
+}
+.mnrf-checkbox .sub-box, .mnrf-radio .sub-box, .mnrf-check-slider .sub-box, .mnrf-radio-slider .sub-box {
+  margin: 2px;
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.mnrf-checkbox.opt-sm .sub-box, .mnrf-radio.opt-sm .sub-box {
+  width: 18px;
+  height: 18px;
+}
+
+.mnrf-checkbox .sub-box, .mnrf-checkbox.opt-md .sub-box, .mnrf-radio .sub-box, .mnrf-radio.opt-md .sub-box {
+  width: 20px;
+  height: 20px;
+}
+
+.mnrf-checkbox.opt-lg .sub-box, .mnrf-radio.opt-lg .sub-box {
+  width: 22px;
+  height: 22px;
+}
+
+.mnrf-checkbox.opt-em .sub-box, .mnrf-radio.opt-em .sub-box {
+  width: 1.46em;
+  height: 1.46em;
+}
+
+.mnrf-check-slider.opt-sm .sub-box, .mnrf-radio-slider.opt-sm .sub-box {
+  width: 31.5px;
+}
+
+.mnrf-check-slider .sub-box, .mnrf-check-slider.opt-md .sub-box, .mnrf-radio-slider .sub-box, .mnrf-radio-slider.opt-md .sub-box {
+  width: 35px;
+}
+
+.mnrf-check-slider.opt-lg .sub-box, .mnrf-radio-slider.opt-lg .sub-box {
+  width: 38.5px;
+}
+
+.mnrf-check-slider.opt-em .sub-box, .mnrf-radio-slider.opt-em .sub-box {
+  width: 2.555em;
+}
+
+.mnrf-radio .sub-box, .mnrf-check-slider .sub-box, .mnrf-radio-slider .sub-box, .mnrf-radio-key, .mnrf-radio-key label, .mnrf-radio .sub-box::before, .mnrf-check-slider .sub-box::before, .mnrf-radio-slider .sub-box::before {
+  border-radius: 1000px;
+}
+
+.mnrf-radio .sub-box::before, .mnrf-check-slider .sub-box::before, .mnrf-radio-slider .sub-box::before {
+  content: "";
+  display: block;
+}
+
+.mnrf-checkbox, .mnrf-checkbox *:not(svg) > * > *, .mnrf-checkbox *::after, .mnrf-checkbox *::before, .mnrf-radio, .mnrf-radio *:not(svg) > * > *, .mnrf-radio *::after, .mnrf-radio *::before, .mnrf-check-slider, .mnrf-check-slider *:not(svg) > * > *, .mnrf-check-slider *::after, .mnrf-check-slider *::before, .mnrf-radio-slider, .mnrf-radio-slider *:not(svg) > * > *, .mnrf-radio-slider *::after, .mnrf-radio-slider *::before, .mnrf-radio-key, .mnrf-radio-key *:not(svg) > * > *, .mnrf-radio-key *::after, .mnrf-radio-key *::before {
+  transition: all 0.3s;
+}
+
+.mnrf-check-slider .sub-box::before, .mnrf-radio-slider .sub-box::before {
+  position: relative;
+  left: 1px;
+  width: 55%;
+}
+
+.mnrf-checkbox, .mnrf-radio, .mnrf-check-slider, .mnrf-radio-slider, .mnrf-radio-key, .mnrf-checkbox *, .mnrf-radio *, .mnrf-check-slider *, .mnrf-radio-slider *, .mnrf-radio-key * {
+  cursor: pointer;
+}
+
+.mnrf-checkbox input:disabled ~ *, .mnrf-radio input:disabled ~ *, .mnrf-check-slider input:disabled ~ *, .mnrf-radio-slider input:disabled ~ *, .mnrf-radio-key input:disabled + label {
+  cursor: no-drop;
+}
+
+.mnrf-checkbox input, .mnrf-radio input, .mnrf-check-slider input, .mnrf-radio-slider input, .mnrf-radio-key input {
+  display: none;
+}
+
+.mnrf-checkbox.opt-block, .mnrf-radio.opt-block, .mnrf-check-slider.opt-block, .mnrf-radio-slider.opt-block {
+  display: block;
+}
+
+.mnrf-checkbox.color-red input:disabled:checked + .sub-box, .mnrf-radio.color-red .sub-box::before, .mnrf-radio.color-red input:disabled + .sub-box::before, .mnrf-radio.color-red input:disabled:checked + .sub-box, .mnrf-check-slider.color-red input:disabled:checked + .sub-box, .mnrf-radio-slider.color-red input:disabled:checked + .sub-box {
+  background-color: #FEE2E2;
+}
+
+.mnrf-checkbox.color-red .sub-box .sub-check, .mnrf-checkbox.color-red input:disabled + .sub-box .sub-check {
+  fill: #FEE2E2;
+}
+
+.mnrf-radio-key.color-red input:checked:enabled + label, .mnrf-radio-key.color-red input:hover:enabled + label {
+  color: #FEE2E2;
+}
+
+.mnrf-checkbox.color-red input:disabled + .sub-box, .mnrf-radio.color-red input:disabled + .sub-box, .mnrf-check-slider.color-red input:disabled + .sub-box, .mnrf-radio-slider.color-red input:disabled + .sub-box, .mnrf-radio-slider.color-red input:disabled + .sub-box::before {
+  border-color: #FECACA;
+}
+
+.mnrf-radio-key.color-red input:disabled + label, .mnrf-check-slider.color-red input:disabled + .sub-box::before {
+  background-color: #FECACA;
+}
+
+.mnrf-radio-key.color-red label, .mnrf-checkbox.color-red input:checked:enabled + .sub-box, .mnrf-radio.color-red input:checked:enabled + .sub-box, .mnrf-check-slider.color-red input:checked:enabled + .sub-box, .mnrf-radio-slider.color-red input:checked:enabled + .sub-box {
+  background-color: #FCA5A5;
+}
+
+.mnrf-radio-key.color-red input:disabled + label {
+  color: #FCA5A5;
+}
+
+.mnrf-checkbox.color-red .sub-box, .mnrf-radio.color-red .sub-box, .mnrf-check-slider.color-red .sub-box, .mnrf-radio-slider.color-red .sub-box, .mnrf-radio-slider.color-red .sub-box::before, .mnrf-radio-slider.color-red input:disabled:checked + .sub-box::before {
+  border-color: #F87171;
+}
+
+.mnrf-radio-key.color-red, .mnrf-radio.color-red input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-red .sub-box::before, .mnrf-check-slider.color-red input:disabled:checked + .sub-box::before {
+  background-color: #F87171;
+}
+
+.mnrf-checkbox.color-red input:disabled:checked + .sub-box .sub-check {
+  fill: #F87171;
+}
+
+.mnrf-radio-key.color-red input:disabled:checked + label, .mnrf-radio-key.color-red input:hover:enabled + label {
+  background-color: #EF4444;
+}
+
+.mnrf-checkbox.color-red input:checked:enabled + .sub-box, .mnrf-radio.color-red input:checked:enabled + .sub-box, .mnrf-check-slider.color-red input:checked:enabled + .sub-box, .mnrf-radio-slider.color-red input:checked:enabled + .sub-box, .mnrf-radio-slider.color-red input:checked:enabled + .sub-box::before {
+  border-color: #DC2626;
+}
+
+.mnrf-radio-key.color-red input:checked:enabled + label, .mnrf-radio.color-red input:checked:enabled + .sub-box::before, .mnrf-check-slider.color-red input:checked:enabled + .sub-box::before {
+  background-color: #DC2626;
+}
+
+.mnrf-checkbox.color-red input:checked:enabled + .sub-box .sub-check {
+  fill: #DC2626;
+}
+
+.mnrf-radio-key.color-red input:disabled:checked + label, .mnrf-radio-key.color-red label {
+  color: #DC2626;
+}
+
+.mnrf-checkbox.color-yellow input:disabled:checked + .sub-box, .mnrf-radio.color-yellow .sub-box::before, .mnrf-radio.color-yellow input:disabled + .sub-box::before, .mnrf-radio.color-yellow input:disabled:checked + .sub-box, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box {
+  background-color: #FEF9C3;
+}
+
+.mnrf-checkbox.color-yellow .sub-box .sub-check, .mnrf-checkbox.color-yellow input:disabled + .sub-box .sub-check {
+  fill: #FEF9C3;
+}
+
+.mnrf-radio-key.color-yellow input:checked:enabled + label, .mnrf-radio-key.color-yellow input:hover:enabled + label {
+  color: #FEF9C3;
+}
+
+.mnrf-checkbox.color-yellow input:disabled + .sub-box, .mnrf-radio.color-yellow input:disabled + .sub-box, .mnrf-check-slider.color-yellow input:disabled + .sub-box, .mnrf-radio-slider.color-yellow input:disabled + .sub-box, .mnrf-radio-slider.color-yellow input:disabled + .sub-box::before {
+  border-color: #FEF08A;
+}
+
+.mnrf-radio-key.color-yellow input:disabled + label, .mnrf-check-slider.color-yellow input:disabled + .sub-box::before {
+  background-color: #FEF08A;
+}
+
+.mnrf-radio-key.color-yellow label, .mnrf-checkbox.color-yellow input:checked:enabled + .sub-box, .mnrf-radio.color-yellow input:checked:enabled + .sub-box, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box, .mnrf-radio-slider.color-yellow input:checked:enabled + .sub-box {
+  background-color: #FDE047;
+}
+
+.mnrf-radio-key.color-yellow input:disabled + label {
+  color: #FDE047;
+}
+
+.mnrf-checkbox.color-yellow .sub-box, .mnrf-radio.color-yellow .sub-box, .mnrf-check-slider.color-yellow .sub-box, .mnrf-radio-slider.color-yellow .sub-box, .mnrf-radio-slider.color-yellow .sub-box::before, .mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box::before {
+  border-color: #FACC15;
+}
+
+.mnrf-radio-key.color-yellow, .mnrf-radio.color-yellow input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-yellow .sub-box::before, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box::before {
+  background-color: #FACC15;
+}
+
+.mnrf-checkbox.color-yellow input:disabled:checked + .sub-box .sub-check {
+  fill: #FACC15;
+}
+
+.mnrf-radio-key.color-yellow input:disabled:checked + label, .mnrf-radio-key.color-yellow input:hover:enabled + label {
+  background-color: #EAB308;
+}
+
+.mnrf-checkbox.color-yellow input:checked:enabled + .sub-box, .mnrf-radio.color-yellow input:checked:enabled + .sub-box, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box, .mnrf-radio-slider.color-yellow input:checked:enabled + .sub-box, .mnrf-radio-slider.color-yellow input:checked:enabled + .sub-box::before {
+  border-color: #CA8A04;
+}
+
+.mnrf-radio-key.color-yellow input:checked:enabled + label, .mnrf-radio.color-yellow input:checked:enabled + .sub-box::before, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box::before {
+  background-color: #CA8A04;
+}
+
+.mnrf-checkbox.color-yellow input:checked:enabled + .sub-box .sub-check {
+  fill: #CA8A04;
+}
+
+.mnrf-radio-key.color-yellow input:disabled:checked + label, .mnrf-radio-key.color-yellow label {
+  color: #CA8A04;
+}
+
+.mnrf-checkbox.color-green input:disabled:checked + .sub-box, .mnrf-radio.color-green .sub-box::before, .mnrf-radio.color-green input:disabled + .sub-box::before, .mnrf-radio.color-green input:disabled:checked + .sub-box, .mnrf-check-slider.color-green input:disabled:checked + .sub-box, .mnrf-radio-slider.color-green input:disabled:checked + .sub-box {
+  background-color: #D1FAE5;
+}
+
+.mnrf-checkbox.color-green .sub-box .sub-check, .mnrf-checkbox.color-green input:disabled + .sub-box .sub-check {
+  fill: #D1FAE5;
+}
+
+.mnrf-radio-key.color-green input:checked:enabled + label, .mnrf-radio-key.color-green input:hover:enabled + label {
+  color: #D1FAE5;
+}
+
+.mnrf-checkbox.color-green input:disabled + .sub-box, .mnrf-radio.color-green input:disabled + .sub-box, .mnrf-check-slider.color-green input:disabled + .sub-box, .mnrf-radio-slider.color-green input:disabled + .sub-box, .mnrf-radio-slider.color-green input:disabled + .sub-box::before {
+  border-color: #A7F3D0;
+}
+
+.mnrf-radio-key.color-green input:disabled + label, .mnrf-check-slider.color-green input:disabled + .sub-box::before {
+  background-color: #A7F3D0;
+}
+
+.mnrf-radio-key.color-green label, .mnrf-checkbox.color-green input:checked:enabled + .sub-box, .mnrf-radio.color-green input:checked:enabled + .sub-box, .mnrf-check-slider.color-green input:checked:enabled + .sub-box, .mnrf-radio-slider.color-green input:checked:enabled + .sub-box {
+  background-color: #6EE7B7;
+}
+
+.mnrf-radio-key.color-green input:disabled + label {
+  color: #6EE7B7;
+}
+
+.mnrf-checkbox.color-green .sub-box, .mnrf-radio.color-green .sub-box, .mnrf-check-slider.color-green .sub-box, .mnrf-radio-slider.color-green .sub-box, .mnrf-radio-slider.color-green .sub-box::before, .mnrf-radio-slider.color-green input:disabled:checked + .sub-box::before {
+  border-color: #34D399;
+}
+
+.mnrf-radio-key.color-green, .mnrf-radio.color-green input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-green .sub-box::before, .mnrf-check-slider.color-green input:disabled:checked + .sub-box::before {
+  background-color: #34D399;
+}
+
+.mnrf-checkbox.color-green input:disabled:checked + .sub-box .sub-check {
+  fill: #34D399;
+}
+
+.mnrf-radio-key.color-green input:disabled:checked + label, .mnrf-radio-key.color-green input:hover:enabled + label {
+  background-color: #10B981;
+}
+
+.mnrf-checkbox.color-green input:checked:enabled + .sub-box, .mnrf-radio.color-green input:checked:enabled + .sub-box, .mnrf-check-slider.color-green input:checked:enabled + .sub-box, .mnrf-radio-slider.color-green input:checked:enabled + .sub-box, .mnrf-radio-slider.color-green input:checked:enabled + .sub-box::before {
+  border-color: #059669;
+}
+
+.mnrf-radio-key.color-green input:checked:enabled + label, .mnrf-radio.color-green input:checked:enabled + .sub-box::before, .mnrf-check-slider.color-green input:checked:enabled + .sub-box::before {
+  background-color: #059669;
+}
+
+.mnrf-checkbox.color-green input:checked:enabled + .sub-box .sub-check {
+  fill: #059669;
+}
+
+.mnrf-radio-key.color-green input:disabled:checked + label, .mnrf-radio-key.color-green label {
+  color: #059669;
+}
+
+.mnrf-checkbox input:disabled:checked + .sub-box, .mnrf-radio .sub-box::before, .mnrf-radio input:disabled + .sub-box::before, .mnrf-radio input:disabled:checked + .sub-box, .mnrf-check-slider input:disabled:checked + .sub-box, .mnrf-radio-slider input:disabled:checked + .sub-box {
+  background-color: #E0F2FE;
+}
+
+.mnrf-checkbox .sub-box .sub-check, .mnrf-checkbox input:disabled + .sub-box .sub-check {
+  fill: #E0F2FE;
+}
+
+.mnrf-radio-key input:checked:enabled + label, .mnrf-radio-key input:hover:enabled + label {
+  color: #E0F2FE;
+}
+
+.mnrf-checkbox input:disabled + .sub-box, .mnrf-radio input:disabled + .sub-box, .mnrf-check-slider input:disabled + .sub-box, .mnrf-radio-slider input:disabled + .sub-box, .mnrf-radio-slider input:disabled + .sub-box::before {
+  border-color: #BAE6FD;
+}
+
+.mnrf-radio-key input:disabled + label, .mnrf-check-slider input:disabled + .sub-box::before {
+  background-color: #BAE6FD;
+}
+
+.mnrf-radio-key label, .mnrf-checkbox input:checked:enabled + .sub-box, .mnrf-radio input:checked:enabled + .sub-box, .mnrf-check-slider input:checked:enabled + .sub-box, .mnrf-radio-slider input:checked:enabled + .sub-box {
+  background-color: #7DD3FC;
+}
+
+.mnrf-radio-key input:disabled + label {
+  color: #7DD3FC;
+}
+
+.mnrf-checkbox .sub-box, .mnrf-radio .sub-box, .mnrf-check-slider .sub-box, .mnrf-radio-slider .sub-box, .mnrf-radio-slider .sub-box::before, .mnrf-radio-slider input:disabled:checked + .sub-box::before {
+  border-color: #38BDF8;
+}
+
+.mnrf-radio-key, .mnrf-radio input:disabled:checked + .sub-box::before, .mnrf-check-slider .sub-box::before, .mnrf-check-slider input:disabled:checked + .sub-box::before {
+  background-color: #38BDF8;
+}
+
+.mnrf-checkbox input:disabled:checked + .sub-box .sub-check {
+  fill: #38BDF8;
+}
+
+.mnrf-radio-key input:disabled:checked + label, .mnrf-radio-key input:hover:enabled + label {
+  background-color: #0EA5E9;
+}
+
+.mnrf-checkbox input:checked:enabled + .sub-box, .mnrf-radio input:checked:enabled + .sub-box, .mnrf-check-slider input:checked:enabled + .sub-box, .mnrf-radio-slider input:checked:enabled + .sub-box, .mnrf-radio-slider input:checked:enabled + .sub-box::before {
+  border-color: #0284C7;
+}
+
+.mnrf-radio-key input:checked:enabled + label, .mnrf-radio input:checked:enabled + .sub-box::before, .mnrf-check-slider input:checked:enabled + .sub-box::before {
+  background-color: #0284C7;
+}
+
+.mnrf-checkbox input:checked:enabled + .sub-box .sub-check {
+  fill: #0284C7;
+}
+
+.mnrf-radio-key input:disabled:checked + label, .mnrf-radio-key label {
+  color: #0284C7;
+}
+
+.mnrf-radio-key {
+  margin: 0.1em;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  box-sizing: border-box;
+  height: 2.5em;
+  padding: 0.3em 0 0.3em 0.3em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.mnrf-radio-key label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3em 0.6em;
+  margin: 0 0.3em 0 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+.mnrf-radio-key.opt-sm {
+  height: 2em;
+  padding: 0.23em 0 0.23em 0.23em;
+}
+.mnrf-radio-key.opt-sm label {
+  padding: 0.25em 0.5em;
+  margin: 0 0.23em 0 0;
+}
+.mnrf-radio-key.opt-md {
+  height: 2.5em;
+  padding: 0.3em 0 0.3em 0.3em;
+}
+.mnrf-radio-key.opt-md label {
+  padding: 0.3em 0.6em;
+  margin: 0 0.3em 0 0;
+}
+.mnrf-radio-key.opt-lg {
+  height: 3em;
+  padding: 0.4em 0 0.4em 0.4em;
+}
+.mnrf-radio-key.opt-lg label {
+  padding: 0.4em 0.7em;
+  margin: 0 0.4em 0 0;
+}
+.mnrf-radio-key.opt-fh {
+  height: 100%;
+}

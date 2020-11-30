@@ -1,0 +1,28 @@
+// console.log(mnrfObj);
+// if(mnrfObj == 'undefined'){
+// 	mnrfObj = {}
+// }
+mnrfObj = typeof mnrfObj == "undefined" ? {} : mnrfObj;
+mnrfObj.inputs = $(".mnrf-input");
+console.log(mnrfObj);
+
+mnrfObj.inputs
+	.mouseover(function () {
+		$(this).addClass("state-hover");
+	})
+	.mouseout(function () {
+		$(this).removeClass("state-hover");
+	});
+
+mnrfObj.inputs.find('.sub-header').click(function () {
+	if ($(this).parent().is(".sub-block")) {
+		$(this).parents(".sub-block").find("input").focus();
+	}else{
+		$(this).parents(".mnrf-input").find("input").focus();
+	}
+});
+
+mnrfObj.inputs
+	.find("input")
+	.focus(function () {
+		$(this).parents(".mnrf-input"

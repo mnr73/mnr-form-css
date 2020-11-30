@@ -1,0 +1,40 @@
+@font-face {
+  font-family: IRANSansWeb;
+  src: url('IRANSansWeb.woff');
+}
+html,h1,h2,h3,h4,h5,h6,input,select,button{
+	font-family: IRANSansWeb;
+	font-size: 14px;
+}
+h6{
+	font-size: 107%;
+}
+h5{
+	font-size: 114%;
+}
+h4{
+	font-size: 121%;
+}
+h3{
+	font-size: 128%;
+}
+h2{
+	font-size: 135%;
+}
+h1{
+	font-size: 142%;
+}
+body{
+	background-color: #eee;
+	padding-bottom: 500px;
+	margin: 0;
+	padding: 0;
+}
+main{
+	background-color: white;
+	box-sizing: border-box;
+	padding: 10px;
+	margin: 40px auto 900px;
+	width: 400px;
+	max-width: 100%;
+}

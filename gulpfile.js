@@ -75,4 +75,4 @@ exports.default = parallel(series(scss, css),js);
 // console.log('done');
 
 watch('./src/scss/**/*.scss', series(scss, css));
-// watch('./src/
+watch('./src/js/**/*.js', series(js));

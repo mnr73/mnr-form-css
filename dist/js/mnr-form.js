@@ -2,8 +2,17 @@
 // if(mnrfObj == 'undefined'){
 // 	mnrfObj = {}
 // }
+// let test
 mnrfObj = typeof mnrfObj == "undefined" ? {} : mnrfObj;
 mnrfObj.inputs = $(".mnrf-input");
+// var orig = mnrfObj.inputs
+$.each(mnrfObj.inputs,function (index, value) {
+	value.org = {};
+	value.org.val = $(value).val();
+	value.org.hint = $(value).find('.sub-hint').html();
+	value.org.title = $(value).find('.sub-title').html();
+});
+
 console.log(mnrfObj);
 
 mnrfObj.inputs
@@ -14,8 +23,12 @@ mnrfObj.inputs
 		$(this).removeClass("state-hover");
 	});
 
-mnrfObj.inputs.click(function () {
-	$(this).find("input").focus();
+mnrfObj.inputs.find(".sub-header").click(function () {
+	if ($(this).parent().is(".sub-block")) {
+		$(this).parents(".sub-block").find("input").focus();
+	} else {
+		$(this).parents(".mnrf-input").find("input").focus();
+	}
 });
 
 mnrfObj.inputs
@@ -26,3 +39,17 @@ mnrfObj.inputs
 	.blur(function () {
 		$(this).parents(".mnrf-input").removeClass("state-focus");
 	});
+
+checkAllDisabled();
+function checkAllDisabled() {
+	mnrfObj.inputs
+		.find("input:disabled")
+		.parents(".mnrf-input")
+		.addClass("state-disable");
+	mnrfObj.inputs
+		.find("input:enabled")
+		.parents(".mnrf-input")
+		.removeClass("state-disable");
+}
+
+// function setDisabled(obj

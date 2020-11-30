@@ -1,28 +1,192 @@
-// console.log(mnrfObj);
-// if(mnrfObj == 'undefined'){
-// 	mnrfObj = {}
-// }
-mnrfObj = typeof mnrfObj == "undefined" ? {} : mnrfObj;
-mnrfObj.inputs = $(".mnrf-input");
-console.log(mnrfObj);
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
-mnrfObj.inputs
-	.mouseover(function () {
-		$(this).addClass("state-hover");
-	})
-	.mouseout(function () {
-		$(this).removeClass("state-hover");
-	});
+<head>
+	<meta charset="utf-8">
+	<title>check box and radio:mnr form css</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" href="../src/css/mnr.css"> -->
+	<link rel="stylesheet" href="../dist/css/mnr-form.css">
+	<link rel="stylesheet" href="main.css">
 
-mnrfObj.inputs.find('.sub-header').click(function () {
-	if ($(this).parent().is(".sub-block")) {
-		$(this).parents(".sub-block").find("input").focus();
-	}else{
-		$(this).parents(".mnrf-input").find("input").focus();
-	}
-});
 
-mnrfObj.inputs
-	.find("input")
-	.focus(function () {
-		$(this).parents(".mnrf-input"
+</head>
+
+<body>
+	<main>
+		<div>
+			<span class="mnrf-input">
+				<span class="sub-frame">
+					<span class="sub-flex">
+						<input type="text" placeholder="type some thingh">
+					</span>
+				</span>
+			</span>
+			<br>
+			<span class="mnrf-input">
+				<span class="sub-frame">
+					<span class="sub-flex">
+						<input type="text" placeholder="type some thingh" disabled>
+					</span>
+				</span>
+			</span>
+			<br>
+			<span class="mnrf-input">
+				<span class="sub-frame">
+					<span class="sub-flex">
+						<input type="text" placeholder="year">
+						<input type="text" placeholder="month">
+						<input type="text" placeholder="day" style="width: 30%;">
+					</span>
+				</span>
+			</span>
+			<br>
+
+			<span class="mnrf-input">
+				<span class="sub-frame">
+					<span class="sub-header">your name</span>
+					<span class="sub-flex">
+						<input type="text" placeholder="type some thingh">
+					</span>
+				</span>
+			</span>
+			<br>
+			<span class="mnrf-input">
+				<span class="sub-frame">
+					<span class="sub-flex">
+						<span class="sub-block">
+							<span class="sub-header">your name</span>
+							<input type="text" placeholder="type some thingh">
+						</span>
+						<span class="sub-block">
+							<span class="sub-header">your name</span>
+							<input type="text" placeholder="type some thingh">
+						</span>
+					</span>
+				</span>
+			</span>
+			<br>
+			<span class="mnrf-input">
+				<span class="sub-frame">
+					<span class="sub-header">your name</span>
+					<span class="sub-flex">
+						<input type="text" placeholder="type some thingh" disabled>
+					</span>
+				</span>
+			</span>
+
+			<br>
+			<span class="mnrf-input">
+				<span class="sub-frame">
+					<span class="sub-flex">
+						<svg class="sub-icon sub-pr-0" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 100 100"
+							xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g id="Layer_x0020_1">
+								<metadata id="CorelCorpID_0Corel-Layer" />
+								<path class="fil0"
+									d="M78.12 23.44c2.72,-2.68 7.12,-2.68 9.84,0 2.47,2.43 2.7,6.25 0.68,8.93l-0.68 0.77 -44.05 43.42c-2.47,2.44 -6.33,2.66 -9.06,0.67l-0.78 -0.67 -22.03 -21.71c-2.72,-2.68 -2.72,-7.02 0,-9.7 2.47,-2.44 6.34,-2.66 9.06,-0.67l0.78 0.67 17.1 16.85 39.14 -38.56z" />
+							</g>
+						</svg>
+						<input type="text" placeholder="type some thingh">
+					</span>
+				</span>
+			</span>
+			<br>
+			<span class="mnrf-input">
+				<span class="sub-frame">
+					<span class="sub-header">your name</span>
+					<span class="sub-flex">
+						<svg class="sub-icon sub-pr-0" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 100 100"
+							xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g id="Layer_x0020_1">
+								<metadata id="CorelCorpID_0Corel-Layer" />
+								<path class="fil0"
+									d="M78.12 23.44c2.72,-2.68 7.12,-2.68 9.84,0 2.47,2.43 2.7,6.25 0.68,8.93l-0.68 0.77 -44.05 43.42c-2.47,2.44 -6.33,2.66 -9.06,0.67l-0.78 -0.67 -22.03 -21.71c-2.72,-2.68 -2.72,-7.02 0,-9.7 2.47,-2.44 6.34,-2.66 9.06,-0.67l0.78 0.67 17.1 16.85 39.14 -38.56z" />
+							</g>
+						</svg>
+						<input type="text" placeholder="type some thingh">
+					</span>
+				</span>
+			</span>
+			<br>
+			<span class="mnrf-input">
+				<span class="sub-frame">
+					<span class="sub-flex">
+						<svg class="sub-icon sub-pr-0" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 100 100"
+							xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g id="Layer_x0020_1">
+								<metadata id="CorelCorpID_0Corel-Layer" />
+								<path class="fil0"
+									d="M78.12 23.44c2.72,-2.68 7.12,-2.68 9.84,0 2.47,2.43 2.7,6.25 0.68,8.93l-0.68 0.77 -44.05 43.42c-2.47,2.44 -6.33,2.66 -9.06,0.67l-0.78 -0.67 -22.03 -21.71c-2.72,-2.68 -2.72,-7.02 0,-9.7 2.47,-2.44 6.34,-2.66 9.06,-0.67l0.78 0.67 17.1 16.85 39.14 -38.56z" />
+							</g>
+						</svg>
+						<span class="sub-block">
+							<span class="sub-header">your name</span>
+							<input type="text" placeholder="type some thingh">
+						</span>
+					</span>
+				</span>
+			</span>
+			<br>
+			<span class="mnrf-input">
+				<span class="sub-title">first name</span>
+				<span class="sub-frame">
+					<span class="sub-flex">
+						<svg class="sub-icon sub-pr-0" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 100 100"
+							xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g id="Layer_x0020_1">
+								<metadata id="CorelCorpID_0Corel-Layer" />
+								<path class="fil0"
+									d="M78.12 23.44c2.72,-2.68 7.12,-2.68 9.84,0 2.47,2.43 2.7,6.25 0.68,8.93l-0.68 0.77 -44.05 43.42c-2.47,2.44 -6.33,2.66 -9.06,0.67l-0.78 -0.67 -22.03 -21.71c-2.72,-2.68 -2.72,-7.02 0,-9.7 2.47,-2.44 6.34,-2.66 9.06,-0.67l0.78 0.67 17.1 16.85 39.14 -38.56z" />
+							</g>
+						</svg>
+						<input type="text" placeholder="type some thingh">
+					</span>
+				</span>
+				<span class="sub-hint">shoud type some thing</span>
+			</span>
+			<br>
+			<span class="mnrf-input opt-bg" id="test">
+				<span class="sub-title">first name</span>
+				<span class="sub-frame">
+					<span class="sub-flex">
+						<svg class="sub-icon sub-pr-0" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 100 100"
+							xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g id="Layer_x0020_1">
+								<metadata id="CorelCorpID_0Corel-Layer" />
+								<path class="fil0"
+									d="M78.12 23.44c2.72,-2.68 7.12,-2.68 9.84,0 2.47,2.43 2.7,6.25 0.68,8.93l-0.68 0.77 -44.05 43.42c-2.47,2.44 -6.33,2.66 -9.06,0.67l-0.78 -0.67 -22.03 -21.71c-2.72,-2.68 -2.72,-7.02 0,-9.7 2.47,-2.44 6.34,-2.66 9.06,-0.67l0.78 0.67 17.1 16.85 39.14 -38.56z" />
+							</g>
+						</svg>
+						<input type="text" placeholder="type some thingh">
+					</span>
+				</span>
+				<span class="sub-hint">shoud type some thing</span>
+			</span>
+			<br>
+			<span class="mnrf-input opt-bg" id="test">
+				<span class="sub-title">first name</span>
+				<span class="sub-info">shoud type some thing</span>
+				<span class="sub-frame">
+					<span class="sub-flex">
+						<svg class="sub-icon sub-pr-0" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 100 100"
+							xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g id="Layer_x0020_1">
+								<metadata id="CorelCorpID_0Corel-Layer" />
+								<path class="fil0"
+									d="M78.12 23.44c2.72,-2.68 7.12,-2.68 9.84,0 2.47,2.43 2.7,6.25 0.68,8.93l-0.68 0.77 -44.05 43.42c-2.47,2.44 -6.33,2.66 -9.06,0.67l-0.78 -0.67 -22.03 -21.71c-2.72,-2.68 -2.72,-7.02 0,-9.7 2.47,-2.44 6.34,-2.66 9.06,-0.67l0.78 0.67 17.1 16.85 39.14 -38.56z" />
+							</g>
+						</svg>
+						<input type="text" placeholder="type some thingh">
+					</span>
+				</span>
+				<span class="sub-hint">shoud type some thing</span>
+			</span>
+		</div>
+	</main>
+
+	<script src="../node_modules/jquery/dist/jquery.slim.js"></script>
+	<script src="../dist/js/mnr-form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+.mnrf-input {
+  display: block;
+}
+.mnrf-input.opt-bg {
+  padding: 5px;
+  background-color: rgba(14, 165, 233, 0.1);
+}
+.mnrf-input > .sub-hint {
+  display: block;
+  color: #0EA5E9;
+  padding: 4px 0 2px;
+}
+.mnrf-input > .sub-info {
+  display: block;
+  color: #0EA5E9;
+  padding: 0 0 4px;
+}
+.mnrf-input > .sub-title {
+  display: block;
+  color: #0EA5E9;
+  padding: 2px 0;
+  font-size: 1.15em;
+}
+.mnrf-input .sub-frame {
+  display: block;
+  background-color: white;
+  border-color: #7DD3FC;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+}
+.mnrf-input .sub-frame .sub-header {
+  display: block;
+  line-height: 10px;
+  padding: 0.4em 0.5em;
+  font-size: 0.9em;
+  margin-bottom: -0.6em;
+  color: #38BDF8;
+}
+.mnrf-input .sub-block {
+  display: block;
+  width: 100%;
+}
+.mnrf-input .sub-flex {
+  display: flex;
+}
+.mnrf-input .sub-flex input {
+  min-width: 1px;
+}
+.mnrf-input .sub-icon {
+  width: 2em;
+  padding: 0 0.5em;
+  fill: currentColor;
+  color: #38BDF8;
+}
+.mnrf-input .sub-icon.sub-pr-0 {
+  padding-right: 0;
+}
+.mnrf-input .sub-icon.sub-pl-0 {
+  padding-left: 0;
+}
+.mnrf-input input {
+  border: none;
+  outline: 0;
+  display: block;
+  width: 100%;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0);
+  color: #555;
+  padding: 0.5em;
+  cursor: inherit;
+}
+.mnrf-input input::placeholder {
+  color: #94A3B8;
+}
+.mnrf-input.state-hover:not(.state-disable) .sub-frame {
+  border-color: #38BDF8;
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.2);
+}
+.mnrf-input.state-hover:not(.state-disable) .sub-frame input:hover:not(:focus)::placeholder {
+  color: #64748B;
+}
+.mnrf-input.state-hover:not(.state-disable) .sub-frame .sub-header {
+  color: #0EA5E9;
+}
+.mnrf-input.state-hover:not(.state-disable) .sub-frame .sub-icon {
+  color: #0EA5E9;
+}
+.mnrf-input.state-focus:not(.state-disable) > .sub-hint {
+  color: #0284C7;
+}
+.mnrf-input.state-focus:not(.state-disable) > .sub-title {
+  color: #0284C7;
+}
+.mnrf-input.state-focus:not(.state-disable) > .sub-info {
+  color: #0284C7;
+}
+.mnrf-input.state-focus:not(.state-disable) .sub-frame {
+  border-color: #0284C7;
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.4);
+}
+.mnrf-input.state-focus:not(.state-disable) .sub-frame .sub-header {
+  color: #0284C7;
+}
+.mnrf-input.state-focus:not(.state-disable) .sub-frame .sub-icon {
+  color: #0284C7;
+}
+.mnrf-input.state-disable .sub-frame {
+  border-color: #BAE6FD;
+  cursor: no-drop;
+}
+.mnrf-input.state-disable .sub-frame input:disabled::placeholder {
+  color: #CBD5E1;
+}
+.mnrf-input.state-disable .sub-frame .sub-header {
+  color: #7DD3FC;
+}
+.mnrf-input.state-disable .sub-frame .sub-icon {
+  color: #7DD3FC;
+}

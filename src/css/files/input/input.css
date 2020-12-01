@@ -1,6 +1,7 @@
 .mnrf-input {
   display: block;
   line-height: 1.6;
+  color: #334155;
 }
 .mnrf-input.opt-bg {
   padding: 5px;
@@ -37,15 +38,25 @@
   margin-bottom: -0.6em;
   color: #38BDF8;
 }
-.mnrf-input .sub-block {
+.mnrf-input .sub-frame .sub_pwst {
+  cursor: pointer;
+}
+.mnrf-input .sub-frame .sub_pwst svg {
   display: block;
+  height: 100%;
+  width: 2em;
+  padding: 0 0.5em;
+  fill: currentColor;
+  color: #38BDF8;
+}
+.mnrf-input .sub-block {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 .mnrf-input .sub-flex {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  vertical-align: middle;
+  align-items: stretch;
 }
 .mnrf-input .sub-flex input {
   min-width: 1px;
@@ -74,10 +85,11 @@
   border: none;
   outline: 0;
   display: block;
-  width: 100%;
+  flex-grow: 1;
+  width: -webkit-fill-available;
   margin: 0;
   background-color: rgba(0, 0, 0, 0);
-  color: #555;
+  color: inherit;
   padding: 0.5em;
   cursor: inherit;
   height: 100%;

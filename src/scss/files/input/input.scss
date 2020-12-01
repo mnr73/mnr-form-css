@@ -6,81 +6,99 @@
 	// justify-content: center;
 	display: block;
 	line-height: 1.6;
+	color: $tw-blueGray-700;
 	// *{
 	// 	height: 100%;
 	// 	display: inline;
 	// }
-	&.opt-bg{
+	&.opt-bg {
 		padding: 5px;
-		background-color: rgba($tw-lightBlue-500, .1);
+		background-color: rgba($tw-lightBlue-500, 0.1);
 	}
-	
-	&>.sub-title{
+
+	& > .sub-title {
 		display: block;
 		color: $tw-lightBlue-500;
 		font-size: 1.2em;
 	}
-	&>.sub-info{
+	& > .sub-info {
 		display: block;
 		color: $tw-lightBlue-500;
 		margin-bottom: 2px;
 	}
-	&>.sub-hint{
+	& > .sub-hint {
 		display: block;
 		color: $tw-lightBlue-500;
 		margin-top: 2px;
 	}
-	.sub-frame{
+	.sub-frame {
 		display: block;
 		background-color: white;
 		border-color: $tw-lightBlue-300;
 		border-style: solid;
 		border-width: 1px;
 		border-radius: 2px;
-		.sub-header{
+		.sub-header {
 			display: block;
 			line-height: 10px;
-			padding: .4em .5em;
-			font-size: .9em;
-			margin-bottom: -.6em;
+			padding: 0.4em 0.5em;
+			font-size: 0.9em;
+			margin-bottom: -0.6em;
 			color: $tw-lightBlue-400;
 		}
+		.sub_pwst {
+			cursor: pointer;
+			// display: block;
+			// height: 100%;
+			// background-color: red;
+			// width: 20px;
+			svg {
+				display: block;
+				height: 100%;
+				width: 2em;
+				padding: 0 0.5em;
+				fill: currentColor;
+				color: $tw-lightBlue-400;
+			}
+		}
 	}
-	
-	
-	.sub-block{
-		display: block;
+
+	.sub-block {
+		display: flex;
+		flex-direction: column;
 		width: 100%;
 	}
-	.sub-flex{
+	.sub-flex {
 		display: flex;
-		align-items: center;
-		justify-content: center;
-		vertical-align: middle;
+		align-items: stretch;
+		// justify-content: center;
+		// vertical-align: middle;
 		// align-items: center;
 		// justify-content: center;
 		// flex-wrap: wrap;
 		// &>*{
 		// 	flex: 1;
 		// }
-		input { min-width: 1px; }
+		input {
+			min-width: 1px;
+		}
 	}
-	
-	.sub-icon{
+
+	.sub-icon {
 		width: 2em;
-		padding: 0 .5em;
+		padding: 0 0.5em;
 		fill: currentColor;
 		color: $tw-lightBlue-400;
 	}
-	
-	.sub-pr-0{
+
+	.sub-pr-0 {
 		padding-right: 0 !important;
 	}
-	.sub-pl-0{
+	.sub-pl-0 {
 		padding-left: 0 !important;
 	}
-	
-	.sub-psfix{
+
+	.sub-psfix {
 		padding: 0.5em;
 		color: $tw-lightBlue-400;
 		vertical-align: middle;
@@ -88,15 +106,16 @@
 		align-items: center;
 		justify-content: center;
 	}
-	
+
 	input {
 		border: none;
 		outline: 0;
 		display: block;
-		width: 100%;
+		flex-grow: 1;
+		width: -webkit-fill-available;
 		margin: 0;
 		background-color: rgba(0, 0, 0, 0);
-		color: #555;
+		color: inherit;
 		padding: 0.5em;
 		cursor: inherit;
 		height: 100%;
@@ -104,62 +123,60 @@
 			color: $tw-blueGray-400;
 		}
 	}
-	
-	
-	
-	&.state-hover:not(.state-disable){
-		.sub-frame{
+
+	&.state-hover:not(.state-disable) {
+		.sub-frame {
 			border-color: $tw-lightBlue-400;
-			box-shadow: 0 0 0 2px rgba($tw-lightBlue-500, .2);
-			input:hover:not(:focus){
+			box-shadow: 0 0 0 2px rgba($tw-lightBlue-500, 0.2);
+			input:hover:not(:focus) {
 				&::placeholder {
 					color: $tw-blueGray-500;
 				}
 			}
-			.sub-header{
+			.sub-header {
 				color: $tw-lightBlue-500;
 			}
-			.sub-icon{
+			.sub-icon {
 				color: $tw-lightBlue-500;
 			}
 		}
 	}
-	&.state-focus:not(.state-disable){
-		&>.sub-hint{
+	&.state-focus:not(.state-disable) {
+		& > .sub-hint {
 			color: $tw-lightBlue-600;
 		}
-		&>.sub-title{
+		& > .sub-title {
 			color: $tw-lightBlue-600;
 		}
-		&>.sub-info{
+		& > .sub-info {
 			color: $tw-lightBlue-600;
 		}
-		.sub-frame{
+		.sub-frame {
 			border-color: $tw-lightBlue-600;
 			box-shadow: 0 0 0 2px rgba($tw-lightBlue-500, 0.4);
-			.sub-header{
+			.sub-header {
 				color: $tw-lightBlue-600;
 			}
-			.sub-icon{
+			.sub-icon {
 				color: $tw-lightBlue-600;
 			}
 		}
 	}
-	
+
 	&.state-disable {
-		.sub-frame{
+		.sub-frame {
 			border-color: $tw-lightBlue-200;
 			cursor: no-drop;
 			// box-shadow: 0 0 0 2px rgba($tw-lightBlue-500, 0.4);
-			input:disabled{
+			input:disabled {
 				&::placeholder {
 					color: $tw-blueGray-300;
 				}
 			}
-			.sub-header{
+			.sub-header {
 				color: $tw-lightBlue-300;
 			}
-			.sub-icon{
+			.sub-icon {
 				color: $tw-lightBlue-300;
 			}
 		}

@@ -730,9 +730,10 @@
   margin-top: 2px
 }
 .mnrf-input .sub-frame {
-  display: block;
+  display: flex;
   background-color: #fff;
   border-radius: 2px;
+  overflow: hidden;
   border: 1px solid #7dd3fc
 }
 .mnrf-input .sub-frame .sub-header {
@@ -744,7 +745,8 @@
   color: #38bdf8
 }
 .mnrf-input .sub-frame .sub_pwst {
-  cursor: pointer
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(255,255,255,0)
 }
 .mnrf-input .sub-frame .sub_pwst svg {
   display: block;
@@ -752,15 +754,41 @@
   width: 2em;
   padding: 0 .5em;
   fill: currentColor;
-  color: #38bdf8
+  color: #94a3b8
 }
-.mnrf-input .sub-block {
+.mnrf-input .sub-frame .sub-btn {
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  border: none;
+  box-sizing: border-box;
+  outline: 0;
+  text-decoration: none;
+  transition: .3s;
+  background-color: #38bdf8;
+  color: #f8fafc;
+  cursor: pointer;
+  padding: 0 10px;
+  display: block;
+  height: 100%
+}
+@media (pointer:fine) {
+  .mnrf-input .sub-frame .sub-btn:hover {
+    background-color: #0ea5e9
+  }
+}
+.mnrf-input .sub-frame .sub-btn:active {
+  background-color: #0284c7
+}
+.mnrf-input .sub-col {
   display: flex;
   flex-direction: column;
   width: 100%
 }
+.mnrf-input .sub-col input {
+  width: 100%
+}
 .mnrf-input .sub-flex {
   display: flex;
+  flex-grow: 1;
   align-items: stretch
 }
 .mnrf-input .sub-flex input {
@@ -778,6 +806,14 @@
 .mnrf-input .sub-pl-0 {
   padding-left: 0!important
 }
+.mnrf-input .sub-pie-0 {
+  -webkit-padding-end: 0!important;
+  padding-inline-end: 0!important
+}
+.mnrf-input .sub-pis-0 {
+  -webkit-padding-start: 0!important;
+  padding-inline-start: 0!important
+}
 .mnrf-input .sub-psfix {
   padding: .5em;
   color: #38bdf8;
@@ -791,13 +827,13 @@
   outline: 0;
   display: block;
   flex-grow: 1;
-  width: -webkit-fill-available;
   margin: 0;
   background-color: rgba(0,0,0,0);
   color: inherit;
   padding: .5em;
   cursor: inherit;
-  height: 100%
+  height: 100%;
+  box-sizing: border-box
 }
 .mnrf-input input::-moz-placeholder {
   color: #94a3b8
@@ -838,20 +874,7 @@
 .mnrf-input.state-focus:not(.state-disable) .sub-frame .sub-icon {
   color: #0284c7
 }
-.mnrf-input.state-disable .sub-frame {
-  border-color: #bae6fd;
+.mnrf-input.state-disable {
+  opacity: .6;
   cursor: no-drop
-}
-.mnrf-input.state-disable .sub-frame input:disabled::-moz-placeholder {
-  color: #cbd5e1
-}
-.mnrf-input.state-disable .sub-frame input:disabled:-ms-input-placeholder {
-  color: #cbd5e1
-}
-.mnrf-input.state-disable .sub-frame input:disabled::placeholder {
-  color: #cbd5e1
-}
-.mnrf-input.state-disable .sub-frame .sub-header,
-.mnrf-input.state-disable .sub-frame .sub-icon {
-  color: #7dd3fc
 }

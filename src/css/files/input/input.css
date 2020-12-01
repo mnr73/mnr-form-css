@@ -23,12 +23,13 @@
   margin-top: 2px;
 }
 .mnrf-input .sub-frame {
-  display: block;
+  display: flex;
   background-color: white;
   border-color: #7DD3FC;
   border-style: solid;
   border-width: 1px;
   border-radius: 2px;
+  overflow: hidden;
 }
 .mnrf-input .sub-frame .sub-header {
   display: block;
@@ -40,6 +41,7 @@
 }
 .mnrf-input .sub-frame .sub_pwst {
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 .mnrf-input .sub-frame .sub_pwst svg {
   display: block;
@@ -47,15 +49,41 @@
   width: 2em;
   padding: 0 0.5em;
   fill: currentColor;
-  color: #38BDF8;
+  color: #94A3B8;
 }
-.mnrf-input .sub-block {
+.mnrf-input .sub-frame .sub-btn {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  border: none;
+  box-sizing: border-box;
+  outline: 0;
+  text-decoration: none;
+  transition: 0.3s;
+  background-color: #38BDF8;
+  color: #F8FAFC;
+  cursor: pointer;
+  padding: 0 10px;
+  display: block;
+  height: 100%;
+}
+@media (pointer: fine) {
+  .mnrf-input .sub-frame .sub-btn:hover {
+    background-color: #0EA5E9;
+  }
+}
+.mnrf-input .sub-frame .sub-btn:active {
+  background-color: #0284C7;
+}
+.mnrf-input .sub-col {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
+.mnrf-input .sub-col input {
+  width: 100%;
+}
 .mnrf-input .sub-flex {
   display: flex;
+  flex-grow: 1;
   align-items: stretch;
 }
 .mnrf-input .sub-flex input {
@@ -73,6 +101,12 @@
 .mnrf-input .sub-pl-0 {
   padding-left: 0 !important;
 }
+.mnrf-input .sub-pie-0 {
+  padding-inline-end: 0 !important;
+}
+.mnrf-input .sub-pis-0 {
+  padding-inline-start: 0 !important;
+}
 .mnrf-input .sub-psfix {
   padding: 0.5em;
   color: #38BDF8;
@@ -86,13 +120,13 @@
   outline: 0;
   display: block;
   flex-grow: 1;
-  width: -webkit-fill-available;
   margin: 0;
   background-color: rgba(0, 0, 0, 0);
   color: inherit;
   padding: 0.5em;
   cursor: inherit;
   height: 100%;
+  box-sizing: border-box;
 }
 .mnrf-input input::placeholder {
   color: #94A3B8;
@@ -129,16 +163,7 @@
 .mnrf-input.state-focus:not(.state-disable) .sub-frame .sub-icon {
   color: #0284C7;
 }
-.mnrf-input.state-disable .sub-frame {
-  border-color: #BAE6FD;
+.mnrf-input.state-disable {
+  opacity: 0.6;
   cursor: no-drop;
-}
-.mnrf-input.state-disable .sub-frame input:disabled::placeholder {
-  color: #CBD5E1;
-}
-.mnrf-input.state-disable .sub-frame .sub-header {
-  color: #7DD3FC;
-}
-.mnrf-input.state-disable .sub-frame .sub-icon {
-  color: #7DD3FC;
 }

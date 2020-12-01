@@ -1,25 +1,25 @@
 .mnrf-input {
   display: block;
+  line-height: 1.6;
 }
 .mnrf-input.opt-bg {
   padding: 5px;
   background-color: rgba(14, 165, 233, 0.1);
 }
-.mnrf-input > .sub-hint {
+.mnrf-input > .sub-title {
   display: block;
   color: #0EA5E9;
-  padding: 4px 0 2px;
+  font-size: 1.2em;
 }
 .mnrf-input > .sub-info {
   display: block;
   color: #0EA5E9;
-  padding: 0 0 4px;
+  margin-bottom: 2px;
 }
-.mnrf-input > .sub-title {
+.mnrf-input > .sub-hint {
   display: block;
   color: #0EA5E9;
-  padding: 2px 0;
-  font-size: 1.2em;
+  margin-top: 2px;
 }
 .mnrf-input .sub-frame {
   display: block;
@@ -32,7 +32,7 @@
 .mnrf-input .sub-frame .sub-header {
   display: block;
   line-height: 10px;
-  padding: 0.4em 0.7em;
+  padding: 0.4em 0.5em;
   font-size: 0.9em;
   margin-bottom: -0.6em;
   color: #38BDF8;
@@ -43,6 +43,9 @@
 }
 .mnrf-input .sub-flex {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
 }
 .mnrf-input .sub-flex input {
   min-width: 1px;
@@ -60,9 +63,12 @@
   padding-left: 0 !important;
 }
 .mnrf-input .sub-psfix {
-  padding: 0.7em;
+  padding: 0.5em;
   color: #38BDF8;
-  display: inline-block;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .mnrf-input input {
   border: none;
@@ -72,8 +78,9 @@
   margin: 0;
   background-color: rgba(0, 0, 0, 0);
   color: #555;
-  padding: 0.7em;
+  padding: 0.5em;
   cursor: inherit;
+  height: 100%;
 }
 .mnrf-input input::placeholder {
   color: #94A3B8;

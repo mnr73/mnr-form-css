@@ -702,27 +702,27 @@
   color: #0284c7
 }
 .mnrf-input {
-  display: block
+  display: block;
+  line-height: 1.6
 }
 .mnrf-input.opt-bg {
   padding: 5px;
   background-color: rgba(14,165,233,.1)
 }
-.mnrf-input > .sub-hint {
+.mnrf-input > .sub-title {
   display: block;
   color: #0ea5e9;
-  padding: 4px 0 2px
+  font-size: 1.2em
 }
 .mnrf-input > .sub-info {
   display: block;
   color: #0ea5e9;
-  padding: 0 0 4px
+  margin-bottom: 2px
 }
-.mnrf-input > .sub-title {
+.mnrf-input > .sub-hint {
   display: block;
   color: #0ea5e9;
-  padding: 2px 0;
-  font-size: 1.2em
+  margin-top: 2px
 }
 .mnrf-input .sub-frame {
   display: block;
@@ -733,7 +733,7 @@
 .mnrf-input .sub-frame .sub-header {
   display: block;
   line-height: 10px;
-  padding: .4em .7em;
+  padding: .4em .5em;
   font-size: .9em;
   margin-bottom: -.6em;
   color: #38bdf8
@@ -743,7 +743,10 @@
   width: 100%
 }
 .mnrf-input .sub-flex {
-  display: flex
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle
 }
 .mnrf-input .sub-flex input {
   min-width: 1px
@@ -761,9 +764,12 @@
   padding-left: 0!important
 }
 .mnrf-input .sub-psfix {
-  padding: .7em;
+  padding: .5em;
   color: #38bdf8;
-  display: inline-block
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center
 }
 .mnrf-input input {
   border: none;
@@ -773,8 +779,9 @@
   margin: 0;
   background-color: rgba(0,0,0,0);
   color: #555;
-  padding: .7em;
-  cursor: inherit
+  padding: .5em;
+  cursor: inherit;
+  height: 100%
 }
 .mnrf-input input::-moz-placeholder {
   color: #94a3b8

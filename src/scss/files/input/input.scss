@@ -5,26 +5,30 @@
 	// align-items: center;
 	// justify-content: center;
 	display: block;
+	line-height: 1.6;
+	// *{
+	// 	height: 100%;
+	// 	display: inline;
+	// }
 	&.opt-bg{
 		padding: 5px;
 		background-color: rgba($tw-lightBlue-500, .1);
 	}
 	
-	&>.sub-hint{
+	&>.sub-title{
 		display: block;
 		color: $tw-lightBlue-500;
-		padding: 4px 0 2px;
+		font-size: 1.2em;
 	}
 	&>.sub-info{
 		display: block;
 		color: $tw-lightBlue-500;
-		padding: 0 0 4px;
+		margin-bottom: 2px;
 	}
-	&>.sub-title{
+	&>.sub-hint{
 		display: block;
 		color: $tw-lightBlue-500;
-		padding: 2px 0;
-		font-size: 1.2em;
+		margin-top: 2px;
 	}
 	.sub-frame{
 		display: block;
@@ -36,7 +40,7 @@
 		.sub-header{
 			display: block;
 			line-height: 10px;
-			padding: .4em .7em;
+			padding: .4em .5em;
 			font-size: .9em;
 			margin-bottom: -.6em;
 			color: $tw-lightBlue-400;
@@ -50,6 +54,9 @@
 	}
 	.sub-flex{
 		display: flex;
+		align-items: center;
+		justify-content: center;
+		vertical-align: middle;
 		// align-items: center;
 		// justify-content: center;
 		// flex-wrap: wrap;
@@ -74,9 +81,12 @@
 	}
 	
 	.sub-psfix{
-		padding: 0.7em;
+		padding: 0.5em;
 		color: $tw-lightBlue-400;
-		display: inline-block;
+		vertical-align: middle;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
 	}
 	
 	input {
@@ -87,9 +97,9 @@
 		margin: 0;
 		background-color: rgba(0, 0, 0, 0);
 		color: #555;
-		padding: 0.7em;
+		padding: 0.5em;
 		cursor: inherit;
-
+		height: 100%;
 		&::placeholder {
 			color: $tw-blueGray-400;
 		}

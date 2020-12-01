@@ -4,6 +4,10 @@
 .mnrf-checkbox .sub-box {
   border-radius: 2px
 }
+.mnrf-checkbox .sub-box .sub-check {
+  height: 100%;
+  display: block
+}
 .mnrf-radio {
   -webkit-tap-highlight-color: rgba(255,255,255,0)
 }

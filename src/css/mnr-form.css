@@ -326,6 +326,10 @@
 .mnrf-checkbox .sub-box {
   border-radius: 2px;
 }
+.mnrf-checkbox .sub-box .sub-check {
+  height: 100%;
+  display: block;
+}
 @media (pointer: fine) {
   .mnrf-checkbox input:enabled + .sub-box::after {
     content: "";

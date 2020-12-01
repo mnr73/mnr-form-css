@@ -24,7 +24,10 @@
 		@extend %normol-sub-box-md;
 		border-radius: 2px;
 		// z-index: 1;
-		
+		.sub-check{
+			height: 100%;
+			display: block;
+		}
 	}
 	input {
 		@extend %display-none;

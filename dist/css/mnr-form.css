@@ -733,7 +733,7 @@
   display: flex;
   background-color: #fff;
   border-radius: 2px;
-  overflow: hidden;
+  box-sizing: border-box;
   border: 1px solid #7dd3fc
 }
 .mnrf-input .sub-frame .sub-header {
@@ -744,17 +744,32 @@
   margin-bottom: -.6em;
   color: #38bdf8
 }
-.mnrf-input .sub-frame .sub_pwst {
+.mnrf-input .sub-frame .sub-pwst {
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(255,255,255,0)
 }
-.mnrf-input .sub-frame .sub_pwst svg {
+.mnrf-input .sub-frame .sub-pwst svg {
   display: block;
   height: 100%;
   width: 2em;
   padding: 0 .5em;
   fill: currentColor;
   color: #94a3b8
+}
+.mnrf-input .sub-frame .sub-toggleData {
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(255,255,255,0)
+}
+.mnrf-input .sub-frame .sub-toggleData svg {
+  display: block;
+  height: 100%;
+  width: 2em;
+  padding: 0 .5em;
+  fill: currentColor;
+  color: #94a3b8
+}
+.mnrf-input .sub-frame .sub-toggleData.state-up svg {
+  transform: rotate(180deg)
 }
 .mnrf-input .sub-frame .sub-btn {
   -webkit-tap-highlight-color: rgba(255,255,255,0);
@@ -778,10 +793,41 @@
 .mnrf-input .sub-frame .sub-btn:active {
   background-color: #0284c7
 }
+.mnrf-input .sub-data {
+  position: absolute;
+  display: none;
+  width: 100%;
+  box-sizing: border-box;
+  top: calc(100% + 7px);
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 0 2px rgba(100,116,139,.4);
+  border-radius: 2px;
+  padding: 5px 0;
+  z-index: 100;
+  border: 1px solid #475569
+}
+.mnrf-input .sub-data.state-show {
+  display: block
+}
+.mnrf-input .sub-data .sub-option {
+  display: block;
+  cursor: pointer;
+  padding: 5px;
+  color: #94a3b8
+}
+.mnrf-input .sub-data .sub-option:hover {
+  color: #475569;
+  background-color: #f1f5f9
+}
+.mnrf-input .sub-data .sub-option.state-hide {
+  display: none
+}
 .mnrf-input .sub-col {
   display: flex;
   flex-direction: column;
-  width: 100%
+  width: 100%;
+  position: relative
 }
 .mnrf-input .sub-col input {
   width: 100%
@@ -789,7 +835,8 @@
 .mnrf-input .sub-flex {
   display: flex;
   flex-grow: 1;
-  align-items: stretch
+  align-items: stretch;
+  position: relative
 }
 .mnrf-input .sub-flex input {
   min-width: 1px

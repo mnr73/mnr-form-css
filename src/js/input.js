@@ -3,6 +3,8 @@
 // 	mnrfObj = {}
 // }
 // let test
+
+var currentState = history.state
 pointer_is_fine = matchMedia("(pointer:fine)").matches;
 
 mnrfObj = typeof mnrfObj == "undefined" ? {} : mnrfObj;
@@ -40,9 +42,7 @@ mnrfObj.inputs
 	.on("focus", function () {
 		$(this).parents(".mnrf-input").addClass("state-focus");
 		// do somethings
-		// if ($(this).siblings().is(".sub-data")) {
-		// 	$(this).siblings(".sub-data").addClass("state-show");
-		// }
+		openWrap($(this).parents(".mnrf-input"));
 	})
 	.on("blur", function () {
 		$(this).parents(".mnrf-input").removeClass("state-focus");
@@ -84,12 +84,10 @@ mnrfObj.inputs.find(".sub-pwst").on("click", function () {
 	});
 });
 
-
-
-mnrfObj.inputs.find(".sub-toggleData").on('click',function() {
+mnrfObj.inputs.find(".sub-toggleData").on("click", function () {
 	$(this).siblings(".sub-data").toggleClass("state-show");
 	subDataBtn($(this).siblings(".sub-data"));
-})
+});
 
 mnrfObj.inputs.find("input").on("keyup", function () {
 	if ($(this).siblings().is(".sub-data")) {
@@ -101,9 +99,9 @@ mnrfObj.inputs.find("input").on("keyup", function () {
 			return !regex.test($(this).text());
 		});
 		hideOptions.addClass("state-hide");
-		if(options.not('.state-hide').length){
+		if (options.not(".state-hide").length) {
 			$(this).siblings(".sub-data").addClass("state-show");
-		}else{
+		} else {
 			$(this).siblings(".sub-data").removeClass("state-show");
 		}
 		subDataBtn($(this).siblings(".sub-data"));
@@ -120,7 +118,7 @@ mnrfObj.inputs.find(".sub-option").on("click", function () {
 // click outside
 $(document).on("mousedown", function (e) {
 	let target = $(e.target);
-	let visibleData = $(".sub-data:visible")
+	let visibleData = $(".sub-data:visible");
 	if (
 		isOutside(target, $(".sub-data")) &&
 		isOutside(target, visibleData.siblings())
@@ -128,6 +126,10 @@ $(document).on("mousedown", function (e) {
 		$(".sub-data").removeClass("state-show");
 		subDataBtn(visibleData);
 	}
+});
+
+$(document).on("click", ".sub-wrap button", function () {
+	closeWrap();
 });
 
 function isOutside(target, obj) {
@@ -139,11 +141,56 @@ function isOutside(target, obj) {
 }
 
 function subDataBtn(obj) {
-	if(obj.siblings().is('.sub-toggleData')){
-		if(obj.is('.state-show')){
-			obj.siblings('.sub-toggleData').addClass('state-up')
-		}else{
-			obj.siblings('.sub-toggleData').removeClass('state-up')
+	if (obj.siblings().is(".sub-toggleData")) {
+		if (obj.is(".state-show")) {
+			obj.siblings(".sub-toggleData").addClass("state-up");
+		} else {
+			obj.siblings(".sub-toggleData").removeClass("state-up");
 		}
 	}
 }
+
+function checkScrollBody() {
+	if ($(".mnrf-mob-wrap").length > 0) {
+		$("body").addClass("mnrf-nosroll");
+	} else {
+		$("body").removeClass("mnrf-nosroll");
+	}
+}
+
+function closeWrap() {
+	$(".mnrf-mob-wrap").replaceWith($(".mnrf-mob-wrap").find(".mnrf-input"));
+	if(currentState == "mnrf-openWraper"){
+		if (window.history && window.history.pushState){
+			currentState = null
+			window.history.back();
+		}
+	}
+	$("body").removeClass("mnrf-nosroll");
+}
+
+
+function openWrap(obj) {
+	if (obj.is(".opt-mobile") && obj.parents(".mnrf-mob-wrap").length < 1) {
+		if ( ($(window).width() < 500 && $(window).height() < 800) || !pointer_is_fine) {
+			if (window.history && window.history.pushState) {
+				window.history.pushState("mnrf-openWraper", null, "#mnrf-openWraper");
+				currentState = history.state
+			}
+			obj.wrap(
+				"<span class='mnrf-mob-wrap'><span class='sub-wrap'></span></span>"
+			);
+			$(".sub-wrap").append("<button>back</button>");
+			$("body").addClass("mnrf-nosroll");
+			obj.find(".sub-frame").find("input").focus();
+		}
+	}
+}
+
+
+	$(window).on("popstate", function (e) {
+		if(currentState == "mnrf-openWraper"){
+			currentState = null
+			closeWrap()
+		}
+	});

@@ -1,3 +1,7 @@
+.mnrf-nosroll {
+  overflow: hidden;
+}
+
 .mnrf-radio-slider .sub-box, .mnrf-check-slider .sub-box, .mnrf-checkbox .sub-box, .mnrf-radio .sub-box {
   margin: 2px;
   background-color: white;
@@ -1605,6 +1609,8 @@
   position: absolute;
   display: none;
   width: 100%;
+  max-height: 185px;
+  overflow-y: auto;
   box-sizing: border-box;
   top: calc(100% + 7px);
   left: 0;
@@ -1728,4 +1734,57 @@
 .mnrf-input.state-disable {
   opacity: 0.6;
   cursor: no-drop;
+}
+
+.mnrf-mob-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(15, 23, 42, 0.5);
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+.mnrf-mob-wrap .sub-wrap {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 6px;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  transition: 0.3s;
+}
+.mnrf-mob-wrap .sub-wrap button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  display: block;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  border: none;
+  box-sizing: border-box;
+  outline: 0;
+  text-decoration: none;
+  transition: 0.3s;
+  background-color: #94A3B8;
+  color: #F8FAFC;
+  cursor: pointer;
+}
+@media (pointer: fine) {
+  .mnrf-mob-wrap .sub-wrap button:hover {
+    background-color: #64748B;
+  }
+}
+.mnrf-mob-wrap .sub-wrap button:active {
+  background-color: #475569;
+}
+.mnrf-mob-wrap .mnrf-input .sub-data {
+  height: calc(100vh - 250px);
+  max-height: none;
 }

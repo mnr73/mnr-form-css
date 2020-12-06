@@ -226,7 +226,7 @@
   top: 0;
   left: 0;
   background-color: rgba(15, 23, 42, 0.5);
-  padding: 10px;
+  padding: 5px;
   box-sizing: border-box;
   z-index: 1000;
 }
@@ -234,9 +234,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  padding: 6px;
   background-color: white;
-  border-radius: 5px;
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
@@ -249,6 +247,7 @@
   height: 40px;
   width: 100%;
   display: block;
+  z-index: 100;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   border: none;
   box-sizing: border-box;
@@ -267,7 +266,22 @@
 .mnrf-mob-wrap .sub-wrap button:active {
   background-color: #475569;
 }
+.mnrf-mob-wrap .mnrf-input {
+  padding: 0;
+}
+.mnrf-mob-wrap .mnrf-input > *:not(.sub-frame) {
+  display: none;
+}
+.mnrf-mob-wrap .mnrf-input .sub-frame {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #7DD3FC;
+}
 .mnrf-mob-wrap .mnrf-input .sub-data {
-  height: calc(100vh - 250px);
+  height: 100vh;
   max-height: none;
+  padding-bottom: 200px;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
 }

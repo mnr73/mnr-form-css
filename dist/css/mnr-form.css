@@ -733,6 +733,7 @@
   margin-top: 2px
 }
 .mnrf-input .sub-frame {
+  line-height: normal;
   display: flex;
   background-color: #fff;
   border-radius: 2px;
@@ -907,17 +908,16 @@
 }
 .mnrf-input .sub-select .sub-toggleData {
   display: flex;
-  padding: .5em;
+  height: 100%;
   width: 100%;
   box-sizing: border-box
 }
 .mnrf-input .sub-select .sub-toggleData .sub-seltext {
   display: block;
   width: 100%;
-  line-height: 1.9em
+  padding: .5em
 }
 .mnrf-input .sub-select .sub-toggleData svg {
-  padding: 0;
   color: inherit;
   fill: currentColor
 }

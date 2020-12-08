@@ -32,6 +32,7 @@
 		margin-top: 2px;
 	}
 	.sub-frame {
+		line-height: normal;
 		display: flex;
 		background-color: white;
 		border-color: $tw-lightBlue-300;
@@ -224,16 +225,16 @@
 		// }
 		.sub-toggleData{
 			display: flex;
-			padding: 0.5em;
+			height: 100%;
 			width: 100%;
 			box-sizing: border-box;
 			.sub-seltext{
 				display: block;
 				width: 100%;
-				line-height: 1.9em;
+				padding: 0.5em;
 			}
 			svg{
-				padding: 0;
+				// padding: 0;
 				color: inherit;
 				fill: currentColor;
 			}

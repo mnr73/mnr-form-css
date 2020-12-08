@@ -1722,6 +1722,17 @@
   color: inherit;
   fill: currentColor;
 }
+.mnrf-input .sub-select .sub-data .sub-search {
+  display: block;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #94A3B8;
+  margin-top: -5px;
+}
+.mnrf-input .sub-select .sub-data .sub-search input {
+  display: block;
+  width: 100%;
+}
 .mnrf-input .sub-select .sub-data .sub-option::before {
   content: "";
   display: inline-block;
@@ -1776,7 +1787,7 @@
   cursor: no-drop;
 }
 .mnrf-input .sub-vhr {
-  width: 1px;
+  width: 2px;
   background-color: #CBD5E1;
   margin: 0.4em 0.5px;
 }

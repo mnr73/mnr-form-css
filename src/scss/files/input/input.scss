@@ -241,6 +241,17 @@
 			}
 		}
 		.sub-data{
+			.sub-search{
+				display: block;
+				border-bottom-style: solid;
+				border-bottom-width: 1px;
+				border-bottom-color: $tw-blueGray-400;
+				margin-top: -5px;
+				input{
+					display: block;
+					width: 100%;
+				}
+			}
 			.sub-option{
 				&::before{
 					content: '';
@@ -255,6 +266,7 @@
 					box-sizing: border-box;
 					vertical-align: middle;
 				}
+				
 				&.state-select{
 					background-color: $tw-blueGray-600;
 					color: $tw-blueGray-100;
@@ -323,7 +335,7 @@
 		// }
 	}
 	.sub-vhr{
-		width: 1px;
+		width: 2px;
         background-color: $tw-blueGray-300;
         margin: .4em .5px;
 	}

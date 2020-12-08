@@ -922,6 +922,15 @@
   color: inherit;
   fill: currentColor
 }
+.mnrf-input .sub-select .sub-data .sub-search {
+  display: block;
+  margin-top: -5px;
+  border-bottom: 1px solid #94a3b8
+}
+.mnrf-input .sub-select .sub-data .sub-search input {
+  display: block;
+  width: 100%
+}
 .mnrf-input .sub-select .sub-data .sub-option::before {
   content: "";
   display: inline-block;
@@ -973,7 +982,7 @@
   cursor: no-drop
 }
 .mnrf-input .sub-vhr {
-  width: 1px;
+  width: 2px;
   background-color: #cbd5e1;
   margin: .4em .5px
 }

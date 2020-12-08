@@ -87,14 +87,23 @@ mnrfObj.inputs.find(".sub-pwst").on("click", function () {
 
 mnrfObj.inputs.find(".sub-toggleData").on("click", function () {
 	$(this).siblings(".sub-data").toggleClass("state-show");
+	if($(this).siblings(".sub-data").find('.sub-search').length > 0){
+		$(this).siblings(".sub-data").find('.sub-option').removeClass("state-hide")
+		$(this).siblings(".sub-data").find('.sub-search').find('input').val('').focus()
+	}
 	subDataBtn($(this).siblings(".sub-data"));
 });
 
-mnrfObj.inputs.find("input:visible").on("keyup", function () {
-	if ($(this).siblings().is(".sub-data")) {
+mnrfObj.inputs.find("input").on("keyup", function () {
+	if ($(this).siblings().is(".sub-data") || $(this).parent().siblings().is(".sub-option")) {
 		let search = $(this).val();
 		let regex = new RegExp(search, "i");
-		let options = $(this).siblings(".sub-data").find(".sub-option");
+		let options
+		if($(this).parent().siblings().is(".sub-option")){
+			options = $(this).parent().siblings(".sub-option");
+		}else{
+			options = $(this).siblings(".sub-data").find(".sub-option");
+		}
 		options.removeClass("state-hide");
 		let hideOptions = options.filter(function () {
 			return !regex.test($(this).text());

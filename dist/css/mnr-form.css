@@ -899,6 +899,44 @@
 .mnrf-input input::placeholder {
   color: #94a3b8
 }
+.mnrf-input .sub-select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  color: #0284c7
+}
+.mnrf-input .sub-select .sub-toggleData {
+  display: flex;
+  padding: .5em;
+  width: 100%;
+  box-sizing: border-box
+}
+.mnrf-input .sub-select .sub-toggleData .sub-seltext {
+  display: block;
+  width: 100%;
+  line-height: 1.9em
+}
+.mnrf-input .sub-select .sub-toggleData svg {
+  padding: 0;
+  color: inherit;
+  fill: currentColor
+}
+.mnrf-input .sub-select .sub-data .sub-option::before {
+  content: "";
+  display: inline-block;
+  width: .9em;
+  height: .9em;
+  -webkit-margin-end: 6px;
+  margin-inline-end: 6px;
+  border-radius: 1000px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  border: .25em solid currentColor
+}
+.mnrf-input .sub-select .sub-data .sub-option.state-select {
+  background-color: #475569;
+  color: #f1f5f9
+}
 .mnrf-input.state-hover:not(.state-disable) .sub-frame {
   border-color: #38bdf8;
   box-shadow: 0 0 0 2px rgba(14,165,233,.2)
@@ -933,6 +971,11 @@
   opacity: .6;
   cursor: no-drop
 }
+.mnrf-input .sub-vhr {
+  width: 1px;
+  background-color: #cbd5e1;
+  margin: .4em .5px
+}
 .mnrf-mob-wrap {
   position: fixed;
   width: 100%;
@@ -958,7 +1001,8 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 40px;
+  height: auto;
+  padding: .5em;
   width: 100%;
   display: block;
   z-index: 100;
@@ -985,6 +1029,9 @@
   border-radius: 0;
   border: none;
   border-bottom: 1px solid #7dd3fc
+}
+.mnrf-mob-wrap .mnrf-input .sub-col {
+  position: static
 }
 .mnrf-mob-wrap .mnrf-input .sub-data {
   height: 100vh;

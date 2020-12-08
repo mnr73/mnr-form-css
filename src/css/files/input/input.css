@@ -182,6 +182,45 @@
 .mnrf-input input::placeholder {
   color: #94A3B8;
 }
+.mnrf-input .sub-select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  color: #0284C7;
+}
+.mnrf-input .sub-select .sub-toggleData {
+  display: flex;
+  padding: 0.5em;
+  width: 100%;
+  box-sizing: border-box;
+}
+.mnrf-input .sub-select .sub-toggleData .sub-seltext {
+  display: block;
+  width: 100%;
+  line-height: 1.9em;
+}
+.mnrf-input .sub-select .sub-toggleData svg {
+  padding: 0;
+  color: inherit;
+  fill: currentColor;
+}
+.mnrf-input .sub-select .sub-data .sub-option::before {
+  content: "";
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  margin-inline-end: 6px;
+  border-style: solid;
+  border-color: currentColor;
+  border-width: 0.25em;
+  border-radius: 1000px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.mnrf-input .sub-select .sub-data .sub-option.state-select {
+  background-color: #475569;
+  color: #F1F5F9;
+}
 .mnrf-input.state-hover:not(.state-disable) .sub-frame {
   border-color: #38BDF8;
   box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.2);
@@ -218,6 +257,11 @@
   opacity: 0.6;
   cursor: no-drop;
 }
+.mnrf-input .sub-vhr {
+  width: 1px;
+  background-color: #CBD5E1;
+  margin: 0.4em 0.5px;
+}
 
 .mnrf-mob-wrap {
   position: fixed;
@@ -244,7 +288,8 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 40px;
+  height: auto;
+  padding: 0.5em;
   width: 100%;
   display: block;
   z-index: 100;
@@ -276,6 +321,9 @@
   border-radius: 0;
   border: none;
   border-bottom: 1px solid #7DD3FC;
+}
+.mnrf-mob-wrap .mnrf-input .sub-col {
+  position: static;
 }
 .mnrf-mob-wrap .mnrf-input .sub-data {
   height: 100vh;

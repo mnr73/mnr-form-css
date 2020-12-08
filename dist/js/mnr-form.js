@@ -17,7 +17,8 @@ mnrfObj.inputs = $(".mnrf-input");
 // 	value.org.title = $(value).find('.sub-title').html();
 // });
 
-console.log(mnrfObj);
+// console.log(mnrfObj);
+// console.log($('input:visible'));
 // if device is mobile hover disable
 if (pointer_is_fine) {
 	mnrfObj.inputs
@@ -31,14 +32,14 @@ if (pointer_is_fine) {
 // if click on sub header focus on input
 mnrfObj.inputs.find(".sub-header").click(function () {
 	if ($(this).parent().is(".sub-block")) {
-		$(this).parents(".sub-block").find("input").focus();
+		$(this).parents(".sub-block").find("input:visible").focus();
 	} else {
-		$(this).parents(".mnrf-input").find("input").focus();
+		$(this).parents(".mnrf-input").find("input:visible").focus();
 	}
 });
 // add state focus on input focus
 mnrfObj.inputs
-	.find("input")
+	.find("input:visible")
 	.on("focus", function () {
 		$(this).parents(".mnrf-input").addClass("state-focus");
 		// do somethings
@@ -68,7 +69,7 @@ function checkAllDisabled() {
 
 mnrfObj.inputs.find(".sub-pwst").on("click", function () {
 	let eye = $(this);
-	eye.siblings("input").attr("type", function (index, attr) {
+	eye.siblings("input:visible").attr("type", function (index, attr) {
 		// return attr == 'password' ? 'text' : 'password';
 		if (attr == "password") {
 			eye.html(
@@ -89,7 +90,7 @@ mnrfObj.inputs.find(".sub-toggleData").on("click", function () {
 	subDataBtn($(this).siblings(".sub-data"));
 });
 
-mnrfObj.inputs.find("input").on("keyup", function () {
+mnrfObj.inputs.find("input:visible").on("keyup", function () {
 	if ($(this).siblings().is(".sub-data")) {
 		let search = $(this).val();
 		let regex = new RegExp(search, "i");
@@ -110,10 +111,37 @@ mnrfObj.inputs.find("input").on("keyup", function () {
 
 mnrfObj.inputs.find(".sub-option").on("click", function () {
 	let opt = $(this);
+	opt.siblings('.sub-option').removeClass('state-select')
+	opt.addClass('state-select')
 	opt.parent().removeClass("state-show");
-	opt.parent().siblings("input").val(opt.text()).focus();
+	if(opt.parents().is('.sub-select')){
+		if(opt.attr('data')){
+			opt.parent().siblings("input").val(opt.attr('data'));
+		}else{
+			opt.parent().siblings("input").val(opt.text());
+		}
+		if(opt.parents().is('.mnrf-mob-wrap')){
+			closeWrap();
+		}
+		
+		opt.parent().siblings(".sub-toggleData").find('.sub-seltext').text(opt.text());
+	}else{
+		if(opt.attr('data')){
+			opt.parent().siblings("input:visible").val(opt.attr('data')).focus();
+		}else{
+			opt.parent().siblings("input:visible").val(opt.text()).focus();
+		}
+	}
 	subDataBtn($(this).parent());
 });
+
+/**
+ * when click on sub select call openWrap 
+ */
+mnrfObj.inputs.find(".sub-select").on("click", function () {
+	openWrap($(this).parents(".mnrf-input"));
+});
+
 
 // click outside
 $(document).on("mousedown", function (e) {
@@ -140,6 +168,9 @@ function isOutside(target, obj) {
 	}
 }
 
+/**
+ * check if data open change svg rotate
+ */
 function subDataBtn(obj) {
 	if (obj.siblings().is(".sub-toggleData")) {
 		if (obj.is(".state-show")) {
@@ -159,7 +190,9 @@ function checkScrollBody() {
 }
 
 function closeWrap() {
-	$(".mnrf-mob-wrap").replaceWith($(".mnrf-mob-wrap").find(".mnrf-input"));
+	let input = $(".mnrf-mob-wrap").find(".mnrf-input");
+	$(".mnrf-mob-wrap").replaceWith(input);
+	input.find('.sub-data').removeClass("state-show")
 	if(currentState == "mnrf-openWraper"){
 		if (window.history && window.history.pushState){
 			currentState = null
@@ -182,7 +215,7 @@ function openWrap(obj) {
 			);
 			$(".sub-wrap").append("<button>back</button>");
 			$("body").addClass("mnrf-nosroll");
-			obj.find(".sub-frame").find("input").focus();
+			obj.find(".sub-frame").find("input:visible").focus();
 		}
 	}
 }

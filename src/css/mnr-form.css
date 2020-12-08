@@ -1705,6 +1705,7 @@
   width: 100%;
   box-sizing: border-box;
   color: #0284C7;
+  height: 100%;
 }
 .mnrf-input .sub-select .sub-toggleData {
   display: flex;

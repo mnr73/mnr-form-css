@@ -1,3 +1,131 @@
+.mnrf-input.color-red .sub-frame {
+  border-color: #FCA5A5;
+}
+
+.mnrf-input.color-red.state-hover:not(.state-disable) .sub-frame {
+  border-color: #F87171;
+}
+
+.mnrf-input.color-red .sub-frame .sub-btn {
+  background-color: #F87171;
+}
+
+.mnrf-input.color-red .sub-psfix, .mnrf-input.color-red .sub-icon, .mnrf-input.color-red .sub-frame .sub-header {
+  color: #F87171;
+}
+
+.mnrf-input.color-red.state-hover:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.color-red.state-hover:not(.state-disable) .sub-frame .sub-header, .mnrf-input.color-red > .sub-hint, .mnrf-input.color-red > .sub-info, .mnrf-input.color-red > .sub-title {
+  color: #EF4444;
+}
+
+.mnrf-input.color-red.state-focus:not(.state-disable) .sub-frame {
+  border-color: #DC2626;
+}
+
+.mnrf-input.color-red .sub-frame .sub-btn:active {
+  background-color: #DC2626;
+}
+
+.mnrf-input.color-red.state-focus:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.color-red.state-focus:not(.state-disable) .sub-frame .sub-header, .mnrf-input.color-red.state-focus:not(.state-disable) > .sub-info, .mnrf-input.color-red.state-focus:not(.state-disable) > .sub-title, .mnrf-input.color-red.state-focus:not(.state-disable) > .sub-hint, .mnrf-input.color-red .sub-select {
+  color: #DC2626;
+}
+
+.mnrf-input.color-yellow .sub-frame {
+  border-color: #FDE047;
+}
+
+.mnrf-input.color-yellow.state-hover:not(.state-disable) .sub-frame {
+  border-color: #FACC15;
+}
+
+.mnrf-input.color-yellow .sub-frame .sub-btn {
+  background-color: #FACC15;
+}
+
+.mnrf-input.color-yellow .sub-psfix, .mnrf-input.color-yellow .sub-icon, .mnrf-input.color-yellow .sub-frame .sub-header {
+  color: #FACC15;
+}
+
+.mnrf-input.color-yellow.state-hover:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.color-yellow.state-hover:not(.state-disable) .sub-frame .sub-header, .mnrf-input.color-yellow > .sub-hint, .mnrf-input.color-yellow > .sub-info, .mnrf-input.color-yellow > .sub-title {
+  color: #EAB308;
+}
+
+.mnrf-input.color-yellow.state-focus:not(.state-disable) .sub-frame {
+  border-color: #CA8A04;
+}
+
+.mnrf-input.color-yellow .sub-frame .sub-btn:active {
+  background-color: #CA8A04;
+}
+
+.mnrf-input.color-yellow.state-focus:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.color-yellow.state-focus:not(.state-disable) .sub-frame .sub-header, .mnrf-input.color-yellow.state-focus:not(.state-disable) > .sub-info, .mnrf-input.color-yellow.state-focus:not(.state-disable) > .sub-title, .mnrf-input.color-yellow.state-focus:not(.state-disable) > .sub-hint, .mnrf-input.color-yellow .sub-select {
+  color: #CA8A04;
+}
+
+.mnrf-input.color-green .sub-frame {
+  border-color: #6EE7B7;
+}
+
+.mnrf-input.color-green.state-hover:not(.state-disable) .sub-frame {
+  border-color: #34D399;
+}
+
+.mnrf-input.color-green .sub-frame .sub-btn {
+  background-color: #34D399;
+}
+
+.mnrf-input.color-green .sub-psfix, .mnrf-input.color-green .sub-icon, .mnrf-input.color-green .sub-frame .sub-header {
+  color: #34D399;
+}
+
+.mnrf-input.color-green.state-hover:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.color-green.state-hover:not(.state-disable) .sub-frame .sub-header, .mnrf-input.color-green > .sub-hint, .mnrf-input.color-green > .sub-info, .mnrf-input.color-green > .sub-title {
+  color: #10B981;
+}
+
+.mnrf-input.color-green.state-focus:not(.state-disable) .sub-frame {
+  border-color: #059669;
+}
+
+.mnrf-input.color-green .sub-frame .sub-btn:active {
+  background-color: #059669;
+}
+
+.mnrf-input.color-green.state-focus:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.color-green.state-focus:not(.state-disable) .sub-frame .sub-header, .mnrf-input.color-green.state-focus:not(.state-disable) > .sub-info, .mnrf-input.color-green.state-focus:not(.state-disable) > .sub-title, .mnrf-input.color-green.state-focus:not(.state-disable) > .sub-hint, .mnrf-input.color-green .sub-select {
+  color: #059669;
+}
+
+.mnrf-input .sub-frame {
+  border-color: #7DD3FC;
+}
+
+.mnrf-input.state-hover:not(.state-disable) .sub-frame {
+  border-color: #38BDF8;
+}
+
+.mnrf-input .sub-frame .sub-btn {
+  background-color: #38BDF8;
+}
+
+.mnrf-input .sub-psfix, .mnrf-input .sub-icon, .mnrf-input .sub-frame .sub-header {
+  color: #38BDF8;
+}
+
+.mnrf-input.state-hover:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.state-hover:not(.state-disable) .sub-frame .sub-header, .mnrf-input > .sub-hint, .mnrf-input > .sub-info, .mnrf-input > .sub-title {
+  color: #0EA5E9;
+}
+
+.mnrf-input.state-focus:not(.state-disable) .sub-frame {
+  border-color: #0284C7;
+}
+
+.mnrf-input .sub-frame .sub-btn:active {
+  background-color: #0284C7;
+}
+
+.mnrf-input.state-focus:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.state-focus:not(.state-disable) .sub-frame .sub-header, .mnrf-input.state-focus:not(.state-disable) > .sub-info, .mnrf-input.state-focus:not(.state-disable) > .sub-title, .mnrf-input.state-focus:not(.state-disable) > .sub-hint, .mnrf-input .sub-select {
+  color: #0284C7;
+}
+
 .mnrf-input {
   display: block;
   line-height: 1.6;
@@ -331,8 +459,10 @@
 }
 .mnrf-mob-wrap .mnrf-input .sub-frame {
   border-radius: 0;
-  border: none;
-  border-bottom: 1px solid #7DD3FC;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  box-shadow: none !important;
 }
 .mnrf-mob-wrap .mnrf-input .sub-col {
   position: static;
@@ -344,4 +474,61 @@
   box-shadow: none;
   border: none;
   border-radius: 0;
+}
+
+.mnrf-input.opt-bg {
+  background-color: rgba(14, 165, 233, 0.1);
+}
+@media (pointer: fine) {
+  .mnrf-input .sub-frame .sub-btn:hover {
+    background-color: #0EA5E9;
+  }
+}
+.mnrf-input.state-hover:not(.state-disable) .sub-frame {
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.2);
+}
+.mnrf-input.state-focus:not(.state-disable) .sub-frame {
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.4);
+}
+.mnrf-input.color-red.opt-bg {
+  background-color: rgba(239, 68, 68, 0.1);
+}
+@media (pointer: fine) {
+  .mnrf-input.color-red .sub-frame .sub-btn:hover {
+    background-color: #EF4444;
+  }
+}
+.mnrf-input.color-red.state-hover:not(.state-disable) .sub-frame {
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+}
+.mnrf-input.color-red.state-focus:not(.state-disable) .sub-frame {
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.4);
+}
+.mnrf-input.color-yellow.opt-bg {
+  background-color: rgba(234, 179, 8, 0.1);
+}
+@media (pointer: fine) {
+  .mnrf-input.color-yellow .sub-frame .sub-btn:hover {
+    background-color: #EAB308;
+  }
+}
+.mnrf-input.color-yellow.state-hover:not(.state-disable) .sub-frame {
+  box-shadow: 0 0 0 2px rgba(234, 179, 8, 0.2);
+}
+.mnrf-input.color-yellow.state-focus:not(.state-disable) .sub-frame {
+  box-shadow: 0 0 0 2px rgba(234, 179, 8, 0.4);
+}
+.mnrf-input.color-green.opt-bg {
+  background-color: rgba(16, 185, 129, 0.1);
+}
+@media (pointer: fine) {
+  .mnrf-input.color-green .sub-frame .sub-btn:hover {
+    background-color: #10B981;
+  }
+}
+.mnrf-input.color-green.state-hover:not(.state-disable) .sub-frame {
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+.mnrf-input.color-green.state-focus:not(.state-disable) .sub-frame {
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.4);
 }

@@ -16,18 +16,117 @@
 <body>
 	<main>
 		<div>
-			<span class="mnrf-input">
+			<span class="mnrf-multi">
+				<input type="hidden">
 				<span class="sub-frame">
+					<span class="sub-tags">
+					</span>
 					<span class="sub-flex">
-						<input type="text" placeholder="type some thingh">
+						<input type="text" placeholder="separat with , and Enter">
 					</span>
 				</span>
+			</span>
+			<br>
+			<span class="mnrf-multi">
+				<input type="hidden">
+				<span class="sub-flex" style="padding-bottom: 10px;">
+					<span class="sub-tags">
+					</span>
+				</span>
+				<span class="sub-frame">
+					<span class="sub-flex">
+						<input type="text" placeholder="separat with , and Enter">
+					</span>
+				</span>
+			</span>
+			<br>
+			<span class="mnrf-multi">
+				<input type="hidden">
+				<span class="sub-frame">
+					<span class="sub-tags">
+					</span>
+					<span class="sub-flex">
+						<input type="text" placeholder="separat with , ، and Enter">
+					</span>
+				</span>
+			</span>
+			<br>
+			<span class="mnrf-multi" id="test">
+				<input type="hidden">
+				<span class="sub-frame">
+					<span class="sub-tags">
+					</span>
+					<span class="sub-flex">
+						<input type="text" placeholder="separat with , ، and Enter">
+					</span>
+					<span class="sub-toggleData">
+						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M4.24106 7.7459C4.53326 7.44784 4.99051 7.42074 5.31272 7.66461L5.40503 7.7459L12 14.4734L18.595 7.7459C18.8872 7.44784 19.3444 7.42074 19.6666 7.66461L19.7589 7.7459C20.0511 8.04396 20.0777 8.51037 19.8386 8.83904L19.7589 8.93321L12.582 16.2541C12.2898 16.5522 11.8325 16.5793 11.5103 16.3354L11.418 16.2541L4.24106 8.93321C3.91965 8.60534 3.91965 8.07376 4.24106 7.7459Z" />
+						</svg>
+					</span>
+					<span class="sub-data">
+						<span class="sub-option">milad</span>
+						<span class="sub-option">hormoz</span>
+						<span class="sub-option">arash</span>
+					</span>
+				</span>
+				
+			</span>
+			<br>
+			<span class="mnrf-multi opt-mobile">
+				<input type="hidden">
+				<span class="sub-frame">
+					<span class="sub-tags">
+					</span>
+					<span class="sub-flex">
+						<input type="text" placeholder="separat with , ، and Enter">
+					</span>
+					<span class="sub-toggleData">
+						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M4.24106 7.7459C4.53326 7.44784 4.99051 7.42074 5.31272 7.66461L5.40503 7.7459L12 14.4734L18.595 7.7459C18.8872 7.44784 19.3444 7.42074 19.6666 7.66461L19.7589 7.7459C20.0511 8.04396 20.0777 8.51037 19.8386 8.83904L19.7589 8.93321L12.582 16.2541C12.2898 16.5522 11.8325 16.5793 11.5103 16.3354L11.418 16.2541L4.24106 8.93321C3.91965 8.60534 3.91965 8.07376 4.24106 7.7459Z" />
+						</svg>
+					</span>
+					<span class="sub-data">
+						<span class="sub-option">milad</span>
+						<span class="sub-option">hormoz</span>
+						<span class="sub-option">arash</span>
+					</span>
+				</span>
+				
+			</span>
+			<br>
+			<span class="mnrf-multi opt-select" id="test2">
+				<input type="hidden">
+				<span class="sub-frame">
+					<span class="sub-tags">
+					</span>
+					<span class="sub-flex">
+						<input type="text" placeholder="search and select">
+					</span>
+					<span class="sub-toggleData">
+						<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M4.24106 7.7459C4.53326 7.44784 4.99051 7.42074 5.31272 7.66461L5.40503 7.7459L12 14.4734L18.595 7.7459C18.8872 7.44784 19.3444 7.42074 19.6666 7.66461L19.7589 7.7459C20.0511 8.04396 20.0777 8.51037 19.8386 8.83904L19.7589 8.93321L12.582 16.2541C12.2898 16.5522 11.8325 16.5793 11.5103 16.3354L11.418 16.2541L4.24106 8.93321C3.91965 8.60534 3.91965 8.07376 4.24106 7.7459Z" />
+						</svg>
+					</span>
+					<span class="sub-data">
+						<span class="sub-option" data="1">milad</span>
+						<span class="sub-option" data="2">hormoz</span>
+						<span class="sub-option" data="3">arash</span>
+					</span>
+				</span>
+				
 			</span>
 		</div>
 	</main>
 
 	<script src="jquery.slim.js"></script>
 	<script src="../dist/js/mnr-form.js"></script>
+	<script>
+		$('#test').get(0).separator = [',','،']
+	</script>
 </body>
 
 </html>

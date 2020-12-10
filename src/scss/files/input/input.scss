@@ -40,6 +40,7 @@
 		border-width: 1px;
 		border-radius: 2px;
 		box-sizing: border-box;
+		position: relative;
 		// overflow: hidden;
 		.sub-header {
 			display: block;
@@ -138,6 +139,10 @@
 			}
 			&.state-hide{
 				display: none;
+			}
+			&.state-select{
+				background-color: $tw-blueGray-600;
+				color: $tw-blueGray-100;
 			}
 		}
 		
@@ -267,10 +272,6 @@
 					vertical-align: middle;
 				}
 				
-				&.state-select{
-					background-color: $tw-blueGray-600;
-					color: $tw-blueGray-100;
-				}
 			}
 		}
 	}

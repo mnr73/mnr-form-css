@@ -1,0 +1,578 @@
+.mnrf-input.color-red .sub-frame, .color-red.mnrf-multi .sub-frame {
+  border-color: #FCA5A5;
+}
+
+.mnrf-input.color-red.state-hover:not(.state-disable) .sub-frame, .color-red.state-hover.mnrf-multi:not(.state-disable) .sub-frame {
+  border-color: #F87171;
+}
+
+.mnrf-input.color-red .sub-frame .sub-btn, .color-red.mnrf-multi .sub-frame .sub-btn {
+  background-color: #F87171;
+}
+
+.mnrf-input.color-red .sub-psfix, .color-red.mnrf-multi .sub-psfix, .mnrf-input.color-red .sub-icon, .color-red.mnrf-multi .sub-icon, .mnrf-input.color-red .sub-frame .sub-header, .color-red.mnrf-multi .sub-frame .sub-header {
+  color: #F87171;
+}
+
+.mnrf-input.color-red.state-hover:not(.state-disable) .sub-frame .sub-icon, .color-red.state-hover.mnrf-multi:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.color-red.state-hover:not(.state-disable) .sub-frame .sub-header, .color-red.state-hover.mnrf-multi:not(.state-disable) .sub-frame .sub-header, .mnrf-input.color-red > .sub-hint, .color-red.mnrf-multi > .sub-hint, .mnrf-input.color-red > .sub-info, .color-red.mnrf-multi > .sub-info, .mnrf-input.color-red > .sub-title, .color-red.mnrf-multi > .sub-title {
+  color: #EF4444;
+}
+
+.mnrf-input.color-red.state-focus:not(.state-disable) .sub-frame, .color-red.state-focus.mnrf-multi:not(.state-disable) .sub-frame {
+  border-color: #DC2626;
+}
+
+.mnrf-input.color-red .sub-frame .sub-btn:active, .color-red.mnrf-multi .sub-frame .sub-btn:active {
+  background-color: #DC2626;
+}
+
+.mnrf-input.color-red.state-focus:not(.state-disable) .sub-frame .sub-icon, .color-red.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.color-red.state-focus:not(.state-disable) .sub-frame .sub-header, .color-red.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-header, .mnrf-input.color-red.state-focus:not(.state-disable) > .sub-info, .color-red.state-focus.mnrf-multi:not(.state-disable) > .sub-info, .mnrf-input.color-red.state-focus:not(.state-disable) > .sub-title, .color-red.state-focus.mnrf-multi:not(.state-disable) > .sub-title, .mnrf-input.color-red.state-focus:not(.state-disable) > .sub-hint, .color-red.state-focus.mnrf-multi:not(.state-disable) > .sub-hint, .mnrf-input.color-red .sub-select, .color-red.mnrf-multi .sub-select {
+  color: #DC2626;
+}
+
+.mnrf-input.color-yellow .sub-frame, .color-yellow.mnrf-multi .sub-frame {
+  border-color: #FDE047;
+}
+
+.mnrf-input.color-yellow.state-hover:not(.state-disable) .sub-frame, .color-yellow.state-hover.mnrf-multi:not(.state-disable) .sub-frame {
+  border-color: #FACC15;
+}
+
+.mnrf-input.color-yellow .sub-frame .sub-btn, .color-yellow.mnrf-multi .sub-frame .sub-btn {
+  background-color: #FACC15;
+}
+
+.mnrf-input.color-yellow .sub-psfix, .color-yellow.mnrf-multi .sub-psfix, .mnrf-input.color-yellow .sub-icon, .color-yellow.mnrf-multi .sub-icon, .mnrf-input.color-yellow .sub-frame .sub-header, .color-yellow.mnrf-multi .sub-frame .sub-header {
+  color: #FACC15;
+}
+
+.mnrf-input.color-yellow.state-hover:not(.state-disable) .sub-frame .sub-icon, .color-yellow.state-hover.mnrf-multi:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.color-yellow.state-hover:not(.state-disable) .sub-frame .sub-header, .color-yellow.state-hover.mnrf-multi:not(.state-disable) .sub-frame .sub-header, .mnrf-input.color-yellow > .sub-hint, .color-yellow.mnrf-multi > .sub-hint, .mnrf-input.color-yellow > .sub-info, .color-yellow.mnrf-multi > .sub-info, .mnrf-input.color-yellow > .sub-title, .color-yellow.mnrf-multi > .sub-title {
+  color: #EAB308;
+}
+
+.mnrf-input.color-yellow.state-focus:not(.state-disable) .sub-frame, .color-yellow.state-focus.mnrf-multi:not(.state-disable) .sub-frame {
+  border-color: #CA8A04;
+}
+
+.mnrf-input.color-yellow .sub-frame .sub-btn:active, .color-yellow.mnrf-multi .sub-frame .sub-btn:active {
+  background-color: #CA8A04;
+}
+
+.mnrf-input.color-yellow.state-focus:not(.state-disable) .sub-frame .sub-icon, .color-yellow.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.color-yellow.state-focus:not(.state-disable) .sub-frame .sub-header, .color-yellow.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-header, .mnrf-input.color-yellow.state-focus:not(.state-disable) > .sub-info, .color-yellow.state-focus.mnrf-multi:not(.state-disable) > .sub-info, .mnrf-input.color-yellow.state-focus:not(.state-disable) > .sub-title, .color-yellow.state-focus.mnrf-multi:not(.state-disable) > .sub-title, .mnrf-input.color-yellow.state-focus:not(.state-disable) > .sub-hint, .color-yellow.state-focus.mnrf-multi:not(.state-disable) > .sub-hint, .mnrf-input.color-yellow .sub-select, .color-yellow.mnrf-multi .sub-select {
+  color: #CA8A04;
+}
+
+.mnrf-input.color-green .sub-frame, .color-green.mnrf-multi .sub-frame {
+  border-color: #6EE7B7;
+}
+
+.mnrf-input.color-green.state-hover:not(.state-disable) .sub-frame, .color-green.state-hover.mnrf-multi:not(.state-disable) .sub-frame {
+  border-color: #34D399;
+}
+
+.mnrf-input.color-green .sub-frame .sub-btn, .color-green.mnrf-multi .sub-frame .sub-btn {
+  background-color: #34D399;
+}
+
+.mnrf-input.color-green .sub-psfix, .color-green.mnrf-multi .sub-psfix, .mnrf-input.color-green .sub-icon, .color-green.mnrf-multi .sub-icon, .mnrf-input.color-green .sub-frame .sub-header, .color-green.mnrf-multi .sub-frame .sub-header {
+  color: #34D399;
+}
+
+.mnrf-input.color-green.state-hover:not(.state-disable) .sub-frame .sub-icon, .color-green.state-hover.mnrf-multi:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.color-green.state-hover:not(.state-disable) .sub-frame .sub-header, .color-green.state-hover.mnrf-multi:not(.state-disable) .sub-frame .sub-header, .mnrf-input.color-green > .sub-hint, .color-green.mnrf-multi > .sub-hint, .mnrf-input.color-green > .sub-info, .color-green.mnrf-multi > .sub-info, .mnrf-input.color-green > .sub-title, .color-green.mnrf-multi > .sub-title {
+  color: #10B981;
+}
+
+.mnrf-input.color-green.state-focus:not(.state-disable) .sub-frame, .color-green.state-focus.mnrf-multi:not(.state-disable) .sub-frame {
+  border-color: #059669;
+}
+
+.mnrf-input.color-green .sub-frame .sub-btn:active, .color-green.mnrf-multi .sub-frame .sub-btn:active {
+  background-color: #059669;
+}
+
+.mnrf-input.color-green.state-focus:not(.state-disable) .sub-frame .sub-icon, .color-green.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.color-green.state-focus:not(.state-disable) .sub-frame .sub-header, .color-green.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-header, .mnrf-input.color-green.state-focus:not(.state-disable) > .sub-info, .color-green.state-focus.mnrf-multi:not(.state-disable) > .sub-info, .mnrf-input.color-green.state-focus:not(.state-disable) > .sub-title, .color-green.state-focus.mnrf-multi:not(.state-disable) > .sub-title, .mnrf-input.color-green.state-focus:not(.state-disable) > .sub-hint, .color-green.state-focus.mnrf-multi:not(.state-disable) > .sub-hint, .mnrf-input.color-green .sub-select, .color-green.mnrf-multi .sub-select {
+  color: #059669;
+}
+
+.mnrf-input .sub-frame, .mnrf-multi .sub-frame {
+  border-color: #7DD3FC;
+}
+
+.mnrf-input.state-hover:not(.state-disable) .sub-frame, .state-hover.mnrf-multi:not(.state-disable) .sub-frame {
+  border-color: #38BDF8;
+}
+
+.mnrf-input .sub-frame .sub-btn, .mnrf-multi .sub-frame .sub-btn {
+  background-color: #38BDF8;
+}
+
+.mnrf-input .sub-psfix, .mnrf-multi .sub-psfix, .mnrf-input .sub-icon, .mnrf-multi .sub-icon, .mnrf-input .sub-frame .sub-header, .mnrf-multi .sub-frame .sub-header {
+  color: #38BDF8;
+}
+
+.mnrf-input.state-hover:not(.state-disable) .sub-frame .sub-icon, .state-hover.mnrf-multi:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.state-hover:not(.state-disable) .sub-frame .sub-header, .state-hover.mnrf-multi:not(.state-disable) .sub-frame .sub-header, .mnrf-input > .sub-hint, .mnrf-multi > .sub-hint, .mnrf-input > .sub-info, .mnrf-multi > .sub-info, .mnrf-input > .sub-title, .mnrf-multi > .sub-title {
+  color: #0EA5E9;
+}
+
+.mnrf-input.state-focus:not(.state-disable) .sub-frame, .state-focus.mnrf-multi:not(.state-disable) .sub-frame {
+  border-color: #0284C7;
+}
+
+.mnrf-input .sub-frame .sub-btn:active, .mnrf-multi .sub-frame .sub-btn:active {
+  background-color: #0284C7;
+}
+
+.mnrf-input.state-focus:not(.state-disable) .sub-frame .sub-icon, .state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.state-focus:not(.state-disable) .sub-frame .sub-header, .state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-header, .mnrf-input.state-focus:not(.state-disable) > .sub-info, .state-focus.mnrf-multi:not(.state-disable) > .sub-info, .mnrf-input.state-focus:not(.state-disable) > .sub-title, .state-focus.mnrf-multi:not(.state-disable) > .sub-title, .mnrf-input.state-focus:not(.state-disable) > .sub-hint, .state-focus.mnrf-multi:not(.state-disable) > .sub-hint, .mnrf-input .sub-select, .mnrf-multi .sub-select {
+  color: #0284C7;
+}
+
+.mnrf-input, .mnrf-multi {
+  display: block;
+  line-height: 1.6;
+  color: #334155;
+}
+.mnrf-input.opt-bg, .opt-bg.mnrf-multi {
+  padding: 5px;
+  background-color: rgba(14, 165, 233, 0.1);
+}
+.mnrf-input > .sub-title, .mnrf-multi > .sub-title {
+  display: block;
+  color: #0EA5E9;
+  font-size: 1.2em;
+}
+.mnrf-input > .sub-info, .mnrf-multi > .sub-info {
+  display: block;
+  color: #0EA5E9;
+  margin-bottom: 2px;
+}
+.mnrf-input > .sub-hint, .mnrf-multi > .sub-hint {
+  display: block;
+  color: #0EA5E9;
+  margin-top: 2px;
+}
+.mnrf-input .sub-frame, .mnrf-multi .sub-frame {
+  line-height: normal;
+  display: flex;
+  background-color: white;
+  border-color: #7DD3FC;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  position: relative;
+}
+.mnrf-input .sub-frame .sub-header, .mnrf-multi .sub-frame .sub-header {
+  display: block;
+  line-height: 10px;
+  padding: 0.4em 0.5em;
+  font-size: 0.9em;
+  margin-bottom: -0.6em;
+  color: #38BDF8;
+}
+.mnrf-input .sub-frame .sub-pwst, .mnrf-multi .sub-frame .sub-pwst {
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.mnrf-input .sub-frame .sub-pwst svg, .mnrf-multi .sub-frame .sub-pwst svg {
+  display: block;
+  height: 100%;
+  width: 2em;
+  padding: 0 0.5em;
+  fill: currentColor;
+  color: #94A3B8;
+}
+.mnrf-input .sub-frame .sub-toggleData, .mnrf-multi .sub-frame .sub-toggleData {
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.mnrf-input .sub-frame .sub-toggleData svg, .mnrf-multi .sub-frame .sub-toggleData svg {
+  display: block;
+  height: 100%;
+  width: 2em;
+  padding: 0 0.5em;
+  fill: currentColor;
+  color: #94A3B8;
+}
+.mnrf-input .sub-frame .sub-toggleData.state-up svg, .mnrf-multi .sub-frame .sub-toggleData.state-up svg {
+  transform: rotate(180deg);
+}
+.mnrf-input .sub-frame .sub-btn, .mnrf-multi .sub-frame .sub-btn {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  border: none;
+  box-sizing: border-box;
+  outline: 0;
+  text-decoration: none;
+  transition: 0.3s;
+  background-color: #38BDF8;
+  color: #F8FAFC;
+  cursor: pointer;
+  padding: 0 10px;
+  display: block;
+  height: 100%;
+}
+@media (pointer: fine) {
+  .mnrf-input .sub-frame .sub-btn:hover, .mnrf-multi .sub-frame .sub-btn:hover {
+    background-color: #0EA5E9;
+  }
+}
+.mnrf-input .sub-frame .sub-btn:active, .mnrf-multi .sub-frame .sub-btn:active {
+  background-color: #0284C7;
+}
+.mnrf-input .sub-data, .mnrf-multi .sub-data {
+  position: absolute;
+  display: none;
+  width: 100%;
+  max-height: 185px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  top: calc(100% + 7px);
+  left: 0;
+  background-color: white;
+  border-color: #475569;
+  box-shadow: 0 0 0 2px rgba(100, 116, 139, 0.4);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  padding: 5px 0;
+  z-index: 100;
+}
+.mnrf-input .sub-data.state-show, .mnrf-multi .sub-data.state-show {
+  display: block;
+}
+.mnrf-input .sub-data .sub-option, .mnrf-multi .sub-data .sub-option {
+  display: block;
+  cursor: pointer;
+  padding: 5px;
+  color: #94A3B8;
+}
+.mnrf-input .sub-data .sub-option:hover, .mnrf-multi .sub-data .sub-option:hover {
+  color: #475569;
+  background-color: #F1F5F9;
+}
+.mnrf-input .sub-data .sub-option.state-hide, .mnrf-multi .sub-data .sub-option.state-hide {
+  display: none;
+}
+.mnrf-input .sub-data .sub-option.state-select, .mnrf-multi .sub-data .sub-option.state-select {
+  background-color: #475569;
+  color: #F1F5F9;
+}
+.mnrf-input .sub-col, .mnrf-multi .sub-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+.mnrf-input .sub-col input, .mnrf-multi .sub-col input {
+  width: 100%;
+}
+.mnrf-input .sub-flex, .mnrf-multi .sub-flex {
+  display: flex;
+  flex-grow: 1;
+  align-items: stretch;
+  position: relative;
+}
+.mnrf-input .sub-flex input, .mnrf-multi .sub-flex input {
+  min-width: 1px;
+}
+.mnrf-input .sub-icon, .mnrf-multi .sub-icon {
+  width: 2em;
+  padding: 0 0.5em;
+  fill: currentColor;
+  color: #38BDF8;
+}
+.mnrf-input .sub-pr-0, .mnrf-multi .sub-pr-0 {
+  padding-right: 0 !important;
+}
+.mnrf-input .sub-pl-0, .mnrf-multi .sub-pl-0 {
+  padding-left: 0 !important;
+}
+.mnrf-input .sub-pie-0, .mnrf-multi .sub-pie-0 {
+  padding-inline-end: 0 !important;
+}
+.mnrf-input .sub-pis-0, .mnrf-multi .sub-pis-0 {
+  padding-inline-start: 0 !important;
+}
+.mnrf-input .sub-psfix, .mnrf-multi .sub-psfix {
+  padding: 0.5em;
+  color: #38BDF8;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.mnrf-input input, .mnrf-multi input {
+  border: none;
+  outline: 0;
+  display: block;
+  flex-grow: 1;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0);
+  color: inherit;
+  padding: 0.5em;
+  cursor: inherit;
+  height: 100%;
+  box-sizing: border-box;
+}
+.mnrf-input input::placeholder, .mnrf-multi input::placeholder {
+  color: #94A3B8;
+}
+.mnrf-input .sub-select, .mnrf-multi .sub-select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  color: #0284C7;
+  height: 100%;
+}
+.mnrf-input .sub-select .sub-toggleData, .mnrf-multi .sub-select .sub-toggleData {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+.mnrf-input .sub-select .sub-toggleData .sub-seltext, .mnrf-multi .sub-select .sub-toggleData .sub-seltext {
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+}
+.mnrf-input .sub-select .sub-toggleData svg, .mnrf-multi .sub-select .sub-toggleData svg {
+  color: inherit;
+  fill: currentColor;
+}
+.mnrf-input .sub-select .sub-data .sub-search, .mnrf-multi .sub-select .sub-data .sub-search {
+  display: block;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #94A3B8;
+  margin-top: -5px;
+}
+.mnrf-input .sub-select .sub-data .sub-search input, .mnrf-multi .sub-select .sub-data .sub-search input {
+  display: block;
+  width: 100%;
+}
+.mnrf-input .sub-select .sub-data .sub-option::before, .mnrf-multi .sub-select .sub-data .sub-option::before {
+  content: "";
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  margin-inline-end: 6px;
+  border-style: solid;
+  border-color: currentColor;
+  border-width: 0.25em;
+  border-radius: 1000px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.mnrf-input.state-hover:not(.state-disable) .sub-frame, .state-hover.mnrf-multi:not(.state-disable) .sub-frame {
+  border-color: #38BDF8;
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.2);
+}
+.mnrf-input.state-hover:not(.state-disable) .sub-frame input:hover:not(:focus)::placeholder, .state-hover.mnrf-multi:not(.state-disable) .sub-frame input:hover:not(:focus)::placeholder {
+  color: #64748B;
+}
+.mnrf-input.state-hover:not(.state-disable) .sub-frame .sub-header, .state-hover.mnrf-multi:not(.state-disable) .sub-frame .sub-header {
+  color: #0EA5E9;
+}
+.mnrf-input.state-hover:not(.state-disable) .sub-frame .sub-icon, .state-hover.mnrf-multi:not(.state-disable) .sub-frame .sub-icon {
+  color: #0EA5E9;
+}
+.mnrf-input.state-focus:not(.state-disable) > .sub-hint, .state-focus.mnrf-multi:not(.state-disable) > .sub-hint {
+  color: #0284C7;
+}
+.mnrf-input.state-focus:not(.state-disable) > .sub-title, .state-focus.mnrf-multi:not(.state-disable) > .sub-title {
+  color: #0284C7;
+}
+.mnrf-input.state-focus:not(.state-disable) > .sub-info, .state-focus.mnrf-multi:not(.state-disable) > .sub-info {
+  color: #0284C7;
+}
+.mnrf-input.state-focus:not(.state-disable) .sub-frame, .state-focus.mnrf-multi:not(.state-disable) .sub-frame {
+  border-color: #0284C7;
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.4);
+}
+.mnrf-input.state-focus:not(.state-disable) .sub-frame .sub-header, .state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-header {
+  color: #0284C7;
+}
+.mnrf-input.state-focus:not(.state-disable) .sub-frame .sub-icon, .state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-icon {
+  color: #0284C7;
+}
+.mnrf-input.state-disable, .state-disable.mnrf-multi {
+  opacity: 0.6;
+  cursor: no-drop;
+}
+.mnrf-input .sub-vhr, .mnrf-multi .sub-vhr {
+  width: 2px;
+  background-color: #CBD5E1;
+  margin: 0.4em 0.5px;
+}
+
+.mnrf-mob-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(15, 23, 42, 0.5);
+  padding: 5px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+.mnrf-mob-wrap .sub-wrap {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  transition: 0.3s;
+}
+.mnrf-mob-wrap .sub-wrap button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  padding: 0.5em;
+  width: 100%;
+  display: block;
+  z-index: 100;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  border: none;
+  box-sizing: border-box;
+  outline: 0;
+  text-decoration: none;
+  transition: 0.3s;
+  background-color: #94A3B8;
+  color: #F8FAFC;
+  cursor: pointer;
+}
+@media (pointer: fine) {
+  .mnrf-mob-wrap .sub-wrap button:hover {
+    background-color: #64748B;
+  }
+}
+.mnrf-mob-wrap .sub-wrap button:active {
+  background-color: #475569;
+}
+.mnrf-mob-wrap .mnrf-input, .mnrf-mob-wrap .mnrf-multi {
+  padding: 0;
+}
+.mnrf-mob-wrap .mnrf-input > *:not(.sub-frame), .mnrf-mob-wrap .mnrf-multi > *:not(.sub-frame) {
+  display: none;
+}
+.mnrf-mob-wrap .mnrf-input .sub-frame, .mnrf-mob-wrap .mnrf-multi .sub-frame {
+  border-radius: 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  box-shadow: none !important;
+}
+.mnrf-mob-wrap .mnrf-input .sub-col, .mnrf-mob-wrap .mnrf-multi .sub-col {
+  position: static;
+}
+.mnrf-mob-wrap .mnrf-input .sub-data, .mnrf-mob-wrap .mnrf-multi .sub-data {
+  height: 100vh;
+  max-height: none;
+  padding-bottom: 200px;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+}
+
+.mnrf-input.opt-bg, .opt-bg.mnrf-multi {
+  background-color: rgba(14, 165, 233, 0.1);
+}
+@media (pointer: fine) {
+  .mnrf-input .sub-frame .sub-btn:hover, .mnrf-multi .sub-frame .sub-btn:hover {
+    background-color: #0EA5E9;
+  }
+}
+.mnrf-input.state-hover:not(.state-disable) .sub-frame, .state-hover.mnrf-multi:not(.state-disable) .sub-frame {
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.2);
+}
+.mnrf-input.state-focus:not(.state-disable) .sub-frame, .state-focus.mnrf-multi:not(.state-disable) .sub-frame {
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.4);
+}
+.mnrf-input.color-red.opt-bg, .color-red.opt-bg.mnrf-multi {
+  background-color: rgba(239, 68, 68, 0.1);
+}
+@media (pointer: fine) {
+  .mnrf-input.color-red .sub-frame .sub-btn:hover, .color-red.mnrf-multi .sub-frame .sub-btn:hover {
+    background-color: #EF4444;
+  }
+}
+.mnrf-input.color-red.state-hover:not(.state-disable) .sub-frame, .color-red.state-hover.mnrf-multi:not(.state-disable) .sub-frame {
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+}
+.mnrf-input.color-red.state-focus:not(.state-disable) .sub-frame, .color-red.state-focus.mnrf-multi:not(.state-disable) .sub-frame {
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.4);
+}
+.mnrf-input.color-yellow.opt-bg, .color-yellow.opt-bg.mnrf-multi {
+  background-color: rgba(234, 179, 8, 0.1);
+}
+@media (pointer: fine) {
+  .mnrf-input.color-yellow .sub-frame .sub-btn:hover, .color-yellow.mnrf-multi .sub-frame .sub-btn:hover {
+    background-color: #EAB308;
+  }
+}
+.mnrf-input.color-yellow.state-hover:not(.state-disable) .sub-frame, .color-yellow.state-hover.mnrf-multi:not(.state-disable) .sub-frame {
+  box-shadow: 0 0 0 2px rgba(234, 179, 8, 0.2);
+}
+.mnrf-input.color-yellow.state-focus:not(.state-disable) .sub-frame, .color-yellow.state-focus.mnrf-multi:not(.state-disable) .sub-frame {
+  box-shadow: 0 0 0 2px rgba(234, 179, 8, 0.4);
+}
+.mnrf-input.color-green.opt-bg, .color-green.opt-bg.mnrf-multi {
+  background-color: rgba(16, 185, 129, 0.1);
+}
+@media (pointer: fine) {
+  .mnrf-input.color-green .sub-frame .sub-btn:hover, .color-green.mnrf-multi .sub-frame .sub-btn:hover {
+    background-color: #10B981;
+  }
+}
+.mnrf-input.color-green.state-hover:not(.state-disable) .sub-frame, .color-green.state-hover.mnrf-multi:not(.state-disable) .sub-frame {
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+.mnrf-input.color-green.state-focus:not(.state-disable) .sub-frame, .color-green.state-focus.mnrf-multi:not(.state-disable) .sub-frame {
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.4);
+}
+.mnrf-multi .sub-tags {
+  flex: 100%;
+  padding-inline-start: 3px;
+}
+.mnrf-multi .sub-tags .sub-tag {
+  margin-inline-end: 3px;
+  margin-top: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0EA5E9;
+  background-color: #BAE6FD;
+  color: #0284C7;
+  border-radius: 1000px;
+  display: inline-flex;
+  align-items: center;
+  padding-inline-end: 10px;
+  cursor: pointer;
+}
+.mnrf-multi .sub-tags .sub-tag .sub-close {
+  width: 1.3em;
+  height: 1.3em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1000px;
+  background-color: #38BDF8;
+  margin-inline-start: 0.2em;
+  margin-inline-end: 0.4em;
+}
+.mnrf-multi .sub-tags .sub-tag .sub-close svg {
+  height: 50%;
+  fill: white;
+}
+.mnrf-multi .sub-tags .sub-tag:hover {
+  background-color: #E0F2FE;
+  color: #38BDF8;
+}
+.mnrf-multi .sub-tags .sub-tag:hover .sub-close {
+  background-color: #0284C7;
+}
+.mnrf-multi .sub-frame {
+  flex-wrap: wrap;
+}

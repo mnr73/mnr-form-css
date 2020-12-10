@@ -4,10 +4,7 @@
 // }
 // let test
 
-var currentState = history.state
-pointer_is_fine = matchMedia("(pointer:fine)").matches;
 
-mnrfObj = typeof mnrfObj == "undefined" ? {} : mnrfObj;
 mnrfObj.inputs = $(".mnrf-input");
 // var orig = mnrfObj.inputs
 // $.each(mnrfObj.inputs,function (index, value) {
@@ -199,7 +196,7 @@ function checkScrollBody() {
 }
 
 function closeWrap() {
-	let input = $(".mnrf-mob-wrap").find(".mnrf-input");
+	let input = $(".mnrf-mob-wrap").find(".sub-wrap").children(':first-child');
 	$(".mnrf-mob-wrap").replaceWith(input);
 	input.find('.sub-data').removeClass("state-show")
 	if(currentState == "mnrf-openWraper"){

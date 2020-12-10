@@ -159,6 +159,7 @@
   border-width: 1px;
   border-radius: 2px;
   box-sizing: border-box;
+  position: relative;
 }
 .mnrf-input .sub-frame .sub-header {
   display: block;
@@ -250,6 +251,10 @@
 }
 .mnrf-input .sub-data .sub-option.state-hide {
   display: none;
+}
+.mnrf-input .sub-data .sub-option.state-select {
+  background-color: #475569;
+  color: #F1F5F9;
 }
 .mnrf-input .sub-col {
   display: flex;
@@ -356,10 +361,6 @@
   border-radius: 1000px;
   box-sizing: border-box;
   vertical-align: middle;
-}
-.mnrf-input .sub-select .sub-data .sub-option.state-select {
-  background-color: #475569;
-  color: #F1F5F9;
 }
 .mnrf-input.state-hover:not(.state-disable) .sub-frame {
   border-color: #38BDF8;

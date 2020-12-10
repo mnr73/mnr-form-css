@@ -243,6 +243,10 @@ $.each(mnrfObj.multi, function (index, value) {
 	value.separator = {};
 	value.separator = ",";
 	value.splits = [];
+	if($(this).find("input[type=hidden]").val() != ''){
+		value.splits = JSON.parse($(this).find("input[type=hidden]").val())
+		setMultiData(value)
+	}
 });
 
 if (pointer_is_fine) {
@@ -329,17 +333,14 @@ function setMultiData(obj) {
 	if ($(obj).find(".sub-data").length) {
 		$(obj).find(".sub-option").removeClass("state-select");
 	}
-	let inputData = [];
 	$.each(obj.splits, function (i, item) {
 		let text
 		let data = false
 		if(typeof item == 'object'){
 			text = item.text
 			data = item.data
-			inputData.push(data);
 		}else{
 			text = item
-			inputData.push(text);
 		}
 		let tag = $('<span class="sub-tag"><span class="sub-close"><svg viewBox="0 0 311 311.07733" xmlns="http://www.w3.org/2000/svg"><path d="m16.035156 311.078125c-4.097656 0-8.195312-1.558594-11.308594-4.695313-6.25-6.25-6.25-16.382812 0-22.632812l279.0625-279.0625c6.25-6.25 16.382813-6.25 22.632813 0s6.25 16.382812 0 22.636719l-279.058594 279.058593c-3.136719 3.117188-7.234375 4.695313-11.328125 4.695313zm0 0"/><path d="m295.117188 311.078125c-4.097657 0-8.191407-1.558594-11.308594-4.695313l-279.082032-279.058593c-6.25-6.253907-6.25-16.386719 0-22.636719s16.382813-6.25 22.636719 0l279.058594 279.0625c6.25 6.25 6.25 16.382812 0 22.632812-3.136719 3.117188-7.230469 4.695313-11.304687 4.695313zm0 0"/></svg></span>' +
 		text +
@@ -363,7 +364,7 @@ function setMultiData(obj) {
 			selectedOpt.addClass("state-select");
 		}
 	});
-	$(obj).find("input[type=hidden]").val(JSON.stringify(inputData));
+	$(obj).find("input[type=hidden]").val(JSON.stringify(obj.splits));
 }
 
 mnrfObj.multi.find(".sub-toggleData").on("click", function () {

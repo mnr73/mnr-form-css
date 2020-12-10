@@ -13,9 +13,9 @@
 			margin-top: 3px;
 			border-style: solid;
 			border-width: 1px;
-			border-color: $tw-lightBlue-500;
-			background-color: $tw-lightBlue-200;
-			color: $tw-lightBlue-600;
+			// border-color: $tw-lightBlue-500;
+			// background-color: $tw-lightBlue-200;
+			// color: $tw-lightBlue-600;
 			border-radius: 1000px;
 			display: inline-flex;
 			align-items: center;
@@ -30,7 +30,7 @@
 				align-items: center;
 				justify-content: center;
 				border-radius: 1000px;
-				background-color: $tw-lightBlue-400;
+				// background-color: $tw-lightBlue-400;
 				margin-inline-start: .2em;
 				margin-inline-end: .4em;
 				svg{
@@ -40,10 +40,10 @@
 			}
 			
 			&:hover{
-				background-color: $tw-lightBlue-100;
-				color: $tw-lightBlue-400;
+				// background-color: $tw-lightBlue-100;
+				// color: $tw-lightBlue-400;
 				.sub-close{
-					background-color: $tw-lightBlue-600;
+					// background-color: $tw-lightBlue-600;
 				}
 			}
 		}
@@ -52,4 +52,40 @@
 	.sub-frame{
 		flex-wrap: wrap;
 	}
+}
+
+$colors: (
+	"main": "lightBlue",
+	"red": "red",
+	"yellow": "yellow",
+	"green": "emerald",
+);
+// map-get(map-get($tw_colors, #{$color}), 500)
+// @extend %tw-bg-#{$color}-100;
+@each $name, $color in ($colors) {
+	$className: ".mnrf-multi.color-#{$name}";
+	@if $name == "main" {
+		$className: ".mnrf-multi";
+	}
+	#{$className} {
+		.sub-tags{
+			.sub-tag{
+				@extend %tw-border-#{$color}-500;
+				@extend %tw-bg-#{$color}-200;
+				@extend %tw-text-#{$color}-600;
+				.sub-close{
+					@extend %tw-bg-#{$color}-400;
+				}
+				
+				&:hover{
+					@extend %tw-bg-#{$color}-100;
+					@extend %tw-text-#{$color}-400;
+					.sub-close{
+						@extend %tw-bg-#{$color}-600;
+					}
+				}
+			}
+		}
+	}
+	
 }

@@ -133,28 +133,23 @@
 }
 .mnrf-input.opt-bg {
   padding: 5px;
-  background-color: rgba(14, 165, 233, 0.1);
 }
 .mnrf-input > .sub-title {
   display: block;
-  color: #0EA5E9;
   font-size: 1.2em;
 }
 .mnrf-input > .sub-info {
   display: block;
-  color: #0EA5E9;
   margin-bottom: 2px;
 }
 .mnrf-input > .sub-hint {
   display: block;
-  color: #0EA5E9;
   margin-top: 2px;
 }
 .mnrf-input .sub-frame {
   line-height: normal;
   display: flex;
   background-color: white;
-  border-color: #7DD3FC;
   border-style: solid;
   border-width: 1px;
   border-radius: 2px;
@@ -167,7 +162,6 @@
   padding: 0.4em 0.5em;
   font-size: 0.9em;
   margin-bottom: -0.6em;
-  color: #38BDF8;
 }
 .mnrf-input .sub-frame .sub-pwst {
   cursor: pointer;
@@ -203,20 +197,11 @@
   outline: 0;
   text-decoration: none;
   transition: 0.3s;
-  background-color: #38BDF8;
   color: #F8FAFC;
   cursor: pointer;
   padding: 0 10px;
   display: block;
   height: 100%;
-}
-@media (pointer: fine) {
-  .mnrf-input .sub-frame .sub-btn:hover {
-    background-color: #0EA5E9;
-  }
-}
-.mnrf-input .sub-frame .sub-btn:active {
-  background-color: #0284C7;
 }
 .mnrf-input .sub-data {
   position: absolute;
@@ -278,7 +263,6 @@
   width: 2em;
   padding: 0 0.5em;
   fill: currentColor;
-  color: #38BDF8;
 }
 .mnrf-input .sub-pr-0 {
   padding-right: 0 !important;
@@ -294,7 +278,6 @@
 }
 .mnrf-input .sub-psfix {
   padding: 0.5em;
-  color: #38BDF8;
   vertical-align: middle;
   display: inline-flex;
   align-items: center;
@@ -320,7 +303,6 @@
   display: block;
   width: 100%;
   box-sizing: border-box;
-  color: #0284C7;
   height: 100%;
 }
 .mnrf-input .sub-select .sub-toggleData {
@@ -362,41 +344,13 @@
   box-sizing: border-box;
   vertical-align: middle;
 }
-.mnrf-input.state-hover:not(.state-disable) .sub-frame {
-  border-color: #38BDF8;
-  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.2);
-}
 .mnrf-input.state-hover:not(.state-disable) .sub-frame input:hover:not(:focus)::placeholder {
   color: #64748B;
-}
-.mnrf-input.state-hover:not(.state-disable) .sub-frame .sub-header {
-  color: #0EA5E9;
-}
-.mnrf-input.state-hover:not(.state-disable) .sub-frame .sub-icon {
-  color: #0EA5E9;
-}
-.mnrf-input.state-focus:not(.state-disable) > .sub-hint {
-  color: #0284C7;
-}
-.mnrf-input.state-focus:not(.state-disable) > .sub-title {
-  color: #0284C7;
-}
-.mnrf-input.state-focus:not(.state-disable) > .sub-info {
-  color: #0284C7;
-}
-.mnrf-input.state-focus:not(.state-disable) .sub-frame {
-  border-color: #0284C7;
-  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.4);
-}
-.mnrf-input.state-focus:not(.state-disable) .sub-frame .sub-header {
-  color: #0284C7;
-}
-.mnrf-input.state-focus:not(.state-disable) .sub-frame .sub-icon {
-  color: #0284C7;
 }
 .mnrf-input.state-disable {
   opacity: 0.6;
   cursor: no-drop;
+  color: #CBD5E1;
 }
 .mnrf-input .sub-vhr {
   width: 2px;

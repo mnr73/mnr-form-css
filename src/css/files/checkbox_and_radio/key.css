@@ -2,7 +2,7 @@
   border-radius: 1000px;
 }
 
-.mnrf-radio-key, .mnrf-radio-key *:not(svg) > * > *, .mnrf-radio-key *::after, .mnrf-radio-key *::before {
+.mnrf-radio-key, .mnrf-radio-key *:not(svg), .mnrf-radio-key *::after, .mnrf-radio-key *::before {
   transition: all 0.3s;
 }
 

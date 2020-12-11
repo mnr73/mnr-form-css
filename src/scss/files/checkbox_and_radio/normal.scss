@@ -207,7 +207,7 @@ $colors: (
 			}
 		}
 		input {
-			// @media (pointer: fine){
+			@media (pointer: fine){
 				&:hover:enabled + .sub-box {
 					// @extend %tw-border-#{$color}-500;
 					border-color: map-get(map-get($tw_colors, #{$color}), 500);
@@ -215,15 +215,17 @@ $colors: (
 						// @extend %tw-fill-#{$color}-300;
 						fill: map-get(map-get($tw_colors, #{$color}), 300);
 					}
-					&::after {
-						// @extend %tw-bg-#{$color}-500;
-						background-color: rgba(
-							$color: map-get(map-get($tw_colors, #{$color}), 500),
-							$alpha: 0.2
-						);
-					}
 				}
-			// }
+			}
+			&:enabled + .sub-box {
+				&::after {
+					// @extend %tw-bg-#{$color}-500;
+					background-color: rgba(
+						$color: map-get(map-get($tw_colors, #{$color}), 500),
+						$alpha: 0.2
+					);
+				}
+			}
 			&:checked:enabled + .sub-box {
 				@extend %tw-border-#{$color}-600;
 				@extend %tw-bg-#{$color}-300;
@@ -261,7 +263,7 @@ $colors: (
 			}
 		}
 		input {
-			// @media (pointer: fine){
+			@media (pointer: fine){
 				&:hover:enabled + .sub-box {
 					// @extend %tw-border-#{$color}-500;
 					border-color: map-get(map-get($tw_colors, #{$color}), 500);
@@ -269,15 +271,17 @@ $colors: (
 						// @extend %tw-bg-#{$color}-300;
 						background-color: map-get(map-get($tw_colors, #{$color}), 300);
 					}
-					&::after {
-						// @extend %tw-bg-#{$color}-500;
-						background-color: rgba(
-							$color: map-get(map-get($tw_colors, #{$color}), 500),
-							$alpha: 0.2
-						);
-					}
 				}
-			// }
+			}
+			&:enabled + .sub-box {
+				&::after {
+					// @extend %tw-bg-#{$color}-500;
+					background-color: rgba(
+						$color: map-get(map-get($tw_colors, #{$color}), 500),
+						$alpha: 0.2
+					);
+				}
+			}
 			&:checked:enabled + .sub-box {
 				@extend %tw-border-#{$color}-600;
 				@extend %tw-bg-#{$color}-300;

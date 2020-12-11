@@ -4,7 +4,7 @@
 .mnrf-check-slider{
     @extend %box;
     -webkit-tap-highlight-color: rgba(255,255,255,0);
-    &,& *:not(svg)>*>*,& *::after,& *::before{
+    &,& *:not(svg),& *::after,& *::before{
 		@extend %transition;
 	}
     .sub-box{
@@ -12,18 +12,45 @@
         @extend %round-corner;
         @extend %slider-sub-box-md;
         padding: 1px;
-        &::before{
+        .sub-check{
             @extend %insider;
             @extend %slider-inside;
             padding-top: 55%;
+            &::before{
+                // transition: all .3s;
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                // opacity: 20%;
+                width: 0%;
+                height: 0%;
+                z-index: 1;
+                border-radius: 1000px;
+            }
         }
     }
     input{
         @extend %display-none;
+        @media (pointer: fine){
+            &:hover:enabled + .sub-box {
+                .sub-check{
+                    &::before {
+                        width: 210%;
+                        height: 210%;
+                    }
+                }
+            }
+        }
         &:checked{
             &+.sub-box{
-                &::before{
+                .sub-check{
                     left: calc(45% - 1px);
+                    &::before {
+                        animation: sliderCheckAnimate .4s;
+                    }
                 }
             }
         }
@@ -65,7 +92,7 @@
 .mnrf-radio-slider{
     @extend %box;
     -webkit-tap-highlight-color: rgba(255,255,255,0);
-    &,& *:not(svg)>*>*,& *::after,& *::before{
+    &,& *:not(svg),& *::after,& *::before{
 		@extend %transition;
 	}
     .sub-box{
@@ -74,22 +101,49 @@
         @extend %round-corner;
         @extend %slider-sub-box-md;
         padding: 1px;
-        &::before{
+        .sub-check{
             @extend %insider;
             @extend %slider-inside;
             // border-color: $tw-lightBlue-400;
             border-width: 4px;
             border-style: solid;
             box-sizing: border-box;
-            padding: calc(27.5% - 4px);
+            padding-top: calc(55% - 8px);
+            &::before{
+                // transition: all .3s;
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                // opacity: 20%;
+                width: 0%;
+                height: 0%;
+                z-index: 1;
+                border-radius: 1000px;
+            }
         }
     }
     input{
         @extend %display-none;
+        @media (pointer: fine){
+            &:hover:enabled + .sub-box {
+                .sub-check{
+                    &::before {
+                        width: 420%;
+                        height: 420%;
+                    }
+                }
+            }
+        }
         &:checked{
             &+.sub-box{
-                &::before{
+                .sub-check{
                     left: calc(45% - 1px);
+                    &::before {
+                        animation: sliderRadioAnimate .4s;
+                    }
                 }
             }
         }
@@ -128,6 +182,32 @@
     }
 }
 
+@keyframes sliderCheckAnimate {
+	from {
+		opacity: 1;
+		width: 0;
+		height: 0;
+	}
+	to {
+		opacity: .7;
+		width: 220%;
+		height: 220%;
+	}
+}
+
+@keyframes sliderRadioAnimate {
+	from {
+		opacity: 1;
+		width: 0;
+		height: 0;
+	}
+	to {
+		opacity: .7;
+		width: 440%;
+		height: 440%;
+	}
+}
+
 $colors: (
 "main": "lightBlue",
 "red": "red",
@@ -146,7 +226,7 @@ $colors: (
         .sub-box{
             // border-color: $tw-lightBlue-400;
             @extend %tw-border-#{$color}-400;
-            &::before{
+            .sub-check{
                 // background-color: $tw-lightBlue-400;
                 @extend %tw-bg-#{$color}-400;
             }
@@ -160,12 +240,33 @@ $colors: (
                     // background-color: $tw-lightBlue-100;
                     // @extend %tw-bg-#{$color}-100;
                     background-color: map-get(map-get($tw_colors, #{$color}), 100);
-                    &::before{
+                    .sub-check{
                         // background-color: $tw-lightBlue-500;
                         // @extend %tw-bg-#{$color}-500;
                         background-color: map-get(map-get($tw_colors, #{$color}), 500);
-                        box-shadow: 0 0 0 .7em rgba($color: map-get(map-get($tw_colors,#{$color}), 500 ), $alpha: .3);
+                        // &::before {
+                        //     // @extend %tw-bg-#{$color}-500;
+                        //     background-color: rgba(
+                        //         $color: map-get(map-get($tw_colors, #{$color}), 500),
+                        //         $alpha: 0.3
+                        //     );
+                        // }
+                        // box-shadow: 0 0 0 .7em rgba($color: map-get(map-get($tw_colors,#{$color}), 500 ), $alpha: .3);
                     }
+                }
+            }
+            &:enabled+.sub-box{
+                .sub-check{
+                    // background-color: $tw-lightBlue-500;
+                    // @extend %tw-bg-#{$color}-500;
+                    &::before {
+                        // @extend %tw-bg-#{$color}-500;
+                        background-color: rgba(
+                            $color: map-get(map-get($tw_colors, #{$color}), 500),
+                            $alpha: 0.3
+                        );
+                    }
+                    // box-shadow: 0 0 0 .7em rgba($color: map-get(map-get($tw_colors,#{$color}), 500 ), $alpha: .3);
                 }
             }
             &:checked:enabled{
@@ -174,7 +275,7 @@ $colors: (
                     @extend %tw-border-#{$color}-600;
                     // background-color: $tw-lightBlue-300;
                     @extend %tw-bg-#{$color}-300;
-                    &::before{
+                    .sub-check{
                         // background-color: $tw-lightBlue-600;
                         @extend %tw-bg-#{$color}-600;
                     }
@@ -184,7 +285,7 @@ $colors: (
                 &+.sub-box{
                     // border-color: $tw-lightBlue-200;
                     @extend %tw-border-#{$color}-200;
-                    &::before{
+                    .sub-check{
                         // background-color: $tw-lightBlue-200;
                         @extend %tw-bg-#{$color}-200;
                     }
@@ -192,7 +293,7 @@ $colors: (
                 &:checked+.sub-box{
                     // background-color: $tw-lightBlue-100;
                     @extend %tw-bg-#{$color}-100;
-                    &::before{
+                    .sub-check{
                         // background-color: $tw-lightBlue-400;
                         @extend %tw-bg-#{$color}-400;
                     }
@@ -209,7 +310,7 @@ $colors: (
         .sub-box{
             // border-color: $tw-lightBlue-400;
             @extend %tw-border-#{$color}-400;
-            &::before{
+            .sub-check{
                 // border-color: $tw-lightBlue-400;
                 @extend %tw-border-#{$color}-400;
             }
@@ -223,11 +324,29 @@ $colors: (
                     // background-color: $tw-lightBlue-100;
                     // @extend %tw-bg-#{$color}-100;
                     background-color: map-get(map-get($tw_colors, #{$color}), 100);
-                    &::before{
+                    .sub-check{
                         // border-color: $tw-lightBlue-500;
                         // @extend %tw-border-#{$color}-500;
                         border-color: map-get(map-get($tw_colors, #{$color}), 500);
-                        box-shadow: 0 0 0 .7em rgba($color: map-get(map-get($tw_colors,#{$color}), 500 ), $alpha: .3);
+                        // box-shadow: 0 0 0 .7em rgba($color: map-get(map-get($tw_colors,#{$color}), 500 ), $alpha: .3);
+                        // &::before {
+                        //     // @extend %tw-bg-#{$color}-500;
+                        //     background-color: rgba(
+                        //         $color: map-get(map-get($tw_colors, #{$color}), 500),
+                        //         $alpha: 0.3
+                        //     );
+                        // }
+                    }
+                }
+            }
+            &:enabled+.sub-box{
+                .sub-check{
+                    &::before {
+                        // @extend %tw-bg-#{$color}-500;
+                        background-color: rgba(
+                            $color: map-get(map-get($tw_colors, #{$color}), 500),
+                            $alpha: 0.3
+                        );
                     }
                 }
             }
@@ -237,7 +356,7 @@ $colors: (
                     @extend %tw-border-#{$color}-600;
                     // background-color: $tw-lightBlue-300;
                     @extend %tw-bg-#{$color}-300;
-                    &::before{
+                    .sub-check{
                         // border-color: $tw-lightBlue-600;
                         @extend %tw-border-#{$color}-600;
                     }
@@ -247,7 +366,7 @@ $colors: (
                 &+.sub-box{
                     // border-color: $tw-lightBlue-200;
                     @extend %tw-border-#{$color}-200;
-                    &::before{
+                    .sub-check{
                         // border-color: $tw-lightBlue-200;
                         @extend %tw-border-#{$color}-200;
                     }
@@ -255,7 +374,7 @@ $colors: (
                 &:checked+.sub-box{
                     // background-color: $tw-lightBlue-100;
                     @extend %tw-bg-#{$color}-100;
-                    &::before{
+                    .sub-check{
                         // border-color: $tw-lightBlue-400;
                         @extend %tw-border-#{$color}-400;
                     }

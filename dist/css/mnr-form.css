@@ -155,11 +155,27 @@
 .mnrf-check-slider .sub-box {
   padding: 1px
 }
-.mnrf-check-slider .sub-box::before {
+.mnrf-check-slider .sub-box .sub-check {
   padding-top: 55%
 }
-.mnrf-check-slider input:checked + .sub-box::before {
+.mnrf-check-slider .sub-box .sub-check::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 0%;
+  height: 0%;
+  z-index: 1;
+  border-radius: 1000px
+}
+.mnrf-check-slider input:checked + .sub-box .sub-check {
   left: calc(45% - 1px)
+}
+.mnrf-check-slider input:checked + .sub-box .sub-check::before {
+  -webkit-animation: .4s sliderCheckAnimate;
+  animation: .4s sliderCheckAnimate
 }
 .mnrf-check-slider input:disabled + .sub-box {
   background-color: #fff
@@ -170,17 +186,182 @@
 .mnrf-radio-slider .sub-box {
   padding: 1px
 }
-.mnrf-radio-slider .sub-box::before {
+.mnrf-radio-slider .sub-box .sub-check {
   border-width: 4px;
   border-style: solid;
   box-sizing: border-box;
-  padding: calc(27.5% - 4px)
+  padding-top: calc(55% - 8px)
 }
-.mnrf-radio-slider input:checked + .sub-box::before {
+.mnrf-radio-slider .sub-box .sub-check::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 0%;
+  height: 0%;
+  z-index: 1;
+  border-radius: 1000px
+}
+.mnrf-radio-slider input:checked + .sub-box .sub-check {
   left: calc(45% - 1px)
+}
+.mnrf-radio-slider input:checked + .sub-box .sub-check::before {
+  -webkit-animation: .4s sliderRadioAnimate;
+  animation: .4s sliderRadioAnimate
 }
 .mnrf-radio-slider input:disabled + .sub-box {
   background-color: #fff
+}
+@-webkit-keyframes sliderCheckAnimate {
+  from {
+    opacity: 1;
+    width: 0;
+    height: 0
+  }
+  to {
+    opacity: .7;
+    width: 220%;
+    height: 220%
+  }
+}
+@keyframes sliderCheckAnimate {
+  from {
+    opacity: 1;
+    width: 0;
+    height: 0
+  }
+  to {
+    opacity: .7;
+    width: 220%;
+    height: 220%
+  }
+}
+@-webkit-keyframes sliderRadioAnimate {
+  from {
+    opacity: 1;
+    width: 0;
+    height: 0
+  }
+  to {
+    opacity: .7;
+    width: 440%;
+    height: 440%
+  }
+}
+@keyframes sliderRadioAnimate {
+  from {
+    opacity: 1;
+    width: 0;
+    height: 0
+  }
+  to {
+    opacity: .7;
+    width: 440%;
+    height: 440%
+  }
+}
+@media (pointer:fine) {
+  .mnrf-checkbox input:hover:enabled+.sub-box::after,
+  .mnrf-radio input:hover:enabled+.sub-box::after {
+    width: 220%;
+    height: 220%
+  }
+  .mnrf-check-slider input:hover:enabled + .sub-box .sub-check::before {
+    width: 210%;
+    height: 210%
+  }
+  .mnrf-radio-slider input:hover:enabled + .sub-box .sub-check::before {
+    width: 420%;
+    height: 420%
+  }
+  .mnrf-check-slider input:hover:enabled + .sub-box {
+    border-color: #0ea5e9;
+    background-color: #e0f2fe
+  }
+  .mnrf-check-slider input:hover:enabled + .sub-box .sub-check {
+    background-color: #0ea5e9
+  }
+  .mnrf-radio-slider input:hover:enabled + .sub-box {
+    border-color: #0ea5e9;
+    background-color: #e0f2fe
+  }
+  .mnrf-radio-slider input:hover:enabled + .sub-box .sub-check {
+    border-color: #0ea5e9
+  }
+}
+.mnrf-check-slider input:enabled + .sub-box .sub-check::before {
+  background-color: rgba(14,165,233,.3)
+}
+.mnrf-radio-slider input:enabled + .sub-box .sub-check::before {
+  background-color: rgba(14,165,233,.3)
+}
+@media (pointer:fine) {
+  .mnrf-check-slider.color-red input:hover:enabled + .sub-box {
+    border-color: #ef4444;
+    background-color: #fee2e2
+  }
+  .mnrf-check-slider.color-red input:hover:enabled + .sub-box .sub-check {
+    background-color: #ef4444
+  }
+  .mnrf-radio-slider.color-red input:hover:enabled + .sub-box {
+    border-color: #ef4444;
+    background-color: #fee2e2
+  }
+  .mnrf-radio-slider.color-red input:hover:enabled + .sub-box .sub-check {
+    border-color: #ef4444
+  }
+}
+.mnrf-check-slider.color-red input:enabled + .sub-box .sub-check::before {
+  background-color: rgba(239,68,68,.3)
+}
+.mnrf-radio-slider.color-red input:enabled + .sub-box .sub-check::before {
+  background-color: rgba(239,68,68,.3)
+}
+@media (pointer:fine) {
+  .mnrf-check-slider.color-yellow input:hover:enabled + .sub-box {
+    border-color: #eab308;
+    background-color: #fef9c3
+  }
+  .mnrf-check-slider.color-yellow input:hover:enabled + .sub-box .sub-check {
+    background-color: #eab308
+  }
+  .mnrf-radio-slider.color-yellow input:hover:enabled + .sub-box {
+    border-color: #eab308;
+    background-color: #fef9c3
+  }
+  .mnrf-radio-slider.color-yellow input:hover:enabled + .sub-box .sub-check {
+    border-color: #eab308
+  }
+}
+.mnrf-check-slider.color-yellow input:enabled + .sub-box .sub-check::before {
+  background-color: rgba(234,179,8,.3)
+}
+.mnrf-radio-slider.color-yellow input:enabled + .sub-box .sub-check::before {
+  background-color: rgba(234,179,8,.3)
+}
+@media (pointer:fine) {
+  .mnrf-check-slider.color-green input:hover:enabled + .sub-box {
+    border-color: #10b981;
+    background-color: #d1fae5
+  }
+  .mnrf-check-slider.color-green input:hover:enabled + .sub-box .sub-check {
+    background-color: #10b981
+  }
+  .mnrf-radio-slider.color-green input:hover:enabled + .sub-box {
+    border-color: #10b981;
+    background-color: #d1fae5
+  }
+  .mnrf-radio-slider.color-green input:hover:enabled + .sub-box .sub-check {
+    border-color: #10b981
+  }
+}
+.mnrf-check-slider.color-green input:enabled + .sub-box .sub-check::before {
+  background-color: rgba(16,185,129,.3)
+}
+.mnrf-radio-slider.color-green input:enabled + .sub-box .sub-check::before {
+  background-color: rgba(16,185,129,.3)
 }
 .mnrf-check-slider .sub-box,
 .mnrf-checkbox .sub-box,
@@ -236,25 +417,25 @@
   width: 2.555em
 }
 .mnrf-check-slider .sub-box,
-.mnrf-check-slider .sub-box::before,
+.mnrf-check-slider .sub-box .sub-check,
 .mnrf-radio .sub-box,
 .mnrf-radio .sub-box::before,
 .mnrf-radio-key,
 .mnrf-radio-key label,
 .mnrf-radio-slider .sub-box,
-.mnrf-radio-slider .sub-box::before {
+.mnrf-radio-slider .sub-box .sub-check {
   border-radius: 1000px
 }
-.mnrf-check-slider .sub-box::before,
+.mnrf-check-slider .sub-box .sub-check,
 .mnrf-radio .sub-box::before,
-.mnrf-radio-slider .sub-box::before {
+.mnrf-radio-slider .sub-box .sub-check {
   content: "";
   display: block
 }
 .mnrf-check-slider,
 .mnrf-check-slider ::after,
 .mnrf-check-slider ::before,
-.mnrf-check-slider :not(svg) > * > *,
+.mnrf-check-slider :not(svg),
 .mnrf-checkbox,
 .mnrf-checkbox ::after,
 .mnrf-checkbox ::before,
@@ -270,11 +451,11 @@
 .mnrf-radio-slider,
 .mnrf-radio-slider ::after,
 .mnrf-radio-slider ::before,
-.mnrf-radio-slider :not(svg) > * > * {
+.mnrf-radio-slider :not(svg) {
   transition: .3s
 }
-.mnrf-check-slider .sub-box::before,
-.mnrf-radio-slider .sub-box::before {
+.mnrf-check-slider .sub-box .sub-check,
+.mnrf-radio-slider .sub-box .sub-check {
   position: relative;
   left: 1px;
   width: 55%
@@ -359,80 +540,6 @@
 }
 .mnrf-radio-key.opt-fh {
   height: 100%
-}
-@media (pointer:fine) {
-  .mnrf-checkbox input:hover:enabled+.sub-box::after,
-  .mnrf-radio input:hover:enabled+.sub-box::after {
-    width: 220%;
-    height: 220%
-  }
-  .mnrf-check-slider input:hover:enabled + .sub-box {
-    border-color: #0ea5e9;
-    background-color: #e0f2fe
-  }
-  .mnrf-check-slider input:hover:enabled + .sub-box::before {
-    background-color: #0ea5e9;
-    box-shadow: 0 0 0 .7em rgba(14,165,233,.3)
-  }
-  .mnrf-radio-slider input:hover:enabled + .sub-box {
-    border-color: #0ea5e9;
-    background-color: #e0f2fe
-  }
-  .mnrf-radio-slider input:hover:enabled + .sub-box::before {
-    border-color: #0ea5e9;
-    box-shadow: 0 0 0 .7em rgba(14,165,233,.3)
-  }
-  .mnrf-check-slider.color-red input:hover:enabled + .sub-box {
-    border-color: #ef4444;
-    background-color: #fee2e2
-  }
-  .mnrf-check-slider.color-red input:hover:enabled + .sub-box::before {
-    background-color: #ef4444;
-    box-shadow: 0 0 0 .7em rgba(239,68,68,.3)
-  }
-  .mnrf-radio-slider.color-red input:hover:enabled + .sub-box {
-    border-color: #ef4444;
-    background-color: #fee2e2
-  }
-  .mnrf-radio-slider.color-red input:hover:enabled + .sub-box::before {
-    border-color: #ef4444;
-    box-shadow: 0 0 0 .7em rgba(239,68,68,.3)
-  }
-  .mnrf-check-slider.color-yellow input:hover:enabled + .sub-box {
-    border-color: #eab308;
-    background-color: #fef9c3
-  }
-  .mnrf-check-slider.color-yellow input:hover:enabled + .sub-box::before {
-    background-color: #eab308;
-    box-shadow: 0 0 0 .7em rgba(234,179,8,.3)
-  }
-  .mnrf-radio-slider.color-yellow input:hover:enabled + .sub-box {
-    border-color: #eab308;
-    background-color: #fef9c3
-  }
-  .mnrf-radio-slider.color-yellow input:hover:enabled + .sub-box::before {
-    border-color: #eab308;
-    box-shadow: 0 0 0 .7em rgba(234,179,8,.3)
-  }
-  .mnrf-check-slider.color-green input:hover:enabled + .sub-box {
-    border-color: #10b981;
-    background-color: #d1fae5
-  }
-  .mnrf-check-slider.color-green input:hover:enabled + .sub-box::before {
-    background-color: #10b981;
-    box-shadow: 0 0 0 .7em rgba(16,185,129,.3)
-  }
-  .mnrf-radio-slider.color-green input:hover:enabled + .sub-box {
-    border-color: #10b981;
-    background-color: #d1fae5
-  }
-  .mnrf-radio-slider.color-green input:hover:enabled + .sub-box::before {
-    border-color: #10b981;
-    box-shadow: 0 0 0 .7em rgba(16,185,129,.3)
-  }
-  .mnrf-mob-wrap .sub-wrap button:hover {
-    background-color: #64748b
-  }
 }
 .mnrf-input,
 .mnrf-multi {
@@ -759,6 +866,15 @@
   color: #f8fafc;
   cursor: pointer
 }
+@media (pointer:fine) {
+  .mnrf-mob-wrap .sub-wrap button:hover {
+    background-color: #64748b
+  }
+  .mnrf-input .sub-frame .sub-btn:hover,
+  .mnrf-multi .sub-frame .sub-btn:hover {
+    background-color: #0ea5e9
+  }
+}
 .mnrf-mob-wrap .sub-wrap button:active {
   background-color: #475569
 }
@@ -832,10 +948,6 @@
   background-color: rgba(16,185,129,.1)
 }
 @media (pointer:fine) {
-  .mnrf-input .sub-frame .sub-btn:hover,
-  .mnrf-multi .sub-frame .sub-btn:hover {
-    background-color: #0ea5e9
-  }
   .color-red.mnrf-multi .sub-frame .sub-btn:hover,
   .mnrf-input.color-red .sub-frame .sub-btn:hover {
     background-color: #ef4444
@@ -877,11 +989,11 @@
 .mnrf-check-slider.color-red input:disabled + .sub-box,
 .mnrf-checkbox.color-red input:disabled + .sub-box,
 .mnrf-radio-slider.color-red input:disabled + .sub-box,
-.mnrf-radio-slider.color-red input:disabled + .sub-box::before,
+.mnrf-radio-slider.color-red input:disabled + .sub-box .sub-check,
 .mnrf-radio.color-red input:disabled + .sub-box {
   border-color: #fecaca
 }
-.mnrf-check-slider.color-red input:disabled + .sub-box::before,
+.mnrf-check-slider.color-red input:disabled + .sub-box .sub-check,
 .mnrf-multi.color-red .sub-tags .sub-tag,
 .mnrf-radio-key.color-red input:disabled + label {
   background-color: #fecaca
@@ -905,14 +1017,14 @@
 .mnrf-checkbox.color-red .sub-box,
 .mnrf-input.color-red.state-hover:not(.state-disable) .sub-frame,
 .mnrf-radio-slider.color-red .sub-box,
-.mnrf-radio-slider.color-red .sub-box::before,
-.mnrf-radio-slider.color-red input:disabled:checked + .sub-box::before,
+.mnrf-radio-slider.color-red .sub-box .sub-check,
+.mnrf-radio-slider.color-red input:disabled:checked + .sub-box .sub-check,
 .mnrf-radio.color-red .sub-box {
   border-color: #f87171
 }
 .color-red.mnrf-multi .sub-frame .sub-btn,
-.mnrf-check-slider.color-red .sub-box::before,
-.mnrf-check-slider.color-red input:disabled:checked + .sub-box::before,
+.mnrf-check-slider.color-red .sub-box .sub-check,
+.mnrf-check-slider.color-red input:disabled:checked + .sub-box .sub-check,
 .mnrf-input.color-red .sub-frame .sub-btn,
 .mnrf-multi.color-red .sub-tags .sub-tag .sub-close,
 .mnrf-radio-key.color-red,
@@ -955,12 +1067,12 @@
 .mnrf-checkbox.color-red input:checked:enabled + .sub-box,
 .mnrf-input.color-red.state-focus:not(.state-disable) .sub-frame,
 .mnrf-radio-slider.color-red input:checked:enabled + .sub-box,
-.mnrf-radio-slider.color-red input:checked:enabled + .sub-box::before,
+.mnrf-radio-slider.color-red input:checked:enabled + .sub-box .sub-check,
 .mnrf-radio.color-red input:checked:enabled + .sub-box {
   border-color: #dc2626
 }
 .color-red.mnrf-multi .sub-frame .sub-btn:active,
-.mnrf-check-slider.color-red input:checked:enabled + .sub-box::before,
+.mnrf-check-slider.color-red input:checked:enabled + .sub-box .sub-check,
 .mnrf-input.color-red .sub-frame .sub-btn:active,
 .mnrf-multi.color-red .sub-tags .sub-tag:hover .sub-close,
 .mnrf-radio-key.color-red input:checked:enabled + label,
@@ -1007,11 +1119,11 @@
 .mnrf-check-slider.color-yellow input:disabled + .sub-box,
 .mnrf-checkbox.color-yellow input:disabled + .sub-box,
 .mnrf-radio-slider.color-yellow input:disabled + .sub-box,
-.mnrf-radio-slider.color-yellow input:disabled + .sub-box::before,
+.mnrf-radio-slider.color-yellow input:disabled + .sub-box .sub-check,
 .mnrf-radio.color-yellow input:disabled + .sub-box {
   border-color: #fef08a
 }
-.mnrf-check-slider.color-yellow input:disabled + .sub-box::before,
+.mnrf-check-slider.color-yellow input:disabled + .sub-box .sub-check,
 .mnrf-multi.color-yellow .sub-tags .sub-tag,
 .mnrf-radio-key.color-yellow input:disabled + label {
   background-color: #fef08a
@@ -1035,14 +1147,14 @@
 .mnrf-checkbox.color-yellow .sub-box,
 .mnrf-input.color-yellow.state-hover:not(.state-disable) .sub-frame,
 .mnrf-radio-slider.color-yellow .sub-box,
-.mnrf-radio-slider.color-yellow .sub-box::before,
-.mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box::before,
+.mnrf-radio-slider.color-yellow .sub-box .sub-check,
+.mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box .sub-check,
 .mnrf-radio.color-yellow .sub-box {
   border-color: #facc15
 }
 .color-yellow.mnrf-multi .sub-frame .sub-btn,
-.mnrf-check-slider.color-yellow .sub-box::before,
-.mnrf-check-slider.color-yellow input:disabled:checked + .sub-box::before,
+.mnrf-check-slider.color-yellow .sub-box .sub-check,
+.mnrf-check-slider.color-yellow input:disabled:checked + .sub-box .sub-check,
 .mnrf-input.color-yellow .sub-frame .sub-btn,
 .mnrf-multi.color-yellow .sub-tags .sub-tag .sub-close,
 .mnrf-radio-key.color-yellow,
@@ -1085,12 +1197,12 @@
 .mnrf-checkbox.color-yellow input:checked:enabled + .sub-box,
 .mnrf-input.color-yellow.state-focus:not(.state-disable) .sub-frame,
 .mnrf-radio-slider.color-yellow input:checked:enabled + .sub-box,
-.mnrf-radio-slider.color-yellow input:checked:enabled + .sub-box::before,
+.mnrf-radio-slider.color-yellow input:checked:enabled + .sub-box .sub-check,
 .mnrf-radio.color-yellow input:checked:enabled + .sub-box {
   border-color: #ca8a04
 }
 .color-yellow.mnrf-multi .sub-frame .sub-btn:active,
-.mnrf-check-slider.color-yellow input:checked:enabled + .sub-box::before,
+.mnrf-check-slider.color-yellow input:checked:enabled + .sub-box .sub-check,
 .mnrf-input.color-yellow .sub-frame .sub-btn:active,
 .mnrf-multi.color-yellow .sub-tags .sub-tag:hover .sub-close,
 .mnrf-radio-key.color-yellow input:checked:enabled + label,
@@ -1137,11 +1249,11 @@
 .mnrf-check-slider.color-green input:disabled + .sub-box,
 .mnrf-checkbox.color-green input:disabled + .sub-box,
 .mnrf-radio-slider.color-green input:disabled + .sub-box,
-.mnrf-radio-slider.color-green input:disabled + .sub-box::before,
+.mnrf-radio-slider.color-green input:disabled + .sub-box .sub-check,
 .mnrf-radio.color-green input:disabled + .sub-box {
   border-color: #a7f3d0
 }
-.mnrf-check-slider.color-green input:disabled + .sub-box::before,
+.mnrf-check-slider.color-green input:disabled + .sub-box .sub-check,
 .mnrf-multi.color-green .sub-tags .sub-tag,
 .mnrf-radio-key.color-green input:disabled + label {
   background-color: #a7f3d0
@@ -1165,14 +1277,14 @@
 .mnrf-checkbox.color-green .sub-box,
 .mnrf-input.color-green.state-hover:not(.state-disable) .sub-frame,
 .mnrf-radio-slider.color-green .sub-box,
-.mnrf-radio-slider.color-green .sub-box::before,
-.mnrf-radio-slider.color-green input:disabled:checked + .sub-box::before,
+.mnrf-radio-slider.color-green .sub-box .sub-check,
+.mnrf-radio-slider.color-green input:disabled:checked + .sub-box .sub-check,
 .mnrf-radio.color-green .sub-box {
   border-color: #34d399
 }
 .color-green.mnrf-multi .sub-frame .sub-btn,
-.mnrf-check-slider.color-green .sub-box::before,
-.mnrf-check-slider.color-green input:disabled:checked + .sub-box::before,
+.mnrf-check-slider.color-green .sub-box .sub-check,
+.mnrf-check-slider.color-green input:disabled:checked + .sub-box .sub-check,
 .mnrf-input.color-green .sub-frame .sub-btn,
 .mnrf-multi.color-green .sub-tags .sub-tag .sub-close,
 .mnrf-radio-key.color-green,
@@ -1215,12 +1327,12 @@
 .mnrf-checkbox.color-green input:checked:enabled + .sub-box,
 .mnrf-input.color-green.state-focus:not(.state-disable) .sub-frame,
 .mnrf-radio-slider.color-green input:checked:enabled + .sub-box,
-.mnrf-radio-slider.color-green input:checked:enabled + .sub-box::before,
+.mnrf-radio-slider.color-green input:checked:enabled + .sub-box .sub-check,
 .mnrf-radio.color-green input:checked:enabled + .sub-box {
   border-color: #059669
 }
 .color-green.mnrf-multi .sub-frame .sub-btn:active,
-.mnrf-check-slider.color-green input:checked:enabled + .sub-box::before,
+.mnrf-check-slider.color-green input:checked:enabled + .sub-box .sub-check,
 .mnrf-input.color-green .sub-frame .sub-btn:active,
 .mnrf-multi.color-green .sub-tags .sub-tag:hover .sub-close,
 .mnrf-radio-key.color-green input:checked:enabled + label,
@@ -1268,10 +1380,10 @@
 .mnrf-checkbox input:disabled + .sub-box,
 .mnrf-radio input:disabled + .sub-box,
 .mnrf-radio-slider input:disabled + .sub-box,
-.mnrf-radio-slider input:disabled + .sub-box::before {
+.mnrf-radio-slider input:disabled + .sub-box .sub-check {
   border-color: #bae6fd
 }
-.mnrf-check-slider input:disabled + .sub-box::before,
+.mnrf-check-slider input:disabled + .sub-box .sub-check,
 .mnrf-multi .sub-tags .sub-tag,
 .mnrf-radio-key input:disabled + label {
   background-color: #bae6fd
@@ -1295,13 +1407,13 @@
 .mnrf-input.state-hover:not(.state-disable) .sub-frame,
 .mnrf-radio .sub-box,
 .mnrf-radio-slider .sub-box,
-.mnrf-radio-slider .sub-box::before,
-.mnrf-radio-slider input:disabled:checked + .sub-box::before,
+.mnrf-radio-slider .sub-box .sub-check,
+.mnrf-radio-slider input:disabled:checked + .sub-box .sub-check,
 .state-hover.mnrf-multi:not(.state-disable) .sub-frame {
   border-color: #38bdf8
 }
-.mnrf-check-slider .sub-box::before,
-.mnrf-check-slider input:disabled:checked + .sub-box::before,
+.mnrf-check-slider .sub-box .sub-check,
+.mnrf-check-slider input:disabled:checked + .sub-box .sub-check,
 .mnrf-input .sub-frame .sub-btn,
 .mnrf-multi .sub-frame .sub-btn,
 .mnrf-multi .sub-tags .sub-tag .sub-close,
@@ -1342,11 +1454,11 @@
 .mnrf-input.state-focus:not(.state-disable) .sub-frame,
 .mnrf-radio input:checked:enabled + .sub-box,
 .mnrf-radio-slider input:checked:enabled + .sub-box,
-.mnrf-radio-slider input:checked:enabled + .sub-box::before,
+.mnrf-radio-slider input:checked:enabled + .sub-box .sub-check,
 .state-focus.mnrf-multi:not(.state-disable) .sub-frame {
   border-color: #0284c7
 }
-.mnrf-check-slider input:checked:enabled + .sub-box::before,
+.mnrf-check-slider input:checked:enabled + .sub-box .sub-check,
 .mnrf-input .sub-frame .sub-btn:active,
 .mnrf-multi .sub-frame .sub-btn:active,
 .mnrf-multi .sub-tags .sub-tag:hover .sub-close,

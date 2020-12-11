@@ -1,20 +1,33 @@
-@use 'extends';
+// @use 'extends';
 @import "../../color";
 
 .mnrf-check-slider{
-    @extend %box;
+    &,& *{
+        cursor: pointer;
+    }
     -webkit-tap-highlight-color: rgba(255,255,255,0);
     &,& *:not(svg),& *::after,& *::before{
-		@extend %transition;
+		transition: all .3s;
 	}
     .sub-box{
-        @extend %sub-box;
-        @extend %round-corner;
-        @extend %slider-sub-box-md;
+        margin: 2px;
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    box-sizing: border-box;
+        border-radius: 1000px;
+            width: 35px;
+
         padding: 1px;
         .sub-check{
-            @extend %insider;
-            @extend %slider-inside;
+            display: block;
+    border-radius: 1000px;
+            position: relative;
+    left: 1px;
+    width: 55%;
             padding-top: 55%;
             &::before{
                 // transition: all .3s;
@@ -33,7 +46,7 @@
         }
     }
     input{
-        @extend %display-none;
+        display: none;
         @media (pointer: fine){
             &:hover:enabled + .sub-box {
                 .sub-check{
@@ -59,51 +72,66 @@
                 background-color: white;
             }
             &~*{
-                @extend %no-drap;
+                cursor: no-drop;
             }
         }
     }
     
     &.opt-sm{
         .sub-box{
-            @extend %slider-sub-box-sm;
+                width: 31.5px;
+
         }
     }
     &.opt-md{
         .sub-box{
-            @extend %slider-sub-box-md;
+                width: 35px;
+
         }
     }
     &.opt-lg{
         .sub-box{
-            @extend %slider-sub-box-lg;
+                width: 38.5px;
         }
     }
     &.opt-em{
         .sub-box{
-            @extend %slider-sub-box-em;
+                width: 2.555em;
         }
     }
     &.opt-block{
-        @extend %opt-block;
+        display: block;
     }
 }
 
 .mnrf-radio-slider{
-    @extend %box;
+    &,& *{
+        cursor: pointer;
+    }
     -webkit-tap-highlight-color: rgba(255,255,255,0);
     &,& *:not(svg),& *::after,& *::before{
-		@extend %transition;
+		transition: all .3s;
 	}
     .sub-box{
-        @extend %sub-box;
+        margin: 2px;
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    box-sizing: border-box;
         // border-color: $tw-lightBlue-400;
-        @extend %round-corner;
-        @extend %slider-sub-box-md;
+        border-radius: 1000px;
+            width: 35px;
+
         padding: 1px;
         .sub-check{
-            @extend %insider;
-            @extend %slider-inside;
+            display: block;
+    border-radius: 1000px;
+            position: relative;
+    left: 1px;
+    width: 55%;
             // border-color: $tw-lightBlue-400;
             border-width: 4px;
             border-style: solid;
@@ -126,7 +154,7 @@
         }
     }
     input{
-        @extend %display-none;
+        display: none;
         @media (pointer: fine){
             &:hover:enabled + .sub-box {
                 .sub-check{
@@ -152,33 +180,35 @@
                 background-color: white;
             }
             &~*{
-                @extend %no-drap;
+                cursor: no-drop;
             }
         }
     }
     
     &.opt-sm{
         .sub-box{
-            @extend %slider-sub-box-sm;
+                width: 31.5px;
+
         }
     }
     &.opt-md{
         .sub-box{
-            @extend %slider-sub-box-md;
+                width: 35px;
+
         }
     }
     &.opt-lg{
         .sub-box{
-            @extend %slider-sub-box-lg;
+                width: 38.5px;
         }
     }
     &.opt-em{
         .sub-box{
-            @extend %slider-sub-box-em;
+                width: 2.555em;
         }
     }
     &.opt-block{
-        @extend %opt-block;
+        display: block;
     }
 }
 

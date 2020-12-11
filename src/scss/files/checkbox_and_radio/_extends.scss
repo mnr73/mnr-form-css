@@ -1,13 +1,13 @@
-%sub-box {
-    margin: 2px;
-    background-color: white;
-    border-width: 2px;
-    border-style: solid;
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    box-sizing: border-box;
-}
+// %sub-box {
+//     margin: 2px;
+//     background-color: white;
+//     border-width: 2px;
+//     border-style: solid;
+//     display: inline-block;
+//     position: relative;
+//     vertical-align: middle;
+//     box-sizing: border-box;
+// }
 
 %normol-sub-box-sm{
     width: 18px;
@@ -38,48 +38,48 @@
     width: 2.555em;
 }
 
-%round-corner{
-    border-radius: 1000px;
-}
+// %round-corner{
+//     border-radius: 1000px;
+// }
 
-%insider {
-    content: '';
-    display: block;
-    @extend %round-corner;
-}
+// %insider {
+//     content: '';
+//     display: block;
+//     border-radius: 1000px;
+// }
 
-%transition{
-    transition: all .3s;
-}
+// %transition{
+//     transition: all .3s;
+// }
 
-%slider-inside{
-    position: relative;
-    left: 1px;
-    width: 55%;
-}
+// %slider-inside{
+//     position: relative;
+//     left: 1px;
+//     width: 55%;
+// }
 
-%box {
-    &,& *{
-        cursor: pointer;
-    }
-}
+// %box {
+//     &,& *{
+//         cursor: pointer;
+//     }
+// }
 
-%no-drap{
-    cursor: no-drop;
-}
+// %no-drap{
+//     cursor: no-drop;
+// }
 
-%display-none{
-    display: none;
-}
+// %display-none{
+//     display: none;
+// }
 
-%opt-block{
-    display: block;
-}
+// %opt-block{
+//     display: block;
+// }
 
-%clearfix {
-    &::after{
-        content: "";
-        clear: both;
-        display: table;
-    }
-}
+// %clearfix {
+//     &::after{
+//         content: "";
+//         clear: both;
+//         display: table;
+//     }
+// }

@@ -2,89 +2,7 @@
   overflow: hidden;
 }
 
-.mnrf-radio-slider .sub-box, .mnrf-check-slider .sub-box, .mnrf-checkbox .sub-box, .mnrf-radio .sub-box {
-  margin: 2px;
-  background-color: white;
-  border-width: 2px;
-  border-style: solid;
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  box-sizing: border-box;
-}
-
-.mnrf-checkbox.opt-sm .sub-box, .mnrf-radio.opt-sm .sub-box {
-  width: 18px;
-  height: 18px;
-}
-
-.mnrf-checkbox .sub-box, .mnrf-checkbox.opt-md .sub-box, .mnrf-radio .sub-box, .mnrf-radio.opt-md .sub-box {
-  width: 20px;
-  height: 20px;
-}
-
-.mnrf-checkbox.opt-lg .sub-box, .mnrf-radio.opt-lg .sub-box {
-  width: 22px;
-  height: 22px;
-}
-
-.mnrf-checkbox.opt-em .sub-box, .mnrf-radio.opt-em .sub-box {
-  width: 1.46em;
-  height: 1.46em;
-}
-
-.mnrf-radio-slider.opt-sm .sub-box, .mnrf-check-slider.opt-sm .sub-box {
-  width: 31.5px;
-}
-
-.mnrf-radio-slider.opt-md .sub-box, .mnrf-radio-slider .sub-box, .mnrf-check-slider.opt-md .sub-box, .mnrf-check-slider .sub-box {
-  width: 35px;
-}
-
-.mnrf-radio-slider.opt-lg .sub-box, .mnrf-check-slider.opt-lg .sub-box {
-  width: 38.5px;
-}
-
-.mnrf-radio-slider.opt-em .sub-box, .mnrf-check-slider.opt-em .sub-box {
-  width: 2.555em;
-}
-
-.mnrf-radio-key label, .mnrf-radio-key, .mnrf-radio-slider .sub-box, .mnrf-check-slider .sub-box, .mnrf-radio .sub-box, .mnrf-radio-slider .sub-box .sub-check, .mnrf-check-slider .sub-box .sub-check, .mnrf-radio .sub-box::before {
-  border-radius: 1000px;
-}
-
-.mnrf-radio-slider .sub-box .sub-check, .mnrf-check-slider .sub-box .sub-check, .mnrf-radio .sub-box::before {
-  content: "";
-  display: block;
-}
-
-.mnrf-radio-key, .mnrf-radio-key *:not(svg), .mnrf-radio-key *::after, .mnrf-radio-key *::before, .mnrf-radio-slider, .mnrf-radio-slider *:not(svg), .mnrf-radio-slider *::after, .mnrf-radio-slider *::before, .mnrf-check-slider, .mnrf-check-slider *:not(svg), .mnrf-check-slider *::after, .mnrf-check-slider *::before, .mnrf-checkbox, .mnrf-checkbox *:not(svg) > * > *, .mnrf-checkbox *::after, .mnrf-checkbox *::before, .mnrf-radio, .mnrf-radio *:not(svg) > * > *, .mnrf-radio *::after, .mnrf-radio *::before {
-  transition: all 0.3s;
-}
-
-.mnrf-radio-slider .sub-box .sub-check, .mnrf-check-slider .sub-box .sub-check {
-  position: relative;
-  left: 1px;
-  width: 55%;
-}
-
-.mnrf-radio-key, .mnrf-radio-slider, .mnrf-check-slider, .mnrf-checkbox, .mnrf-radio, .mnrf-radio-key *, .mnrf-radio-slider *, .mnrf-check-slider *, .mnrf-checkbox *, .mnrf-radio * {
-  cursor: pointer;
-}
-
-.mnrf-radio-key input:disabled + label, .mnrf-radio-slider input:disabled ~ *, .mnrf-check-slider input:disabled ~ *, .mnrf-checkbox input:disabled ~ *, .mnrf-radio input:disabled ~ * {
-  cursor: no-drop;
-}
-
-.mnrf-radio-key input, .mnrf-radio-slider input, .mnrf-check-slider input, .mnrf-checkbox input, .mnrf-radio input {
-  display: none;
-}
-
-.mnrf-radio-slider.opt-block, .mnrf-check-slider.opt-block, .mnrf-checkbox.opt-block, .mnrf-radio.opt-block {
-  display: block;
-}
-
-.mnrf-multi.color-red .sub-tags .sub-tag:hover, .mnrf-radio-slider.color-red input:disabled:checked + .sub-box, .mnrf-check-slider.color-red input:disabled:checked + .sub-box, .mnrf-radio.color-red input:disabled:checked + .sub-box, .mnrf-radio.color-red input:disabled + .sub-box::before, .mnrf-radio.color-red .sub-box::before, .mnrf-checkbox.color-red input:disabled:checked + .sub-box {
+.mnrf-multi.color-red .sub-tags .sub-tag:hover, .mnrf-radio-slider.color-red input:disabled:checked + .sub-box, .mnrf-check-slider.color-red input:disabled:checked + .sub-box, .mnrf-radio.color-red input:disabled:checked + .sub-box, .mnrf-radio.color-red input:disabled + .sub-box .sub-check, .mnrf-radio.color-red .sub-box .sub-check, .mnrf-checkbox.color-red input:disabled:checked + .sub-box {
   background-color: #FEE2E2;
 }
 
@@ -120,7 +38,7 @@
   border-color: #F87171;
 }
 
-.mnrf-multi.color-red .sub-tags .sub-tag .sub-close, .mnrf-input.color-red .sub-frame .sub-btn, .color-red.mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key.color-red, .mnrf-check-slider.color-red input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-red .sub-box .sub-check, .mnrf-radio.color-red input:disabled:checked + .sub-box::before {
+.mnrf-multi.color-red .sub-tags .sub-tag .sub-close, .mnrf-input.color-red .sub-frame .sub-btn, .color-red.mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key.color-red, .mnrf-check-slider.color-red input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-red .sub-box .sub-check, .mnrf-radio.color-red input:disabled:checked + .sub-box .sub-check {
   background-color: #F87171;
 }
 
@@ -148,7 +66,7 @@
   border-color: #DC2626;
 }
 
-.mnrf-multi.color-red .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-red .sub-frame .sub-btn:active, .color-red.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key.color-red input:checked:enabled + label, .mnrf-check-slider.color-red input:checked:enabled + .sub-box .sub-check, .mnrf-radio.color-red input:checked:enabled + .sub-box::before {
+.mnrf-multi.color-red .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-red .sub-frame .sub-btn:active, .color-red.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key.color-red input:checked:enabled + label, .mnrf-check-slider.color-red input:checked:enabled + .sub-box .sub-check, .mnrf-radio.color-red input:checked:enabled + .sub-box .sub-check {
   background-color: #DC2626;
 }
 
@@ -160,7 +78,7 @@
   color: #DC2626;
 }
 
-.mnrf-multi.color-yellow .sub-tags .sub-tag:hover, .mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-radio.color-yellow input:disabled:checked + .sub-box, .mnrf-radio.color-yellow input:disabled + .sub-box::before, .mnrf-radio.color-yellow .sub-box::before, .mnrf-checkbox.color-yellow input:disabled:checked + .sub-box {
+.mnrf-multi.color-yellow .sub-tags .sub-tag:hover, .mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-radio.color-yellow input:disabled:checked + .sub-box, .mnrf-radio.color-yellow input:disabled + .sub-box .sub-check, .mnrf-radio.color-yellow .sub-box .sub-check, .mnrf-checkbox.color-yellow input:disabled:checked + .sub-box {
   background-color: #FEF9C3;
 }
 
@@ -196,7 +114,7 @@
   border-color: #FACC15;
 }
 
-.mnrf-multi.color-yellow .sub-tags .sub-tag .sub-close, .mnrf-input.color-yellow .sub-frame .sub-btn, .color-yellow.mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key.color-yellow, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-yellow .sub-box .sub-check, .mnrf-radio.color-yellow input:disabled:checked + .sub-box::before {
+.mnrf-multi.color-yellow .sub-tags .sub-tag .sub-close, .mnrf-input.color-yellow .sub-frame .sub-btn, .color-yellow.mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key.color-yellow, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-yellow .sub-box .sub-check, .mnrf-radio.color-yellow input:disabled:checked + .sub-box .sub-check {
   background-color: #FACC15;
 }
 
@@ -224,7 +142,7 @@
   border-color: #CA8A04;
 }
 
-.mnrf-multi.color-yellow .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-yellow .sub-frame .sub-btn:active, .color-yellow.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key.color-yellow input:checked:enabled + label, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box .sub-check, .mnrf-radio.color-yellow input:checked:enabled + .sub-box::before {
+.mnrf-multi.color-yellow .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-yellow .sub-frame .sub-btn:active, .color-yellow.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key.color-yellow input:checked:enabled + label, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box .sub-check, .mnrf-radio.color-yellow input:checked:enabled + .sub-box .sub-check {
   background-color: #CA8A04;
 }
 
@@ -236,7 +154,7 @@
   color: #CA8A04;
 }
 
-.mnrf-multi.color-green .sub-tags .sub-tag:hover, .mnrf-radio-slider.color-green input:disabled:checked + .sub-box, .mnrf-check-slider.color-green input:disabled:checked + .sub-box, .mnrf-radio.color-green input:disabled:checked + .sub-box, .mnrf-radio.color-green input:disabled + .sub-box::before, .mnrf-radio.color-green .sub-box::before, .mnrf-checkbox.color-green input:disabled:checked + .sub-box {
+.mnrf-multi.color-green .sub-tags .sub-tag:hover, .mnrf-radio-slider.color-green input:disabled:checked + .sub-box, .mnrf-check-slider.color-green input:disabled:checked + .sub-box, .mnrf-radio.color-green input:disabled:checked + .sub-box, .mnrf-radio.color-green input:disabled + .sub-box .sub-check, .mnrf-radio.color-green .sub-box .sub-check, .mnrf-checkbox.color-green input:disabled:checked + .sub-box {
   background-color: #D1FAE5;
 }
 
@@ -272,7 +190,7 @@
   border-color: #34D399;
 }
 
-.mnrf-multi.color-green .sub-tags .sub-tag .sub-close, .mnrf-input.color-green .sub-frame .sub-btn, .color-green.mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key.color-green, .mnrf-check-slider.color-green input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-green .sub-box .sub-check, .mnrf-radio.color-green input:disabled:checked + .sub-box::before {
+.mnrf-multi.color-green .sub-tags .sub-tag .sub-close, .mnrf-input.color-green .sub-frame .sub-btn, .color-green.mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key.color-green, .mnrf-check-slider.color-green input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-green .sub-box .sub-check, .mnrf-radio.color-green input:disabled:checked + .sub-box .sub-check {
   background-color: #34D399;
 }
 
@@ -300,7 +218,7 @@
   border-color: #059669;
 }
 
-.mnrf-multi.color-green .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-green .sub-frame .sub-btn:active, .color-green.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key.color-green input:checked:enabled + label, .mnrf-check-slider.color-green input:checked:enabled + .sub-box .sub-check, .mnrf-radio.color-green input:checked:enabled + .sub-box::before {
+.mnrf-multi.color-green .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-green .sub-frame .sub-btn:active, .color-green.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key.color-green input:checked:enabled + label, .mnrf-check-slider.color-green input:checked:enabled + .sub-box .sub-check, .mnrf-radio.color-green input:checked:enabled + .sub-box .sub-check {
   background-color: #059669;
 }
 
@@ -312,7 +230,7 @@
   color: #059669;
 }
 
-.mnrf-multi .sub-tags .sub-tag:hover, .mnrf-radio-slider input:disabled:checked + .sub-box, .mnrf-check-slider input:disabled:checked + .sub-box, .mnrf-radio input:disabled:checked + .sub-box, .mnrf-radio input:disabled + .sub-box::before, .mnrf-radio .sub-box::before, .mnrf-checkbox input:disabled:checked + .sub-box {
+.mnrf-multi .sub-tags .sub-tag:hover, .mnrf-radio-slider input:disabled:checked + .sub-box, .mnrf-check-slider input:disabled:checked + .sub-box, .mnrf-radio input:disabled:checked + .sub-box, .mnrf-radio input:disabled + .sub-box .sub-check, .mnrf-radio .sub-box .sub-check, .mnrf-checkbox input:disabled:checked + .sub-box {
   background-color: #E0F2FE;
 }
 
@@ -348,7 +266,7 @@
   border-color: #38BDF8;
 }
 
-.mnrf-multi .sub-tags .sub-tag .sub-close, .mnrf-input .sub-frame .sub-btn, .mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key, .mnrf-check-slider input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider .sub-box .sub-check, .mnrf-radio input:disabled:checked + .sub-box::before {
+.mnrf-multi .sub-tags .sub-tag .sub-close, .mnrf-input .sub-frame .sub-btn, .mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key, .mnrf-check-slider input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider .sub-box .sub-check, .mnrf-radio input:disabled:checked + .sub-box .sub-check {
   background-color: #38BDF8;
 }
 
@@ -376,7 +294,7 @@
   border-color: #0284C7;
 }
 
-.mnrf-multi .sub-tags .sub-tag:hover .sub-close, .mnrf-input .sub-frame .sub-btn:active, .mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key input:checked:enabled + label, .mnrf-check-slider input:checked:enabled + .sub-box .sub-check, .mnrf-radio input:checked:enabled + .sub-box::before {
+.mnrf-multi .sub-tags .sub-tag:hover .sub-close, .mnrf-input .sub-frame .sub-btn:active, .mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key input:checked:enabled + label, .mnrf-check-slider input:checked:enabled + .sub-box .sub-check, .mnrf-radio input:checked:enabled + .sub-box .sub-check {
   background-color: #0284C7;
 }
 
@@ -391,12 +309,31 @@
 .mnrf-checkbox {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
+.mnrf-checkbox, .mnrf-checkbox * {
+  cursor: pointer;
+}
+.mnrf-checkbox, .mnrf-checkbox *:not(svg) > * > *, .mnrf-checkbox *::after, .mnrf-checkbox *::before {
+  transition: all 0.3s;
+}
 .mnrf-checkbox .sub-box {
+  margin: 2px;
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
   border-radius: 2px;
 }
 .mnrf-checkbox .sub-box .sub-check {
   height: 100%;
   display: block;
+}
+.mnrf-checkbox input {
+  display: none;
 }
 .mnrf-checkbox input:enabled + .sub-box::after {
   content: "";
@@ -419,15 +356,60 @@
 .mnrf-checkbox input:checked + .sub-box::after {
   animation: checkanimate 0.4s;
 }
+.mnrf-checkbox input:disabled ~ * {
+  cursor: no-drop;
+}
+.mnrf-checkbox.opt-sm .sub-box {
+  width: 18px;
+  height: 18px;
+}
+.mnrf-checkbox.opt-md .sub-box {
+  width: 20px;
+  height: 20px;
+}
+.mnrf-checkbox.opt-lg .sub-box {
+  width: 22px;
+  height: 22px;
+}
+.mnrf-checkbox.opt-em .sub-box {
+  width: 1.46em;
+  height: 1.46em;
+}
+.mnrf-checkbox.opt-block {
+  display: block;
+}
+
 .mnrf-radio {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
+.mnrf-radio, .mnrf-radio * {
+  cursor: pointer;
+}
+.mnrf-radio, .mnrf-radio *:not(svg) > * > *, .mnrf-radio *::after, .mnrf-radio *::before {
+  transition: all 0.3s;
+}
 .mnrf-radio .sub-box {
+  margin: 2px;
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-radius: 1000px;
+  width: 20px;
+  height: 20px;
   padding: 3px;
 }
-.mnrf-radio .sub-box::before {
+.mnrf-radio .sub-box .sub-check {
+  display: block;
+  border-radius: 1000px;
   width: 100%;
   height: 100%;
+}
+.mnrf-radio input {
+  display: none;
 }
 .mnrf-radio input:enabled + .sub-box::after {
   content: "";
@@ -450,6 +432,29 @@
 .mnrf-radio input:checked + .sub-box::after {
   animation: checkanimate 0.4s;
 }
+.mnrf-radio input:disabled ~ * {
+  cursor: no-drop;
+}
+.mnrf-radio.opt-sm .sub-box {
+  width: 18px;
+  height: 18px;
+}
+.mnrf-radio.opt-md .sub-box {
+  width: 20px;
+  height: 20px;
+}
+.mnrf-radio.opt-lg .sub-box {
+  width: 22px;
+  height: 22px;
+}
+.mnrf-radio.opt-em .sub-box {
+  width: 1.46em;
+  height: 1.46em;
+}
+.mnrf-radio.opt-block {
+  display: block;
+}
+
 @keyframes checkanimate {
   from {
     opacity: 1;
@@ -477,7 +482,7 @@
   .mnrf-radio input:hover:enabled + .sub-box {
     border-color: #0EA5E9;
   }
-  .mnrf-radio input:hover:enabled + .sub-box::before {
+  .mnrf-radio input:hover:enabled + .sub-box .sub-check {
     background-color: #7DD3FC;
   }
 }
@@ -499,7 +504,7 @@
   .mnrf-radio.color-red input:hover:enabled + .sub-box {
     border-color: #EF4444;
   }
-  .mnrf-radio.color-red input:hover:enabled + .sub-box::before {
+  .mnrf-radio.color-red input:hover:enabled + .sub-box .sub-check {
     background-color: #FCA5A5;
   }
 }
@@ -521,7 +526,7 @@
   .mnrf-radio.color-yellow input:hover:enabled + .sub-box {
     border-color: #EAB308;
   }
-  .mnrf-radio.color-yellow input:hover:enabled + .sub-box::before {
+  .mnrf-radio.color-yellow input:hover:enabled + .sub-box .sub-check {
     background-color: #FDE047;
   }
 }
@@ -543,96 +548,14 @@
   .mnrf-radio.color-green input:hover:enabled + .sub-box {
     border-color: #10B981;
   }
-  .mnrf-radio.color-green input:hover:enabled + .sub-box::before {
+  .mnrf-radio.color-green input:hover:enabled + .sub-box .sub-check {
     background-color: #6EE7B7;
   }
 }
 .mnrf-radio.color-green input:enabled + .sub-box::after {
   background-color: rgba(16, 185, 129, 0.2);
 }
-.mnrf-checkbox .sub-box, .mnrf-radio .sub-box, .mnrf-check-slider .sub-box, .mnrf-radio-slider .sub-box {
-  margin: 2px;
-  background-color: white;
-  border-width: 2px;
-  border-style: solid;
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  box-sizing: border-box;
-}
-
-.mnrf-checkbox.opt-sm .sub-box, .mnrf-radio.opt-sm .sub-box {
-  width: 18px;
-  height: 18px;
-}
-
-.mnrf-checkbox .sub-box, .mnrf-checkbox.opt-md .sub-box, .mnrf-radio .sub-box, .mnrf-radio.opt-md .sub-box {
-  width: 20px;
-  height: 20px;
-}
-
-.mnrf-checkbox.opt-lg .sub-box, .mnrf-radio.opt-lg .sub-box {
-  width: 22px;
-  height: 22px;
-}
-
-.mnrf-checkbox.opt-em .sub-box, .mnrf-radio.opt-em .sub-box {
-  width: 1.46em;
-  height: 1.46em;
-}
-
-.mnrf-check-slider.opt-sm .sub-box, .mnrf-radio-slider.opt-sm .sub-box {
-  width: 31.5px;
-}
-
-.mnrf-check-slider .sub-box, .mnrf-check-slider.opt-md .sub-box, .mnrf-radio-slider .sub-box, .mnrf-radio-slider.opt-md .sub-box {
-  width: 35px;
-}
-
-.mnrf-check-slider.opt-lg .sub-box, .mnrf-radio-slider.opt-lg .sub-box {
-  width: 38.5px;
-}
-
-.mnrf-check-slider.opt-em .sub-box, .mnrf-radio-slider.opt-em .sub-box {
-  width: 2.555em;
-}
-
-.mnrf-radio-key label, .mnrf-radio-key, .mnrf-radio .sub-box, .mnrf-check-slider .sub-box, .mnrf-radio-slider .sub-box, .mnrf-radio .sub-box::before, .mnrf-check-slider .sub-box .sub-check, .mnrf-radio-slider .sub-box .sub-check {
-  border-radius: 1000px;
-}
-
-.mnrf-radio .sub-box::before, .mnrf-check-slider .sub-box .sub-check, .mnrf-radio-slider .sub-box .sub-check {
-  content: "";
-  display: block;
-}
-
-.mnrf-radio-key, .mnrf-radio-key *:not(svg), .mnrf-radio-key *::after, .mnrf-radio-key *::before, .mnrf-checkbox, .mnrf-checkbox *:not(svg) > * > *, .mnrf-checkbox *::after, .mnrf-checkbox *::before, .mnrf-radio, .mnrf-radio *:not(svg) > * > *, .mnrf-radio *::after, .mnrf-radio *::before, .mnrf-check-slider, .mnrf-check-slider *:not(svg), .mnrf-check-slider *::after, .mnrf-check-slider *::before, .mnrf-radio-slider, .mnrf-radio-slider *:not(svg), .mnrf-radio-slider *::after, .mnrf-radio-slider *::before {
-  transition: all 0.3s;
-}
-
-.mnrf-check-slider .sub-box .sub-check, .mnrf-radio-slider .sub-box .sub-check {
-  position: relative;
-  left: 1px;
-  width: 55%;
-}
-
-.mnrf-radio-key, .mnrf-checkbox, .mnrf-radio, .mnrf-check-slider, .mnrf-radio-slider, .mnrf-radio-key *, .mnrf-checkbox *, .mnrf-radio *, .mnrf-check-slider *, .mnrf-radio-slider * {
-  cursor: pointer;
-}
-
-.mnrf-radio-key input:disabled + label, .mnrf-checkbox input:disabled ~ *, .mnrf-radio input:disabled ~ *, .mnrf-check-slider input:disabled ~ *, .mnrf-radio-slider input:disabled ~ * {
-  cursor: no-drop;
-}
-
-.mnrf-radio-key input, .mnrf-checkbox input, .mnrf-radio input, .mnrf-check-slider input, .mnrf-radio-slider input {
-  display: none;
-}
-
-.mnrf-checkbox.opt-block, .mnrf-radio.opt-block, .mnrf-check-slider.opt-block, .mnrf-radio-slider.opt-block {
-  display: block;
-}
-
-.mnrf-multi.color-red .sub-tags .sub-tag:hover, .mnrf-radio-slider.color-red input:disabled:checked + .sub-box, .mnrf-check-slider.color-red input:disabled:checked + .sub-box, .mnrf-checkbox.color-red input:disabled:checked + .sub-box, .mnrf-radio.color-red .sub-box::before, .mnrf-radio.color-red input:disabled + .sub-box::before, .mnrf-radio.color-red input:disabled:checked + .sub-box {
+.mnrf-multi.color-red .sub-tags .sub-tag:hover, .mnrf-radio-slider.color-red input:disabled:checked + .sub-box, .mnrf-check-slider.color-red input:disabled:checked + .sub-box, .mnrf-checkbox.color-red input:disabled:checked + .sub-box, .mnrf-radio.color-red .sub-box .sub-check, .mnrf-radio.color-red input:disabled + .sub-box .sub-check, .mnrf-radio.color-red input:disabled:checked + .sub-box {
   background-color: #FEE2E2;
 }
 
@@ -668,7 +591,7 @@
   border-color: #F87171;
 }
 
-.mnrf-multi.color-red .sub-tags .sub-tag .sub-close, .mnrf-input.color-red .sub-frame .sub-btn, .color-red.mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key.color-red, .mnrf-check-slider.color-red input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-red .sub-box .sub-check, .mnrf-radio.color-red input:disabled:checked + .sub-box::before {
+.mnrf-multi.color-red .sub-tags .sub-tag .sub-close, .mnrf-input.color-red .sub-frame .sub-btn, .color-red.mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key.color-red, .mnrf-check-slider.color-red input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-red .sub-box .sub-check, .mnrf-radio.color-red input:disabled:checked + .sub-box .sub-check {
   background-color: #F87171;
 }
 
@@ -696,7 +619,7 @@
   border-color: #DC2626;
 }
 
-.mnrf-multi.color-red .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-red .sub-frame .sub-btn:active, .color-red.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key.color-red input:checked:enabled + label, .mnrf-check-slider.color-red input:checked:enabled + .sub-box .sub-check, .mnrf-radio.color-red input:checked:enabled + .sub-box::before {
+.mnrf-multi.color-red .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-red .sub-frame .sub-btn:active, .color-red.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key.color-red input:checked:enabled + label, .mnrf-check-slider.color-red input:checked:enabled + .sub-box .sub-check, .mnrf-radio.color-red input:checked:enabled + .sub-box .sub-check {
   background-color: #DC2626;
 }
 
@@ -708,7 +631,7 @@
   color: #DC2626;
 }
 
-.mnrf-multi.color-yellow .sub-tags .sub-tag:hover, .mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-checkbox.color-yellow input:disabled:checked + .sub-box, .mnrf-radio.color-yellow .sub-box::before, .mnrf-radio.color-yellow input:disabled + .sub-box::before, .mnrf-radio.color-yellow input:disabled:checked + .sub-box {
+.mnrf-multi.color-yellow .sub-tags .sub-tag:hover, .mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-checkbox.color-yellow input:disabled:checked + .sub-box, .mnrf-radio.color-yellow .sub-box .sub-check, .mnrf-radio.color-yellow input:disabled + .sub-box .sub-check, .mnrf-radio.color-yellow input:disabled:checked + .sub-box {
   background-color: #FEF9C3;
 }
 
@@ -744,7 +667,7 @@
   border-color: #FACC15;
 }
 
-.mnrf-multi.color-yellow .sub-tags .sub-tag .sub-close, .mnrf-input.color-yellow .sub-frame .sub-btn, .color-yellow.mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key.color-yellow, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-yellow .sub-box .sub-check, .mnrf-radio.color-yellow input:disabled:checked + .sub-box::before {
+.mnrf-multi.color-yellow .sub-tags .sub-tag .sub-close, .mnrf-input.color-yellow .sub-frame .sub-btn, .color-yellow.mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key.color-yellow, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-yellow .sub-box .sub-check, .mnrf-radio.color-yellow input:disabled:checked + .sub-box .sub-check {
   background-color: #FACC15;
 }
 
@@ -772,7 +695,7 @@
   border-color: #CA8A04;
 }
 
-.mnrf-multi.color-yellow .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-yellow .sub-frame .sub-btn:active, .color-yellow.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key.color-yellow input:checked:enabled + label, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box .sub-check, .mnrf-radio.color-yellow input:checked:enabled + .sub-box::before {
+.mnrf-multi.color-yellow .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-yellow .sub-frame .sub-btn:active, .color-yellow.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key.color-yellow input:checked:enabled + label, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box .sub-check, .mnrf-radio.color-yellow input:checked:enabled + .sub-box .sub-check {
   background-color: #CA8A04;
 }
 
@@ -784,7 +707,7 @@
   color: #CA8A04;
 }
 
-.mnrf-multi.color-green .sub-tags .sub-tag:hover, .mnrf-radio-slider.color-green input:disabled:checked + .sub-box, .mnrf-check-slider.color-green input:disabled:checked + .sub-box, .mnrf-checkbox.color-green input:disabled:checked + .sub-box, .mnrf-radio.color-green .sub-box::before, .mnrf-radio.color-green input:disabled + .sub-box::before, .mnrf-radio.color-green input:disabled:checked + .sub-box {
+.mnrf-multi.color-green .sub-tags .sub-tag:hover, .mnrf-radio-slider.color-green input:disabled:checked + .sub-box, .mnrf-check-slider.color-green input:disabled:checked + .sub-box, .mnrf-checkbox.color-green input:disabled:checked + .sub-box, .mnrf-radio.color-green .sub-box .sub-check, .mnrf-radio.color-green input:disabled + .sub-box .sub-check, .mnrf-radio.color-green input:disabled:checked + .sub-box {
   background-color: #D1FAE5;
 }
 
@@ -820,7 +743,7 @@
   border-color: #34D399;
 }
 
-.mnrf-multi.color-green .sub-tags .sub-tag .sub-close, .mnrf-input.color-green .sub-frame .sub-btn, .color-green.mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key.color-green, .mnrf-check-slider.color-green input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-green .sub-box .sub-check, .mnrf-radio.color-green input:disabled:checked + .sub-box::before {
+.mnrf-multi.color-green .sub-tags .sub-tag .sub-close, .mnrf-input.color-green .sub-frame .sub-btn, .color-green.mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key.color-green, .mnrf-check-slider.color-green input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-green .sub-box .sub-check, .mnrf-radio.color-green input:disabled:checked + .sub-box .sub-check {
   background-color: #34D399;
 }
 
@@ -848,7 +771,7 @@
   border-color: #059669;
 }
 
-.mnrf-multi.color-green .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-green .sub-frame .sub-btn:active, .color-green.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key.color-green input:checked:enabled + label, .mnrf-check-slider.color-green input:checked:enabled + .sub-box .sub-check, .mnrf-radio.color-green input:checked:enabled + .sub-box::before {
+.mnrf-multi.color-green .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-green .sub-frame .sub-btn:active, .color-green.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key.color-green input:checked:enabled + label, .mnrf-check-slider.color-green input:checked:enabled + .sub-box .sub-check, .mnrf-radio.color-green input:checked:enabled + .sub-box .sub-check {
   background-color: #059669;
 }
 
@@ -860,7 +783,7 @@
   color: #059669;
 }
 
-.mnrf-multi .sub-tags .sub-tag:hover, .mnrf-radio-slider input:disabled:checked + .sub-box, .mnrf-check-slider input:disabled:checked + .sub-box, .mnrf-checkbox input:disabled:checked + .sub-box, .mnrf-radio .sub-box::before, .mnrf-radio input:disabled + .sub-box::before, .mnrf-radio input:disabled:checked + .sub-box {
+.mnrf-multi .sub-tags .sub-tag:hover, .mnrf-radio-slider input:disabled:checked + .sub-box, .mnrf-check-slider input:disabled:checked + .sub-box, .mnrf-checkbox input:disabled:checked + .sub-box, .mnrf-radio .sub-box .sub-check, .mnrf-radio input:disabled + .sub-box .sub-check, .mnrf-radio input:disabled:checked + .sub-box {
   background-color: #E0F2FE;
 }
 
@@ -896,7 +819,7 @@
   border-color: #38BDF8;
 }
 
-.mnrf-multi .sub-tags .sub-tag .sub-close, .mnrf-input .sub-frame .sub-btn, .mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key, .mnrf-check-slider input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider .sub-box .sub-check, .mnrf-radio input:disabled:checked + .sub-box::before {
+.mnrf-multi .sub-tags .sub-tag .sub-close, .mnrf-input .sub-frame .sub-btn, .mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key, .mnrf-check-slider input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider .sub-box .sub-check, .mnrf-radio input:disabled:checked + .sub-box .sub-check {
   background-color: #38BDF8;
 }
 
@@ -924,7 +847,7 @@
   border-color: #0284C7;
 }
 
-.mnrf-multi .sub-tags .sub-tag:hover .sub-close, .mnrf-input .sub-frame .sub-btn:active, .mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key input:checked:enabled + label, .mnrf-check-slider input:checked:enabled + .sub-box .sub-check, .mnrf-radio input:checked:enabled + .sub-box::before {
+.mnrf-multi .sub-tags .sub-tag:hover .sub-close, .mnrf-input .sub-frame .sub-btn:active, .mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key input:checked:enabled + label, .mnrf-check-slider input:checked:enabled + .sub-box .sub-check, .mnrf-radio input:checked:enabled + .sub-box .sub-check {
   background-color: #0284C7;
 }
 
@@ -939,10 +862,31 @@
 .mnrf-check-slider {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
+.mnrf-check-slider, .mnrf-check-slider * {
+  cursor: pointer;
+}
+.mnrf-check-slider, .mnrf-check-slider *:not(svg), .mnrf-check-slider *::after, .mnrf-check-slider *::before {
+  transition: all 0.3s;
+}
 .mnrf-check-slider .sub-box {
+  margin: 2px;
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-radius: 1000px;
+  width: 35px;
   padding: 1px;
 }
 .mnrf-check-slider .sub-box .sub-check {
+  display: block;
+  border-radius: 1000px;
+  position: relative;
+  left: 1px;
+  width: 55%;
   padding-top: 55%;
 }
 .mnrf-check-slider .sub-box .sub-check::before {
@@ -956,6 +900,9 @@
   height: 0%;
   z-index: 1;
   border-radius: 1000px;
+}
+.mnrf-check-slider input {
+  display: none;
 }
 @media (pointer: fine) {
   .mnrf-check-slider input:hover:enabled + .sub-box .sub-check::before {
@@ -972,13 +919,53 @@
 .mnrf-check-slider input:disabled + .sub-box {
   background-color: white;
 }
+.mnrf-check-slider input:disabled ~ * {
+  cursor: no-drop;
+}
+.mnrf-check-slider.opt-sm .sub-box {
+  width: 31.5px;
+}
+.mnrf-check-slider.opt-md .sub-box {
+  width: 35px;
+}
+.mnrf-check-slider.opt-lg .sub-box {
+  width: 38.5px;
+}
+.mnrf-check-slider.opt-em .sub-box {
+  width: 2.555em;
+}
+.mnrf-check-slider.opt-block {
+  display: block;
+}
+
 .mnrf-radio-slider {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
+.mnrf-radio-slider, .mnrf-radio-slider * {
+  cursor: pointer;
+}
+.mnrf-radio-slider, .mnrf-radio-slider *:not(svg), .mnrf-radio-slider *::after, .mnrf-radio-slider *::before {
+  transition: all 0.3s;
+}
 .mnrf-radio-slider .sub-box {
+  margin: 2px;
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-radius: 1000px;
+  width: 35px;
   padding: 1px;
 }
 .mnrf-radio-slider .sub-box .sub-check {
+  display: block;
+  border-radius: 1000px;
+  position: relative;
+  left: 1px;
+  width: 55%;
   border-width: 4px;
   border-style: solid;
   box-sizing: border-box;
@@ -996,6 +983,9 @@
   z-index: 1;
   border-radius: 1000px;
 }
+.mnrf-radio-slider input {
+  display: none;
+}
 @media (pointer: fine) {
   .mnrf-radio-slider input:hover:enabled + .sub-box .sub-check::before {
     width: 420%;
@@ -1011,6 +1001,25 @@
 .mnrf-radio-slider input:disabled + .sub-box {
   background-color: white;
 }
+.mnrf-radio-slider input:disabled ~ * {
+  cursor: no-drop;
+}
+.mnrf-radio-slider.opt-sm .sub-box {
+  width: 31.5px;
+}
+.mnrf-radio-slider.opt-md .sub-box {
+  width: 35px;
+}
+.mnrf-radio-slider.opt-lg .sub-box {
+  width: 38.5px;
+}
+.mnrf-radio-slider.opt-em .sub-box {
+  width: 2.555em;
+}
+.mnrf-radio-slider.opt-block {
+  display: block;
+}
+
 @keyframes sliderCheckAnimate {
   from {
     opacity: 1;
@@ -1131,89 +1140,7 @@
 .mnrf-radio-slider.color-green input:enabled + .sub-box .sub-check::before {
   background-color: rgba(16, 185, 129, 0.3);
 }
-.mnrf-checkbox .sub-box, .mnrf-radio .sub-box, .mnrf-check-slider .sub-box, .mnrf-radio-slider .sub-box {
-  margin: 2px;
-  background-color: white;
-  border-width: 2px;
-  border-style: solid;
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  box-sizing: border-box;
-}
-
-.mnrf-checkbox.opt-sm .sub-box, .mnrf-radio.opt-sm .sub-box {
-  width: 18px;
-  height: 18px;
-}
-
-.mnrf-checkbox .sub-box, .mnrf-checkbox.opt-md .sub-box, .mnrf-radio .sub-box, .mnrf-radio.opt-md .sub-box {
-  width: 20px;
-  height: 20px;
-}
-
-.mnrf-checkbox.opt-lg .sub-box, .mnrf-radio.opt-lg .sub-box {
-  width: 22px;
-  height: 22px;
-}
-
-.mnrf-checkbox.opt-em .sub-box, .mnrf-radio.opt-em .sub-box {
-  width: 1.46em;
-  height: 1.46em;
-}
-
-.mnrf-check-slider.opt-sm .sub-box, .mnrf-radio-slider.opt-sm .sub-box {
-  width: 31.5px;
-}
-
-.mnrf-check-slider .sub-box, .mnrf-check-slider.opt-md .sub-box, .mnrf-radio-slider .sub-box, .mnrf-radio-slider.opt-md .sub-box {
-  width: 35px;
-}
-
-.mnrf-check-slider.opt-lg .sub-box, .mnrf-radio-slider.opt-lg .sub-box {
-  width: 38.5px;
-}
-
-.mnrf-check-slider.opt-em .sub-box, .mnrf-radio-slider.opt-em .sub-box {
-  width: 2.555em;
-}
-
-.mnrf-radio .sub-box, .mnrf-check-slider .sub-box, .mnrf-radio-slider .sub-box, .mnrf-radio-key, .mnrf-radio-key label, .mnrf-radio .sub-box::before, .mnrf-check-slider .sub-box .sub-check, .mnrf-radio-slider .sub-box .sub-check {
-  border-radius: 1000px;
-}
-
-.mnrf-radio .sub-box::before, .mnrf-check-slider .sub-box .sub-check, .mnrf-radio-slider .sub-box .sub-check {
-  content: "";
-  display: block;
-}
-
-.mnrf-checkbox, .mnrf-checkbox *:not(svg) > * > *, .mnrf-checkbox *::after, .mnrf-checkbox *::before, .mnrf-radio, .mnrf-radio *:not(svg) > * > *, .mnrf-radio *::after, .mnrf-radio *::before, .mnrf-check-slider, .mnrf-check-slider *:not(svg), .mnrf-check-slider *::after, .mnrf-check-slider *::before, .mnrf-radio-slider, .mnrf-radio-slider *:not(svg), .mnrf-radio-slider *::after, .mnrf-radio-slider *::before, .mnrf-radio-key, .mnrf-radio-key *:not(svg), .mnrf-radio-key *::after, .mnrf-radio-key *::before {
-  transition: all 0.3s;
-}
-
-.mnrf-check-slider .sub-box .sub-check, .mnrf-radio-slider .sub-box .sub-check {
-  position: relative;
-  left: 1px;
-  width: 55%;
-}
-
-.mnrf-checkbox, .mnrf-radio, .mnrf-check-slider, .mnrf-radio-slider, .mnrf-radio-key, .mnrf-checkbox *, .mnrf-radio *, .mnrf-check-slider *, .mnrf-radio-slider *, .mnrf-radio-key * {
-  cursor: pointer;
-}
-
-.mnrf-checkbox input:disabled ~ *, .mnrf-radio input:disabled ~ *, .mnrf-check-slider input:disabled ~ *, .mnrf-radio-slider input:disabled ~ *, .mnrf-radio-key input:disabled + label {
-  cursor: no-drop;
-}
-
-.mnrf-checkbox input, .mnrf-radio input, .mnrf-check-slider input, .mnrf-radio-slider input, .mnrf-radio-key input {
-  display: none;
-}
-
-.mnrf-checkbox.opt-block, .mnrf-radio.opt-block, .mnrf-check-slider.opt-block, .mnrf-radio-slider.opt-block {
-  display: block;
-}
-
-.mnrf-multi.color-red .sub-tags .sub-tag:hover, .mnrf-checkbox.color-red input:disabled:checked + .sub-box, .mnrf-radio.color-red .sub-box::before, .mnrf-radio.color-red input:disabled + .sub-box::before, .mnrf-radio.color-red input:disabled:checked + .sub-box, .mnrf-check-slider.color-red input:disabled:checked + .sub-box, .mnrf-radio-slider.color-red input:disabled:checked + .sub-box {
+.mnrf-multi.color-red .sub-tags .sub-tag:hover, .mnrf-checkbox.color-red input:disabled:checked + .sub-box, .mnrf-radio.color-red .sub-box .sub-check, .mnrf-radio.color-red input:disabled + .sub-box .sub-check, .mnrf-radio.color-red input:disabled:checked + .sub-box, .mnrf-check-slider.color-red input:disabled:checked + .sub-box, .mnrf-radio-slider.color-red input:disabled:checked + .sub-box {
   background-color: #FEE2E2;
 }
 
@@ -1249,7 +1176,7 @@
   border-color: #F87171;
 }
 
-.mnrf-multi.color-red .sub-tags .sub-tag .sub-close, .mnrf-input.color-red .sub-frame .sub-btn, .color-red.mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key.color-red, .mnrf-radio.color-red input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-red .sub-box .sub-check, .mnrf-check-slider.color-red input:disabled:checked + .sub-box .sub-check {
+.mnrf-multi.color-red .sub-tags .sub-tag .sub-close, .mnrf-input.color-red .sub-frame .sub-btn, .color-red.mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key.color-red, .mnrf-radio.color-red input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-red .sub-box .sub-check, .mnrf-check-slider.color-red input:disabled:checked + .sub-box .sub-check {
   background-color: #F87171;
 }
 
@@ -1277,7 +1204,7 @@
   border-color: #DC2626;
 }
 
-.mnrf-multi.color-red .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-red .sub-frame .sub-btn:active, .color-red.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key.color-red input:checked:enabled + label, .mnrf-radio.color-red input:checked:enabled + .sub-box::before, .mnrf-check-slider.color-red input:checked:enabled + .sub-box .sub-check {
+.mnrf-multi.color-red .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-red .sub-frame .sub-btn:active, .color-red.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key.color-red input:checked:enabled + label, .mnrf-radio.color-red input:checked:enabled + .sub-box .sub-check, .mnrf-check-slider.color-red input:checked:enabled + .sub-box .sub-check {
   background-color: #DC2626;
 }
 
@@ -1289,7 +1216,7 @@
   color: #DC2626;
 }
 
-.mnrf-multi.color-yellow .sub-tags .sub-tag:hover, .mnrf-checkbox.color-yellow input:disabled:checked + .sub-box, .mnrf-radio.color-yellow .sub-box::before, .mnrf-radio.color-yellow input:disabled + .sub-box::before, .mnrf-radio.color-yellow input:disabled:checked + .sub-box, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box {
+.mnrf-multi.color-yellow .sub-tags .sub-tag:hover, .mnrf-checkbox.color-yellow input:disabled:checked + .sub-box, .mnrf-radio.color-yellow .sub-box .sub-check, .mnrf-radio.color-yellow input:disabled + .sub-box .sub-check, .mnrf-radio.color-yellow input:disabled:checked + .sub-box, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box {
   background-color: #FEF9C3;
 }
 
@@ -1325,7 +1252,7 @@
   border-color: #FACC15;
 }
 
-.mnrf-multi.color-yellow .sub-tags .sub-tag .sub-close, .mnrf-input.color-yellow .sub-frame .sub-btn, .color-yellow.mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key.color-yellow, .mnrf-radio.color-yellow input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-yellow .sub-box .sub-check, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box .sub-check {
+.mnrf-multi.color-yellow .sub-tags .sub-tag .sub-close, .mnrf-input.color-yellow .sub-frame .sub-btn, .color-yellow.mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key.color-yellow, .mnrf-radio.color-yellow input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-yellow .sub-box .sub-check, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box .sub-check {
   background-color: #FACC15;
 }
 
@@ -1353,7 +1280,7 @@
   border-color: #CA8A04;
 }
 
-.mnrf-multi.color-yellow .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-yellow .sub-frame .sub-btn:active, .color-yellow.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key.color-yellow input:checked:enabled + label, .mnrf-radio.color-yellow input:checked:enabled + .sub-box::before, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box .sub-check {
+.mnrf-multi.color-yellow .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-yellow .sub-frame .sub-btn:active, .color-yellow.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key.color-yellow input:checked:enabled + label, .mnrf-radio.color-yellow input:checked:enabled + .sub-box .sub-check, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box .sub-check {
   background-color: #CA8A04;
 }
 
@@ -1365,7 +1292,7 @@
   color: #CA8A04;
 }
 
-.mnrf-multi.color-green .sub-tags .sub-tag:hover, .mnrf-checkbox.color-green input:disabled:checked + .sub-box, .mnrf-radio.color-green .sub-box::before, .mnrf-radio.color-green input:disabled + .sub-box::before, .mnrf-radio.color-green input:disabled:checked + .sub-box, .mnrf-check-slider.color-green input:disabled:checked + .sub-box, .mnrf-radio-slider.color-green input:disabled:checked + .sub-box {
+.mnrf-multi.color-green .sub-tags .sub-tag:hover, .mnrf-checkbox.color-green input:disabled:checked + .sub-box, .mnrf-radio.color-green .sub-box .sub-check, .mnrf-radio.color-green input:disabled + .sub-box .sub-check, .mnrf-radio.color-green input:disabled:checked + .sub-box, .mnrf-check-slider.color-green input:disabled:checked + .sub-box, .mnrf-radio-slider.color-green input:disabled:checked + .sub-box {
   background-color: #D1FAE5;
 }
 
@@ -1401,7 +1328,7 @@
   border-color: #34D399;
 }
 
-.mnrf-multi.color-green .sub-tags .sub-tag .sub-close, .mnrf-input.color-green .sub-frame .sub-btn, .color-green.mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key.color-green, .mnrf-radio.color-green input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-green .sub-box .sub-check, .mnrf-check-slider.color-green input:disabled:checked + .sub-box .sub-check {
+.mnrf-multi.color-green .sub-tags .sub-tag .sub-close, .mnrf-input.color-green .sub-frame .sub-btn, .color-green.mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key.color-green, .mnrf-radio.color-green input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-green .sub-box .sub-check, .mnrf-check-slider.color-green input:disabled:checked + .sub-box .sub-check {
   background-color: #34D399;
 }
 
@@ -1429,7 +1356,7 @@
   border-color: #059669;
 }
 
-.mnrf-multi.color-green .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-green .sub-frame .sub-btn:active, .color-green.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key.color-green input:checked:enabled + label, .mnrf-radio.color-green input:checked:enabled + .sub-box::before, .mnrf-check-slider.color-green input:checked:enabled + .sub-box .sub-check {
+.mnrf-multi.color-green .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-green .sub-frame .sub-btn:active, .color-green.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key.color-green input:checked:enabled + label, .mnrf-radio.color-green input:checked:enabled + .sub-box .sub-check, .mnrf-check-slider.color-green input:checked:enabled + .sub-box .sub-check {
   background-color: #059669;
 }
 
@@ -1441,7 +1368,7 @@
   color: #059669;
 }
 
-.mnrf-multi .sub-tags .sub-tag:hover, .mnrf-checkbox input:disabled:checked + .sub-box, .mnrf-radio .sub-box::before, .mnrf-radio input:disabled + .sub-box::before, .mnrf-radio input:disabled:checked + .sub-box, .mnrf-check-slider input:disabled:checked + .sub-box, .mnrf-radio-slider input:disabled:checked + .sub-box {
+.mnrf-multi .sub-tags .sub-tag:hover, .mnrf-checkbox input:disabled:checked + .sub-box, .mnrf-radio .sub-box .sub-check, .mnrf-radio input:disabled + .sub-box .sub-check, .mnrf-radio input:disabled:checked + .sub-box, .mnrf-check-slider input:disabled:checked + .sub-box, .mnrf-radio-slider input:disabled:checked + .sub-box {
   background-color: #E0F2FE;
 }
 
@@ -1477,7 +1404,7 @@
   border-color: #38BDF8;
 }
 
-.mnrf-multi .sub-tags .sub-tag .sub-close, .mnrf-input .sub-frame .sub-btn, .mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key, .mnrf-radio input:disabled:checked + .sub-box::before, .mnrf-check-slider .sub-box .sub-check, .mnrf-check-slider input:disabled:checked + .sub-box .sub-check {
+.mnrf-multi .sub-tags .sub-tag .sub-close, .mnrf-input .sub-frame .sub-btn, .mnrf-multi .sub-frame .sub-btn, .mnrf-radio-key, .mnrf-radio input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider .sub-box .sub-check, .mnrf-check-slider input:disabled:checked + .sub-box .sub-check {
   background-color: #38BDF8;
 }
 
@@ -1505,7 +1432,7 @@
   border-color: #0284C7;
 }
 
-.mnrf-multi .sub-tags .sub-tag:hover .sub-close, .mnrf-input .sub-frame .sub-btn:active, .mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key input:checked:enabled + label, .mnrf-radio input:checked:enabled + .sub-box::before, .mnrf-check-slider input:checked:enabled + .sub-box .sub-check {
+.mnrf-multi .sub-tags .sub-tag:hover .sub-close, .mnrf-input .sub-frame .sub-btn:active, .mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio-key input:checked:enabled + label, .mnrf-radio input:checked:enabled + .sub-box .sub-check, .mnrf-check-slider input:checked:enabled + .sub-box .sub-check {
   background-color: #0284C7;
 }
 
@@ -1519,6 +1446,7 @@
 
 .mnrf-radio-key {
   margin: 0.1em;
+  border-radius: 1000px;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   display: inline-block;
   position: relative;
@@ -1530,6 +1458,12 @@
   justify-content: center;
   align-items: center;
 }
+.mnrf-radio-key, .mnrf-radio-key * {
+  cursor: pointer;
+}
+.mnrf-radio-key, .mnrf-radio-key *:not(svg), .mnrf-radio-key *::after, .mnrf-radio-key *::before {
+  transition: all 0.3s;
+}
 .mnrf-radio-key label {
   display: inline-flex;
   align-items: center;
@@ -1538,6 +1472,13 @@
   margin: 0 0.3em 0 0;
   height: 100%;
   box-sizing: border-box;
+  border-radius: 1000px;
+}
+.mnrf-radio-key input {
+  display: none;
+}
+.mnrf-radio-key input:disabled + label {
+  cursor: no-drop;
 }
 .mnrf-radio-key.opt-sm {
   height: 2em;
@@ -1567,7 +1508,7 @@
   height: 100%;
 }
 
-.mnrf-multi.color-red .sub-tags .sub-tag:hover, .mnrf-checkbox.color-red input:disabled:checked + .sub-box, .mnrf-radio.color-red .sub-box::before, .mnrf-radio.color-red input:disabled + .sub-box::before, .mnrf-radio.color-red input:disabled:checked + .sub-box, .mnrf-check-slider.color-red input:disabled:checked + .sub-box, .mnrf-radio-slider.color-red input:disabled:checked + .sub-box {
+.mnrf-multi.color-red .sub-tags .sub-tag:hover, .mnrf-checkbox.color-red input:disabled:checked + .sub-box, .mnrf-radio.color-red .sub-box .sub-check, .mnrf-radio.color-red input:disabled + .sub-box .sub-check, .mnrf-radio.color-red input:disabled:checked + .sub-box, .mnrf-check-slider.color-red input:disabled:checked + .sub-box, .mnrf-radio-slider.color-red input:disabled:checked + .sub-box {
   background-color: #FEE2E2;
 }
 
@@ -1603,7 +1544,7 @@
   border-color: #F87171;
 }
 
-.mnrf-multi.color-red .sub-tags .sub-tag .sub-close, .mnrf-input.color-red .sub-frame .sub-btn, .color-red.mnrf-multi .sub-frame .sub-btn, .mnrf-radio.color-red input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-red .sub-box .sub-check, .mnrf-check-slider.color-red input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key.color-red {
+.mnrf-multi.color-red .sub-tags .sub-tag .sub-close, .mnrf-input.color-red .sub-frame .sub-btn, .color-red.mnrf-multi .sub-frame .sub-btn, .mnrf-radio.color-red input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-red .sub-box .sub-check, .mnrf-check-slider.color-red input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key.color-red {
   background-color: #F87171;
 }
 
@@ -1631,7 +1572,7 @@
   border-color: #DC2626;
 }
 
-.mnrf-multi.color-red .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-red .sub-frame .sub-btn:active, .color-red.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio.color-red input:checked:enabled + .sub-box::before, .mnrf-check-slider.color-red input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key.color-red input:checked:enabled + label {
+.mnrf-multi.color-red .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-red .sub-frame .sub-btn:active, .color-red.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio.color-red input:checked:enabled + .sub-box .sub-check, .mnrf-check-slider.color-red input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key.color-red input:checked:enabled + label {
   background-color: #DC2626;
 }
 
@@ -1643,7 +1584,7 @@
   color: #DC2626;
 }
 
-.mnrf-multi.color-yellow .sub-tags .sub-tag:hover, .mnrf-checkbox.color-yellow input:disabled:checked + .sub-box, .mnrf-radio.color-yellow .sub-box::before, .mnrf-radio.color-yellow input:disabled + .sub-box::before, .mnrf-radio.color-yellow input:disabled:checked + .sub-box, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box {
+.mnrf-multi.color-yellow .sub-tags .sub-tag:hover, .mnrf-checkbox.color-yellow input:disabled:checked + .sub-box, .mnrf-radio.color-yellow .sub-box .sub-check, .mnrf-radio.color-yellow input:disabled + .sub-box .sub-check, .mnrf-radio.color-yellow input:disabled:checked + .sub-box, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box {
   background-color: #FEF9C3;
 }
 
@@ -1679,7 +1620,7 @@
   border-color: #FACC15;
 }
 
-.mnrf-multi.color-yellow .sub-tags .sub-tag .sub-close, .mnrf-input.color-yellow .sub-frame .sub-btn, .color-yellow.mnrf-multi .sub-frame .sub-btn, .mnrf-radio.color-yellow input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-yellow .sub-box .sub-check, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key.color-yellow {
+.mnrf-multi.color-yellow .sub-tags .sub-tag .sub-close, .mnrf-input.color-yellow .sub-frame .sub-btn, .color-yellow.mnrf-multi .sub-frame .sub-btn, .mnrf-radio.color-yellow input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-yellow .sub-box .sub-check, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key.color-yellow {
   background-color: #FACC15;
 }
 
@@ -1707,7 +1648,7 @@
   border-color: #CA8A04;
 }
 
-.mnrf-multi.color-yellow .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-yellow .sub-frame .sub-btn:active, .color-yellow.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio.color-yellow input:checked:enabled + .sub-box::before, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key.color-yellow input:checked:enabled + label {
+.mnrf-multi.color-yellow .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-yellow .sub-frame .sub-btn:active, .color-yellow.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio.color-yellow input:checked:enabled + .sub-box .sub-check, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key.color-yellow input:checked:enabled + label {
   background-color: #CA8A04;
 }
 
@@ -1719,7 +1660,7 @@
   color: #CA8A04;
 }
 
-.mnrf-multi.color-green .sub-tags .sub-tag:hover, .mnrf-checkbox.color-green input:disabled:checked + .sub-box, .mnrf-radio.color-green .sub-box::before, .mnrf-radio.color-green input:disabled + .sub-box::before, .mnrf-radio.color-green input:disabled:checked + .sub-box, .mnrf-check-slider.color-green input:disabled:checked + .sub-box, .mnrf-radio-slider.color-green input:disabled:checked + .sub-box {
+.mnrf-multi.color-green .sub-tags .sub-tag:hover, .mnrf-checkbox.color-green input:disabled:checked + .sub-box, .mnrf-radio.color-green .sub-box .sub-check, .mnrf-radio.color-green input:disabled + .sub-box .sub-check, .mnrf-radio.color-green input:disabled:checked + .sub-box, .mnrf-check-slider.color-green input:disabled:checked + .sub-box, .mnrf-radio-slider.color-green input:disabled:checked + .sub-box {
   background-color: #D1FAE5;
 }
 
@@ -1755,7 +1696,7 @@
   border-color: #34D399;
 }
 
-.mnrf-multi.color-green .sub-tags .sub-tag .sub-close, .mnrf-input.color-green .sub-frame .sub-btn, .color-green.mnrf-multi .sub-frame .sub-btn, .mnrf-radio.color-green input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-green .sub-box .sub-check, .mnrf-check-slider.color-green input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key.color-green {
+.mnrf-multi.color-green .sub-tags .sub-tag .sub-close, .mnrf-input.color-green .sub-frame .sub-btn, .color-green.mnrf-multi .sub-frame .sub-btn, .mnrf-radio.color-green input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-green .sub-box .sub-check, .mnrf-check-slider.color-green input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key.color-green {
   background-color: #34D399;
 }
 
@@ -1783,7 +1724,7 @@
   border-color: #059669;
 }
 
-.mnrf-multi.color-green .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-green .sub-frame .sub-btn:active, .color-green.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio.color-green input:checked:enabled + .sub-box::before, .mnrf-check-slider.color-green input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key.color-green input:checked:enabled + label {
+.mnrf-multi.color-green .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-green .sub-frame .sub-btn:active, .color-green.mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio.color-green input:checked:enabled + .sub-box .sub-check, .mnrf-check-slider.color-green input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key.color-green input:checked:enabled + label {
   background-color: #059669;
 }
 
@@ -1795,7 +1736,7 @@
   color: #059669;
 }
 
-.mnrf-multi .sub-tags .sub-tag:hover, .mnrf-checkbox input:disabled:checked + .sub-box, .mnrf-radio .sub-box::before, .mnrf-radio input:disabled + .sub-box::before, .mnrf-radio input:disabled:checked + .sub-box, .mnrf-check-slider input:disabled:checked + .sub-box, .mnrf-radio-slider input:disabled:checked + .sub-box {
+.mnrf-multi .sub-tags .sub-tag:hover, .mnrf-checkbox input:disabled:checked + .sub-box, .mnrf-radio .sub-box .sub-check, .mnrf-radio input:disabled + .sub-box .sub-check, .mnrf-radio input:disabled:checked + .sub-box, .mnrf-check-slider input:disabled:checked + .sub-box, .mnrf-radio-slider input:disabled:checked + .sub-box {
   background-color: #E0F2FE;
 }
 
@@ -1831,7 +1772,7 @@
   border-color: #38BDF8;
 }
 
-.mnrf-multi .sub-tags .sub-tag .sub-close, .mnrf-input .sub-frame .sub-btn, .mnrf-multi .sub-frame .sub-btn, .mnrf-radio input:disabled:checked + .sub-box::before, .mnrf-check-slider .sub-box .sub-check, .mnrf-check-slider input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key {
+.mnrf-multi .sub-tags .sub-tag .sub-close, .mnrf-input .sub-frame .sub-btn, .mnrf-multi .sub-frame .sub-btn, .mnrf-radio input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider .sub-box .sub-check, .mnrf-check-slider input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key {
   background-color: #38BDF8;
 }
 
@@ -1859,7 +1800,7 @@
   border-color: #0284C7;
 }
 
-.mnrf-multi .sub-tags .sub-tag:hover .sub-close, .mnrf-input .sub-frame .sub-btn:active, .mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio input:checked:enabled + .sub-box::before, .mnrf-check-slider input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key input:checked:enabled + label {
+.mnrf-multi .sub-tags .sub-tag:hover .sub-close, .mnrf-input .sub-frame .sub-btn:active, .mnrf-multi .sub-frame .sub-btn:active, .mnrf-radio input:checked:enabled + .sub-box .sub-check, .mnrf-check-slider input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key input:checked:enabled + label {
   background-color: #0284C7;
 }
 
@@ -2232,7 +2173,7 @@
 .mnrf-input.color-green.state-focus:not(.state-disable) .sub-frame, .color-green.state-focus.mnrf-multi:not(.state-disable) .sub-frame {
   box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.4);
 }
-.mnrf-checkbox.color-red input:disabled:checked + .sub-box, .mnrf-radio.color-red .sub-box::before, .mnrf-radio.color-red input:disabled + .sub-box::before, .mnrf-radio.color-red input:disabled:checked + .sub-box, .mnrf-check-slider.color-red input:disabled:checked + .sub-box, .mnrf-radio-slider.color-red input:disabled:checked + .sub-box, .mnrf-multi.color-red .sub-tags .sub-tag:hover {
+.mnrf-checkbox.color-red input:disabled:checked + .sub-box, .mnrf-radio.color-red .sub-box .sub-check, .mnrf-radio.color-red input:disabled + .sub-box .sub-check, .mnrf-radio.color-red input:disabled:checked + .sub-box, .mnrf-check-slider.color-red input:disabled:checked + .sub-box, .mnrf-radio-slider.color-red input:disabled:checked + .sub-box, .mnrf-multi.color-red .sub-tags .sub-tag:hover {
   background-color: #FEE2E2;
 }
 
@@ -2268,7 +2209,7 @@
   border-color: #F87171;
 }
 
-.mnrf-radio.color-red input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-red .sub-box .sub-check, .mnrf-check-slider.color-red input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key.color-red, .color-red.mnrf-multi .sub-frame .sub-btn, .mnrf-multi.color-red .sub-tags .sub-tag .sub-close, .mnrf-input.color-red .sub-frame .sub-btn {
+.mnrf-radio.color-red input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-red .sub-box .sub-check, .mnrf-check-slider.color-red input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key.color-red, .color-red.mnrf-multi .sub-frame .sub-btn, .mnrf-multi.color-red .sub-tags .sub-tag .sub-close, .mnrf-input.color-red .sub-frame .sub-btn {
   background-color: #F87171;
 }
 
@@ -2296,7 +2237,7 @@
   border-color: #DC2626;
 }
 
-.mnrf-radio.color-red input:checked:enabled + .sub-box::before, .mnrf-check-slider.color-red input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key.color-red input:checked:enabled + label, .color-red.mnrf-multi .sub-frame .sub-btn:active, .mnrf-multi.color-red .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-red .sub-frame .sub-btn:active {
+.mnrf-radio.color-red input:checked:enabled + .sub-box .sub-check, .mnrf-check-slider.color-red input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key.color-red input:checked:enabled + label, .color-red.mnrf-multi .sub-frame .sub-btn:active, .mnrf-multi.color-red .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-red .sub-frame .sub-btn:active {
   background-color: #DC2626;
 }
 
@@ -2308,7 +2249,7 @@
   color: #DC2626;
 }
 
-.mnrf-checkbox.color-yellow input:disabled:checked + .sub-box, .mnrf-radio.color-yellow .sub-box::before, .mnrf-radio.color-yellow input:disabled + .sub-box::before, .mnrf-radio.color-yellow input:disabled:checked + .sub-box, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-multi.color-yellow .sub-tags .sub-tag:hover {
+.mnrf-checkbox.color-yellow input:disabled:checked + .sub-box, .mnrf-radio.color-yellow .sub-box .sub-check, .mnrf-radio.color-yellow input:disabled + .sub-box .sub-check, .mnrf-radio.color-yellow input:disabled:checked + .sub-box, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-multi.color-yellow .sub-tags .sub-tag:hover {
   background-color: #FEF9C3;
 }
 
@@ -2344,7 +2285,7 @@
   border-color: #FACC15;
 }
 
-.mnrf-radio.color-yellow input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-yellow .sub-box .sub-check, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key.color-yellow, .color-yellow.mnrf-multi .sub-frame .sub-btn, .mnrf-multi.color-yellow .sub-tags .sub-tag .sub-close, .mnrf-input.color-yellow .sub-frame .sub-btn {
+.mnrf-radio.color-yellow input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-yellow .sub-box .sub-check, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key.color-yellow, .color-yellow.mnrf-multi .sub-frame .sub-btn, .mnrf-multi.color-yellow .sub-tags .sub-tag .sub-close, .mnrf-input.color-yellow .sub-frame .sub-btn {
   background-color: #FACC15;
 }
 
@@ -2372,7 +2313,7 @@
   border-color: #CA8A04;
 }
 
-.mnrf-radio.color-yellow input:checked:enabled + .sub-box::before, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key.color-yellow input:checked:enabled + label, .color-yellow.mnrf-multi .sub-frame .sub-btn:active, .mnrf-multi.color-yellow .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-yellow .sub-frame .sub-btn:active {
+.mnrf-radio.color-yellow input:checked:enabled + .sub-box .sub-check, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key.color-yellow input:checked:enabled + label, .color-yellow.mnrf-multi .sub-frame .sub-btn:active, .mnrf-multi.color-yellow .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-yellow .sub-frame .sub-btn:active {
   background-color: #CA8A04;
 }
 
@@ -2384,7 +2325,7 @@
   color: #CA8A04;
 }
 
-.mnrf-checkbox.color-green input:disabled:checked + .sub-box, .mnrf-radio.color-green .sub-box::before, .mnrf-radio.color-green input:disabled + .sub-box::before, .mnrf-radio.color-green input:disabled:checked + .sub-box, .mnrf-check-slider.color-green input:disabled:checked + .sub-box, .mnrf-radio-slider.color-green input:disabled:checked + .sub-box, .mnrf-multi.color-green .sub-tags .sub-tag:hover {
+.mnrf-checkbox.color-green input:disabled:checked + .sub-box, .mnrf-radio.color-green .sub-box .sub-check, .mnrf-radio.color-green input:disabled + .sub-box .sub-check, .mnrf-radio.color-green input:disabled:checked + .sub-box, .mnrf-check-slider.color-green input:disabled:checked + .sub-box, .mnrf-radio-slider.color-green input:disabled:checked + .sub-box, .mnrf-multi.color-green .sub-tags .sub-tag:hover {
   background-color: #D1FAE5;
 }
 
@@ -2420,7 +2361,7 @@
   border-color: #34D399;
 }
 
-.mnrf-radio.color-green input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-green .sub-box .sub-check, .mnrf-check-slider.color-green input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key.color-green, .color-green.mnrf-multi .sub-frame .sub-btn, .mnrf-multi.color-green .sub-tags .sub-tag .sub-close, .mnrf-input.color-green .sub-frame .sub-btn {
+.mnrf-radio.color-green input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-green .sub-box .sub-check, .mnrf-check-slider.color-green input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key.color-green, .color-green.mnrf-multi .sub-frame .sub-btn, .mnrf-multi.color-green .sub-tags .sub-tag .sub-close, .mnrf-input.color-green .sub-frame .sub-btn {
   background-color: #34D399;
 }
 
@@ -2448,7 +2389,7 @@
   border-color: #059669;
 }
 
-.mnrf-radio.color-green input:checked:enabled + .sub-box::before, .mnrf-check-slider.color-green input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key.color-green input:checked:enabled + label, .color-green.mnrf-multi .sub-frame .sub-btn:active, .mnrf-multi.color-green .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-green .sub-frame .sub-btn:active {
+.mnrf-radio.color-green input:checked:enabled + .sub-box .sub-check, .mnrf-check-slider.color-green input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key.color-green input:checked:enabled + label, .color-green.mnrf-multi .sub-frame .sub-btn:active, .mnrf-multi.color-green .sub-tags .sub-tag:hover .sub-close, .mnrf-input.color-green .sub-frame .sub-btn:active {
   background-color: #059669;
 }
 
@@ -2460,7 +2401,7 @@
   color: #059669;
 }
 
-.mnrf-checkbox input:disabled:checked + .sub-box, .mnrf-radio .sub-box::before, .mnrf-radio input:disabled + .sub-box::before, .mnrf-radio input:disabled:checked + .sub-box, .mnrf-check-slider input:disabled:checked + .sub-box, .mnrf-radio-slider input:disabled:checked + .sub-box, .mnrf-multi .sub-tags .sub-tag:hover {
+.mnrf-checkbox input:disabled:checked + .sub-box, .mnrf-radio .sub-box .sub-check, .mnrf-radio input:disabled + .sub-box .sub-check, .mnrf-radio input:disabled:checked + .sub-box, .mnrf-check-slider input:disabled:checked + .sub-box, .mnrf-radio-slider input:disabled:checked + .sub-box, .mnrf-multi .sub-tags .sub-tag:hover {
   background-color: #E0F2FE;
 }
 
@@ -2496,7 +2437,7 @@
   border-color: #38BDF8;
 }
 
-.mnrf-radio input:disabled:checked + .sub-box::before, .mnrf-check-slider .sub-box .sub-check, .mnrf-check-slider input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key, .mnrf-multi .sub-frame .sub-btn, .mnrf-multi .sub-tags .sub-tag .sub-close, .mnrf-input .sub-frame .sub-btn {
+.mnrf-radio input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider .sub-box .sub-check, .mnrf-check-slider input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key, .mnrf-multi .sub-frame .sub-btn, .mnrf-multi .sub-tags .sub-tag .sub-close, .mnrf-input .sub-frame .sub-btn {
   background-color: #38BDF8;
 }
 
@@ -2524,7 +2465,7 @@
   border-color: #0284C7;
 }
 
-.mnrf-radio input:checked:enabled + .sub-box::before, .mnrf-check-slider input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key input:checked:enabled + label, .mnrf-multi .sub-frame .sub-btn:active, .mnrf-multi .sub-tags .sub-tag:hover .sub-close, .mnrf-input .sub-frame .sub-btn:active {
+.mnrf-radio input:checked:enabled + .sub-box .sub-check, .mnrf-check-slider input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key input:checked:enabled + label, .mnrf-multi .sub-frame .sub-btn:active, .mnrf-multi .sub-tags .sub-tag:hover .sub-close, .mnrf-input .sub-frame .sub-btn:active {
   background-color: #0284C7;
 }
 
@@ -2957,7 +2898,7 @@
   box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.4);
 }
 
-.mnrf-multi.color-red .sub-tags .sub-tag:hover, .mnrf-checkbox.color-red input:disabled:checked + .sub-box, .mnrf-radio.color-red .sub-box::before, .mnrf-radio.color-red input:disabled + .sub-box::before, .mnrf-radio.color-red input:disabled:checked + .sub-box, .mnrf-check-slider.color-red input:disabled:checked + .sub-box, .mnrf-radio-slider.color-red input:disabled:checked + .sub-box {
+.mnrf-multi.color-red .sub-tags .sub-tag:hover, .mnrf-checkbox.color-red input:disabled:checked + .sub-box, .mnrf-radio.color-red .sub-box .sub-check, .mnrf-radio.color-red input:disabled + .sub-box .sub-check, .mnrf-radio.color-red input:disabled:checked + .sub-box, .mnrf-check-slider.color-red input:disabled:checked + .sub-box, .mnrf-radio-slider.color-red input:disabled:checked + .sub-box {
   background-color: #FEE2E2;
 }
 
@@ -2993,7 +2934,7 @@
   border-color: #F87171;
 }
 
-.mnrf-multi.color-red .sub-tags .sub-tag .sub-close, .mnrf-radio.color-red input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-red .sub-box .sub-check, .mnrf-check-slider.color-red input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key.color-red, .mnrf-input.color-red .sub-frame .sub-btn, .color-red.mnrf-multi .sub-frame .sub-btn {
+.mnrf-multi.color-red .sub-tags .sub-tag .sub-close, .mnrf-radio.color-red input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-red .sub-box .sub-check, .mnrf-check-slider.color-red input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key.color-red, .mnrf-input.color-red .sub-frame .sub-btn, .color-red.mnrf-multi .sub-frame .sub-btn {
   background-color: #F87171;
 }
 
@@ -3021,7 +2962,7 @@
   border-color: #DC2626;
 }
 
-.mnrf-multi.color-red .sub-tags .sub-tag:hover .sub-close, .mnrf-radio.color-red input:checked:enabled + .sub-box::before, .mnrf-check-slider.color-red input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key.color-red input:checked:enabled + label, .mnrf-input.color-red .sub-frame .sub-btn:active, .color-red.mnrf-multi .sub-frame .sub-btn:active {
+.mnrf-multi.color-red .sub-tags .sub-tag:hover .sub-close, .mnrf-radio.color-red input:checked:enabled + .sub-box .sub-check, .mnrf-check-slider.color-red input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key.color-red input:checked:enabled + label, .mnrf-input.color-red .sub-frame .sub-btn:active, .color-red.mnrf-multi .sub-frame .sub-btn:active {
   background-color: #DC2626;
 }
 
@@ -3033,7 +2974,7 @@
   color: #DC2626;
 }
 
-.mnrf-multi.color-yellow .sub-tags .sub-tag:hover, .mnrf-checkbox.color-yellow input:disabled:checked + .sub-box, .mnrf-radio.color-yellow .sub-box::before, .mnrf-radio.color-yellow input:disabled + .sub-box::before, .mnrf-radio.color-yellow input:disabled:checked + .sub-box, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box {
+.mnrf-multi.color-yellow .sub-tags .sub-tag:hover, .mnrf-checkbox.color-yellow input:disabled:checked + .sub-box, .mnrf-radio.color-yellow .sub-box .sub-check, .mnrf-radio.color-yellow input:disabled + .sub-box .sub-check, .mnrf-radio.color-yellow input:disabled:checked + .sub-box, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box {
   background-color: #FEF9C3;
 }
 
@@ -3069,7 +3010,7 @@
   border-color: #FACC15;
 }
 
-.mnrf-multi.color-yellow .sub-tags .sub-tag .sub-close, .mnrf-radio.color-yellow input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-yellow .sub-box .sub-check, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key.color-yellow, .mnrf-input.color-yellow .sub-frame .sub-btn, .color-yellow.mnrf-multi .sub-frame .sub-btn {
+.mnrf-multi.color-yellow .sub-tags .sub-tag .sub-close, .mnrf-radio.color-yellow input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-yellow .sub-box .sub-check, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key.color-yellow, .mnrf-input.color-yellow .sub-frame .sub-btn, .color-yellow.mnrf-multi .sub-frame .sub-btn {
   background-color: #FACC15;
 }
 
@@ -3097,7 +3038,7 @@
   border-color: #CA8A04;
 }
 
-.mnrf-multi.color-yellow .sub-tags .sub-tag:hover .sub-close, .mnrf-radio.color-yellow input:checked:enabled + .sub-box::before, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key.color-yellow input:checked:enabled + label, .mnrf-input.color-yellow .sub-frame .sub-btn:active, .color-yellow.mnrf-multi .sub-frame .sub-btn:active {
+.mnrf-multi.color-yellow .sub-tags .sub-tag:hover .sub-close, .mnrf-radio.color-yellow input:checked:enabled + .sub-box .sub-check, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key.color-yellow input:checked:enabled + label, .mnrf-input.color-yellow .sub-frame .sub-btn:active, .color-yellow.mnrf-multi .sub-frame .sub-btn:active {
   background-color: #CA8A04;
 }
 
@@ -3109,7 +3050,7 @@
   color: #CA8A04;
 }
 
-.mnrf-multi.color-green .sub-tags .sub-tag:hover, .mnrf-checkbox.color-green input:disabled:checked + .sub-box, .mnrf-radio.color-green .sub-box::before, .mnrf-radio.color-green input:disabled + .sub-box::before, .mnrf-radio.color-green input:disabled:checked + .sub-box, .mnrf-check-slider.color-green input:disabled:checked + .sub-box, .mnrf-radio-slider.color-green input:disabled:checked + .sub-box {
+.mnrf-multi.color-green .sub-tags .sub-tag:hover, .mnrf-checkbox.color-green input:disabled:checked + .sub-box, .mnrf-radio.color-green .sub-box .sub-check, .mnrf-radio.color-green input:disabled + .sub-box .sub-check, .mnrf-radio.color-green input:disabled:checked + .sub-box, .mnrf-check-slider.color-green input:disabled:checked + .sub-box, .mnrf-radio-slider.color-green input:disabled:checked + .sub-box {
   background-color: #D1FAE5;
 }
 
@@ -3145,7 +3086,7 @@
   border-color: #34D399;
 }
 
-.mnrf-multi.color-green .sub-tags .sub-tag .sub-close, .mnrf-radio.color-green input:disabled:checked + .sub-box::before, .mnrf-check-slider.color-green .sub-box .sub-check, .mnrf-check-slider.color-green input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key.color-green, .mnrf-input.color-green .sub-frame .sub-btn, .color-green.mnrf-multi .sub-frame .sub-btn {
+.mnrf-multi.color-green .sub-tags .sub-tag .sub-close, .mnrf-radio.color-green input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-green .sub-box .sub-check, .mnrf-check-slider.color-green input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key.color-green, .mnrf-input.color-green .sub-frame .sub-btn, .color-green.mnrf-multi .sub-frame .sub-btn {
   background-color: #34D399;
 }
 
@@ -3173,7 +3114,7 @@
   border-color: #059669;
 }
 
-.mnrf-multi.color-green .sub-tags .sub-tag:hover .sub-close, .mnrf-radio.color-green input:checked:enabled + .sub-box::before, .mnrf-check-slider.color-green input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key.color-green input:checked:enabled + label, .mnrf-input.color-green .sub-frame .sub-btn:active, .color-green.mnrf-multi .sub-frame .sub-btn:active {
+.mnrf-multi.color-green .sub-tags .sub-tag:hover .sub-close, .mnrf-radio.color-green input:checked:enabled + .sub-box .sub-check, .mnrf-check-slider.color-green input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key.color-green input:checked:enabled + label, .mnrf-input.color-green .sub-frame .sub-btn:active, .color-green.mnrf-multi .sub-frame .sub-btn:active {
   background-color: #059669;
 }
 
@@ -3185,7 +3126,7 @@
   color: #059669;
 }
 
-.mnrf-multi .sub-tags .sub-tag:hover, .mnrf-checkbox input:disabled:checked + .sub-box, .mnrf-radio .sub-box::before, .mnrf-radio input:disabled + .sub-box::before, .mnrf-radio input:disabled:checked + .sub-box, .mnrf-check-slider input:disabled:checked + .sub-box, .mnrf-radio-slider input:disabled:checked + .sub-box {
+.mnrf-multi .sub-tags .sub-tag:hover, .mnrf-checkbox input:disabled:checked + .sub-box, .mnrf-radio .sub-box .sub-check, .mnrf-radio input:disabled + .sub-box .sub-check, .mnrf-radio input:disabled:checked + .sub-box, .mnrf-check-slider input:disabled:checked + .sub-box, .mnrf-radio-slider input:disabled:checked + .sub-box {
   background-color: #E0F2FE;
 }
 
@@ -3221,7 +3162,7 @@
   border-color: #38BDF8;
 }
 
-.mnrf-multi .sub-tags .sub-tag .sub-close, .mnrf-radio input:disabled:checked + .sub-box::before, .mnrf-check-slider .sub-box .sub-check, .mnrf-check-slider input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key, .mnrf-input .sub-frame .sub-btn, .mnrf-multi .sub-frame .sub-btn {
+.mnrf-multi .sub-tags .sub-tag .sub-close, .mnrf-radio input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider .sub-box .sub-check, .mnrf-check-slider input:disabled:checked + .sub-box .sub-check, .mnrf-radio-key, .mnrf-input .sub-frame .sub-btn, .mnrf-multi .sub-frame .sub-btn {
   background-color: #38BDF8;
 }
 
@@ -3249,7 +3190,7 @@
   border-color: #0284C7;
 }
 
-.mnrf-multi .sub-tags .sub-tag:hover .sub-close, .mnrf-radio input:checked:enabled + .sub-box::before, .mnrf-check-slider input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key input:checked:enabled + label, .mnrf-input .sub-frame .sub-btn:active, .mnrf-multi .sub-frame .sub-btn:active {
+.mnrf-multi .sub-tags .sub-tag:hover .sub-close, .mnrf-radio input:checked:enabled + .sub-box .sub-check, .mnrf-check-slider input:checked:enabled + .sub-box .sub-check, .mnrf-radio-key input:checked:enabled + label, .mnrf-input .sub-frame .sub-btn:active, .mnrf-multi .sub-frame .sub-btn:active {
   background-color: #0284C7;
 }
 

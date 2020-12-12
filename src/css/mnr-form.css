@@ -2,7 +2,7 @@
   background-color: #FEE2E2;
 }
 
-.mnrf-radio-key.color-red input:checked:enabled + label, .mnrf-radio-key.color-red input:hover:enabled + label, .mnrf-checkbox.color-red input:disabled + .sub-box .sub-check, .color-red.mnrf-radio input:disabled + .sub-box .sub-check, .mnrf-checkbox.color-red .sub-box .sub-check, .color-red.mnrf-radio .sub-box .sub-check {
+.mnrf-radio-key.color-red input:checked:enabled + label, .mnrf-radio-key.color-red input:hover:enabled + label, .mnrf-checkbox.color-red .sub-box .sub-check, .color-red.mnrf-radio .sub-box .sub-check {
   color: #FEE2E2;
 }
 
@@ -38,7 +38,7 @@
   background-color: #F87171;
 }
 
-.mnrf-multi.color-red .sub-tags .sub-tag:hover, .mnrf-input.color-red .sub-psfix, .color-red.mnrf-multi .sub-psfix, .mnrf-input.color-red .sub-icon, .color-red.mnrf-multi .sub-icon, .mnrf-input.color-red .sub-frame .sub-header, .color-red.mnrf-multi .sub-frame .sub-header, .mnrf-check-slider.color-red input:disabled:checked + .sub-box .sub-check, .color-red.mnrf-radio-slider input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-red .sub-box .sub-check, .color-red.mnrf-radio-slider .sub-box .sub-check, .mnrf-checkbox.color-red input:disabled:checked + .sub-box .sub-check, .color-red.mnrf-radio input:disabled:checked + .sub-box .sub-check {
+.mnrf-multi.color-red .sub-tags .sub-tag:hover, .mnrf-input.color-red .sub-psfix, .color-red.mnrf-multi .sub-psfix, .mnrf-input.color-red .sub-icon, .color-red.mnrf-multi .sub-icon, .mnrf-input.color-red .sub-frame .sub-header, .color-red.mnrf-multi .sub-frame .sub-header, .mnrf-check-slider.color-red input:disabled:checked + .sub-box .sub-check, .color-red.mnrf-radio-slider input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-red .sub-box .sub-check, .color-red.mnrf-radio-slider .sub-box .sub-check {
   color: #F87171;
 }
 
@@ -62,7 +62,7 @@
   background-color: #DC2626;
 }
 
-.mnrf-multi.color-red .sub-tags .sub-tag, .mnrf-input.color-red.state-focus:not(.state-disable) .sub-frame .sub-icon, .color-red.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.color-red.state-focus:not(.state-disable) .sub-frame .sub-header, .color-red.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-header, .mnrf-input.color-red.state-focus:not(.state-disable) > .sub-info, .color-red.state-focus.mnrf-multi:not(.state-disable) > .sub-info, .mnrf-input.color-red.state-focus:not(.state-disable) > .sub-title, .color-red.state-focus.mnrf-multi:not(.state-disable) > .sub-title, .mnrf-input.color-red.state-focus:not(.state-disable) > .sub-hint, .color-red.state-focus.mnrf-multi:not(.state-disable) > .sub-hint, .mnrf-input.color-red .sub-select, .color-red.mnrf-multi .sub-select, .mnrf-radio-key.color-red input:disabled:checked + label, .mnrf-radio-key.color-red label, .mnrf-check-slider.color-red input:checked:enabled + .sub-box .sub-check, .color-red.mnrf-radio-slider input:checked:enabled + .sub-box .sub-check, .mnrf-checkbox.color-red input:checked:enabled + .sub-box .sub-check, .color-red.mnrf-radio input:checked:enabled + .sub-box .sub-check {
+.mnrf-multi.color-red .sub-tags .sub-tag, .mnrf-input.color-red.state-focus:not(.state-disable) .sub-frame .sub-icon, .color-red.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.color-red.state-focus:not(.state-disable) .sub-frame .sub-header, .color-red.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-header, .mnrf-input.color-red.state-focus:not(.state-disable) > .sub-info, .color-red.state-focus.mnrf-multi:not(.state-disable) > .sub-info, .mnrf-input.color-red.state-focus:not(.state-disable) > .sub-title, .color-red.state-focus.mnrf-multi:not(.state-disable) > .sub-title, .mnrf-input.color-red.state-focus:not(.state-disable) > .sub-hint, .color-red.state-focus.mnrf-multi:not(.state-disable) > .sub-hint, .mnrf-input.color-red .sub-select, .color-red.mnrf-multi .sub-select, .mnrf-radio-key.color-red input:disabled:checked + label, .mnrf-radio-key.color-red label, .mnrf-check-slider.color-red input:checked:enabled + .sub-box .sub-check, .color-red.mnrf-radio-slider input:checked:enabled + .sub-box .sub-check {
   color: #DC2626;
 }
 
@@ -70,7 +70,7 @@
   background-color: #FEF9C3;
 }
 
-.mnrf-radio-key.color-yellow input:checked:enabled + label, .mnrf-radio-key.color-yellow input:hover:enabled + label, .mnrf-checkbox.color-yellow input:disabled + .sub-box .sub-check, .color-yellow.mnrf-radio input:disabled + .sub-box .sub-check, .mnrf-checkbox.color-yellow .sub-box .sub-check, .color-yellow.mnrf-radio .sub-box .sub-check {
+.mnrf-radio-key.color-yellow input:checked:enabled + label, .mnrf-radio-key.color-yellow input:hover:enabled + label, .mnrf-checkbox.color-yellow .sub-box .sub-check, .color-yellow.mnrf-radio .sub-box .sub-check {
   color: #FEF9C3;
 }
 
@@ -106,7 +106,7 @@
   background-color: #FACC15;
 }
 
-.mnrf-multi.color-yellow .sub-tags .sub-tag:hover, .mnrf-input.color-yellow .sub-psfix, .color-yellow.mnrf-multi .sub-psfix, .mnrf-input.color-yellow .sub-icon, .color-yellow.mnrf-multi .sub-icon, .mnrf-input.color-yellow .sub-frame .sub-header, .color-yellow.mnrf-multi .sub-frame .sub-header, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box .sub-check, .color-yellow.mnrf-radio-slider input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-yellow .sub-box .sub-check, .color-yellow.mnrf-radio-slider .sub-box .sub-check, .mnrf-checkbox.color-yellow input:disabled:checked + .sub-box .sub-check, .color-yellow.mnrf-radio input:disabled:checked + .sub-box .sub-check {
+.mnrf-multi.color-yellow .sub-tags .sub-tag:hover, .mnrf-input.color-yellow .sub-psfix, .color-yellow.mnrf-multi .sub-psfix, .mnrf-input.color-yellow .sub-icon, .color-yellow.mnrf-multi .sub-icon, .mnrf-input.color-yellow .sub-frame .sub-header, .color-yellow.mnrf-multi .sub-frame .sub-header, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box .sub-check, .color-yellow.mnrf-radio-slider input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-yellow .sub-box .sub-check, .color-yellow.mnrf-radio-slider .sub-box .sub-check {
   color: #FACC15;
 }
 
@@ -130,7 +130,7 @@
   background-color: #CA8A04;
 }
 
-.mnrf-multi.color-yellow .sub-tags .sub-tag, .mnrf-input.color-yellow.state-focus:not(.state-disable) .sub-frame .sub-icon, .color-yellow.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.color-yellow.state-focus:not(.state-disable) .sub-frame .sub-header, .color-yellow.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-header, .mnrf-input.color-yellow.state-focus:not(.state-disable) > .sub-info, .color-yellow.state-focus.mnrf-multi:not(.state-disable) > .sub-info, .mnrf-input.color-yellow.state-focus:not(.state-disable) > .sub-title, .color-yellow.state-focus.mnrf-multi:not(.state-disable) > .sub-title, .mnrf-input.color-yellow.state-focus:not(.state-disable) > .sub-hint, .color-yellow.state-focus.mnrf-multi:not(.state-disable) > .sub-hint, .mnrf-input.color-yellow .sub-select, .color-yellow.mnrf-multi .sub-select, .mnrf-radio-key.color-yellow input:disabled:checked + label, .mnrf-radio-key.color-yellow label, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box .sub-check, .color-yellow.mnrf-radio-slider input:checked:enabled + .sub-box .sub-check, .mnrf-checkbox.color-yellow input:checked:enabled + .sub-box .sub-check, .color-yellow.mnrf-radio input:checked:enabled + .sub-box .sub-check {
+.mnrf-multi.color-yellow .sub-tags .sub-tag, .mnrf-input.color-yellow.state-focus:not(.state-disable) .sub-frame .sub-icon, .color-yellow.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.color-yellow.state-focus:not(.state-disable) .sub-frame .sub-header, .color-yellow.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-header, .mnrf-input.color-yellow.state-focus:not(.state-disable) > .sub-info, .color-yellow.state-focus.mnrf-multi:not(.state-disable) > .sub-info, .mnrf-input.color-yellow.state-focus:not(.state-disable) > .sub-title, .color-yellow.state-focus.mnrf-multi:not(.state-disable) > .sub-title, .mnrf-input.color-yellow.state-focus:not(.state-disable) > .sub-hint, .color-yellow.state-focus.mnrf-multi:not(.state-disable) > .sub-hint, .mnrf-input.color-yellow .sub-select, .color-yellow.mnrf-multi .sub-select, .mnrf-radio-key.color-yellow input:disabled:checked + label, .mnrf-radio-key.color-yellow label, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box .sub-check, .color-yellow.mnrf-radio-slider input:checked:enabled + .sub-box .sub-check {
   color: #CA8A04;
 }
 
@@ -138,7 +138,7 @@
   background-color: #D1FAE5;
 }
 
-.mnrf-radio-key.color-green input:checked:enabled + label, .mnrf-radio-key.color-green input:hover:enabled + label, .mnrf-checkbox.color-green input:disabled + .sub-box .sub-check, .color-green.mnrf-radio input:disabled + .sub-box .sub-check, .mnrf-checkbox.color-green .sub-box .sub-check, .color-green.mnrf-radio .sub-box .sub-check {
+.mnrf-radio-key.color-green input:checked:enabled + label, .mnrf-radio-key.color-green input:hover:enabled + label, .mnrf-checkbox.color-green .sub-box .sub-check, .color-green.mnrf-radio .sub-box .sub-check {
   color: #D1FAE5;
 }
 
@@ -174,7 +174,7 @@
   background-color: #34D399;
 }
 
-.mnrf-multi.color-green .sub-tags .sub-tag:hover, .mnrf-input.color-green .sub-psfix, .color-green.mnrf-multi .sub-psfix, .mnrf-input.color-green .sub-icon, .color-green.mnrf-multi .sub-icon, .mnrf-input.color-green .sub-frame .sub-header, .color-green.mnrf-multi .sub-frame .sub-header, .mnrf-check-slider.color-green input:disabled:checked + .sub-box .sub-check, .color-green.mnrf-radio-slider input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-green .sub-box .sub-check, .color-green.mnrf-radio-slider .sub-box .sub-check, .mnrf-checkbox.color-green input:disabled:checked + .sub-box .sub-check, .color-green.mnrf-radio input:disabled:checked + .sub-box .sub-check {
+.mnrf-multi.color-green .sub-tags .sub-tag:hover, .mnrf-input.color-green .sub-psfix, .color-green.mnrf-multi .sub-psfix, .mnrf-input.color-green .sub-icon, .color-green.mnrf-multi .sub-icon, .mnrf-input.color-green .sub-frame .sub-header, .color-green.mnrf-multi .sub-frame .sub-header, .mnrf-check-slider.color-green input:disabled:checked + .sub-box .sub-check, .color-green.mnrf-radio-slider input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-green .sub-box .sub-check, .color-green.mnrf-radio-slider .sub-box .sub-check {
   color: #34D399;
 }
 
@@ -198,7 +198,7 @@
   background-color: #059669;
 }
 
-.mnrf-multi.color-green .sub-tags .sub-tag, .mnrf-input.color-green.state-focus:not(.state-disable) .sub-frame .sub-icon, .color-green.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.color-green.state-focus:not(.state-disable) .sub-frame .sub-header, .color-green.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-header, .mnrf-input.color-green.state-focus:not(.state-disable) > .sub-info, .color-green.state-focus.mnrf-multi:not(.state-disable) > .sub-info, .mnrf-input.color-green.state-focus:not(.state-disable) > .sub-title, .color-green.state-focus.mnrf-multi:not(.state-disable) > .sub-title, .mnrf-input.color-green.state-focus:not(.state-disable) > .sub-hint, .color-green.state-focus.mnrf-multi:not(.state-disable) > .sub-hint, .mnrf-input.color-green .sub-select, .color-green.mnrf-multi .sub-select, .mnrf-radio-key.color-green input:disabled:checked + label, .mnrf-radio-key.color-green label, .mnrf-check-slider.color-green input:checked:enabled + .sub-box .sub-check, .color-green.mnrf-radio-slider input:checked:enabled + .sub-box .sub-check, .mnrf-checkbox.color-green input:checked:enabled + .sub-box .sub-check, .color-green.mnrf-radio input:checked:enabled + .sub-box .sub-check {
+.mnrf-multi.color-green .sub-tags .sub-tag, .mnrf-input.color-green.state-focus:not(.state-disable) .sub-frame .sub-icon, .color-green.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.color-green.state-focus:not(.state-disable) .sub-frame .sub-header, .color-green.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-header, .mnrf-input.color-green.state-focus:not(.state-disable) > .sub-info, .color-green.state-focus.mnrf-multi:not(.state-disable) > .sub-info, .mnrf-input.color-green.state-focus:not(.state-disable) > .sub-title, .color-green.state-focus.mnrf-multi:not(.state-disable) > .sub-title, .mnrf-input.color-green.state-focus:not(.state-disable) > .sub-hint, .color-green.state-focus.mnrf-multi:not(.state-disable) > .sub-hint, .mnrf-input.color-green .sub-select, .color-green.mnrf-multi .sub-select, .mnrf-radio-key.color-green input:disabled:checked + label, .mnrf-radio-key.color-green label, .mnrf-check-slider.color-green input:checked:enabled + .sub-box .sub-check, .color-green.mnrf-radio-slider input:checked:enabled + .sub-box .sub-check {
   color: #059669;
 }
 
@@ -206,7 +206,7 @@
   background-color: #E0F2FE;
 }
 
-.mnrf-radio-key input:checked:enabled + label, .mnrf-radio-key input:hover:enabled + label, .mnrf-checkbox input:disabled + .sub-box .sub-check, .mnrf-radio input:disabled + .sub-box .sub-check, .mnrf-checkbox .sub-box .sub-check, .mnrf-radio .sub-box .sub-check {
+.mnrf-radio-key input:checked:enabled + label, .mnrf-radio-key input:hover:enabled + label, .mnrf-checkbox .sub-box .sub-check, .mnrf-radio .sub-box .sub-check {
   color: #E0F2FE;
 }
 
@@ -242,7 +242,7 @@
   background-color: #38BDF8;
 }
 
-.mnrf-multi .sub-tags .sub-tag:hover, .mnrf-input .sub-psfix, .mnrf-multi .sub-psfix, .mnrf-input .sub-icon, .mnrf-multi .sub-icon, .mnrf-input .sub-frame .sub-header, .mnrf-multi .sub-frame .sub-header, .mnrf-check-slider input:disabled:checked + .sub-box .sub-check, .mnrf-radio-slider input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider .sub-box .sub-check, .mnrf-radio-slider .sub-box .sub-check, .mnrf-checkbox input:disabled:checked + .sub-box .sub-check, .mnrf-radio input:disabled:checked + .sub-box .sub-check {
+.mnrf-multi .sub-tags .sub-tag:hover, .mnrf-input .sub-psfix, .mnrf-multi .sub-psfix, .mnrf-input .sub-icon, .mnrf-multi .sub-icon, .mnrf-input .sub-frame .sub-header, .mnrf-multi .sub-frame .sub-header, .mnrf-check-slider input:disabled:checked + .sub-box .sub-check, .mnrf-radio-slider input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider .sub-box .sub-check, .mnrf-radio-slider .sub-box .sub-check {
   color: #38BDF8;
 }
 
@@ -266,7 +266,7 @@
   background-color: #0284C7;
 }
 
-.mnrf-multi .sub-tags .sub-tag, .mnrf-input.state-focus:not(.state-disable) .sub-frame .sub-icon, .state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.state-focus:not(.state-disable) .sub-frame .sub-header, .state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-header, .mnrf-input.state-focus:not(.state-disable) > .sub-info, .state-focus.mnrf-multi:not(.state-disable) > .sub-info, .mnrf-input.state-focus:not(.state-disable) > .sub-title, .state-focus.mnrf-multi:not(.state-disable) > .sub-title, .mnrf-input.state-focus:not(.state-disable) > .sub-hint, .state-focus.mnrf-multi:not(.state-disable) > .sub-hint, .mnrf-input .sub-select, .mnrf-multi .sub-select, .mnrf-radio-key input:disabled:checked + label, .mnrf-radio-key label, .mnrf-check-slider input:checked:enabled + .sub-box .sub-check, .mnrf-radio-slider input:checked:enabled + .sub-box .sub-check, .mnrf-checkbox input:checked:enabled + .sub-box .sub-check, .mnrf-radio input:checked:enabled + .sub-box .sub-check {
+.mnrf-multi .sub-tags .sub-tag, .mnrf-input.state-focus:not(.state-disable) .sub-frame .sub-icon, .state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.state-focus:not(.state-disable) .sub-frame .sub-header, .state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-header, .mnrf-input.state-focus:not(.state-disable) > .sub-info, .state-focus.mnrf-multi:not(.state-disable) > .sub-info, .mnrf-input.state-focus:not(.state-disable) > .sub-title, .state-focus.mnrf-multi:not(.state-disable) > .sub-title, .mnrf-input.state-focus:not(.state-disable) > .sub-hint, .state-focus.mnrf-multi:not(.state-disable) > .sub-hint, .mnrf-input .sub-select, .mnrf-multi .sub-select, .mnrf-radio-key input:disabled:checked + label, .mnrf-radio-key label, .mnrf-check-slider input:checked:enabled + .sub-box .sub-check, .mnrf-radio-slider input:checked:enabled + .sub-box .sub-check {
   color: #0284C7;
 }
 
@@ -382,6 +382,16 @@
 .mnrf-checkbox input:enabled + .sub-box::after, .mnrf-radio input:enabled + .sub-box::after {
   background-color: rgba(14, 165, 233, 0.5);
 }
+.mnrf-checkbox input:checked:enabled + .sub-box .sub-check, .mnrf-radio input:checked:enabled + .sub-box .sub-check {
+  color: #0284C7;
+}
+.mnrf-checkbox input:disabled + .sub-box .sub-check, .mnrf-radio input:disabled + .sub-box .sub-check {
+  color: #E0F2FE;
+}
+.mnrf-checkbox input:disabled:checked + .sub-box .sub-check, .mnrf-radio input:disabled:checked + .sub-box .sub-check {
+  color: #38BDF8;
+}
+
 @media (pointer: fine) {
   .mnrf-checkbox.color-red input:hover:enabled + .sub-box, .color-red.mnrf-radio input:hover:enabled + .sub-box {
     border-color: #EF4444;
@@ -393,6 +403,16 @@
 .mnrf-checkbox.color-red input:enabled + .sub-box::after, .color-red.mnrf-radio input:enabled + .sub-box::after {
   background-color: rgba(239, 68, 68, 0.5);
 }
+.mnrf-checkbox.color-red input:checked:enabled + .sub-box .sub-check, .color-red.mnrf-radio input:checked:enabled + .sub-box .sub-check {
+  color: #DC2626;
+}
+.mnrf-checkbox.color-red input:disabled + .sub-box .sub-check, .color-red.mnrf-radio input:disabled + .sub-box .sub-check {
+  color: #FEE2E2;
+}
+.mnrf-checkbox.color-red input:disabled:checked + .sub-box .sub-check, .color-red.mnrf-radio input:disabled:checked + .sub-box .sub-check {
+  color: #F87171;
+}
+
 @media (pointer: fine) {
   .mnrf-checkbox.color-yellow input:hover:enabled + .sub-box, .color-yellow.mnrf-radio input:hover:enabled + .sub-box {
     border-color: #EAB308;
@@ -404,6 +424,16 @@
 .mnrf-checkbox.color-yellow input:enabled + .sub-box::after, .color-yellow.mnrf-radio input:enabled + .sub-box::after {
   background-color: rgba(234, 179, 8, 0.5);
 }
+.mnrf-checkbox.color-yellow input:checked:enabled + .sub-box .sub-check, .color-yellow.mnrf-radio input:checked:enabled + .sub-box .sub-check {
+  color: #CA8A04;
+}
+.mnrf-checkbox.color-yellow input:disabled + .sub-box .sub-check, .color-yellow.mnrf-radio input:disabled + .sub-box .sub-check {
+  color: #FEF9C3;
+}
+.mnrf-checkbox.color-yellow input:disabled:checked + .sub-box .sub-check, .color-yellow.mnrf-radio input:disabled:checked + .sub-box .sub-check {
+  color: #FACC15;
+}
+
 @media (pointer: fine) {
   .mnrf-checkbox.color-green input:hover:enabled + .sub-box, .color-green.mnrf-radio input:hover:enabled + .sub-box {
     border-color: #10B981;
@@ -415,6 +445,16 @@
 .mnrf-checkbox.color-green input:enabled + .sub-box::after, .color-green.mnrf-radio input:enabled + .sub-box::after {
   background-color: rgba(16, 185, 129, 0.5);
 }
+.mnrf-checkbox.color-green input:checked:enabled + .sub-box .sub-check, .color-green.mnrf-radio input:checked:enabled + .sub-box .sub-check {
+  color: #059669;
+}
+.mnrf-checkbox.color-green input:disabled + .sub-box .sub-check, .color-green.mnrf-radio input:disabled + .sub-box .sub-check {
+  color: #D1FAE5;
+}
+.mnrf-checkbox.color-green input:disabled:checked + .sub-box .sub-check, .color-green.mnrf-radio input:disabled:checked + .sub-box .sub-check {
+  color: #34D399;
+}
+
 .mnrf-check-slider, .mnrf-radio-slider {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
@@ -1041,4 +1081,178 @@
 }
 .mnrf-multi .sub-frame {
   flex-wrap: wrap;
+}
+
+.mnrf-btn {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  display: inline-flex;
+  position: relative;
+  z-index: 1;
+}
+.mnrf-btn, .mnrf-btn *:not(svg) > * > *, .mnrf-btn *::after, .mnrf-btn *::before {
+  transition: all 0.3s;
+}
+.mnrf-btn .sub-btn {
+  outline: none;
+  text-decoration: none;
+  border: none;
+  color: #F8FAFC;
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.5em;
+  line-height: normal;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.mnrf-btn .sub-btn:first-child {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+.mnrf-btn .sub-btn:last-child {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.mnrf-btn .sub-btn::before, .mnrf-btn .sub-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 3px;
+}
+.mnrf-btn .sub-btn::after {
+  transition: all 0.6s;
+  width: calc(100% + 2em);
+  height: calc(100% + 2em);
+  opacity: 0;
+}
+@media (pointer: fine) {
+  .mnrf-btn .sub-btn:hover::before {
+    width: calc(100% + .5em);
+    height: calc(100% + .5em);
+  }
+}
+.mnrf-btn .sub-btn:active::before {
+  width: 0;
+  height: 0;
+}
+.mnrf-btn .sub-btn:active::after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: 0s;
+}
+.mnrf-btn.opt-rtl .sub-btn {
+  border-radius: 0;
+}
+.mnrf-btn.opt-rtl .sub-btn:last-child {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+.mnrf-btn.opt-rtl .sub-btn:first-child {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.mnrf-btn.opt-block {
+  display: flex;
+}
+.mnrf-btn.opt-block .sub-btn {
+  display: flex;
+  width: 100%;
+}
+
+.mnrf-btn .sub-btn {
+  background-color: #0EA5E9;
+}
+.mnrf-btn .sub-btn::before, .mnrf-btn .sub-btn::after {
+  background-color: rgba(14, 165, 233, 0.5);
+}
+.mnrf-btn .sub-btn::after {
+  background-color: #0ea5e9;
+}
+@media (pointer: fine) {
+  .mnrf-btn .sub-btn:hover {
+    background-color: #0284C7;
+  }
+}
+.mnrf-btn .sub-btn:active {
+  background-color: #0369A1;
+}
+
+.mnrf-btn.color-red .sub-btn {
+  background-color: #EF4444;
+}
+.mnrf-btn.color-red .sub-btn::before, .mnrf-btn.color-red .sub-btn::after {
+  background-color: rgba(239, 68, 68, 0.5);
+}
+.mnrf-btn.color-red .sub-btn::after {
+  background-color: #ef4444;
+}
+@media (pointer: fine) {
+  .mnrf-btn.color-red .sub-btn:hover {
+    background-color: #DC2626;
+  }
+}
+.mnrf-btn.color-red .sub-btn:active {
+  background-color: #B91C1C;
+}
+
+.mnrf-btn.color-yellow .sub-btn {
+  background-color: #EAB308;
+}
+.mnrf-btn.color-yellow .sub-btn::before, .mnrf-btn.color-yellow .sub-btn::after {
+  background-color: rgba(234, 179, 8, 0.5);
+}
+.mnrf-btn.color-yellow .sub-btn::after {
+  background-color: #eab308;
+}
+@media (pointer: fine) {
+  .mnrf-btn.color-yellow .sub-btn:hover {
+    background-color: #CA8A04;
+  }
+}
+.mnrf-btn.color-yellow .sub-btn:active {
+  background-color: #A16207;
+}
+
+.mnrf-btn.color-green .sub-btn {
+  background-color: #10B981;
+}
+.mnrf-btn.color-green .sub-btn::before, .mnrf-btn.color-green .sub-btn::after {
+  background-color: rgba(16, 185, 129, 0.5);
+}
+.mnrf-btn.color-green .sub-btn::after {
+  background-color: #10b981;
+}
+@media (pointer: fine) {
+  .mnrf-btn.color-green .sub-btn:hover {
+    background-color: #059669;
+  }
+}
+.mnrf-btn.color-green .sub-btn:active {
+  background-color: #047857;
+}
+
+.mnrf-btn.color-dark .sub-btn {
+  background-color: #64748B;
+}
+.mnrf-btn.color-dark .sub-btn::before, .mnrf-btn.color-dark .sub-btn::after {
+  background-color: rgba(100, 116, 139, 0.5);
+}
+.mnrf-btn.color-dark .sub-btn::after {
+  background-color: #64748b;
+}
+@media (pointer: fine) {
+  .mnrf-btn.color-dark .sub-btn:hover {
+    background-color: #475569;
+  }
+}
+.mnrf-btn.color-dark .sub-btn:active {
+  background-color: #334155;
 }

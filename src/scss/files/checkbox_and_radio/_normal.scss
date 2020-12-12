@@ -149,7 +149,7 @@ $colors: (
 					// @extend %tw-border-#{$color}-500;
 					border-color: map-get(map-get($tw_colors, #{$color}), 500);
 					.sub-check {
-						// @extend %tw-fill-#{$color}-300;
+						// @extend %tw-text-#{$color}-300;
 						color: map-get(map-get($tw_colors, #{$color}), 300);
 					}
 				}
@@ -167,21 +167,24 @@ $colors: (
 				@extend %tw-border-#{$color}-600;
 				@extend %tw-bg-#{$color}-300;
 				.sub-check {
-					@extend %tw-text-#{$color}-600;
+					// @extend %tw-text-#{$color}-600;
+					color: map-get(map-get($tw_colors, #{$color}), 600);
 				}
 			}
 			&:disabled {
 				& + .sub-box {
 					@extend %tw-border-#{$color}-200;
 					.sub-check {
-						@extend %tw-text-#{$color}-100;
+						// @extend %tw-text-#{$color}-100;
+						color: map-get(map-get($tw_colors, #{$color}), 100);
 					}
 				}
 				&:checked + .sub-box {
 					@extend %tw-bg-#{$color}-100;
 					// @extend %tw-border-#{$color}-200;
 					.sub-check {
-						@extend %tw-text-#{$color}-400;
+						// @extend %tw-text-#{$color}-400;
+						color: map-get(map-get($tw_colors, #{$color}), 400);
 					}
 				}
 			}

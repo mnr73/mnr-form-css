@@ -1,3 +1,34 @@
+.mnrf-check-slider .sub-box,
+.mnrf-checkbox .sub-box,
+.mnrf-radio .sub-box,
+.mnrf-radio-slider .sub-box {
+  z-index: 3;
+  margin: 2px;
+  background-color: #fff;
+  border-width: 2px;
+  border-style: solid;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  box-sizing: border-box;
+  transition: .3s
+}
+.mnrf-check-slider .sub-box .sub-check::before,
+.mnrf-checkbox .sub-box::before,
+.mnrf-radio .sub-box::before,
+.mnrf-radio-slider .sub-box .sub-check::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 0%;
+  height: 0%;
+  z-index: -1;
+  border-radius: 1000px;
+  transition: .3s
+}
 .mnrf-multi.color-red .sub-tags .sub-tag:hover {
   background-color: #fee2e2
 }
@@ -314,45 +345,6 @@
 .state-focus.mnrf-multi:not(.state-disable) > .sub-info,
 .state-focus.mnrf-multi:not(.state-disable) > .sub-title {
   color: #0284c7
-}
-.mnrf-check-slider .sub-box,
-.mnrf-checkbox .sub-box,
-.mnrf-radio .sub-box,
-.mnrf-radio-slider .sub-box {
-  z-index: 3;
-  margin: 2px;
-  background-color: #fff;
-  border-width: 2px;
-  border-style: solid;
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  box-sizing: border-box;
-  transition: .3s
-}
-.mnrf-check-slider .sub-box .sub-check::before,
-.mnrf-checkbox .sub-box::before,
-.mnrf-radio .sub-box::before,
-.mnrf-radio-slider .sub-box .sub-check::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 0%;
-  height: 0%;
-  z-index: -1;
-  border-radius: 1000px;
-  transition: .3s
-}
-.mnrf-check-slider .sub-box,
-.mnrf-check-slider .sub-box .sub-check,
-.mnrf-radio .sub-box,
-.mnrf-radio .sub-box .sub-check,
-.mnrf-radio-slider .sub-box,
-.mnrf-radio-slider .sub-box .sub-check {
-  border-radius: 1000px
 }
 .mnrf-nosroll {
   overflow: hidden
@@ -1431,4 +1423,12 @@
 }
 .mnrf-multi .sub-frame {
   flex-wrap: wrap
+}
+.mnrf-check-slider .sub-box,
+.mnrf-check-slider .sub-box .sub-check,
+.mnrf-radio .sub-box,
+.mnrf-radio .sub-box .sub-check,
+.mnrf-radio-slider .sub-box,
+.mnrf-radio-slider .sub-box .sub-check {
+  border-radius: 1000px
 }

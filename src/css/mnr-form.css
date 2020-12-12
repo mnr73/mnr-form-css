@@ -1,3 +1,30 @@
+.mnrf-check-slider .sub-box, .mnrf-radio-slider .sub-box, .mnrf-checkbox .sub-box, .mnrf-radio .sub-box {
+  z-index: 3;
+  margin: 2px;
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+.mnrf-check-slider .sub-box .sub-check::before, .mnrf-radio-slider .sub-box .sub-check::before, .mnrf-checkbox .sub-box::before, .mnrf-radio .sub-box::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0%;
+  height: 0%;
+  z-index: -1;
+  border-radius: 1000px;
+  transition: all 0.3s;
+}
+
 .mnrf-multi.color-red .sub-tags .sub-tag:hover {
   background-color: #FEE2E2;
 }
@@ -220,37 +247,6 @@
 
 .mnrf-multi .sub-tags .sub-tag, .mnrf-input.state-focus:not(.state-disable) .sub-frame .sub-icon, .state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-icon, .mnrf-input.state-focus:not(.state-disable) .sub-frame .sub-header, .state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-header, .mnrf-input.state-focus:not(.state-disable) > .sub-info, .state-focus.mnrf-multi:not(.state-disable) > .sub-info, .mnrf-input.state-focus:not(.state-disable) > .sub-title, .state-focus.mnrf-multi:not(.state-disable) > .sub-title, .mnrf-input.state-focus:not(.state-disable) > .sub-hint, .state-focus.mnrf-multi:not(.state-disable) > .sub-hint, .mnrf-input .sub-select, .mnrf-multi .sub-select, .mnrf-radio-key label {
   color: #0284C7;
-}
-
-.mnrf-check-slider .sub-box, .mnrf-radio-slider .sub-box, .mnrf-checkbox .sub-box, .mnrf-radio .sub-box {
-  z-index: 3;
-  margin: 2px;
-  background-color: white;
-  border-width: 2px;
-  border-style: solid;
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  box-sizing: border-box;
-  transition: all 0.3s;
-}
-
-.mnrf-check-slider .sub-box .sub-check::before, .mnrf-radio-slider .sub-box .sub-check::before, .mnrf-checkbox .sub-box::before, .mnrf-radio .sub-box::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0%;
-  height: 0%;
-  z-index: -1;
-  border-radius: 1000px;
-  transition: all 0.3s;
-}
-
-.mnrf-check-slider .sub-box .sub-check, .mnrf-radio-slider .sub-box .sub-check, .mnrf-check-slider .sub-box, .mnrf-radio-slider .sub-box, .mnrf-radio .sub-box .sub-check, .mnrf-radio .sub-box {
-  border-radius: 1000px;
 }
 
 .mnrf-nosroll {
@@ -1228,4 +1224,8 @@
 }
 .mnrf-multi .sub-frame {
   flex-wrap: wrap;
+}
+
+.mnrf-radio .sub-box, .mnrf-radio .sub-box .sub-check, .mnrf-check-slider .sub-box, .mnrf-check-slider .sub-box .sub-check, .mnrf-radio-slider .sub-box, .mnrf-radio-slider .sub-box .sub-check {
+  border-radius: 1000px;
 }

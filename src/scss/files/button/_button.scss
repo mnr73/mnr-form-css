@@ -3,7 +3,7 @@
 .mnrf-btn{
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	&,
-	& *:not(svg) > * > *,
+	& *:not(svg),
 	& *::after,
 	& *::before {
 		transition: all 0.3s;
@@ -78,6 +78,10 @@
 				opacity: 1;
 				transition: 0s;
 			}
+		}
+		&:disabled{
+			opacity: 0.6;
+			cursor: no-drop;
 		}
 	}
 	&.opt-rtl{

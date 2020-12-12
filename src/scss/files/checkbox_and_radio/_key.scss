@@ -46,6 +46,7 @@
 		&:disabled {
 			& + label {
 				cursor: no-drop;
+				opacity: .5;
 			}
 		}
 	}
@@ -113,22 +114,26 @@ $colors: (
 				@extend %tw-text-#{$color}-100;
 			}
 
-			&:checked:enabled + label {
-				@extend %tw-bg-#{$color}-600;
-				@extend %tw-text-#{$color}-100;
-			}
-
-			&:disabled {
-				& + label {
-					@extend %tw-bg-#{$color}-200;
-					@extend %tw-text-#{$color}-300;
-				}
-
-				&:checked + label {
-					@extend %tw-bg-#{$color}-500;
-					@extend %tw-text-#{$color}-600;
+			&:checked {
+				&,&:enabled{
+					&+label{
+						@extend %tw-bg-#{$color}-600;
+						@extend %tw-text-#{$color}-100;
+					}
 				}
 			}
+
+			// &:disabled {
+			// 	& + label {
+			// 		@extend %tw-bg-#{$color}-200;
+			// 		@extend %tw-text-#{$color}-300;
+			// 	}
+
+			// 	&:checked + label {
+			// 		@extend %tw-bg-#{$color}-500;
+			// 		@extend %tw-text-#{$color}-600;
+			// 	}
+			// }
 		}
 	}
 }

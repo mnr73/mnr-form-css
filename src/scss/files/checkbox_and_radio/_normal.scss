@@ -8,7 +8,7 @@
 	}
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	&,
-	& *:not(svg) > * > *,
+	& *:not(svg),
 	& *::after,
 	& *::before {
 		transition: all 0.3s;
@@ -30,12 +30,13 @@
 			height: 100%;
 			display: block;
 			fill: currentColor;
+			// color: inherit;
 		}
 	}
 	input {
 		display: none;
 		&:enabled + .sub-box {
-			&::after {
+			&::before {
 				content: "";
 				display: block;
 				position: absolute;
@@ -51,7 +52,7 @@
 		}
 		@media (pointer: fine) {
 			&:hover:enabled + .sub-box {
-				&::after {
+				&::before {
 					width: 220%;
 					height: 220%;
 				}
@@ -59,13 +60,15 @@
 		}
 		&:checked + .sub-box {
 			// transition: all .3s;
-			&::after {
+			border-color: currentColor;
+			&::before {
 				animation: checkanimate 0.4s;
 			}
 		}
 		&:disabled {
 			& ~ * {
 				cursor: no-drop;
+				opacity: 0.5;
 			}
 		}
 	}
@@ -109,6 +112,14 @@
 			background-color: currentColor;
 		}
 	}
+	input{
+		&:hover:enabled:checked + .sub-box {
+			&::before {
+				width: 0;
+				height: 0;
+			}
+		}
+	}
 }
 
 @keyframes checkanimate {
@@ -138,54 +149,30 @@ $colors: (
 	}
 	#{$className} {
 		.sub-box {
-			@extend %tw-border-#{$color}-400;
-			.sub-check {
-				@extend %tw-text-#{$color}-100;
-			}
+			// @extend %tw-border-#{$color}-400;
+			border-color: map-get(map-get($tw_colors, #{$color}), 400);
+			color: map-get(map-get($tw_colors, #{$color}), 100);
 		}
 		input {
 			@media (pointer: fine) {
-				&:hover:enabled + .sub-box {
-					// @extend %tw-border-#{$color}-500;
+				&:not(:checked):hover:enabled + .sub-box {
 					border-color: map-get(map-get($tw_colors, #{$color}), 500);
-					.sub-check {
-						// @extend %tw-text-#{$color}-300;
-						color: map-get(map-get($tw_colors, #{$color}), 300);
-					}
+					color: map-get(map-get($tw_colors, #{$color}), 300);
 				}
 			}
-			&:enabled + .sub-box {
-				&::after {
-					// @extend %tw-bg-#{$color}-500;
+			& + .sub-box {
+				&::before {
 					background-color: rgba(
 						$color: map-get(map-get($tw_colors, #{$color}), 500),
 						$alpha: 0.5
 					);
 				}
 			}
-			&:checked:enabled + .sub-box {
-				@extend %tw-border-#{$color}-600;
-				@extend %tw-bg-#{$color}-300;
-				.sub-check {
-					// @extend %tw-text-#{$color}-600;
-					color: map-get(map-get($tw_colors, #{$color}), 600);
-				}
-			}
-			&:disabled {
-				& + .sub-box {
-					@extend %tw-border-#{$color}-200;
-					.sub-check {
-						// @extend %tw-text-#{$color}-100;
-						color: map-get(map-get($tw_colors, #{$color}), 100);
-					}
-				}
-				&:checked + .sub-box {
-					@extend %tw-bg-#{$color}-100;
-					// @extend %tw-border-#{$color}-200;
-					.sub-check {
-						// @extend %tw-text-#{$color}-400;
-						color: map-get(map-get($tw_colors, #{$color}), 400);
-					}
+			&:checked {
+				& + .sub-box{
+					// border-color: map-get(map-get($tw_colors, #{$color}), 600) !important;
+					background-color: map-get(map-get($tw_colors, #{$color}), 300) !important;
+					color: map-get(map-get($tw_colors, #{$color}), 600) !important;
 				}
 			}
 		}

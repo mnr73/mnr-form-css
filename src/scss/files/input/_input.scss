@@ -318,22 +318,6 @@
 	&.state-disable {
 		opacity: 0.6;
 		cursor: no-drop;
-		// .sub-frame {
-		// 	border-color: $tw-lightBlue-200;
-		// 	cursor: no-drop;
-		// 	// box-shadow: 0 0 0 2px rgba($tw-lightBlue-500, 0.4);
-		// 	input:disabled {
-		// 		&::placeholder {
-					color: $tw-blueGray-300;
-		// 		}
-		// 	}
-		// 	.sub-header {
-		// 		color: $tw-lightBlue-300;
-		// 	}
-		// 	.sub-icon {
-		// 		color: $tw-lightBlue-300;
-		// 	}
-		// }
 	}
 	.sub-vhr{
 		width: 2px;
@@ -459,7 +443,7 @@ $colors: (
 					}
 				}
 				&:active{
-					@extend %tw-bg-#{$color}-600;
+					background-color: map-get(map-get($tw_colors, #{$color}), 600);
 				}
 			}
 		}

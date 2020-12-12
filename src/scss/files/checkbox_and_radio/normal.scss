@@ -1,18 +1,6 @@
 // @use 'extends';
 @import "../../color";
 
-// body {
-// 	// @media (pointer: none) {
-// 	// 	background-color: red;
-// 	// }
-// 	@media (pointer: coarse) {
-// 		background-color: blue;
-// 	}
-// 	@media (pointer: fine) {
-// 		background-color: green;
-// 	}
-// }
-
 .mnrf-checkbox {
 	&,
 	& * {
@@ -37,10 +25,11 @@
 		width: 20px;
 		height: 20px;
 		border-radius: 2px;
-		// z-index: 1;
+		z-index: 3;
 		.sub-check {
 			height: 100%;
 			display: block;
+			fill: currentColor;
 		}
 	}
 	input {
@@ -56,7 +45,7 @@
 				// opacity: 20%;
 				width: 0%;
 				height: 0%;
-				z-index: 1;
+				z-index: -1;
 				border-radius: 1000px;
 			}
 		}
@@ -110,104 +99,15 @@
 }
 
 .mnrf-radio {
-	&,
-	& * {
-		cursor: pointer;
-	}
-	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-	&,
-	& *:not(svg) > * > *,
-	& *::after,
-	& *::before {
-		transition: all 0.3s;
-	}
+	@extend .mnrf-checkbox;
 	.sub-box {
-		margin: 2px;
-		background-color: white;
-		border-width: 2px;
-		border-style: solid;
-		display: inline-block;
-		position: relative;
-		vertical-align: middle;
-		box-sizing: border-box;
 		border-radius: 1000px;
-		width: 20px;
-		height: 20px;
-		// transition: all .3s;
 		padding: 3px;
 		.sub-check {
-			display: block;
 			border-radius: 1000px;
 			width: 100%;
-			height: 100%;
+			background-color: currentColor;
 		}
-	}
-	input {
-		display: none;
-		&:enabled + .sub-box {
-			&::after {
-				// transition: all .3s;
-				content: "";
-				display: block;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				// opacity: 20%;
-				width: 0%;
-				height: 0%;
-				z-index: 1;
-				border-radius: 1000px;
-			}
-		}
-		@media (pointer: fine) {
-			&:hover:enabled + .sub-box {
-				// transition: all .3s;
-				&::after {
-					width: 220%;
-					height: 220%;
-				}
-			}
-		}
-		&:checked + .sub-box {
-			// transition: all .3s;
-			&::after {
-				animation: checkanimate 0.4s;
-			}
-		}
-		&:disabled {
-			& ~ * {
-				cursor: no-drop;
-			}
-		}
-	}
-
-	&.opt-sm {
-		.sub-box {
-			width: 18px;
-			height: 18px;
-		}
-	}
-	&.opt-md {
-		.sub-box {
-			width: 20px;
-			height: 20px;
-		}
-	}
-	&.opt-lg {
-		.sub-box {
-			width: 22px;
-			height: 22px;
-		}
-	}
-	&.opt-em {
-		.sub-box {
-			width: 1.46em;
-			height: 1.46em;
-		}
-	}
-	&.opt-block {
-		display: block;
 	}
 }
 
@@ -240,7 +140,7 @@ $colors: (
 		.sub-box {
 			@extend %tw-border-#{$color}-400;
 			.sub-check {
-				@extend %tw-fill-#{$color}-100;
+				@extend %tw-text-#{$color}-100;
 			}
 		}
 		input {
@@ -250,7 +150,7 @@ $colors: (
 					border-color: map-get(map-get($tw_colors, #{$color}), 500);
 					.sub-check {
 						// @extend %tw-fill-#{$color}-300;
-						fill: map-get(map-get($tw_colors, #{$color}), 300);
+						color: map-get(map-get($tw_colors, #{$color}), 300);
 					}
 				}
 			}
@@ -259,7 +159,7 @@ $colors: (
 					// @extend %tw-bg-#{$color}-500;
 					background-color: rgba(
 						$color: map-get(map-get($tw_colors, #{$color}), 500),
-						$alpha: 0.2
+						$alpha: 0.5
 					);
 				}
 			}
@@ -267,79 +167,21 @@ $colors: (
 				@extend %tw-border-#{$color}-600;
 				@extend %tw-bg-#{$color}-300;
 				.sub-check {
-					@extend %tw-fill-#{$color}-600;
+					@extend %tw-text-#{$color}-600;
 				}
 			}
 			&:disabled {
 				& + .sub-box {
 					@extend %tw-border-#{$color}-200;
 					.sub-check {
-						@extend %tw-fill-#{$color}-100;
+						@extend %tw-text-#{$color}-100;
 					}
 				}
 				&:checked + .sub-box {
 					@extend %tw-bg-#{$color}-100;
 					// @extend %tw-border-#{$color}-200;
 					.sub-check {
-						@extend %tw-fill-#{$color}-400;
-					}
-				}
-			}
-		}
-	}
-
-	$className: ".mnrf-radio.color-#{$name}";
-	@if $name == "main" {
-		$className: ".mnrf-radio";
-	}
-	#{$className} {
-		.sub-box {
-			@extend %tw-border-#{$color}-400;
-			.sub-check {
-				@extend %tw-bg-#{$color}-100;
-			}
-		}
-		input {
-			@media (pointer: fine) {
-				&:hover:enabled + .sub-box {
-					// @extend %tw-border-#{$color}-500;
-					border-color: map-get(map-get($tw_colors, #{$color}), 500);
-					.sub-check {
-						// @extend %tw-bg-#{$color}-300;
-						background-color: map-get(
-							map-get($tw_colors, #{$color}),
-							300
-						);
-					}
-				}
-			}
-			&:enabled + .sub-box {
-				&::after {
-					// @extend %tw-bg-#{$color}-500;
-					background-color: rgba(
-						$color: map-get(map-get($tw_colors, #{$color}), 500),
-						$alpha: 0.2
-					);
-				}
-			}
-			&:checked:enabled + .sub-box {
-				@extend %tw-border-#{$color}-600;
-				@extend %tw-bg-#{$color}-300;
-				.sub-check {
-					@extend %tw-bg-#{$color}-600;
-				}
-			}
-			&:disabled {
-				& + .sub-box {
-					@extend %tw-border-#{$color}-200;
-					.sub-check {
-						@extend %tw-bg-#{$color}-100;
-					}
-				}
-				&:checked + .sub-box {
-					@extend %tw-bg-#{$color}-100;
-					.sub-check {
-						@extend %tw-bg-#{$color}-400;
+						@extend %tw-text-#{$color}-400;
 					}
 				}
 			}

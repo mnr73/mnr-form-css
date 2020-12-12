@@ -1,173 +1,141 @@
-.mnrf-radio.color-red input:disabled:checked + .sub-box, .mnrf-radio.color-red input:disabled + .sub-box .sub-check, .mnrf-radio.color-red .sub-box .sub-check, .mnrf-checkbox.color-red input:disabled:checked + .sub-box {
+.mnrf-checkbox.color-red input:disabled:checked + .sub-box, .color-red.mnrf-radio input:disabled:checked + .sub-box {
   background-color: #FEE2E2;
 }
 
-.mnrf-checkbox.color-red input:disabled + .sub-box .sub-check, .mnrf-checkbox.color-red .sub-box .sub-check {
-  fill: #FEE2E2;
+.mnrf-checkbox.color-red input:disabled + .sub-box .sub-check, .color-red.mnrf-radio input:disabled + .sub-box .sub-check, .mnrf-checkbox.color-red .sub-box .sub-check, .color-red.mnrf-radio .sub-box .sub-check {
+  color: #FEE2E2;
 }
 
-.mnrf-radio.color-red input:disabled + .sub-box, .mnrf-checkbox.color-red input:disabled + .sub-box {
+.mnrf-checkbox.color-red input:disabled + .sub-box, .color-red.mnrf-radio input:disabled + .sub-box {
   border-color: #FECACA;
 }
 
-.mnrf-radio.color-red input:checked:enabled + .sub-box, .mnrf-checkbox.color-red input:checked:enabled + .sub-box {
+.mnrf-checkbox.color-red input:checked:enabled + .sub-box, .color-red.mnrf-radio input:checked:enabled + .sub-box {
   background-color: #FCA5A5;
 }
 
-.mnrf-radio.color-red .sub-box, .mnrf-checkbox.color-red .sub-box {
+.mnrf-checkbox.color-red .sub-box, .color-red.mnrf-radio .sub-box {
   border-color: #F87171;
 }
 
-.mnrf-radio.color-red input:disabled:checked + .sub-box .sub-check {
-  background-color: #F87171;
+.mnrf-checkbox.color-red input:disabled:checked + .sub-box .sub-check, .color-red.mnrf-radio input:disabled:checked + .sub-box .sub-check {
+  color: #F87171;
 }
 
-.mnrf-checkbox.color-red input:disabled:checked + .sub-box .sub-check {
-  fill: #F87171;
-}
-
-.mnrf-radio.color-red input:checked:enabled + .sub-box, .mnrf-checkbox.color-red input:checked:enabled + .sub-box {
+.mnrf-checkbox.color-red input:checked:enabled + .sub-box, .color-red.mnrf-radio input:checked:enabled + .sub-box {
   border-color: #DC2626;
 }
 
-.mnrf-radio.color-red input:checked:enabled + .sub-box .sub-check {
-  background-color: #DC2626;
+.mnrf-checkbox.color-red input:checked:enabled + .sub-box .sub-check, .color-red.mnrf-radio input:checked:enabled + .sub-box .sub-check {
+  color: #DC2626;
 }
 
-.mnrf-checkbox.color-red input:checked:enabled + .sub-box .sub-check {
-  fill: #DC2626;
-}
-
-.mnrf-radio.color-yellow input:disabled:checked + .sub-box, .mnrf-radio.color-yellow input:disabled + .sub-box .sub-check, .mnrf-radio.color-yellow .sub-box .sub-check, .mnrf-checkbox.color-yellow input:disabled:checked + .sub-box {
+.mnrf-checkbox.color-yellow input:disabled:checked + .sub-box, .color-yellow.mnrf-radio input:disabled:checked + .sub-box {
   background-color: #FEF9C3;
 }
 
-.mnrf-checkbox.color-yellow input:disabled + .sub-box .sub-check, .mnrf-checkbox.color-yellow .sub-box .sub-check {
-  fill: #FEF9C3;
+.mnrf-checkbox.color-yellow input:disabled + .sub-box .sub-check, .color-yellow.mnrf-radio input:disabled + .sub-box .sub-check, .mnrf-checkbox.color-yellow .sub-box .sub-check, .color-yellow.mnrf-radio .sub-box .sub-check {
+  color: #FEF9C3;
 }
 
-.mnrf-radio.color-yellow input:disabled + .sub-box, .mnrf-checkbox.color-yellow input:disabled + .sub-box {
+.mnrf-checkbox.color-yellow input:disabled + .sub-box, .color-yellow.mnrf-radio input:disabled + .sub-box {
   border-color: #FEF08A;
 }
 
-.mnrf-radio.color-yellow input:checked:enabled + .sub-box, .mnrf-checkbox.color-yellow input:checked:enabled + .sub-box {
+.mnrf-checkbox.color-yellow input:checked:enabled + .sub-box, .color-yellow.mnrf-radio input:checked:enabled + .sub-box {
   background-color: #FDE047;
 }
 
-.mnrf-radio.color-yellow .sub-box, .mnrf-checkbox.color-yellow .sub-box {
+.mnrf-checkbox.color-yellow .sub-box, .color-yellow.mnrf-radio .sub-box {
   border-color: #FACC15;
 }
 
-.mnrf-radio.color-yellow input:disabled:checked + .sub-box .sub-check {
-  background-color: #FACC15;
+.mnrf-checkbox.color-yellow input:disabled:checked + .sub-box .sub-check, .color-yellow.mnrf-radio input:disabled:checked + .sub-box .sub-check {
+  color: #FACC15;
 }
 
-.mnrf-checkbox.color-yellow input:disabled:checked + .sub-box .sub-check {
-  fill: #FACC15;
-}
-
-.mnrf-radio.color-yellow input:checked:enabled + .sub-box, .mnrf-checkbox.color-yellow input:checked:enabled + .sub-box {
+.mnrf-checkbox.color-yellow input:checked:enabled + .sub-box, .color-yellow.mnrf-radio input:checked:enabled + .sub-box {
   border-color: #CA8A04;
 }
 
-.mnrf-radio.color-yellow input:checked:enabled + .sub-box .sub-check {
-  background-color: #CA8A04;
+.mnrf-checkbox.color-yellow input:checked:enabled + .sub-box .sub-check, .color-yellow.mnrf-radio input:checked:enabled + .sub-box .sub-check {
+  color: #CA8A04;
 }
 
-.mnrf-checkbox.color-yellow input:checked:enabled + .sub-box .sub-check {
-  fill: #CA8A04;
-}
-
-.mnrf-radio.color-green input:disabled:checked + .sub-box, .mnrf-radio.color-green input:disabled + .sub-box .sub-check, .mnrf-radio.color-green .sub-box .sub-check, .mnrf-checkbox.color-green input:disabled:checked + .sub-box {
+.mnrf-checkbox.color-green input:disabled:checked + .sub-box, .color-green.mnrf-radio input:disabled:checked + .sub-box {
   background-color: #D1FAE5;
 }
 
-.mnrf-checkbox.color-green input:disabled + .sub-box .sub-check, .mnrf-checkbox.color-green .sub-box .sub-check {
-  fill: #D1FAE5;
+.mnrf-checkbox.color-green input:disabled + .sub-box .sub-check, .color-green.mnrf-radio input:disabled + .sub-box .sub-check, .mnrf-checkbox.color-green .sub-box .sub-check, .color-green.mnrf-radio .sub-box .sub-check {
+  color: #D1FAE5;
 }
 
-.mnrf-radio.color-green input:disabled + .sub-box, .mnrf-checkbox.color-green input:disabled + .sub-box {
+.mnrf-checkbox.color-green input:disabled + .sub-box, .color-green.mnrf-radio input:disabled + .sub-box {
   border-color: #A7F3D0;
 }
 
-.mnrf-radio.color-green input:checked:enabled + .sub-box, .mnrf-checkbox.color-green input:checked:enabled + .sub-box {
+.mnrf-checkbox.color-green input:checked:enabled + .sub-box, .color-green.mnrf-radio input:checked:enabled + .sub-box {
   background-color: #6EE7B7;
 }
 
-.mnrf-radio.color-green .sub-box, .mnrf-checkbox.color-green .sub-box {
+.mnrf-checkbox.color-green .sub-box, .color-green.mnrf-radio .sub-box {
   border-color: #34D399;
 }
 
-.mnrf-radio.color-green input:disabled:checked + .sub-box .sub-check {
-  background-color: #34D399;
+.mnrf-checkbox.color-green input:disabled:checked + .sub-box .sub-check, .color-green.mnrf-radio input:disabled:checked + .sub-box .sub-check {
+  color: #34D399;
 }
 
-.mnrf-checkbox.color-green input:disabled:checked + .sub-box .sub-check {
-  fill: #34D399;
-}
-
-.mnrf-radio.color-green input:checked:enabled + .sub-box, .mnrf-checkbox.color-green input:checked:enabled + .sub-box {
+.mnrf-checkbox.color-green input:checked:enabled + .sub-box, .color-green.mnrf-radio input:checked:enabled + .sub-box {
   border-color: #059669;
 }
 
-.mnrf-radio.color-green input:checked:enabled + .sub-box .sub-check {
-  background-color: #059669;
+.mnrf-checkbox.color-green input:checked:enabled + .sub-box .sub-check, .color-green.mnrf-radio input:checked:enabled + .sub-box .sub-check {
+  color: #059669;
 }
 
-.mnrf-checkbox.color-green input:checked:enabled + .sub-box .sub-check {
-  fill: #059669;
-}
-
-.mnrf-radio input:disabled:checked + .sub-box, .mnrf-radio input:disabled + .sub-box .sub-check, .mnrf-radio .sub-box .sub-check, .mnrf-checkbox input:disabled:checked + .sub-box {
+.mnrf-checkbox input:disabled:checked + .sub-box, .mnrf-radio input:disabled:checked + .sub-box {
   background-color: #E0F2FE;
 }
 
-.mnrf-checkbox input:disabled + .sub-box .sub-check, .mnrf-checkbox .sub-box .sub-check {
-  fill: #E0F2FE;
+.mnrf-checkbox input:disabled + .sub-box .sub-check, .mnrf-radio input:disabled + .sub-box .sub-check, .mnrf-checkbox .sub-box .sub-check, .mnrf-radio .sub-box .sub-check {
+  color: #E0F2FE;
 }
 
-.mnrf-radio input:disabled + .sub-box, .mnrf-checkbox input:disabled + .sub-box {
+.mnrf-checkbox input:disabled + .sub-box, .mnrf-radio input:disabled + .sub-box {
   border-color: #BAE6FD;
 }
 
-.mnrf-radio input:checked:enabled + .sub-box, .mnrf-checkbox input:checked:enabled + .sub-box {
+.mnrf-checkbox input:checked:enabled + .sub-box, .mnrf-radio input:checked:enabled + .sub-box {
   background-color: #7DD3FC;
 }
 
-.mnrf-radio .sub-box, .mnrf-checkbox .sub-box {
+.mnrf-checkbox .sub-box, .mnrf-radio .sub-box {
   border-color: #38BDF8;
 }
 
-.mnrf-radio input:disabled:checked + .sub-box .sub-check {
-  background-color: #38BDF8;
+.mnrf-checkbox input:disabled:checked + .sub-box .sub-check, .mnrf-radio input:disabled:checked + .sub-box .sub-check {
+  color: #38BDF8;
 }
 
-.mnrf-checkbox input:disabled:checked + .sub-box .sub-check {
-  fill: #38BDF8;
-}
-
-.mnrf-radio input:checked:enabled + .sub-box, .mnrf-checkbox input:checked:enabled + .sub-box {
+.mnrf-checkbox input:checked:enabled + .sub-box, .mnrf-radio input:checked:enabled + .sub-box {
   border-color: #0284C7;
 }
 
-.mnrf-radio input:checked:enabled + .sub-box .sub-check {
-  background-color: #0284C7;
+.mnrf-checkbox input:checked:enabled + .sub-box .sub-check, .mnrf-radio input:checked:enabled + .sub-box .sub-check {
+  color: #0284C7;
 }
 
-.mnrf-checkbox input:checked:enabled + .sub-box .sub-check {
-  fill: #0284C7;
-}
-
-.mnrf-checkbox {
+.mnrf-checkbox, .mnrf-radio {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
-.mnrf-checkbox, .mnrf-checkbox * {
+.mnrf-checkbox, .mnrf-radio, .mnrf-checkbox *, .mnrf-radio * {
   cursor: pointer;
 }
-.mnrf-checkbox, .mnrf-checkbox *:not(svg) > * > *, .mnrf-checkbox *::after, .mnrf-checkbox *::before {
+.mnrf-checkbox, .mnrf-radio, .mnrf-checkbox *:not(svg) > * > *, .mnrf-radio *:not(svg) > * > *, .mnrf-checkbox *::after, .mnrf-radio *::after, .mnrf-checkbox *::before, .mnrf-radio *::before {
   transition: all 0.3s;
 }
-.mnrf-checkbox .sub-box {
+.mnrf-checkbox .sub-box, .mnrf-radio .sub-box {
   margin: 2px;
   background-color: white;
   border-width: 2px;
@@ -179,15 +147,17 @@
   width: 20px;
   height: 20px;
   border-radius: 2px;
+  z-index: 3;
 }
-.mnrf-checkbox .sub-box .sub-check {
+.mnrf-checkbox .sub-box .sub-check, .mnrf-radio .sub-box .sub-check {
   height: 100%;
   display: block;
+  fill: currentColor;
 }
-.mnrf-checkbox input {
+.mnrf-checkbox input, .mnrf-radio input {
   display: none;
 }
-.mnrf-checkbox input:enabled + .sub-box::after {
+.mnrf-checkbox input:enabled + .sub-box::after, .mnrf-radio input:enabled + .sub-box::after {
   content: "";
   display: block;
   position: absolute;
@@ -196,115 +166,49 @@
   transform: translate(-50%, -50%);
   width: 0%;
   height: 0%;
-  z-index: 1;
+  z-index: -1;
   border-radius: 1000px;
 }
 @media (pointer: fine) {
-  .mnrf-checkbox input:hover:enabled + .sub-box::after {
+  .mnrf-checkbox input:hover:enabled + .sub-box::after, .mnrf-radio input:hover:enabled + .sub-box::after {
     width: 220%;
     height: 220%;
   }
 }
-.mnrf-checkbox input:checked + .sub-box::after {
+.mnrf-checkbox input:checked + .sub-box::after, .mnrf-radio input:checked + .sub-box::after {
   animation: checkanimate 0.4s;
 }
-.mnrf-checkbox input:disabled ~ * {
+.mnrf-checkbox input:disabled ~ *, .mnrf-radio input:disabled ~ * {
   cursor: no-drop;
 }
-.mnrf-checkbox.opt-sm .sub-box {
+.mnrf-checkbox.opt-sm .sub-box, .opt-sm.mnrf-radio .sub-box {
   width: 18px;
   height: 18px;
 }
-.mnrf-checkbox.opt-md .sub-box {
+.mnrf-checkbox.opt-md .sub-box, .opt-md.mnrf-radio .sub-box {
   width: 20px;
   height: 20px;
 }
-.mnrf-checkbox.opt-lg .sub-box {
+.mnrf-checkbox.opt-lg .sub-box, .opt-lg.mnrf-radio .sub-box {
   width: 22px;
   height: 22px;
 }
-.mnrf-checkbox.opt-em .sub-box {
+.mnrf-checkbox.opt-em .sub-box, .opt-em.mnrf-radio .sub-box {
   width: 1.46em;
   height: 1.46em;
 }
-.mnrf-checkbox.opt-block {
+.mnrf-checkbox.opt-block, .opt-block.mnrf-radio {
   display: block;
 }
 
-.mnrf-radio {
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-}
-.mnrf-radio, .mnrf-radio * {
-  cursor: pointer;
-}
-.mnrf-radio, .mnrf-radio *:not(svg) > * > *, .mnrf-radio *::after, .mnrf-radio *::before {
-  transition: all 0.3s;
-}
 .mnrf-radio .sub-box {
-  margin: 2px;
-  background-color: white;
-  border-width: 2px;
-  border-style: solid;
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  box-sizing: border-box;
   border-radius: 1000px;
-  width: 20px;
-  height: 20px;
   padding: 3px;
 }
 .mnrf-radio .sub-box .sub-check {
-  display: block;
   border-radius: 1000px;
   width: 100%;
-  height: 100%;
-}
-.mnrf-radio input {
-  display: none;
-}
-.mnrf-radio input:enabled + .sub-box::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0%;
-  height: 0%;
-  z-index: 1;
-  border-radius: 1000px;
-}
-@media (pointer: fine) {
-  .mnrf-radio input:hover:enabled + .sub-box::after {
-    width: 220%;
-    height: 220%;
-  }
-}
-.mnrf-radio input:checked + .sub-box::after {
-  animation: checkanimate 0.4s;
-}
-.mnrf-radio input:disabled ~ * {
-  cursor: no-drop;
-}
-.mnrf-radio.opt-sm .sub-box {
-  width: 18px;
-  height: 18px;
-}
-.mnrf-radio.opt-md .sub-box {
-  width: 20px;
-  height: 20px;
-}
-.mnrf-radio.opt-lg .sub-box {
-  width: 22px;
-  height: 22px;
-}
-.mnrf-radio.opt-em .sub-box {
-  width: 1.46em;
-  height: 1.46em;
-}
-.mnrf-radio.opt-block {
-  display: block;
+  background-color: currentColor;
 }
 
 @keyframes checkanimate {
@@ -320,90 +224,46 @@
   }
 }
 @media (pointer: fine) {
-  .mnrf-checkbox input:hover:enabled + .sub-box {
+  .mnrf-checkbox input:hover:enabled + .sub-box, .mnrf-radio input:hover:enabled + .sub-box {
     border-color: #0EA5E9;
   }
-  .mnrf-checkbox input:hover:enabled + .sub-box .sub-check {
-    fill: #7DD3FC;
+  .mnrf-checkbox input:hover:enabled + .sub-box .sub-check, .mnrf-radio input:hover:enabled + .sub-box .sub-check {
+    color: #7DD3FC;
   }
 }
-.mnrf-checkbox input:enabled + .sub-box::after {
-  background-color: rgba(14, 165, 233, 0.2);
+.mnrf-checkbox input:enabled + .sub-box::after, .mnrf-radio input:enabled + .sub-box::after {
+  background-color: rgba(14, 165, 233, 0.5);
 }
 @media (pointer: fine) {
-  .mnrf-radio input:hover:enabled + .sub-box {
-    border-color: #0EA5E9;
-  }
-  .mnrf-radio input:hover:enabled + .sub-box .sub-check {
-    background-color: #7DD3FC;
-  }
-}
-.mnrf-radio input:enabled + .sub-box::after {
-  background-color: rgba(14, 165, 233, 0.2);
-}
-@media (pointer: fine) {
-  .mnrf-checkbox.color-red input:hover:enabled + .sub-box {
+  .mnrf-checkbox.color-red input:hover:enabled + .sub-box, .color-red.mnrf-radio input:hover:enabled + .sub-box {
     border-color: #EF4444;
   }
-  .mnrf-checkbox.color-red input:hover:enabled + .sub-box .sub-check {
-    fill: #FCA5A5;
+  .mnrf-checkbox.color-red input:hover:enabled + .sub-box .sub-check, .color-red.mnrf-radio input:hover:enabled + .sub-box .sub-check {
+    color: #FCA5A5;
   }
 }
-.mnrf-checkbox.color-red input:enabled + .sub-box::after {
-  background-color: rgba(239, 68, 68, 0.2);
+.mnrf-checkbox.color-red input:enabled + .sub-box::after, .color-red.mnrf-radio input:enabled + .sub-box::after {
+  background-color: rgba(239, 68, 68, 0.5);
 }
 @media (pointer: fine) {
-  .mnrf-radio.color-red input:hover:enabled + .sub-box {
-    border-color: #EF4444;
-  }
-  .mnrf-radio.color-red input:hover:enabled + .sub-box .sub-check {
-    background-color: #FCA5A5;
-  }
-}
-.mnrf-radio.color-red input:enabled + .sub-box::after {
-  background-color: rgba(239, 68, 68, 0.2);
-}
-@media (pointer: fine) {
-  .mnrf-checkbox.color-yellow input:hover:enabled + .sub-box {
+  .mnrf-checkbox.color-yellow input:hover:enabled + .sub-box, .color-yellow.mnrf-radio input:hover:enabled + .sub-box {
     border-color: #EAB308;
   }
-  .mnrf-checkbox.color-yellow input:hover:enabled + .sub-box .sub-check {
-    fill: #FDE047;
+  .mnrf-checkbox.color-yellow input:hover:enabled + .sub-box .sub-check, .color-yellow.mnrf-radio input:hover:enabled + .sub-box .sub-check {
+    color: #FDE047;
   }
 }
-.mnrf-checkbox.color-yellow input:enabled + .sub-box::after {
-  background-color: rgba(234, 179, 8, 0.2);
+.mnrf-checkbox.color-yellow input:enabled + .sub-box::after, .color-yellow.mnrf-radio input:enabled + .sub-box::after {
+  background-color: rgba(234, 179, 8, 0.5);
 }
 @media (pointer: fine) {
-  .mnrf-radio.color-yellow input:hover:enabled + .sub-box {
-    border-color: #EAB308;
-  }
-  .mnrf-radio.color-yellow input:hover:enabled + .sub-box .sub-check {
-    background-color: #FDE047;
-  }
-}
-.mnrf-radio.color-yellow input:enabled + .sub-box::after {
-  background-color: rgba(234, 179, 8, 0.2);
-}
-@media (pointer: fine) {
-  .mnrf-checkbox.color-green input:hover:enabled + .sub-box {
+  .mnrf-checkbox.color-green input:hover:enabled + .sub-box, .color-green.mnrf-radio input:hover:enabled + .sub-box {
     border-color: #10B981;
   }
-  .mnrf-checkbox.color-green input:hover:enabled + .sub-box .sub-check {
-    fill: #6EE7B7;
+  .mnrf-checkbox.color-green input:hover:enabled + .sub-box .sub-check, .color-green.mnrf-radio input:hover:enabled + .sub-box .sub-check {
+    color: #6EE7B7;
   }
 }
-.mnrf-checkbox.color-green input:enabled + .sub-box::after {
-  background-color: rgba(16, 185, 129, 0.2);
-}
-@media (pointer: fine) {
-  .mnrf-radio.color-green input:hover:enabled + .sub-box {
-    border-color: #10B981;
-  }
-  .mnrf-radio.color-green input:hover:enabled + .sub-box .sub-check {
-    background-color: #6EE7B7;
-  }
-}
-.mnrf-radio.color-green input:enabled + .sub-box::after {
-  background-color: rgba(16, 185, 129, 0.2);
+.mnrf-checkbox.color-green input:enabled + .sub-box::after, .color-green.mnrf-radio input:enabled + .sub-box::after {
+  background-color: rgba(16, 185, 129, 0.5);
 }

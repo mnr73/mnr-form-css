@@ -1,141 +1,142 @@
-.mnrf-radio-slider.color-red input:disabled:checked + .sub-box, .mnrf-check-slider.color-red input:disabled:checked + .sub-box {
+.mnrf-check-slider.color-red input:disabled:checked + .sub-box, .color-red.mnrf-radio-slider input:disabled:checked + .sub-box {
   background-color: #FEE2E2;
 }
 
-.mnrf-radio-slider.color-red input:disabled + .sub-box .sub-check, .mnrf-radio-slider.color-red input:disabled + .sub-box, .mnrf-check-slider.color-red input:disabled + .sub-box {
+.mnrf-check-slider.color-red input:disabled + .sub-box, .color-red.mnrf-radio-slider input:disabled + .sub-box {
   border-color: #FECACA;
 }
 
-.mnrf-check-slider.color-red input:disabled + .sub-box .sub-check {
-  background-color: #FECACA;
+.mnrf-check-slider.color-red input:disabled + .sub-box .sub-check, .color-red.mnrf-radio-slider input:disabled + .sub-box .sub-check {
+  color: #FECACA;
 }
 
-.mnrf-radio-slider.color-red input:checked:enabled + .sub-box, .mnrf-check-slider.color-red input:checked:enabled + .sub-box {
+.mnrf-check-slider.color-red input:checked:enabled + .sub-box, .color-red.mnrf-radio-slider input:checked:enabled + .sub-box {
   background-color: #FCA5A5;
 }
 
-.mnrf-radio-slider.color-red input:disabled:checked + .sub-box .sub-check, .mnrf-radio-slider.color-red .sub-box .sub-check, .mnrf-radio-slider.color-red .sub-box, .mnrf-check-slider.color-red .sub-box {
+.mnrf-check-slider.color-red .sub-box, .color-red.mnrf-radio-slider .sub-box {
   border-color: #F87171;
 }
 
-.mnrf-check-slider.color-red input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-red .sub-box .sub-check {
-  background-color: #F87171;
+.mnrf-check-slider.color-red input:disabled:checked + .sub-box .sub-check, .color-red.mnrf-radio-slider input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-red .sub-box .sub-check, .color-red.mnrf-radio-slider .sub-box .sub-check {
+  color: #F87171;
 }
 
-.mnrf-radio-slider.color-red input:checked:enabled + .sub-box .sub-check, .mnrf-radio-slider.color-red input:checked:enabled + .sub-box, .mnrf-check-slider.color-red input:checked:enabled + .sub-box {
+.mnrf-check-slider.color-red input:checked:enabled + .sub-box, .color-red.mnrf-radio-slider input:checked:enabled + .sub-box {
   border-color: #DC2626;
 }
 
-.mnrf-check-slider.color-red input:checked:enabled + .sub-box .sub-check {
-  background-color: #DC2626;
+.mnrf-check-slider.color-red input:checked:enabled + .sub-box .sub-check, .color-red.mnrf-radio-slider input:checked:enabled + .sub-box .sub-check {
+  color: #DC2626;
 }
 
-.mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box, .mnrf-check-slider.color-yellow input:disabled:checked + .sub-box {
+.mnrf-check-slider.color-yellow input:disabled:checked + .sub-box, .color-yellow.mnrf-radio-slider input:disabled:checked + .sub-box {
   background-color: #FEF9C3;
 }
 
-.mnrf-radio-slider.color-yellow input:disabled + .sub-box .sub-check, .mnrf-radio-slider.color-yellow input:disabled + .sub-box, .mnrf-check-slider.color-yellow input:disabled + .sub-box {
+.mnrf-check-slider.color-yellow input:disabled + .sub-box, .color-yellow.mnrf-radio-slider input:disabled + .sub-box {
   border-color: #FEF08A;
 }
 
-.mnrf-check-slider.color-yellow input:disabled + .sub-box .sub-check {
-  background-color: #FEF08A;
+.mnrf-check-slider.color-yellow input:disabled + .sub-box .sub-check, .color-yellow.mnrf-radio-slider input:disabled + .sub-box .sub-check {
+  color: #FEF08A;
 }
 
-.mnrf-radio-slider.color-yellow input:checked:enabled + .sub-box, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box {
+.mnrf-check-slider.color-yellow input:checked:enabled + .sub-box, .color-yellow.mnrf-radio-slider input:checked:enabled + .sub-box {
   background-color: #FDE047;
 }
 
-.mnrf-radio-slider.color-yellow input:disabled:checked + .sub-box .sub-check, .mnrf-radio-slider.color-yellow .sub-box .sub-check, .mnrf-radio-slider.color-yellow .sub-box, .mnrf-check-slider.color-yellow .sub-box {
+.mnrf-check-slider.color-yellow .sub-box, .color-yellow.mnrf-radio-slider .sub-box {
   border-color: #FACC15;
 }
 
-.mnrf-check-slider.color-yellow input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-yellow .sub-box .sub-check {
-  background-color: #FACC15;
+.mnrf-check-slider.color-yellow input:disabled:checked + .sub-box .sub-check, .color-yellow.mnrf-radio-slider input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-yellow .sub-box .sub-check, .color-yellow.mnrf-radio-slider .sub-box .sub-check {
+  color: #FACC15;
 }
 
-.mnrf-radio-slider.color-yellow input:checked:enabled + .sub-box .sub-check, .mnrf-radio-slider.color-yellow input:checked:enabled + .sub-box, .mnrf-check-slider.color-yellow input:checked:enabled + .sub-box {
+.mnrf-check-slider.color-yellow input:checked:enabled + .sub-box, .color-yellow.mnrf-radio-slider input:checked:enabled + .sub-box {
   border-color: #CA8A04;
 }
 
-.mnrf-check-slider.color-yellow input:checked:enabled + .sub-box .sub-check {
-  background-color: #CA8A04;
+.mnrf-check-slider.color-yellow input:checked:enabled + .sub-box .sub-check, .color-yellow.mnrf-radio-slider input:checked:enabled + .sub-box .sub-check {
+  color: #CA8A04;
 }
 
-.mnrf-radio-slider.color-green input:disabled:checked + .sub-box, .mnrf-check-slider.color-green input:disabled:checked + .sub-box {
+.mnrf-check-slider.color-green input:disabled:checked + .sub-box, .color-green.mnrf-radio-slider input:disabled:checked + .sub-box {
   background-color: #D1FAE5;
 }
 
-.mnrf-radio-slider.color-green input:disabled + .sub-box .sub-check, .mnrf-radio-slider.color-green input:disabled + .sub-box, .mnrf-check-slider.color-green input:disabled + .sub-box {
+.mnrf-check-slider.color-green input:disabled + .sub-box, .color-green.mnrf-radio-slider input:disabled + .sub-box {
   border-color: #A7F3D0;
 }
 
-.mnrf-check-slider.color-green input:disabled + .sub-box .sub-check {
-  background-color: #A7F3D0;
+.mnrf-check-slider.color-green input:disabled + .sub-box .sub-check, .color-green.mnrf-radio-slider input:disabled + .sub-box .sub-check {
+  color: #A7F3D0;
 }
 
-.mnrf-radio-slider.color-green input:checked:enabled + .sub-box, .mnrf-check-slider.color-green input:checked:enabled + .sub-box {
+.mnrf-check-slider.color-green input:checked:enabled + .sub-box, .color-green.mnrf-radio-slider input:checked:enabled + .sub-box {
   background-color: #6EE7B7;
 }
 
-.mnrf-radio-slider.color-green input:disabled:checked + .sub-box .sub-check, .mnrf-radio-slider.color-green .sub-box .sub-check, .mnrf-radio-slider.color-green .sub-box, .mnrf-check-slider.color-green .sub-box {
+.mnrf-check-slider.color-green .sub-box, .color-green.mnrf-radio-slider .sub-box {
   border-color: #34D399;
 }
 
-.mnrf-check-slider.color-green input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-green .sub-box .sub-check {
-  background-color: #34D399;
+.mnrf-check-slider.color-green input:disabled:checked + .sub-box .sub-check, .color-green.mnrf-radio-slider input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider.color-green .sub-box .sub-check, .color-green.mnrf-radio-slider .sub-box .sub-check {
+  color: #34D399;
 }
 
-.mnrf-radio-slider.color-green input:checked:enabled + .sub-box .sub-check, .mnrf-radio-slider.color-green input:checked:enabled + .sub-box, .mnrf-check-slider.color-green input:checked:enabled + .sub-box {
+.mnrf-check-slider.color-green input:checked:enabled + .sub-box, .color-green.mnrf-radio-slider input:checked:enabled + .sub-box {
   border-color: #059669;
 }
 
-.mnrf-check-slider.color-green input:checked:enabled + .sub-box .sub-check {
-  background-color: #059669;
+.mnrf-check-slider.color-green input:checked:enabled + .sub-box .sub-check, .color-green.mnrf-radio-slider input:checked:enabled + .sub-box .sub-check {
+  color: #059669;
 }
 
-.mnrf-radio-slider input:disabled:checked + .sub-box, .mnrf-check-slider input:disabled:checked + .sub-box {
+.mnrf-check-slider input:disabled:checked + .sub-box, .mnrf-radio-slider input:disabled:checked + .sub-box {
   background-color: #E0F2FE;
 }
 
-.mnrf-radio-slider input:disabled + .sub-box .sub-check, .mnrf-radio-slider input:disabled + .sub-box, .mnrf-check-slider input:disabled + .sub-box {
+.mnrf-check-slider input:disabled + .sub-box, .mnrf-radio-slider input:disabled + .sub-box {
   border-color: #BAE6FD;
 }
 
-.mnrf-check-slider input:disabled + .sub-box .sub-check {
-  background-color: #BAE6FD;
+.mnrf-check-slider input:disabled + .sub-box .sub-check, .mnrf-radio-slider input:disabled + .sub-box .sub-check {
+  color: #BAE6FD;
 }
 
-.mnrf-radio-slider input:checked:enabled + .sub-box, .mnrf-check-slider input:checked:enabled + .sub-box {
+.mnrf-check-slider input:checked:enabled + .sub-box, .mnrf-radio-slider input:checked:enabled + .sub-box {
   background-color: #7DD3FC;
 }
 
-.mnrf-radio-slider input:disabled:checked + .sub-box .sub-check, .mnrf-radio-slider .sub-box .sub-check, .mnrf-radio-slider .sub-box, .mnrf-check-slider .sub-box {
+.mnrf-check-slider .sub-box, .mnrf-radio-slider .sub-box {
   border-color: #38BDF8;
 }
 
-.mnrf-check-slider input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider .sub-box .sub-check {
-  background-color: #38BDF8;
+.mnrf-check-slider input:disabled:checked + .sub-box .sub-check, .mnrf-radio-slider input:disabled:checked + .sub-box .sub-check, .mnrf-check-slider .sub-box .sub-check, .mnrf-radio-slider .sub-box .sub-check {
+  color: #38BDF8;
 }
 
-.mnrf-radio-slider input:checked:enabled + .sub-box .sub-check, .mnrf-radio-slider input:checked:enabled + .sub-box, .mnrf-check-slider input:checked:enabled + .sub-box {
+.mnrf-check-slider input:checked:enabled + .sub-box, .mnrf-radio-slider input:checked:enabled + .sub-box {
   border-color: #0284C7;
 }
 
-.mnrf-check-slider input:checked:enabled + .sub-box .sub-check {
-  background-color: #0284C7;
+.mnrf-check-slider input:checked:enabled + .sub-box .sub-check, .mnrf-radio-slider input:checked:enabled + .sub-box .sub-check {
+  color: #0284C7;
 }
 
-.mnrf-check-slider {
+.mnrf-check-slider, .mnrf-radio-slider {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
-.mnrf-check-slider, .mnrf-check-slider * {
+.mnrf-check-slider, .mnrf-radio-slider, .mnrf-check-slider *, .mnrf-radio-slider * {
   cursor: pointer;
 }
-.mnrf-check-slider, .mnrf-check-slider *:not(svg), .mnrf-check-slider *::after, .mnrf-check-slider *::before {
+.mnrf-check-slider, .mnrf-radio-slider, .mnrf-check-slider *:not(svg), .mnrf-radio-slider *:not(svg), .mnrf-check-slider *::after, .mnrf-radio-slider *::after, .mnrf-check-slider *::before, .mnrf-radio-slider *::before {
   transition: all 0.3s;
 }
-.mnrf-check-slider .sub-box {
+.mnrf-check-slider .sub-box, .mnrf-radio-slider .sub-box {
+  z-index: 3;
   margin: 2px;
   background-color: white;
   border-width: 2px;
@@ -148,15 +149,16 @@
   width: 35px;
   padding: 1px;
 }
-.mnrf-check-slider .sub-box .sub-check {
+.mnrf-check-slider .sub-box .sub-check, .mnrf-radio-slider .sub-box .sub-check {
   display: block;
   border-radius: 1000px;
   position: relative;
   left: 1px;
   width: 55%;
   padding-top: 55%;
+  background-color: currentColor;
 }
-.mnrf-check-slider .sub-box .sub-check::before {
+.mnrf-check-slider .sub-box .sub-check::before, .mnrf-radio-slider .sub-box .sub-check::before {
   content: "";
   display: block;
   position: absolute;
@@ -165,93 +167,52 @@
   transform: translate(-50%, -50%);
   width: 0%;
   height: 0%;
-  z-index: 1;
+  z-index: -1;
   border-radius: 1000px;
 }
-.mnrf-check-slider input {
+.mnrf-check-slider input, .mnrf-radio-slider input {
   display: none;
 }
 @media (pointer: fine) {
-  .mnrf-check-slider input:hover:enabled + .sub-box .sub-check::before {
+  .mnrf-check-slider input:hover:enabled + .sub-box .sub-check::before, .mnrf-radio-slider input:hover:enabled + .sub-box .sub-check::before {
     width: 210%;
     height: 210%;
   }
 }
-.mnrf-check-slider input:checked + .sub-box .sub-check {
+.mnrf-check-slider input:checked + .sub-box .sub-check, .mnrf-radio-slider input:checked + .sub-box .sub-check {
   left: calc(45% - 1px);
 }
-.mnrf-check-slider input:checked + .sub-box .sub-check::before {
+.mnrf-check-slider input:checked + .sub-box .sub-check::before, .mnrf-radio-slider input:checked + .sub-box .sub-check::before {
   animation: sliderCheckAnimate 0.4s;
 }
-.mnrf-check-slider input:disabled + .sub-box {
+.mnrf-check-slider input:disabled + .sub-box, .mnrf-radio-slider input:disabled + .sub-box {
   background-color: white;
 }
-.mnrf-check-slider input:disabled ~ * {
+.mnrf-check-slider input:disabled ~ *, .mnrf-radio-slider input:disabled ~ * {
   cursor: no-drop;
 }
-.mnrf-check-slider.opt-sm .sub-box {
+.mnrf-check-slider.opt-sm .sub-box, .opt-sm.mnrf-radio-slider .sub-box {
   width: 31.5px;
 }
-.mnrf-check-slider.opt-md .sub-box {
+.mnrf-check-slider.opt-md .sub-box, .opt-md.mnrf-radio-slider .sub-box {
   width: 35px;
 }
-.mnrf-check-slider.opt-lg .sub-box {
+.mnrf-check-slider.opt-lg .sub-box, .opt-lg.mnrf-radio-slider .sub-box {
   width: 38.5px;
 }
-.mnrf-check-slider.opt-em .sub-box {
+.mnrf-check-slider.opt-em .sub-box, .opt-em.mnrf-radio-slider .sub-box {
   width: 2.555em;
 }
-.mnrf-check-slider.opt-block {
+.mnrf-check-slider.opt-block, .opt-block.mnrf-radio-slider {
   display: block;
 }
 
-.mnrf-radio-slider {
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-}
-.mnrf-radio-slider, .mnrf-radio-slider * {
-  cursor: pointer;
-}
-.mnrf-radio-slider, .mnrf-radio-slider *:not(svg), .mnrf-radio-slider *::after, .mnrf-radio-slider *::before {
-  transition: all 0.3s;
-}
-.mnrf-radio-slider .sub-box {
-  margin: 2px;
-  background-color: white;
-  border-width: 2px;
-  border-style: solid;
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  box-sizing: border-box;
-  border-radius: 1000px;
-  width: 35px;
-  padding: 1px;
-}
 .mnrf-radio-slider .sub-box .sub-check {
-  display: block;
-  border-radius: 1000px;
-  position: relative;
-  left: 1px;
-  width: 55%;
   border-width: 4px;
   border-style: solid;
   box-sizing: border-box;
   padding-top: calc(55% - 8px);
-}
-.mnrf-radio-slider .sub-box .sub-check::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0%;
-  height: 0%;
-  z-index: 1;
-  border-radius: 1000px;
-}
-.mnrf-radio-slider input {
-  display: none;
+  background-color: rgba(0, 0, 0, 0);
 }
 @media (pointer: fine) {
   .mnrf-radio-slider input:hover:enabled + .sub-box .sub-check::before {
@@ -259,32 +220,8 @@
     height: 420%;
   }
 }
-.mnrf-radio-slider input:checked + .sub-box .sub-check {
-  left: calc(45% - 1px);
-}
 .mnrf-radio-slider input:checked + .sub-box .sub-check::before {
   animation: sliderRadioAnimate 0.4s;
-}
-.mnrf-radio-slider input:disabled + .sub-box {
-  background-color: white;
-}
-.mnrf-radio-slider input:disabled ~ * {
-  cursor: no-drop;
-}
-.mnrf-radio-slider.opt-sm .sub-box {
-  width: 31.5px;
-}
-.mnrf-radio-slider.opt-md .sub-box {
-  width: 35px;
-}
-.mnrf-radio-slider.opt-lg .sub-box {
-  width: 38.5px;
-}
-.mnrf-radio-slider.opt-em .sub-box {
-  width: 2.555em;
-}
-.mnrf-radio-slider.opt-block {
-  display: block;
 }
 
 @keyframes sliderCheckAnimate {
@@ -312,98 +249,50 @@
   }
 }
 @media (pointer: fine) {
-  .mnrf-check-slider input:hover:enabled + .sub-box {
+  .mnrf-check-slider input:hover:enabled + .sub-box, .mnrf-radio-slider input:hover:enabled + .sub-box {
     border-color: #0EA5E9;
     background-color: #E0F2FE;
   }
-  .mnrf-check-slider input:hover:enabled + .sub-box .sub-check {
-    background-color: #0EA5E9;
+  .mnrf-check-slider input:hover:enabled + .sub-box .sub-check, .mnrf-radio-slider input:hover:enabled + .sub-box .sub-check {
+    color: #0EA5E9;
   }
 }
-.mnrf-check-slider input:enabled + .sub-box .sub-check::before {
-  background-color: rgba(14, 165, 233, 0.3);
+.mnrf-check-slider input:enabled + .sub-box .sub-check::before, .mnrf-radio-slider input:enabled + .sub-box .sub-check::before {
+  background-color: rgba(14, 165, 233, 0.5);
 }
 @media (pointer: fine) {
-  .mnrf-radio-slider input:hover:enabled + .sub-box {
-    border-color: #0EA5E9;
-    background-color: #E0F2FE;
-  }
-  .mnrf-radio-slider input:hover:enabled + .sub-box .sub-check {
-    border-color: #0EA5E9;
-  }
-}
-.mnrf-radio-slider input:enabled + .sub-box .sub-check::before {
-  background-color: rgba(14, 165, 233, 0.3);
-}
-@media (pointer: fine) {
-  .mnrf-check-slider.color-red input:hover:enabled + .sub-box {
+  .mnrf-check-slider.color-red input:hover:enabled + .sub-box, .color-red.mnrf-radio-slider input:hover:enabled + .sub-box {
     border-color: #EF4444;
     background-color: #FEE2E2;
   }
-  .mnrf-check-slider.color-red input:hover:enabled + .sub-box .sub-check {
-    background-color: #EF4444;
+  .mnrf-check-slider.color-red input:hover:enabled + .sub-box .sub-check, .color-red.mnrf-radio-slider input:hover:enabled + .sub-box .sub-check {
+    color: #EF4444;
   }
 }
-.mnrf-check-slider.color-red input:enabled + .sub-box .sub-check::before {
-  background-color: rgba(239, 68, 68, 0.3);
+.mnrf-check-slider.color-red input:enabled + .sub-box .sub-check::before, .color-red.mnrf-radio-slider input:enabled + .sub-box .sub-check::before {
+  background-color: rgba(239, 68, 68, 0.5);
 }
 @media (pointer: fine) {
-  .mnrf-radio-slider.color-red input:hover:enabled + .sub-box {
-    border-color: #EF4444;
-    background-color: #FEE2E2;
-  }
-  .mnrf-radio-slider.color-red input:hover:enabled + .sub-box .sub-check {
-    border-color: #EF4444;
-  }
-}
-.mnrf-radio-slider.color-red input:enabled + .sub-box .sub-check::before {
-  background-color: rgba(239, 68, 68, 0.3);
-}
-@media (pointer: fine) {
-  .mnrf-check-slider.color-yellow input:hover:enabled + .sub-box {
+  .mnrf-check-slider.color-yellow input:hover:enabled + .sub-box, .color-yellow.mnrf-radio-slider input:hover:enabled + .sub-box {
     border-color: #EAB308;
     background-color: #FEF9C3;
   }
-  .mnrf-check-slider.color-yellow input:hover:enabled + .sub-box .sub-check {
-    background-color: #EAB308;
+  .mnrf-check-slider.color-yellow input:hover:enabled + .sub-box .sub-check, .color-yellow.mnrf-radio-slider input:hover:enabled + .sub-box .sub-check {
+    color: #EAB308;
   }
 }
-.mnrf-check-slider.color-yellow input:enabled + .sub-box .sub-check::before {
-  background-color: rgba(234, 179, 8, 0.3);
+.mnrf-check-slider.color-yellow input:enabled + .sub-box .sub-check::before, .color-yellow.mnrf-radio-slider input:enabled + .sub-box .sub-check::before {
+  background-color: rgba(234, 179, 8, 0.5);
 }
 @media (pointer: fine) {
-  .mnrf-radio-slider.color-yellow input:hover:enabled + .sub-box {
-    border-color: #EAB308;
-    background-color: #FEF9C3;
-  }
-  .mnrf-radio-slider.color-yellow input:hover:enabled + .sub-box .sub-check {
-    border-color: #EAB308;
-  }
-}
-.mnrf-radio-slider.color-yellow input:enabled + .sub-box .sub-check::before {
-  background-color: rgba(234, 179, 8, 0.3);
-}
-@media (pointer: fine) {
-  .mnrf-check-slider.color-green input:hover:enabled + .sub-box {
+  .mnrf-check-slider.color-green input:hover:enabled + .sub-box, .color-green.mnrf-radio-slider input:hover:enabled + .sub-box {
     border-color: #10B981;
     background-color: #D1FAE5;
   }
-  .mnrf-check-slider.color-green input:hover:enabled + .sub-box .sub-check {
-    background-color: #10B981;
+  .mnrf-check-slider.color-green input:hover:enabled + .sub-box .sub-check, .color-green.mnrf-radio-slider input:hover:enabled + .sub-box .sub-check {
+    color: #10B981;
   }
 }
-.mnrf-check-slider.color-green input:enabled + .sub-box .sub-check::before {
-  background-color: rgba(16, 185, 129, 0.3);
-}
-@media (pointer: fine) {
-  .mnrf-radio-slider.color-green input:hover:enabled + .sub-box {
-    border-color: #10B981;
-    background-color: #D1FAE5;
-  }
-  .mnrf-radio-slider.color-green input:hover:enabled + .sub-box .sub-check {
-    border-color: #10B981;
-  }
-}
-.mnrf-radio-slider.color-green input:enabled + .sub-box .sub-check::before {
-  background-color: rgba(16, 185, 129, 0.3);
+.mnrf-check-slider.color-green input:enabled + .sub-box .sub-check::before, .color-green.mnrf-radio-slider input:enabled + .sub-box .sub-check::before {
+  background-color: rgba(16, 185, 129, 0.5);
 }

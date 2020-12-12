@@ -1,215 +1,147 @@
 // @use 'extends';
 @import "../../color";
 
-.mnrf-check-slider{
-    &,& *{
-        cursor: pointer;
-    }
-    -webkit-tap-highlight-color: rgba(255,255,255,0);
-    &,& *:not(svg),& *::after,& *::before{
-		transition: all .3s;
+.mnrf-check-slider {
+	&,
+	& * {
+		cursor: pointer;
 	}
-    .sub-box{
-        margin: 2px;
-    background-color: white;
-    border-width: 2px;
-    border-style: solid;
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    box-sizing: border-box;
-        border-radius: 1000px;
-            width: 35px;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	&,
+	& *:not(svg),
+	& *::after,
+	& *::before {
+		transition: all 0.3s;
+	}
+	.sub-box {
+		z-index: 3;
+		margin: 2px;
+		background-color: white;
+		border-width: 2px;
+		border-style: solid;
+		display: inline-block;
+		position: relative;
+		vertical-align: middle;
+		box-sizing: border-box;
+		border-radius: 1000px;
+		width: 35px;
 
-        padding: 1px;
-        .sub-check{
-            display: block;
-    border-radius: 1000px;
-            position: relative;
-    left: 1px;
-    width: 55%;
-            padding-top: 55%;
-            &::before{
-                // transition: all .3s;
-                content: "";
-                display: block;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                // opacity: 20%;
-                width: 0%;
-                height: 0%;
-                z-index: 1;
-                border-radius: 1000px;
-            }
-        }
-    }
-    input{
-        display: none;
-        @media (pointer: fine){
-            &:hover:enabled + .sub-box {
-                .sub-check{
-                    &::before {
-                        width: 210%;
-                        height: 210%;
-                    }
-                }
-            }
-        }
-        &:checked{
-            &+.sub-box{
-                .sub-check{
-                    left: calc(45% - 1px);
-                    &::before {
-                        animation: sliderCheckAnimate .4s;
-                    }
-                }
-            }
-        }
-        &:disabled{
-            &+.sub-box{
-                background-color: white;
-            }
-            &~*{
-                cursor: no-drop;
-            }
-        }
-    }
-    
-    &.opt-sm{
-        .sub-box{
-                width: 31.5px;
+		padding: 1px;
+		.sub-check {
+			display: block;
+			border-radius: 1000px;
+			position: relative;
+			left: 1px;
+			width: 55%;
+			padding-top: 55%;
+			background-color: currentColor;
+			&::before {
+				// transition: all .3s;
+				content: "";
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				// opacity: 20%;
+				width: 0%;
+				height: 0%;
+				z-index: -1;
+				border-radius: 1000px;
+			}
+		}
+	}
+	input {
+		display: none;
+		@media (pointer: fine) {
+			&:hover:enabled + .sub-box {
+				.sub-check {
+					&::before {
+						width: 210%;
+						height: 210%;
+					}
+				}
+			}
+		}
+		&:checked {
+			& + .sub-box {
+				.sub-check {
+					left: calc(45% - 1px);
+					&::before {
+						animation: sliderCheckAnimate 0.4s;
+					}
+				}
+			}
+		}
+		&:disabled {
+			& + .sub-box {
+				background-color: white;
+			}
+			& ~ * {
+				cursor: no-drop;
+			}
+		}
+	}
 
-        }
-    }
-    &.opt-md{
-        .sub-box{
-                width: 35px;
-
-        }
-    }
-    &.opt-lg{
-        .sub-box{
-                width: 38.5px;
-        }
-    }
-    &.opt-em{
-        .sub-box{
-                width: 2.555em;
-        }
-    }
-    &.opt-block{
-        display: block;
-    }
+	&.opt-sm {
+		.sub-box {
+			width: 31.5px;
+		}
+	}
+	&.opt-md {
+		.sub-box {
+			width: 35px;
+		}
+	}
+	&.opt-lg {
+		.sub-box {
+			width: 38.5px;
+		}
+	}
+	&.opt-em {
+		.sub-box {
+			width: 2.555em;
+		}
+	}
+	&.opt-block {
+		display: block;
+	}
 }
 
-.mnrf-radio-slider{
-    &,& *{
-        cursor: pointer;
-    }
-    -webkit-tap-highlight-color: rgba(255,255,255,0);
-    &,& *:not(svg),& *::after,& *::before{
-		transition: all .3s;
+.mnrf-radio-slider {
+	@extend .mnrf-check-slider;
+	.sub-box {
+		.sub-check {
+			border-width: 4px;
+			border-style: solid;
+			box-sizing: border-box;
+			padding-top: calc(55% - 8px);
+			background-color: rgba(0, 0, 0, 0);
+		}
 	}
-    .sub-box{
-        margin: 2px;
-    background-color: white;
-    border-width: 2px;
-    border-style: solid;
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    box-sizing: border-box;
-        // border-color: $tw-lightBlue-400;
-        border-radius: 1000px;
-            width: 35px;
-
-        padding: 1px;
-        .sub-check{
-            display: block;
-    border-radius: 1000px;
-            position: relative;
-    left: 1px;
-    width: 55%;
-            // border-color: $tw-lightBlue-400;
-            border-width: 4px;
-            border-style: solid;
-            box-sizing: border-box;
-            padding-top: calc(55% - 8px);
-            &::before{
-                // transition: all .3s;
-                content: "";
-                display: block;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                // opacity: 20%;
-                width: 0%;
-                height: 0%;
-                z-index: 1;
-                border-radius: 1000px;
-            }
-        }
-    }
-    input{
-        display: none;
-        @media (pointer: fine){
-            &:hover:enabled + .sub-box {
-                .sub-check{
-                    &::before {
-                        width: 420%;
-                        height: 420%;
-                    }
-                }
-            }
-        }
-        &:checked{
-            &+.sub-box{
-                .sub-check{
-                    left: calc(45% - 1px);
-                    &::before {
-                        animation: sliderRadioAnimate .4s;
-                    }
-                }
-            }
-        }
-        &:disabled{
-            &+.sub-box{
-                background-color: white;
-            }
-            &~*{
-                cursor: no-drop;
-            }
-        }
-    }
-    
-    &.opt-sm{
-        .sub-box{
-                width: 31.5px;
-
-        }
-    }
-    &.opt-md{
-        .sub-box{
-                width: 35px;
-
-        }
-    }
-    &.opt-lg{
-        .sub-box{
-                width: 38.5px;
-        }
-    }
-    &.opt-em{
-        .sub-box{
-                width: 2.555em;
-        }
-    }
-    &.opt-block{
-        display: block;
-    }
+	input {
+		//     display: none;
+		@media (pointer: fine) {
+			&:hover:enabled + .sub-box {
+				.sub-check {
+					&::before {
+						width: 420%;
+						height: 420%;
+					}
+				}
+			}
+		}
+		&:checked {
+			& + .sub-box {
+				.sub-check {
+					// left: calc(45% - 1px);
+					&::before {
+						animation: sliderRadioAnimate 0.4s;
+					}
+				}
+			}
+		}
+	}
 }
 
 @keyframes sliderCheckAnimate {
@@ -219,7 +151,7 @@
 		height: 0;
 	}
 	to {
-		opacity: .7;
+		opacity: 0.7;
 		width: 220%;
 		height: 220%;
 	}
@@ -232,184 +164,96 @@
 		height: 0;
 	}
 	to {
-		opacity: .7;
+		opacity: 0.7;
 		width: 440%;
 		height: 440%;
 	}
 }
 
 $colors: (
-"main": "lightBlue",
-"red": "red",
-"yellow": "yellow",
-"green": "emerald",
+	"main": "lightBlue",
+	"red": "red",
+	"yellow": "yellow",
+	"green": "emerald",
 );
 
-
-
 @each $name, $color in ($colors) {
-    $className : '.mnrf-check-slider.color-#{$name}';
-    @if $name == 'main' {
-        $className : '.mnrf-check-slider';
-    }
-    #{$className}{
-        .sub-box{
-            // border-color: $tw-lightBlue-400;
-            @extend %tw-border-#{$color}-400;
-            .sub-check{
-                // background-color: $tw-lightBlue-400;
-                @extend %tw-bg-#{$color}-400;
-            }
-        }
-        input{
-            @media (pointer: fine){
-                &:hover:enabled+.sub-box{
-                    // border-color: $tw-lightBlue-500;
-                    // @extend %tw-border-#{$color}-500;
-                    border-color: map-get(map-get($tw_colors, #{$color}), 500);
-                    // background-color: $tw-lightBlue-100;
-                    // @extend %tw-bg-#{$color}-100;
-                    background-color: map-get(map-get($tw_colors, #{$color}), 100);
-                    .sub-check{
-                        // background-color: $tw-lightBlue-500;
-                        // @extend %tw-bg-#{$color}-500;
-                        background-color: map-get(map-get($tw_colors, #{$color}), 500);
-                        // &::before {
-                        //     // @extend %tw-bg-#{$color}-500;
-                        //     background-color: rgba(
-                        //         $color: map-get(map-get($tw_colors, #{$color}), 500),
-                        //         $alpha: 0.3
-                        //     );
-                        // }
-                        // box-shadow: 0 0 0 .7em rgba($color: map-get(map-get($tw_colors,#{$color}), 500 ), $alpha: .3);
-                    }
-                }
-            }
-            &:enabled+.sub-box{
-                .sub-check{
-                    // background-color: $tw-lightBlue-500;
-                    // @extend %tw-bg-#{$color}-500;
-                    &::before {
-                        // @extend %tw-bg-#{$color}-500;
-                        background-color: rgba(
-                            $color: map-get(map-get($tw_colors, #{$color}), 500),
-                            $alpha: 0.3
-                        );
-                    }
-                    // box-shadow: 0 0 0 .7em rgba($color: map-get(map-get($tw_colors,#{$color}), 500 ), $alpha: .3);
-                }
-            }
-            &:checked:enabled{
-                &+.sub-box{
-                    // border-color: $tw-lightBlue-600;
-                    @extend %tw-border-#{$color}-600;
-                    // background-color: $tw-lightBlue-300;
-                    @extend %tw-bg-#{$color}-300;
-                    .sub-check{
-                        // background-color: $tw-lightBlue-600;
-                        @extend %tw-bg-#{$color}-600;
-                    }
-                }
-            }
-            &:disabled{
-                &+.sub-box{
-                    // border-color: $tw-lightBlue-200;
-                    @extend %tw-border-#{$color}-200;
-                    .sub-check{
-                        // background-color: $tw-lightBlue-200;
-                        @extend %tw-bg-#{$color}-200;
-                    }
-                }
-                &:checked+.sub-box{
-                    // background-color: $tw-lightBlue-100;
-                    @extend %tw-bg-#{$color}-100;
-                    .sub-check{
-                        // background-color: $tw-lightBlue-400;
-                        @extend %tw-bg-#{$color}-400;
-                    }
-                }
-            }
-        }
-    }
-
-    $className : '.mnrf-radio-slider.color-#{$name}';
-    @if $name == 'main' {
-        $className : '.mnrf-radio-slider';
-    }
-    #{$className}{
-        .sub-box{
-            // border-color: $tw-lightBlue-400;
-            @extend %tw-border-#{$color}-400;
-            .sub-check{
-                // border-color: $tw-lightBlue-400;
-                @extend %tw-border-#{$color}-400;
-            }
-        }
-        input{
-            @media (pointer: fine){
-                &:hover:enabled+.sub-box{
-                    // border-color: $tw-lightBlue-500;
-                    // @extend %tw-border-#{$color}-500;
-                    border-color: map-get(map-get($tw_colors, #{$color}), 500);
-                    // background-color: $tw-lightBlue-100;
-                    // @extend %tw-bg-#{$color}-100;
-                    background-color: map-get(map-get($tw_colors, #{$color}), 100);
-                    .sub-check{
-                        // border-color: $tw-lightBlue-500;
-                        // @extend %tw-border-#{$color}-500;
-                        border-color: map-get(map-get($tw_colors, #{$color}), 500);
-                        // box-shadow: 0 0 0 .7em rgba($color: map-get(map-get($tw_colors,#{$color}), 500 ), $alpha: .3);
-                        // &::before {
-                        //     // @extend %tw-bg-#{$color}-500;
-                        //     background-color: rgba(
-                        //         $color: map-get(map-get($tw_colors, #{$color}), 500),
-                        //         $alpha: 0.3
-                        //     );
-                        // }
-                    }
-                }
-            }
-            &:enabled+.sub-box{
-                .sub-check{
-                    &::before {
-                        // @extend %tw-bg-#{$color}-500;
-                        background-color: rgba(
-                            $color: map-get(map-get($tw_colors, #{$color}), 500),
-                            $alpha: 0.3
-                        );
-                    }
-                }
-            }
-            &:checked:enabled{
-                &+.sub-box{
-                    // border-color: $tw-lightBlue-600;
-                    @extend %tw-border-#{$color}-600;
-                    // background-color: $tw-lightBlue-300;
-                    @extend %tw-bg-#{$color}-300;
-                    .sub-check{
-                        // border-color: $tw-lightBlue-600;
-                        @extend %tw-border-#{$color}-600;
-                    }
-                }
-            }
-            &:disabled{
-                &+.sub-box{
-                    // border-color: $tw-lightBlue-200;
-                    @extend %tw-border-#{$color}-200;
-                    .sub-check{
-                        // border-color: $tw-lightBlue-200;
-                        @extend %tw-border-#{$color}-200;
-                    }
-                }
-                &:checked+.sub-box{
-                    // background-color: $tw-lightBlue-100;
-                    @extend %tw-bg-#{$color}-100;
-                    .sub-check{
-                        // border-color: $tw-lightBlue-400;
-                        @extend %tw-border-#{$color}-400;
-                    }
-                }
-            }
-        }
-    }
+	$className: ".mnrf-check-slider.color-#{$name}";
+	@if $name == "main" {
+		$className: ".mnrf-check-slider";
+	}
+	#{$className} {
+		.sub-box {
+			// border-color: $tw-lightBlue-400;
+			@extend %tw-border-#{$color}-400;
+			.sub-check {
+				// background-color: $tw-lightBlue-400;
+				@extend %tw-text-#{$color}-400;
+			}
+		}
+		input {
+			@media (pointer: fine) {
+				&:hover:enabled + .sub-box {
+					// border-color: $tw-lightBlue-500;
+					// @extend %tw-border-#{$color}-500;
+					border-color: map-get(map-get($tw_colors, #{$color}), 500);
+					// background-color: $tw-lightBlue-100;
+					// @extend %tw-bg-#{$color}-100;
+					background-color: map-get(
+						map-get($tw_colors, #{$color}),
+						100
+					);
+					.sub-check {
+						// background-color: $tw-lightBlue-500;
+						// @extend %tw-bg-#{$color}-500;
+						color: map-get(map-get($tw_colors, #{$color}), 500);
+					}
+				}
+			}
+			&:enabled + .sub-box {
+				.sub-check {
+					// background-color: $tw-lightBlue-500;
+					// @extend %tw-bg-#{$color}-500;
+					&::before {
+						// @extend %tw-bg-#{$color}-500;
+						background-color: rgba(
+							$color:
+								map-get(map-get($tw_colors, #{$color}), 500),
+							$alpha: 0.5
+						);
+					}
+				}
+			}
+			&:checked:enabled {
+				& + .sub-box {
+					// border-color: $tw-lightBlue-600;
+					@extend %tw-border-#{$color}-600;
+					// background-color: $tw-lightBlue-300;
+					@extend %tw-bg-#{$color}-300;
+					.sub-check {
+						// background-color: $tw-lightBlue-600;
+						@extend %tw-text-#{$color}-600;
+					}
+				}
+			}
+			&:disabled {
+				& + .sub-box {
+					// border-color: $tw-lightBlue-200;
+					@extend %tw-border-#{$color}-200;
+					.sub-check {
+						// background-color: $tw-lightBlue-200;
+						@extend %tw-text-#{$color}-200;
+					}
+				}
+				&:checked + .sub-box {
+					// background-color: $tw-lightBlue-100;
+					@extend %tw-bg-#{$color}-100;
+					.sub-check {
+						// background-color: $tw-lightBlue-400;
+						@extend %tw-text-#{$color}-400;
+					}
+				}
+			}
+		}
+	}
 }

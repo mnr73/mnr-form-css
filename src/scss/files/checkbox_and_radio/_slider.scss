@@ -12,23 +12,14 @@
 
 
 	.sub-box {
-		z-index: 3;
-		margin: 2px;
-		background-color: white;
-		border-width: 2px;
-		border-style: solid;
-		display: inline-block;
-		position: relative;
-		vertical-align: middle;
-		box-sizing: border-box;
-		border-radius: 1000px;
+		@extend %check_and_radio_box;
+		@extend %full_round_corner;
 		width: 35px;
-		transition: all 0.3s;
 		padding: 1px;
 
 		.sub-check {
 			display: block;
-			border-radius: 1000px;
+			@extend %full_round_corner;
 			position: relative;
 			left: 1px;
 			width: 55%;
@@ -37,18 +28,7 @@
 			transition: all 0.3s;
 
 			&::before {
-				transition: all .3s;
-				content: "";
-				display: block;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				// opacity: 20%;
-				width: 0%;
-				height: 0%;
-				z-index: -1;
-				border-radius: 1000px;
+				@extend %check_and_radio_before;
 			}
 		}
 	}
@@ -235,13 +215,10 @@ $color in ($colors) {
 			}
 
 			&:checked {
-				&,
-				&:enabled {
-					&+.sub-box {
-						background-color: map-get(map-get($tw_colors, #{$color}),
-							300) !important;
-						color: map-get(map-get($tw_colors, #{$color}), 600) !important;
-					}
+				& + .sub-box {
+					background-color: map-get(map-get($tw_colors, #{$color}),
+						300) !important;
+					color: map-get(map-get($tw_colors, #{$color}), 600) !important;
 				}
 			}
 		}

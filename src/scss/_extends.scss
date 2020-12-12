@@ -1,0 +1,30 @@
+%check_and_radio_box{
+	z-index: 3;
+	margin: 2px;
+	background-color: white;
+	border-width: 2px;
+	border-style: solid;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	box-sizing: border-box;
+	transition: all 0.3s;
+}
+
+%check_and_radio_before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 0%;
+	height: 0%;
+	z-index: -1;
+	border-radius: 1000px;
+	transition: all .3s;
+}
+
+%full_round_corner{
+	border-radius: 1000px;
+}

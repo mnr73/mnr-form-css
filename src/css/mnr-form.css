@@ -330,6 +330,7 @@
     opacity: 0.7;
     width: 220%;
     height: 220%;
+    z-index: 1;
   }
 }
 .mnrf-checkbox .sub-box, .mnrf-radio .sub-box {
@@ -492,6 +493,7 @@
     opacity: 0.7;
     width: 220%;
     height: 220%;
+    z-index: 1;
   }
 }
 @keyframes sliderRadioAnimate {
@@ -504,6 +506,7 @@
     opacity: 0.7;
     width: 440%;
     height: 440%;
+    z-index: 1;
   }
 }
 .mnrf-check-slider .sub-box, .mnrf-radio-slider .sub-box {

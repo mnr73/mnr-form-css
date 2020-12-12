@@ -431,7 +431,8 @@
   to {
     opacity: .7;
     width: 220%;
-    height: 220%
+    height: 220%;
+    z-index: 1
   }
 }
 @keyframes checkanimate {
@@ -443,7 +444,8 @@
   to {
     opacity: .7;
     width: 220%;
-    height: 220%
+    height: 220%;
+    z-index: 1
   }
 }
 .mnrf-checkbox input + .sub-box::before,
@@ -629,7 +631,8 @@
   to {
     opacity: .7;
     width: 220%;
-    height: 220%
+    height: 220%;
+    z-index: 1
   }
 }
 @keyframes sliderCheckAnimate {
@@ -641,7 +644,8 @@
   to {
     opacity: .7;
     width: 220%;
-    height: 220%
+    height: 220%;
+    z-index: 1
   }
 }
 @-webkit-keyframes sliderRadioAnimate {
@@ -653,7 +657,8 @@
   to {
     opacity: .7;
     width: 440%;
-    height: 440%
+    height: 440%;
+    z-index: 1
   }
 }
 @keyframes sliderRadioAnimate {
@@ -665,7 +670,8 @@
   to {
     opacity: .7;
     width: 440%;
-    height: 440%
+    height: 440%;
+    z-index: 1
   }
 }
 .mnrf-check-slider input + .sub-box .sub-check::before,

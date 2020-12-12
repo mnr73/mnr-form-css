@@ -7,12 +7,6 @@
 		cursor: pointer;
 	}
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-	&,
-	& *:not(svg),
-	& *::after,
-	& *::before {
-		transition: all 0.3s;
-	}
 	.sub-box {
 		margin: 2px;
 		background-color: white;
@@ -32,6 +26,7 @@
 			fill: currentColor;
 			// color: inherit;
 		}
+		transition: all 0.3s;
 	}
 	input {
 		display: none;
@@ -48,6 +43,7 @@
 				height: 0%;
 				z-index: -1;
 				border-radius: 1000px;
+				transition: all 0.3s;
 			}
 		}
 		@media (pointer: fine) {

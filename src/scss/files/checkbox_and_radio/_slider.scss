@@ -10,12 +10,6 @@
 
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 
-	&,
-	& *:not(svg),
-	& *::after,
-	& *::before {
-		transition: all 0.3s;
-	}
 
 	.sub-box {
 		z-index: 3;
@@ -29,7 +23,7 @@
 		box-sizing: border-box;
 		border-radius: 1000px;
 		width: 35px;
-
+		transition: all 0.3s;
 		padding: 1px;
 
 		.sub-check {
@@ -40,9 +34,10 @@
 			width: 55%;
 			padding-top: 55%;
 			background-color: currentColor;
+			transition: all 0.3s;
 
 			&::before {
-				// transition: all .3s;
+				transition: all .3s;
 				content: "";
 				display: block;
 				position: absolute;

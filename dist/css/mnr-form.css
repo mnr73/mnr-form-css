@@ -328,16 +328,6 @@
 .mnrf-radio * {
   cursor: pointer
 }
-.mnrf-checkbox,
-.mnrf-checkbox ::after,
-.mnrf-checkbox ::before,
-.mnrf-checkbox :not(svg),
-.mnrf-radio,
-.mnrf-radio ::after,
-.mnrf-radio ::before,
-.mnrf-radio :not(svg) {
-  transition: .3s
-}
 .mnrf-checkbox .sub-box,
 .mnrf-radio .sub-box {
   margin: 2px;
@@ -350,6 +340,7 @@
   height: 20px;
   border-radius: 2px;
   z-index: 3;
+  transition: .3s;
   color: #e0f2fe;
   border: 2px solid #38bdf8
 }
@@ -374,7 +365,8 @@
   width: 0%;
   height: 0%;
   z-index: -1;
-  border-radius: 1000px
+  border-radius: 1000px;
+  transition: .3s
 }
 .mnrf-checkbox input:checked + .sub-box::before,
 .mnrf-radio input:checked + .sub-box::before {
@@ -509,16 +501,6 @@
 .mnrf-radio-slider * {
   cursor: pointer
 }
-.mnrf-check-slider,
-.mnrf-check-slider ::after,
-.mnrf-check-slider ::before,
-.mnrf-check-slider :not(svg),
-.mnrf-radio-slider,
-.mnrf-radio-slider ::after,
-.mnrf-radio-slider ::before,
-.mnrf-radio-slider :not(svg) {
-  transition: .3s
-}
 .mnrf-check-slider .sub-box,
 .mnrf-radio-slider .sub-box {
   z-index: 3;
@@ -530,6 +512,7 @@
   box-sizing: border-box;
   border-radius: 1000px;
   width: 35px;
+  transition: .3s;
   padding: 1px;
   color: #38bdf8;
   border: 2px solid #38bdf8
@@ -542,10 +525,12 @@
   left: 1px;
   width: 55%;
   padding-top: 55%;
-  background-color: currentColor
+  background-color: currentColor;
+  transition: .3s
 }
 .mnrf-check-slider .sub-box .sub-check::before,
 .mnrf-radio-slider .sub-box .sub-check::before {
+  transition: .3s;
   content: "";
   display: block;
   position: absolute;

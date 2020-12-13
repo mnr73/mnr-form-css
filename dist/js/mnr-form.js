@@ -1,8 +1,8 @@
 var currentState = history.state
 pointer_is_fine = matchMedia("(pointer:fine)").matches;
 mnrfObj = typeof mnrfObj == "undefined" ? {} : mnrfObj;
+
 $('.mnrf-checkbox,.mnrf-radio,.mnrf-radio-key,.mnrf-radio-slider,.mnrf-check-slider').click(function (event) {
-	console.log(event.pageX);
 	if(event.pageX != 0){
 		$(this).find('input').blur()
 	}
@@ -59,17 +59,6 @@ mnrfObj.inputs
 		// }
 	});
 // add state disabled to disabled inputs
-checkAllDisabled();
-function checkAllDisabled() {
-	mnrfObj.inputs
-		.find("input:disabled")
-		.parents(".mnrf-input")
-		.addClass("state-disable");
-	mnrfObj.inputs
-		.find("input:enabled")
-		.parents(".mnrf-input")
-		.removeClass("state-disable");
-}
 
 // function setDisabled(obj
 
@@ -428,4 +417,48 @@ function subDataBtn(obj) {
 			obj.siblings(".sub-toggleData").removeClass("state-up");
 		}
 	}
+}
+
+mnrfObj.textarea = $(".mnrf-textarea");
+
+if (pointer_is_fine) {
+	mnrfObj.textarea
+		.mouseover(function () {
+			$(this).addClass("state-hover");
+		})
+		.mouseout(function () {
+			$(this).removeClass("state-hover");
+		});
+}
+
+mnrfObj.textarea
+	.find("textarea")
+	.on("focus", function () {
+		$(this).parents(".mnrf-textarea").addClass("state-focus");
+		// do somethings
+		openWrap($(this).parents(".mnrf-textarea"));
+	})
+	.on("blur", function () {
+		$(this).parents(".mnrf-textarea").removeClass("state-focus");
+		// do somethings
+		// if($(this).siblings().is('.sub-data')){
+		// 	$(this).siblings('.sub-data').removeClass('state-show')
+		// }
+	});
+
+
+checkAllDisabled();
+function checkAllDisabled() {
+	mnrfObj.inputs
+		.find("input:disabled")
+		.parents(".mnrf-input")
+		.addClass("state-disable");
+	// mnrfObj.inputs
+	// 	.find("input:enabled")
+	// 	.parents(".mnrf-input")
+	// 	.removeClass("state-disable");
+	mnrfObj.textarea
+		.find("textarea:disabled")
+		.parents(".mnrf-textarea")
+		.addClass("state-disable");
 }

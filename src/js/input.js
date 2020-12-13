@@ -50,17 +50,6 @@ mnrfObj.inputs
 		// }
 	});
 // add state disabled to disabled inputs
-checkAllDisabled();
-function checkAllDisabled() {
-	mnrfObj.inputs
-		.find("input:disabled")
-		.parents(".mnrf-input")
-		.addClass("state-disable");
-	mnrfObj.inputs
-		.find("input:enabled")
-		.parents(".mnrf-input")
-		.removeClass("state-disable");
-}
 
 // function setDisabled(obj
 

@@ -71,6 +71,8 @@ function js() {
 	"./src/js/checkAndRadio.js",
 	"./src/js/input.js",
 	"./src/js/multiple.js",
+	"./src/js/textarea.js",
+	"./src/js/functions.js",
 	])
 	.pipe(concat("mnr-form.js"))
 	.pipe(minify())

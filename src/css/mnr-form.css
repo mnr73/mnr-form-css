@@ -711,6 +711,10 @@
   height: calc(100% + 2em);
   opacity: 0;
 }
+.mnrf-btn .sub-btn:focus::before {
+  width: calc(100% + .5em);
+  height: calc(100% + .5em);
+}
 @media (pointer: fine) {
   .mnrf-btn .sub-btn:hover::before {
     width: calc(100% + .5em);

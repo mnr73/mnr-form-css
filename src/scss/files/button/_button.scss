@@ -57,6 +57,13 @@
 			height: calc(100% + 2em);
 			opacity: 0;
 		}
+		&:focus{
+			// background-color: $tw-lightBlue-500;
+			&::before{
+				width: calc(100% + .5em);
+				height: calc(100% + .5em);
+			}
+		}
 		@media (pointer: fine) {
 			&:hover{
 				// background-color: $tw-lightBlue-500;

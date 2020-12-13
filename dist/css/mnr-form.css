@@ -866,6 +866,10 @@
   opacity: 0;
   background-color: #0ea5e9
 }
+.mnrf-btn .sub-btn:focus::before {
+  width: calc(100% + .5em);
+  height: calc(100% + .5em)
+}
 @media (pointer:fine) {
   .mnrf-radio-slider input:hover:enabled + .sub-box .sub-check::before {
     width: 420%;

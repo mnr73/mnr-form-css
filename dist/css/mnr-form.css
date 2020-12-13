@@ -4,6 +4,8 @@
 .mnrf-radio-slider .sub-box {
   z-index: 3;
   margin: 2px;
+  -webkit-margin-end: 5px;
+  margin-inline-end: 5px;
   background-color: #fff;
   border-width: 2px;
   border-style: solid;
@@ -34,6 +36,7 @@
 }
 .mnrf-radio-key.color-red input:checked + label,
 .mnrf-radio-key.color-red input:checked:enabled + label,
+.mnrf-radio-key.color-red input:focus + label,
 .mnrf-radio-key.color-red input:hover:enabled + label {
   color: #fee2e2
 }
@@ -68,6 +71,7 @@
 .mnrf-multi.color-red .sub-tags .sub-tag:hover {
   color: #f87171
 }
+.mnrf-radio-key.color-red input:focus + label,
 .mnrf-radio-key.color-red input:hover:enabled + label {
   background-color: #ef4444
 }
@@ -114,6 +118,7 @@
 }
 .mnrf-radio-key.color-yellow input:checked + label,
 .mnrf-radio-key.color-yellow input:checked:enabled + label,
+.mnrf-radio-key.color-yellow input:focus + label,
 .mnrf-radio-key.color-yellow input:hover:enabled + label {
   color: #fef9c3
 }
@@ -148,6 +153,7 @@
 .mnrf-multi.color-yellow .sub-tags .sub-tag:hover {
   color: #facc15
 }
+.mnrf-radio-key.color-yellow input:focus + label,
 .mnrf-radio-key.color-yellow input:hover:enabled + label {
   background-color: #eab308
 }
@@ -194,6 +200,7 @@
 }
 .mnrf-radio-key.color-green input:checked + label,
 .mnrf-radio-key.color-green input:checked:enabled + label,
+.mnrf-radio-key.color-green input:focus + label,
 .mnrf-radio-key.color-green input:hover:enabled + label {
   color: #d1fae5
 }
@@ -228,6 +235,7 @@
 .mnrf-multi.color-green .sub-tags .sub-tag:hover {
   color: #34d399
 }
+.mnrf-radio-key.color-green input:focus + label,
 .mnrf-radio-key.color-green input:hover:enabled + label {
   background-color: #10b981
 }
@@ -274,6 +282,7 @@
 }
 .mnrf-radio-key input:checked + label,
 .mnrf-radio-key input:checked:enabled + label,
+.mnrf-radio-key input:focus + label,
 .mnrf-radio-key input:hover:enabled + label {
   color: #e0f2fe
 }
@@ -305,6 +314,7 @@
 .mnrf-multi .sub-tags .sub-tag:hover {
   color: #38bdf8
 }
+.mnrf-radio-key input:focus + label,
 .mnrf-radio-key input:hover:enabled + label {
   background-color: #0ea5e9
 }
@@ -351,7 +361,9 @@
 }
 .mnrf-checkbox,
 .mnrf-radio {
-  -webkit-tap-highlight-color: rgba(255,255,255,0)
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  display: inline-flex;
+  align-items: center
 }
 .mnrf-checkbox,
 .mnrf-checkbox *,
@@ -375,7 +387,14 @@
 }
 .mnrf-checkbox input,
 .mnrf-radio input {
-  display: none
+  opacity: 0;
+  width: 0;
+  height: 0
+}
+.mnrf-checkbox input:focus + .sub-box::before,
+.mnrf-radio input:focus + .sub-box::before {
+  width: 220%;
+  height: 220%
 }
 .mnrf-checkbox input:checked + .sub-box::before,
 .mnrf-radio input:checked + .sub-box::before {
@@ -409,7 +428,7 @@
 }
 .mnrf-checkbox.opt-block,
 .opt-block.mnrf-radio {
-  display: block
+  display: flex
 }
 .mnrf-radio .sub-box {
   padding: 3px
@@ -491,6 +510,34 @@
   border-color: #34d399;
   color: #d1fae5
 }
+@media (pointer:fine) {
+  .mnrf-checkbox input:hover:enabled + .sub-box::before,
+  .mnrf-radio input:hover:enabled + .sub-box::before {
+    width: 220%;
+    height: 220%
+  }
+  .mnrf-checkbox input:not(:checked):hover:enabled + .sub-box,
+  .mnrf-radio input:not(:checked):hover:enabled + .sub-box {
+    border-color: #0ea5e9
+  }
+  .color-red.mnrf-radio input:not(:checked):hover:enabled + .sub-box,
+  .mnrf-checkbox.color-red input:not(:checked):hover:enabled + .sub-box {
+    border-color: #ef4444
+  }
+  .color-yellow.mnrf-radio input:not(:checked):hover:enabled + .sub-box,
+  .mnrf-checkbox.color-yellow input:not(:checked):hover:enabled + .sub-box {
+    border-color: #eab308
+  }
+  .color-green.mnrf-radio input:not(:checked):hover:enabled + .sub-box,
+  .mnrf-checkbox.color-green input:not(:checked):hover:enabled + .sub-box {
+    border-color: #10b981
+  }
+  .mnrf-check-slider input:hover:enabled + .sub-box .sub-check::before,
+  .mnrf-radio-slider input:hover:enabled + .sub-box .sub-check::before {
+    width: 210%;
+    height: 210%
+  }
+}
 .color-green.mnrf-radio input + .sub-box::before,
 .mnrf-checkbox.color-green input + .sub-box::before {
   background-color: rgba(16,185,129,.5)
@@ -529,43 +576,14 @@
 }
 .mnrf-check-slider input,
 .mnrf-radio-slider input {
-  display: none
+  opacity: 0;
+  width: 0;
+  height: 0
 }
-@media (pointer:fine) {
-  .mnrf-checkbox input:hover:enabled + .sub-box::before,
-  .mnrf-radio input:hover:enabled + .sub-box::before {
-    width: 220%;
-    height: 220%
-  }
-  .mnrf-checkbox input:not(:checked):hover:enabled + .sub-box,
-  .mnrf-radio input:not(:checked):hover:enabled + .sub-box {
-    border-color: #0ea5e9;
-    color: #7dd3fc
-  }
-  .color-red.mnrf-radio input:not(:checked):hover:enabled + .sub-box,
-  .mnrf-checkbox.color-red input:not(:checked):hover:enabled + .sub-box {
-    border-color: #ef4444;
-    color: #fca5a5
-  }
-  .color-yellow.mnrf-radio input:not(:checked):hover:enabled + .sub-box,
-  .mnrf-checkbox.color-yellow input:not(:checked):hover:enabled + .sub-box {
-    border-color: #eab308;
-    color: #fde047
-  }
-  .color-green.mnrf-radio input:not(:checked):hover:enabled + .sub-box,
-  .mnrf-checkbox.color-green input:not(:checked):hover:enabled + .sub-box {
-    border-color: #10b981;
-    color: #6ee7b7
-  }
-  .mnrf-check-slider input:hover:enabled + .sub-box .sub-check::before,
-  .mnrf-radio-slider input:hover:enabled + .sub-box .sub-check::before {
-    width: 210%;
-    height: 210%
-  }
-  .mnrf-radio-slider input:hover:enabled + .sub-box .sub-check::before {
-    width: 420%;
-    height: 420%
-  }
+.mnrf-check-slider input:focus + .sub-box .sub-check::before,
+.mnrf-radio-slider input:focus + .sub-box .sub-check::before {
+  width: 210%;
+  height: 210%
 }
 .mnrf-check-slider input:checked + .sub-box,
 .mnrf-radio-slider input:checked + .sub-box {
@@ -756,7 +774,9 @@
   border-radius: 1000px
 }
 .mnrf-radio-key input {
-  display: none
+  opacity: 0;
+  width: 0;
+  height: 0
 }
 .mnrf-radio-key input:disabled + label {
   cursor: no-drop;
@@ -792,6 +812,7 @@
 .mnrf-btn {
   -webkit-tap-highlight-color: rgba(255,255,255,0);
   display: inline-flex;
+  align-items: center;
   position: relative;
   z-index: 1
 }
@@ -845,6 +866,10 @@
   background-color: #0ea5e9
 }
 @media (pointer:fine) {
+  .mnrf-radio-slider input:hover:enabled + .sub-box .sub-check::before {
+    width: 420%;
+    height: 420%
+  }
   .mnrf-check-slider input:not(:checked):hover:enabled + .sub-box,
   .mnrf-radio-slider input:not(:checked):hover:enabled + .sub-box {
     background-color: #e0f2fe;

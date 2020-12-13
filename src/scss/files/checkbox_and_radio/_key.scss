@@ -42,7 +42,9 @@
 	}
 
 	input {
-		display: none;
+		opacity: 0;
+		width: 0;
+		height: 0;
 		&:disabled {
 			& + label {
 				cursor: no-drop;
@@ -109,7 +111,7 @@ $colors: (
 		}
 
 		input {
-			&:hover:enabled + label {
+			&:hover:enabled + label, &:focus + label {
 				@extend %tw-bg-#{$color}-500;
 				@extend %tw-text-#{$color}-100;
 			}

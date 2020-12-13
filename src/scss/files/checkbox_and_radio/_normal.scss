@@ -7,6 +7,8 @@
 		cursor: pointer;
 	}
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	display: inline-flex;
+	align-items: center;
 	.sub-box {
 		@extend %check_and_radio_box;
 		width: 20px;
@@ -23,7 +25,15 @@
 		}
 	}
 	input {
-		display: none;
+		opacity: 0;
+		width: 0;
+		height: 0;
+		&:focus + .sub-box{
+			&::before {
+				width: 220%;
+				height: 220%;
+			}
+		}
 		@media (pointer: fine) {
 			&:hover:enabled + .sub-box {
 				&::before {
@@ -71,7 +81,7 @@
 		}
 	}
 	&.opt-block {
-		display: block;
+		display: flex;
 	}
 }
 
@@ -132,7 +142,7 @@ $colors: (
 			@media (pointer: fine) {
 				&:not(:checked):hover:enabled + .sub-box {
 					border-color: map-get(map-get($tw_colors, #{$color}), 500);
-					color: map-get(map-get($tw_colors, #{$color}), 300);
+					// color: map-get(map-get($tw_colors, #{$color}), 300);
 				}
 			}
 			& + .sub-box {

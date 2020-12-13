@@ -1,6 +1,12 @@
 var currentState = history.state
 pointer_is_fine = matchMedia("(pointer:fine)").matches;
 mnrfObj = typeof mnrfObj == "undefined" ? {} : mnrfObj;
+$('.mnrf-checkbox,.mnrf-radio,mnrf-radio-key,mnrf-radio-slider,mnrf-check-slider').click(function (event) {
+	console.log(event.pageX);
+	if(event.pageX != 0){
+		$(this).find('input').blur()
+	}
+});
 // console.log(mnrfObj);
 // if(mnrfObj == 'undefined'){
 // 	mnrfObj = {}

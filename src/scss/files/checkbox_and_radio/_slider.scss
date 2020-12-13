@@ -34,7 +34,17 @@
 	}
 
 	input {
-		display: none;
+		opacity: 0;
+		width: 0;
+		height: 0;
+		&:focus + .sub-box{
+			.sub-check {
+				&::before {
+					width: 210%;
+					height: 210%;
+				}
+			}
+		}
 
 		@media (pointer: fine) {
 			&:hover:enabled+.sub-box {

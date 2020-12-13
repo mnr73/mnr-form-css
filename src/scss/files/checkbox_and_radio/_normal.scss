@@ -7,8 +7,7 @@
 		cursor: pointer;
 	}
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-	display: inline-flex;
-	align-items: center;
+	white-space: nowrap;
 	.sub-box {
 		@extend %check_and_radio_box;
 		width: 20px;
@@ -28,6 +27,7 @@
 		opacity: 0;
 		width: 0;
 		height: 0;
+		position: absolute;
 		&:focus + .sub-box{
 			&::before {
 				width: 220%;
@@ -81,7 +81,7 @@
 		}
 	}
 	&.opt-block {
-		display: flex;
+		display: block;
 	}
 }
 

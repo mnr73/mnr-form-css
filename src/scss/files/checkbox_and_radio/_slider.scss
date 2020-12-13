@@ -9,7 +9,7 @@
 	}
 
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-
+	white-space: nowrap;
 
 	.sub-box {
 		@extend %check_and_radio_box;
@@ -37,6 +37,7 @@
 		opacity: 0;
 		width: 0;
 		height: 0;
+		position: absolute;
 		&:focus + .sub-box{
 			.sub-check {
 				&::before {

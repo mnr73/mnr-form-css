@@ -4,8 +4,6 @@
 .mnrf-radio-slider .sub-box {
   z-index: 3;
   margin: 2px;
-  -webkit-margin-end: 5px;
-  margin-inline-end: 5px;
   background-color: #fff;
   border-width: 2px;
   border-style: solid;
@@ -362,8 +360,7 @@
 .mnrf-checkbox,
 .mnrf-radio {
   -webkit-tap-highlight-color: rgba(255,255,255,0);
-  display: inline-flex;
-  align-items: center
+  white-space: nowrap
 }
 .mnrf-checkbox,
 .mnrf-checkbox *,
@@ -389,7 +386,8 @@
 .mnrf-radio input {
   opacity: 0;
   width: 0;
-  height: 0
+  height: 0;
+  position: absolute
 }
 .mnrf-checkbox input:focus + .sub-box::before,
 .mnrf-radio input:focus + .sub-box::before {
@@ -428,7 +426,7 @@
 }
 .mnrf-checkbox.opt-block,
 .opt-block.mnrf-radio {
-  display: flex
+  display: block
 }
 .mnrf-radio .sub-box {
   padding: 3px
@@ -549,7 +547,8 @@
 }
 .mnrf-check-slider,
 .mnrf-radio-slider {
-  -webkit-tap-highlight-color: rgba(255,255,255,0)
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  white-space: nowrap
 }
 .mnrf-check-slider,
 .mnrf-check-slider *,
@@ -578,7 +577,8 @@
 .mnrf-radio-slider input {
   opacity: 0;
   width: 0;
-  height: 0
+  height: 0;
+  position: absolute
 }
 .mnrf-check-slider input:focus + .sub-box .sub-check::before,
 .mnrf-radio-slider input:focus + .sub-box .sub-check::before {
@@ -776,7 +776,8 @@
 .mnrf-radio-key input {
   opacity: 0;
   width: 0;
-  height: 0
+  height: 0;
+  position: absolute
 }
 .mnrf-radio-key input:disabled + label {
   cursor: no-drop;

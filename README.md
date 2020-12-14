@@ -1,6 +1,6 @@
 # mnr form element UI
 
-written with css and jquery
+written with scss and jquery
 
 ## include 
 - checkbox and radio

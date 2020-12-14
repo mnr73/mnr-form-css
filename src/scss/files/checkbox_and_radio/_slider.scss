@@ -2,24 +2,19 @@
 // @import "../../color";
 
 .mnrf-check-slider {
-
-	&,
-	& * {
-		cursor: pointer;
-	}
-
-	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-	white-space: nowrap;
+	@extend %chek_and_radio_main_body;
 
 	.sub-box {
 		@extend %check_and_radio_box;
-		@extend %full_round_corner;
+		border-color: map-get(map-get($tw_colors, #{$main-color}), 400);
+		color: map-get(map-get($tw_colors, #{$main-color}), 400);
+		border-radius: 1000px;
 		width: 35px;
 		padding: 1px;
 
 		.sub-check {
 			display: block;
-			@extend %full_round_corner;
+			border-radius: 1000px;
 			position: relative;
 			left: 1px;
 			width: 55%;
@@ -29,16 +24,14 @@
 
 			&::before {
 				@extend %check_and_radio_before;
+				background-color: rgba(map-get(map-get($tw_colors, #{$main-color}), 500), 0.5);
 			}
 		}
 	}
 
 	input {
-		opacity: 0;
-		width: 0;
-		height: 0;
-		position: absolute;
-		&:focus + .sub-box{
+		@extend %chek_and_radio_input_hide;
+		&:focus + .sub-box {
 			.sub-check {
 				&::before {
 					width: 210%;
@@ -48,20 +41,24 @@
 		}
 
 		@media (pointer: fine) {
-			&:hover:enabled+.sub-box {
-				.sub-check {
-					&::before {
-						width: 210%;
-						height: 210%;
+			&:hover:enabled {
+				& + .sub-box{
+					.sub-check {
+						&::before {
+							
+							width: 210%;
+							height: 210%;
+						}
 					}
 				}
 			}
 		}
 
 		&:checked {
-			&+.sub-box {
+			& + .sub-box {
 				border-color: currentColor;
-
+				background-color: map-get(map-get($tw_colors, #{$main-color}), 300) !important;
+				color: map-get(map-get($tw_colors, #{$main-color}), 600) !important;
 				.sub-check {
 					left: calc(45% - 1px);
 
@@ -74,11 +71,11 @@
 		}
 
 		&:disabled {
-
 			// & + .sub-box {
 			// 	background-color: white;
 			// }
-			&~* {
+			& ~ *,
+			& ~ * * {
 				cursor: no-drop;
 				opacity: 0.5;
 			}
@@ -128,14 +125,15 @@
 	}
 
 	input {
-
 		//     display: none;
 		@media (pointer: fine) {
-			&:hover:enabled+.sub-box {
-				.sub-check {
-					&::before {
-						width: 420%;
-						height: 420%;
+			&:hover:enabled {
+				& + .sub-box {
+					.sub-check {
+						&::before {
+							width: 420%;
+							height: 420%;
+						}
 					}
 				}
 			}
@@ -147,9 +145,8 @@
 			}
 		}
 		&:checked {
-			&+.sub-box {
+			& + .sub-box {
 				.sub-check {
-
 					&::before {
 						animation: sliderRadioAnimate 0.4s;
 					}
@@ -189,19 +186,8 @@
 	}
 }
 
-$colors: ("main": "lightBlue",
-	"red": "red",
-	"yellow": "yellow",
-	"green": "emerald",
-);
-
-@each $name,
-$color in ($colors) {
+@each $name, $color in ($colors) {
 	$className: ".mnrf-check-slider.color-#{$name}";
-
-	@if $name=="main" {
-		$className: ".mnrf-check-slider";
-	}
 
 	#{$className} {
 		.sub-box {
@@ -210,27 +196,17 @@ $color in ($colors) {
 		}
 
 		input {
-			@media (pointer: fine) {
-				&:not(:checked):hover:enabled+.sub-box {
-					background-color: map-get(map-get($tw_colors, #{$color}),
-						100);
-					color: map-get(map-get($tw_colors, #{$color}), 500);
-				}
-			}
-
-			&+.sub-box {
+			& + .sub-box {
 				.sub-check {
 					&::before {
-						background-color: rgba($color: map-get(map-get($tw_colors, #{$color}), 500),
-							$alpha: 0.5);
+						background-color: rgba(map-get(map-get($tw_colors, #{$color}), 500), 0.5);
 					}
 				}
 			}
 
 			&:checked {
 				& + .sub-box {
-					background-color: map-get(map-get($tw_colors, #{$color}),
-						300) !important;
+					background-color: map-get(map-get($tw_colors, #{$color}), 300) !important;
 					color: map-get(map-get($tw_colors, #{$color}), 600) !important;
 				}
 			}

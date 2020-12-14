@@ -1,17 +1,21 @@
-@import 'firstextends.scss';
+@import 'extends.scss';
 @import 'color.scss';
 @import 'files/basic/basic.scss';
+
+
+$main-color : "lightBlue";
+$colors: (
+	"red": "red",
+	"yellow": "yellow",
+	"green": "emerald",
+);
 
 @import 'files/checkbox_and_radio/normal.scss';
 @import 'files/checkbox_and_radio/slider.scss';
 @import 'files/checkbox_and_radio/key.scss';
 
-@import 'files/button/button.scss';
+// @import 'files/button/button.scss';
 
-@import 'files/input/input.scss';
-
-@import 'files/multiple/multiple.scss';
-
-@import 'files/textarea/textarea.scss';
-
-@import 'endextends.scss';
+// @import 'files/input/input.scss';
+// @import 'files/multiple/multiple.scss';
+// @import 'files/textarea/textarea.scss';

@@ -6,8 +6,8 @@
 
 	.sub-box {
 		@extend %check_and_radio_box;
-		border-color: map-get(map-get($tw_colors, #{$main-color}), 400);
-		color: map-get(map-get($tw_colors, #{$main-color}), 400);
+		border-color: map-get($main-color, 400);
+		color: map-get($main-color, 400);
 		border-radius: 1000px;
 		width: 35px;
 		padding: 1px;
@@ -24,7 +24,7 @@
 
 			&::before {
 				@extend %check_and_radio_before;
-				background-color: rgba(map-get(map-get($tw_colors, #{$main-color}), 500), 0.5);
+				background-color: rgba(map-get($main-color, 500), 0.5);
 			}
 		}
 	}
@@ -57,8 +57,8 @@
 		&:checked {
 			& + .sub-box {
 				border-color: currentColor;
-				background-color: map-get(map-get($tw_colors, #{$main-color}), 300) !important;
-				color: map-get(map-get($tw_colors, #{$main-color}), 600) !important;
+				background-color: map-get($main-color, 300) !important;
+				color: map-get($main-color, 600) !important;
 				.sub-check {
 					left: calc(45% - 1px);
 
@@ -191,23 +191,23 @@
 
 	#{$className} {
 		.sub-box {
-			border-color: map-get(map-get($tw_colors, #{$color}), 400);
-			color: map-get(map-get($tw_colors, #{$color}), 400);
+			border-color: map-get($color, 400);
+			color: map-get($color, 400);
 		}
 
 		input {
 			& + .sub-box {
 				.sub-check {
 					&::before {
-						background-color: rgba(map-get(map-get($tw_colors, #{$color}), 500), 0.5);
+						background-color: rgba(map-get($color, 500), 0.5);
 					}
 				}
 			}
 
 			&:checked {
 				& + .sub-box {
-					background-color: map-get(map-get($tw_colors, #{$color}), 300) !important;
-					color: map-get(map-get($tw_colors, #{$color}), 600) !important;
+					background-color: map-get($color, 300) !important;
+					color: map-get($color, 600) !important;
 				}
 			}
 		}

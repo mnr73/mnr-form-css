@@ -424,3 +424,815 @@
   background-color: #059669 !important;
   color: #D1FAE5 !important;
 }
+
+.mnrf-btn {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.mnrf-btn, .mnrf-btn *:not(svg), .mnrf-btn *::after, .mnrf-btn *::before {
+  transition: all 0.3s;
+}
+.mnrf-btn .sub-btn {
+  outline: none;
+  background-color: #0EA5E9;
+  text-decoration: none;
+  border: none;
+  color: #F8FAFC;
+  display: inline-flex;
+  cursor: pointer;
+  padding: 0.5em;
+  line-height: normal;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.mnrf-btn .sub-btn:first-child {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+.mnrf-btn .sub-btn:last-child {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.mnrf-btn .sub-btn::before, .mnrf-btn .sub-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 165, 233, 0.5);
+  z-index: -1;
+  border-radius: 3px;
+}
+.mnrf-btn .sub-btn::after {
+  background-color: #0ea5e9;
+  transition: all 0.6s;
+  width: calc(100% + 2em);
+  height: calc(100% + 2em);
+  opacity: 0;
+}
+.mnrf-btn .sub-btn:focus::before {
+  width: calc(100% + 0.5em);
+  height: calc(100% + 0.5em);
+}
+@media (pointer: fine) {
+  .mnrf-btn .sub-btn:hover {
+    background-color: #0284C7;
+  }
+  .mnrf-btn .sub-btn:hover::before {
+    width: calc(100% + 0.5em);
+    height: calc(100% + 0.5em);
+  }
+}
+.mnrf-btn .sub-btn:active {
+  background-color: #0369A1;
+}
+.mnrf-btn .sub-btn:active::before {
+  width: 0;
+  height: 0;
+}
+.mnrf-btn .sub-btn:active::after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: 0s;
+}
+.mnrf-btn .sub-btn:disabled {
+  opacity: 0.6;
+  cursor: no-drop;
+}
+.mnrf-btn.opt-rtl .sub-btn {
+  border-radius: 0;
+}
+.mnrf-btn.opt-rtl .sub-btn:last-child {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+.mnrf-btn.opt-rtl .sub-btn:first-child {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.mnrf-btn.opt-block {
+  display: flex;
+}
+.mnrf-btn.opt-block .sub-btn {
+  display: flex;
+  width: 100%;
+}
+
+.mnrf-btn.color-red .sub-btn {
+  background-color: #EF4444;
+}
+.mnrf-btn.color-red .sub-btn::before, .mnrf-btn.color-red .sub-btn::after {
+  background-color: rgba(239, 68, 68, 0.5);
+}
+.mnrf-btn.color-red .sub-btn::after {
+  background-color: #ef4444;
+}
+@media (pointer: fine) {
+  .mnrf-btn.color-red .sub-btn:hover {
+    background-color: #DC2626;
+  }
+}
+.mnrf-btn.color-red .sub-btn:active {
+  background-color: #B91C1C;
+}
+
+.mnrf-btn.color-yellow .sub-btn {
+  background-color: #EAB308;
+}
+.mnrf-btn.color-yellow .sub-btn::before, .mnrf-btn.color-yellow .sub-btn::after {
+  background-color: rgba(234, 179, 8, 0.5);
+}
+.mnrf-btn.color-yellow .sub-btn::after {
+  background-color: #eab308;
+}
+@media (pointer: fine) {
+  .mnrf-btn.color-yellow .sub-btn:hover {
+    background-color: #CA8A04;
+  }
+}
+.mnrf-btn.color-yellow .sub-btn:active {
+  background-color: #A16207;
+}
+
+.mnrf-btn.color-green .sub-btn {
+  background-color: #10B981;
+}
+.mnrf-btn.color-green .sub-btn::before, .mnrf-btn.color-green .sub-btn::after {
+  background-color: rgba(16, 185, 129, 0.5);
+}
+.mnrf-btn.color-green .sub-btn::after {
+  background-color: #10b981;
+}
+@media (pointer: fine) {
+  .mnrf-btn.color-green .sub-btn:hover {
+    background-color: #059669;
+  }
+}
+.mnrf-btn.color-green .sub-btn:active {
+  background-color: #047857;
+}
+
+.mnrf-btn.color-dark .sub-btn {
+  background-color: #64748B;
+}
+.mnrf-btn.color-dark .sub-btn::before, .mnrf-btn.color-dark .sub-btn::after {
+  background-color: rgba(100, 116, 139, 0.5);
+}
+.mnrf-btn.color-dark .sub-btn::after {
+  background-color: #64748b;
+}
+@media (pointer: fine) {
+  .mnrf-btn.color-dark .sub-btn:hover {
+    background-color: #475569;
+  }
+}
+.mnrf-btn.color-dark .sub-btn:active {
+  background-color: #334155;
+}
+
+.mnrf-input, .mnrf-textarea, .mnrf-multi {
+  display: block;
+  line-height: 2;
+  color: #334155;
+}
+.mnrf-input.opt-bg, .opt-bg.mnrf-textarea, .opt-bg.mnrf-multi {
+  padding: 5px;
+  background-color: rgba(14, 165, 233, 0.1);
+}
+.mnrf-input > .sub-title, .mnrf-textarea > .sub-title, .mnrf-multi > .sub-title {
+  font-size: 1.2em;
+}
+.mnrf-input > .sub-title, .mnrf-textarea > .sub-title, .mnrf-multi > .sub-title, .mnrf-input > .sub-hint, .mnrf-textarea > .sub-hint, .mnrf-multi > .sub-hint {
+  display: block;
+  color: #0EA5E9;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+.mnrf-input .sub-frame, .mnrf-textarea .sub-frame, .mnrf-multi .sub-frame {
+  line-height: normal;
+  display: flex;
+  background-color: white;
+  border-color: #7DD3FC;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  position: relative;
+}
+.mnrf-input .sub-frame .sub-header, .mnrf-textarea .sub-frame .sub-header, .mnrf-multi .sub-frame .sub-header {
+  display: block;
+  line-height: 10px;
+  padding: 0.4em 0.5em;
+  font-size: 0.9em;
+  margin-bottom: -0.6em;
+  color: #38BDF8;
+}
+.mnrf-input .sub-frame .sub-pwst, .mnrf-textarea .sub-frame .sub-pwst, .mnrf-multi .sub-frame .sub-pwst {
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.mnrf-input .sub-frame .sub-pwst svg, .mnrf-textarea .sub-frame .sub-pwst svg, .mnrf-multi .sub-frame .sub-pwst svg {
+  display: block;
+  height: 100%;
+  width: 2em;
+  padding: 0 0.5em;
+  fill: currentColor;
+  color: #94A3B8;
+}
+.mnrf-input .sub-frame .sub-toggleData, .mnrf-textarea .sub-frame .sub-toggleData, .mnrf-multi .sub-frame .sub-toggleData {
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.mnrf-input .sub-frame .sub-toggleData svg, .mnrf-textarea .sub-frame .sub-toggleData svg, .mnrf-multi .sub-frame .sub-toggleData svg {
+  display: block;
+  height: 100%;
+  width: 2em;
+  padding: 0 0.5em;
+  fill: currentColor;
+  color: #94A3B8;
+}
+.mnrf-input .sub-frame .sub-toggleData.state-up svg, .mnrf-textarea .sub-frame .sub-toggleData.state-up svg, .mnrf-multi .sub-frame .sub-toggleData.state-up svg {
+  transform: rotate(180deg);
+}
+.mnrf-input .sub-frame .mnrf-btn button, .mnrf-textarea .sub-frame .mnrf-btn button, .mnrf-multi .sub-frame .mnrf-btn button {
+  white-space: nowrap;
+  border-radius: 1px;
+}
+.mnrf-input .sub-data, .mnrf-textarea .sub-data, .mnrf-multi .sub-data {
+  position: absolute;
+  display: none;
+  width: 100%;
+  max-height: 185px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  top: calc(100% + 7px);
+  left: 0;
+  background-color: white;
+  border-color: #475569;
+  box-shadow: 0 0 0 2px rgba(100, 116, 139, 0.4);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  padding: 5px 0;
+  z-index: 100;
+}
+.mnrf-input .sub-data.state-show, .mnrf-textarea .sub-data.state-show, .mnrf-multi .sub-data.state-show {
+  display: block;
+}
+.mnrf-input .sub-data .sub-option, .mnrf-textarea .sub-data .sub-option, .mnrf-multi .sub-data .sub-option {
+  display: block;
+  cursor: pointer;
+  padding: 5px;
+  color: #94A3B8;
+}
+.mnrf-input .sub-data .sub-option:hover, .mnrf-textarea .sub-data .sub-option:hover, .mnrf-multi .sub-data .sub-option:hover {
+  color: #475569;
+  background-color: #F1F5F9;
+}
+.mnrf-input .sub-data .sub-option.state-hide, .mnrf-textarea .sub-data .sub-option.state-hide, .mnrf-multi .sub-data .sub-option.state-hide {
+  display: none;
+}
+.mnrf-input .sub-data .sub-option.state-select, .mnrf-textarea .sub-data .sub-option.state-select, .mnrf-multi .sub-data .sub-option.state-select {
+  background-color: #475569;
+  color: #F1F5F9;
+}
+.mnrf-input .sub-col, .mnrf-textarea .sub-col, .mnrf-multi .sub-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+.mnrf-input .sub-col input, .mnrf-textarea .sub-col input, .mnrf-multi .sub-col input {
+  width: 100%;
+}
+.mnrf-input .sub-flex, .mnrf-textarea .sub-flex, .mnrf-multi .sub-flex {
+  display: flex;
+  flex-grow: 1;
+  align-items: stretch;
+  position: relative;
+}
+.mnrf-input .sub-flex input, .mnrf-textarea .sub-flex input, .mnrf-multi .sub-flex input {
+  min-width: 1px;
+}
+.mnrf-input .sub-icon, .mnrf-textarea .sub-icon, .mnrf-multi .sub-icon {
+  width: 2em;
+  padding: 0 0.5em;
+  fill: currentColor;
+  color: #38BDF8;
+}
+.mnrf-input .sub-pr-0, .mnrf-textarea .sub-pr-0, .mnrf-multi .sub-pr-0 {
+  padding-right: 0 !important;
+}
+.mnrf-input .sub-pl-0, .mnrf-textarea .sub-pl-0, .mnrf-multi .sub-pl-0 {
+  padding-left: 0 !important;
+}
+.mnrf-input .sub-pie-0, .mnrf-textarea .sub-pie-0, .mnrf-multi .sub-pie-0 {
+  padding-inline-end: 0 !important;
+}
+.mnrf-input .sub-pis-0, .mnrf-textarea .sub-pis-0, .mnrf-multi .sub-pis-0 {
+  padding-inline-start: 0 !important;
+}
+.mnrf-input .sub-psfix, .mnrf-textarea .sub-psfix, .mnrf-multi .sub-psfix {
+  padding: 0.5em;
+  color: #38BDF8;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.mnrf-input input, .mnrf-textarea input, .mnrf-multi input {
+  border: none;
+  outline: 0;
+  display: block;
+  flex-grow: 1;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0);
+  color: inherit;
+  padding: 0.5em;
+  cursor: inherit;
+  height: 100%;
+  box-sizing: border-box;
+}
+.mnrf-input input::placeholder, .mnrf-textarea input::placeholder, .mnrf-multi input::placeholder {
+  color: #94A3B8;
+}
+.mnrf-input .sub-select, .mnrf-textarea .sub-select, .mnrf-multi .sub-select {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  color: #0284C7;
+  height: 100%;
+}
+.mnrf-input .sub-select .sub-toggleData, .mnrf-textarea .sub-select .sub-toggleData, .mnrf-multi .sub-select .sub-toggleData {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+.mnrf-input .sub-select .sub-toggleData .sub-seltext, .mnrf-textarea .sub-select .sub-toggleData .sub-seltext, .mnrf-multi .sub-select .sub-toggleData .sub-seltext {
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+}
+.mnrf-input .sub-select .sub-toggleData svg, .mnrf-textarea .sub-select .sub-toggleData svg, .mnrf-multi .sub-select .sub-toggleData svg {
+  color: inherit;
+  fill: currentColor;
+}
+.mnrf-input .sub-select .sub-data .sub-search, .mnrf-textarea .sub-select .sub-data .sub-search, .mnrf-multi .sub-select .sub-data .sub-search {
+  display: block;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #94A3B8;
+  margin-top: -5px;
+}
+.mnrf-input .sub-select .sub-data .sub-search input, .mnrf-textarea .sub-select .sub-data .sub-search input, .mnrf-multi .sub-select .sub-data .sub-search input {
+  display: block;
+  width: 100%;
+}
+.mnrf-input .sub-select .sub-data .sub-option::before, .mnrf-textarea .sub-select .sub-data .sub-option::before, .mnrf-multi .sub-select .sub-data .sub-option::before {
+  content: "";
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  margin-inline-end: 6px;
+  border-style: solid;
+  border-color: currentColor;
+  border-width: 0.25em;
+  border-radius: 1000px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+.mnrf-input.state-hover:not(.state-disable) .sub-frame, .state-hover.mnrf-textarea:not(.state-disable) .sub-frame, .state-hover.mnrf-multi:not(.state-disable) .sub-frame {
+  border-color: #38BDF8;
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.2);
+}
+.mnrf-input.state-hover:not(.state-disable) .sub-frame input:hover:not(:focus)::placeholder, .state-hover.mnrf-textarea:not(.state-disable) .sub-frame input:hover:not(:focus)::placeholder, .state-hover.mnrf-multi:not(.state-disable) .sub-frame input:hover:not(:focus)::placeholder {
+  color: #64748B;
+}
+.mnrf-input.state-hover:not(.state-disable) .sub-frame .sub-header, .state-hover.mnrf-textarea:not(.state-disable) .sub-frame .sub-header, .state-hover.mnrf-multi:not(.state-disable) .sub-frame .sub-header {
+  color: #0EA5E9;
+}
+.mnrf-input.state-hover:not(.state-disable) .sub-frame .sub-icon, .state-hover.mnrf-textarea:not(.state-disable) .sub-frame .sub-icon, .state-hover.mnrf-multi:not(.state-disable) .sub-frame .sub-icon {
+  color: #0EA5E9;
+}
+.mnrf-input.state-focus:not(.state-disable) > .sub-title, .state-focus.mnrf-textarea:not(.state-disable) > .sub-title, .state-focus.mnrf-multi:not(.state-disable) > .sub-title, .mnrf-input.state-focus:not(.state-disable) > .sub-hint, .state-focus.mnrf-textarea:not(.state-disable) > .sub-hint, .state-focus.mnrf-multi:not(.state-disable) > .sub-hint {
+  color: #0284C7;
+}
+.mnrf-input.state-focus:not(.state-disable) .sub-frame, .state-focus.mnrf-textarea:not(.state-disable) .sub-frame, .state-focus.mnrf-multi:not(.state-disable) .sub-frame {
+  border-color: #0284C7;
+  box-shadow: 0 0 0 2px rgba(14, 165, 233, 0.4);
+}
+.mnrf-input.state-focus:not(.state-disable) .sub-frame .sub-header, .state-focus.mnrf-textarea:not(.state-disable) .sub-frame .sub-header, .state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-header {
+  color: #0284C7;
+}
+.mnrf-input.state-focus:not(.state-disable) .sub-frame .sub-icon, .state-focus.mnrf-textarea:not(.state-disable) .sub-frame .sub-icon, .state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-icon {
+  color: #0284C7;
+}
+.mnrf-input.state-disable, .state-disable.mnrf-textarea, .state-disable.mnrf-multi {
+  opacity: 0.6;
+  cursor: no-drop;
+}
+.mnrf-input .sub-vhr, .mnrf-textarea .sub-vhr, .mnrf-multi .sub-vhr {
+  width: 2px;
+  background-color: #CBD5E1;
+  margin: 0.4em 0.5px;
+}
+
+.mnrf-mob-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(15, 23, 42, 0.5);
+  padding: 5px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+.mnrf-mob-wrap .sub-wrap {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  transition: 0.3s;
+}
+.mnrf-mob-wrap .sub-wrap button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  padding: 0.5em;
+  width: 100%;
+  display: block;
+  z-index: 100;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  border: none;
+  box-sizing: border-box;
+  outline: 0;
+  text-decoration: none;
+  transition: 0.3s;
+  background-color: #94A3B8;
+  color: #F8FAFC;
+  cursor: pointer;
+}
+@media (pointer: fine) {
+  .mnrf-mob-wrap .sub-wrap button:hover {
+    background-color: #64748B;
+  }
+}
+.mnrf-mob-wrap .sub-wrap button:active {
+  background-color: #475569;
+}
+.mnrf-mob-wrap .mnrf-input, .mnrf-mob-wrap .mnrf-textarea, .mnrf-mob-wrap .mnrf-multi {
+  padding: 0;
+}
+.mnrf-mob-wrap .mnrf-input > *:not(.sub-frame), .mnrf-mob-wrap .mnrf-textarea > *:not(.sub-frame), .mnrf-mob-wrap .mnrf-multi > *:not(.sub-frame) {
+  display: none;
+}
+.mnrf-mob-wrap .mnrf-input .sub-frame, .mnrf-mob-wrap .mnrf-textarea .sub-frame, .mnrf-mob-wrap .mnrf-multi .sub-frame {
+  border-radius: 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  box-shadow: none !important;
+}
+.mnrf-mob-wrap .mnrf-input .sub-col, .mnrf-mob-wrap .mnrf-textarea .sub-col, .mnrf-mob-wrap .mnrf-multi .sub-col {
+  position: static;
+}
+.mnrf-mob-wrap .mnrf-input .sub-data, .mnrf-mob-wrap .mnrf-textarea .sub-data, .mnrf-mob-wrap .mnrf-multi .sub-data {
+  height: 100vh;
+  max-height: none;
+  padding-bottom: 200px;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+}
+
+.mnrf-input.color-red.opt-bg, .color-red.opt-bg.mnrf-textarea, .color-red.opt-bg.mnrf-multi {
+  background-color: rgba(239, 68, 68, 0.1);
+}
+.mnrf-input.color-red > .sub-title, .color-red.mnrf-textarea > .sub-title, .color-red.mnrf-multi > .sub-title, .mnrf-input.color-red > .sub-hint, .color-red.mnrf-textarea > .sub-hint, .color-red.mnrf-multi > .sub-hint {
+  color: #EF4444;
+}
+.mnrf-input.color-red .sub-frame, .color-red.mnrf-textarea .sub-frame, .color-red.mnrf-multi .sub-frame {
+  border-color: #FCA5A5;
+}
+.mnrf-input.color-red .sub-frame .sub-header, .color-red.mnrf-textarea .sub-frame .sub-header, .color-red.mnrf-multi .sub-frame .sub-header {
+  color: #F87171;
+}
+.mnrf-input.color-red .sub-icon, .color-red.mnrf-textarea .sub-icon, .color-red.mnrf-multi .sub-icon {
+  color: #F87171;
+}
+.mnrf-input.color-red .sub-psfix, .color-red.mnrf-textarea .sub-psfix, .color-red.mnrf-multi .sub-psfix {
+  color: #F87171;
+}
+.mnrf-input.color-red .sub-select, .color-red.mnrf-textarea .sub-select, .color-red.mnrf-multi .sub-select {
+  color: #DC2626;
+}
+.mnrf-input.color-red.state-hover:not(.state-disable) .sub-frame, .color-red.state-hover.mnrf-textarea:not(.state-disable) .sub-frame, .color-red.state-hover.mnrf-multi:not(.state-disable) .sub-frame {
+  border-color: #F87171;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+}
+.mnrf-input.color-red.state-hover:not(.state-disable) .sub-frame .sub-header, .color-red.state-hover.mnrf-textarea:not(.state-disable) .sub-frame .sub-header, .color-red.state-hover.mnrf-multi:not(.state-disable) .sub-frame .sub-header {
+  color: #EF4444;
+}
+.mnrf-input.color-red.state-hover:not(.state-disable) .sub-frame .sub-icon, .color-red.state-hover.mnrf-textarea:not(.state-disable) .sub-frame .sub-icon, .color-red.state-hover.mnrf-multi:not(.state-disable) .sub-frame .sub-icon {
+  color: #EF4444;
+}
+.mnrf-input.color-red.state-focus:not(.state-disable) > .sub-title, .color-red.state-focus.mnrf-textarea:not(.state-disable) > .sub-title, .color-red.state-focus.mnrf-multi:not(.state-disable) > .sub-title, .mnrf-input.color-red.state-focus:not(.state-disable) > .sub-hint, .color-red.state-focus.mnrf-textarea:not(.state-disable) > .sub-hint, .color-red.state-focus.mnrf-multi:not(.state-disable) > .sub-hint {
+  color: #DC2626;
+}
+.mnrf-input.color-red.state-focus:not(.state-disable) .sub-frame, .color-red.state-focus.mnrf-textarea:not(.state-disable) .sub-frame, .color-red.state-focus.mnrf-multi:not(.state-disable) .sub-frame {
+  border-color: #DC2626;
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.4);
+}
+.mnrf-input.color-red.state-focus:not(.state-disable) .sub-frame .sub-header, .color-red.state-focus.mnrf-textarea:not(.state-disable) .sub-frame .sub-header, .color-red.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-header {
+  color: #DC2626;
+}
+.mnrf-input.color-red.state-focus:not(.state-disable) .sub-frame .sub-icon, .color-red.state-focus.mnrf-textarea:not(.state-disable) .sub-frame .sub-icon, .color-red.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-icon {
+  color: #DC2626;
+}
+
+.mnrf-input.color-yellow.opt-bg, .color-yellow.opt-bg.mnrf-textarea, .color-yellow.opt-bg.mnrf-multi {
+  background-color: rgba(234, 179, 8, 0.1);
+}
+.mnrf-input.color-yellow > .sub-title, .color-yellow.mnrf-textarea > .sub-title, .color-yellow.mnrf-multi > .sub-title, .mnrf-input.color-yellow > .sub-hint, .color-yellow.mnrf-textarea > .sub-hint, .color-yellow.mnrf-multi > .sub-hint {
+  color: #EAB308;
+}
+.mnrf-input.color-yellow .sub-frame, .color-yellow.mnrf-textarea .sub-frame, .color-yellow.mnrf-multi .sub-frame {
+  border-color: #FDE047;
+}
+.mnrf-input.color-yellow .sub-frame .sub-header, .color-yellow.mnrf-textarea .sub-frame .sub-header, .color-yellow.mnrf-multi .sub-frame .sub-header {
+  color: #FACC15;
+}
+.mnrf-input.color-yellow .sub-icon, .color-yellow.mnrf-textarea .sub-icon, .color-yellow.mnrf-multi .sub-icon {
+  color: #FACC15;
+}
+.mnrf-input.color-yellow .sub-psfix, .color-yellow.mnrf-textarea .sub-psfix, .color-yellow.mnrf-multi .sub-psfix {
+  color: #FACC15;
+}
+.mnrf-input.color-yellow .sub-select, .color-yellow.mnrf-textarea .sub-select, .color-yellow.mnrf-multi .sub-select {
+  color: #CA8A04;
+}
+.mnrf-input.color-yellow.state-hover:not(.state-disable) .sub-frame, .color-yellow.state-hover.mnrf-textarea:not(.state-disable) .sub-frame, .color-yellow.state-hover.mnrf-multi:not(.state-disable) .sub-frame {
+  border-color: #FACC15;
+  box-shadow: 0 0 0 2px rgba(234, 179, 8, 0.2);
+}
+.mnrf-input.color-yellow.state-hover:not(.state-disable) .sub-frame .sub-header, .color-yellow.state-hover.mnrf-textarea:not(.state-disable) .sub-frame .sub-header, .color-yellow.state-hover.mnrf-multi:not(.state-disable) .sub-frame .sub-header {
+  color: #EAB308;
+}
+.mnrf-input.color-yellow.state-hover:not(.state-disable) .sub-frame .sub-icon, .color-yellow.state-hover.mnrf-textarea:not(.state-disable) .sub-frame .sub-icon, .color-yellow.state-hover.mnrf-multi:not(.state-disable) .sub-frame .sub-icon {
+  color: #EAB308;
+}
+.mnrf-input.color-yellow.state-focus:not(.state-disable) > .sub-title, .color-yellow.state-focus.mnrf-textarea:not(.state-disable) > .sub-title, .color-yellow.state-focus.mnrf-multi:not(.state-disable) > .sub-title, .mnrf-input.color-yellow.state-focus:not(.state-disable) > .sub-hint, .color-yellow.state-focus.mnrf-textarea:not(.state-disable) > .sub-hint, .color-yellow.state-focus.mnrf-multi:not(.state-disable) > .sub-hint {
+  color: #CA8A04;
+}
+.mnrf-input.color-yellow.state-focus:not(.state-disable) .sub-frame, .color-yellow.state-focus.mnrf-textarea:not(.state-disable) .sub-frame, .color-yellow.state-focus.mnrf-multi:not(.state-disable) .sub-frame {
+  border-color: #CA8A04;
+  box-shadow: 0 0 0 2px rgba(234, 179, 8, 0.4);
+}
+.mnrf-input.color-yellow.state-focus:not(.state-disable) .sub-frame .sub-header, .color-yellow.state-focus.mnrf-textarea:not(.state-disable) .sub-frame .sub-header, .color-yellow.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-header {
+  color: #CA8A04;
+}
+.mnrf-input.color-yellow.state-focus:not(.state-disable) .sub-frame .sub-icon, .color-yellow.state-focus.mnrf-textarea:not(.state-disable) .sub-frame .sub-icon, .color-yellow.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-icon {
+  color: #CA8A04;
+}
+
+.mnrf-input.color-green.opt-bg, .color-green.opt-bg.mnrf-textarea, .color-green.opt-bg.mnrf-multi {
+  background-color: rgba(16, 185, 129, 0.1);
+}
+.mnrf-input.color-green > .sub-title, .color-green.mnrf-textarea > .sub-title, .color-green.mnrf-multi > .sub-title, .mnrf-input.color-green > .sub-hint, .color-green.mnrf-textarea > .sub-hint, .color-green.mnrf-multi > .sub-hint {
+  color: #10B981;
+}
+.mnrf-input.color-green .sub-frame, .color-green.mnrf-textarea .sub-frame, .color-green.mnrf-multi .sub-frame {
+  border-color: #6EE7B7;
+}
+.mnrf-input.color-green .sub-frame .sub-header, .color-green.mnrf-textarea .sub-frame .sub-header, .color-green.mnrf-multi .sub-frame .sub-header {
+  color: #34D399;
+}
+.mnrf-input.color-green .sub-icon, .color-green.mnrf-textarea .sub-icon, .color-green.mnrf-multi .sub-icon {
+  color: #34D399;
+}
+.mnrf-input.color-green .sub-psfix, .color-green.mnrf-textarea .sub-psfix, .color-green.mnrf-multi .sub-psfix {
+  color: #34D399;
+}
+.mnrf-input.color-green .sub-select, .color-green.mnrf-textarea .sub-select, .color-green.mnrf-multi .sub-select {
+  color: #059669;
+}
+.mnrf-input.color-green.state-hover:not(.state-disable) .sub-frame, .color-green.state-hover.mnrf-textarea:not(.state-disable) .sub-frame, .color-green.state-hover.mnrf-multi:not(.state-disable) .sub-frame {
+  border-color: #34D399;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+.mnrf-input.color-green.state-hover:not(.state-disable) .sub-frame .sub-header, .color-green.state-hover.mnrf-textarea:not(.state-disable) .sub-frame .sub-header, .color-green.state-hover.mnrf-multi:not(.state-disable) .sub-frame .sub-header {
+  color: #10B981;
+}
+.mnrf-input.color-green.state-hover:not(.state-disable) .sub-frame .sub-icon, .color-green.state-hover.mnrf-textarea:not(.state-disable) .sub-frame .sub-icon, .color-green.state-hover.mnrf-multi:not(.state-disable) .sub-frame .sub-icon {
+  color: #10B981;
+}
+.mnrf-input.color-green.state-focus:not(.state-disable) > .sub-title, .color-green.state-focus.mnrf-textarea:not(.state-disable) > .sub-title, .color-green.state-focus.mnrf-multi:not(.state-disable) > .sub-title, .mnrf-input.color-green.state-focus:not(.state-disable) > .sub-hint, .color-green.state-focus.mnrf-textarea:not(.state-disable) > .sub-hint, .color-green.state-focus.mnrf-multi:not(.state-disable) > .sub-hint {
+  color: #059669;
+}
+.mnrf-input.color-green.state-focus:not(.state-disable) .sub-frame, .color-green.state-focus.mnrf-textarea:not(.state-disable) .sub-frame, .color-green.state-focus.mnrf-multi:not(.state-disable) .sub-frame {
+  border-color: #059669;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.4);
+}
+.mnrf-input.color-green.state-focus:not(.state-disable) .sub-frame .sub-header, .color-green.state-focus.mnrf-textarea:not(.state-disable) .sub-frame .sub-header, .color-green.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-header {
+  color: #059669;
+}
+.mnrf-input.color-green.state-focus:not(.state-disable) .sub-frame .sub-icon, .color-green.state-focus.mnrf-textarea:not(.state-disable) .sub-frame .sub-icon, .color-green.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-icon {
+  color: #059669;
+}
+
+.mnrf-input.color-dark.opt-bg, .color-dark.opt-bg.mnrf-textarea, .color-dark.opt-bg.mnrf-multi {
+  background-color: rgba(100, 116, 139, 0.1);
+}
+.mnrf-input.color-dark > .sub-title, .color-dark.mnrf-textarea > .sub-title, .color-dark.mnrf-multi > .sub-title, .mnrf-input.color-dark > .sub-hint, .color-dark.mnrf-textarea > .sub-hint, .color-dark.mnrf-multi > .sub-hint {
+  color: #64748B;
+}
+.mnrf-input.color-dark .sub-frame, .color-dark.mnrf-textarea .sub-frame, .color-dark.mnrf-multi .sub-frame {
+  border-color: #CBD5E1;
+}
+.mnrf-input.color-dark .sub-frame .sub-header, .color-dark.mnrf-textarea .sub-frame .sub-header, .color-dark.mnrf-multi .sub-frame .sub-header {
+  color: #94A3B8;
+}
+.mnrf-input.color-dark .sub-icon, .color-dark.mnrf-textarea .sub-icon, .color-dark.mnrf-multi .sub-icon {
+  color: #94A3B8;
+}
+.mnrf-input.color-dark .sub-psfix, .color-dark.mnrf-textarea .sub-psfix, .color-dark.mnrf-multi .sub-psfix {
+  color: #94A3B8;
+}
+.mnrf-input.color-dark .sub-select, .color-dark.mnrf-textarea .sub-select, .color-dark.mnrf-multi .sub-select {
+  color: #475569;
+}
+.mnrf-input.color-dark.state-hover:not(.state-disable) .sub-frame, .color-dark.state-hover.mnrf-textarea:not(.state-disable) .sub-frame, .color-dark.state-hover.mnrf-multi:not(.state-disable) .sub-frame {
+  border-color: #94A3B8;
+  box-shadow: 0 0 0 2px rgba(100, 116, 139, 0.2);
+}
+.mnrf-input.color-dark.state-hover:not(.state-disable) .sub-frame .sub-header, .color-dark.state-hover.mnrf-textarea:not(.state-disable) .sub-frame .sub-header, .color-dark.state-hover.mnrf-multi:not(.state-disable) .sub-frame .sub-header {
+  color: #64748B;
+}
+.mnrf-input.color-dark.state-hover:not(.state-disable) .sub-frame .sub-icon, .color-dark.state-hover.mnrf-textarea:not(.state-disable) .sub-frame .sub-icon, .color-dark.state-hover.mnrf-multi:not(.state-disable) .sub-frame .sub-icon {
+  color: #64748B;
+}
+.mnrf-input.color-dark.state-focus:not(.state-disable) > .sub-title, .color-dark.state-focus.mnrf-textarea:not(.state-disable) > .sub-title, .color-dark.state-focus.mnrf-multi:not(.state-disable) > .sub-title, .mnrf-input.color-dark.state-focus:not(.state-disable) > .sub-hint, .color-dark.state-focus.mnrf-textarea:not(.state-disable) > .sub-hint, .color-dark.state-focus.mnrf-multi:not(.state-disable) > .sub-hint {
+  color: #475569;
+}
+.mnrf-input.color-dark.state-focus:not(.state-disable) .sub-frame, .color-dark.state-focus.mnrf-textarea:not(.state-disable) .sub-frame, .color-dark.state-focus.mnrf-multi:not(.state-disable) .sub-frame {
+  border-color: #475569;
+  box-shadow: 0 0 0 2px rgba(100, 116, 139, 0.4);
+}
+.mnrf-input.color-dark.state-focus:not(.state-disable) .sub-frame .sub-header, .color-dark.state-focus.mnrf-textarea:not(.state-disable) .sub-frame .sub-header, .color-dark.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-header {
+  color: #475569;
+}
+.mnrf-input.color-dark.state-focus:not(.state-disable) .sub-frame .sub-icon, .color-dark.state-focus.mnrf-textarea:not(.state-disable) .sub-frame .sub-icon, .color-dark.state-focus.mnrf-multi:not(.state-disable) .sub-frame .sub-icon {
+  color: #475569;
+}
+
+.mnrf-multi .sub-tags {
+  flex: 100%;
+  padding-inline-start: 3px;
+}
+.mnrf-multi .sub-tags .sub-tag {
+  margin-inline-end: 3px;
+  margin-top: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0EA5E9;
+  background-color: #BAE6FD;
+  color: #0284C7;
+  border-radius: 1000px;
+  display: inline-flex;
+  align-items: center;
+  padding-inline-end: 10px;
+  cursor: pointer;
+}
+.mnrf-multi .sub-tags .sub-tag .sub-close {
+  width: 1.3em;
+  height: 1.3em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1000px;
+  background-color: #38BDF8;
+  margin-inline-start: 0.2em;
+  margin-inline-end: 0.4em;
+}
+.mnrf-multi .sub-tags .sub-tag .sub-close svg {
+  height: 50%;
+  fill: white;
+}
+.mnrf-multi .sub-tags .sub-tag:hover {
+  background-color: #E0F2FE;
+  color: #38BDF8;
+}
+.mnrf-multi .sub-tags .sub-tag:hover .sub-close {
+  background-color: #0284C7;
+}
+.mnrf-multi .sub-frame {
+  flex-wrap: wrap;
+}
+
+.mnrf-multi.color-red .sub-tags .sub-tag {
+  border-color: #EF4444;
+  background-color: #FECACA;
+  color: #DC2626;
+}
+.mnrf-multi.color-red .sub-tags .sub-tag .sub-close {
+  background-color: #F87171;
+}
+.mnrf-multi.color-red .sub-tags .sub-tag:hover {
+  background-color: #FEE2E2;
+  color: #F87171;
+}
+.mnrf-multi.color-red .sub-tags .sub-tag:hover .sub-close {
+  background-color: #DC2626;
+}
+
+.mnrf-multi.color-yellow .sub-tags .sub-tag {
+  border-color: #EAB308;
+  background-color: #FEF08A;
+  color: #CA8A04;
+}
+.mnrf-multi.color-yellow .sub-tags .sub-tag .sub-close {
+  background-color: #FACC15;
+}
+.mnrf-multi.color-yellow .sub-tags .sub-tag:hover {
+  background-color: #FEF9C3;
+  color: #FACC15;
+}
+.mnrf-multi.color-yellow .sub-tags .sub-tag:hover .sub-close {
+  background-color: #CA8A04;
+}
+
+.mnrf-multi.color-green .sub-tags .sub-tag {
+  border-color: #10B981;
+  background-color: #A7F3D0;
+  color: #059669;
+}
+.mnrf-multi.color-green .sub-tags .sub-tag .sub-close {
+  background-color: #34D399;
+}
+.mnrf-multi.color-green .sub-tags .sub-tag:hover {
+  background-color: #D1FAE5;
+  color: #34D399;
+}
+.mnrf-multi.color-green .sub-tags .sub-tag:hover .sub-close {
+  background-color: #059669;
+}
+
+.mnrf-multi.color-dark .sub-tags .sub-tag {
+  border-color: #64748B;
+  background-color: #E2E8F0;
+  color: #475569;
+}
+.mnrf-multi.color-dark .sub-tags .sub-tag .sub-close {
+  background-color: #94A3B8;
+}
+.mnrf-multi.color-dark .sub-tags .sub-tag:hover {
+  background-color: #F1F5F9;
+  color: #94A3B8;
+}
+.mnrf-multi.color-dark .sub-tags .sub-tag:hover .sub-close {
+  background-color: #475569;
+}
+
+.mnrf-textarea textarea {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  min-width: 100%;
+  min-height: 5em;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  padding: 0.5em;
+  background-color: white;
+}
+.mnrf-textarea .sub-header {
+  line-height: normal !important;
+}
+
+.mnrf-mob-wrap .mnrf-textarea {
+  height: 100%;
+}
+.mnrf-mob-wrap .mnrf-textarea .sub-frame {
+  height: 100%;
+}
+.mnrf-mob-wrap .mnrf-textarea .sub-frame textarea {
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+  height: 100%;
+  resize: none;
+}

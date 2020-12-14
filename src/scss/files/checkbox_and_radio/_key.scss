@@ -3,7 +3,7 @@
 
 .mnrf-radio-key {
 	@extend %chek_and_radio_main_body;
-	background-color: map-get(map-get($tw_colors, #{$main-color}), 400);
+	background-color: map-get($main-color, 400);
 	border-radius: 1000px;
 	// @extend %tw-bg-lightBlue-400;
 	position: relative;
@@ -21,8 +21,8 @@
 	}
 
 	.sub-check {
-		background-color: map-get(map-get($tw_colors, #{$main-color}), 300);
-		color: map-get(map-get($tw_colors, #{$main-color}), 600);
+		background-color: map-get($main-color, 300);
+		color: map-get($main-color, 600);
 		transition: all 0.3s;
 		display: inline-flex;
 		align-items: center;
@@ -40,13 +40,13 @@
 		@extend %chek_and_radio_input_hide;
 		&:hover:enabled + .sub-check,
 		&:focus + .sub-check {
-			background-color: map-get(map-get($tw_colors, #{$main-color}), 500);
-			color: map-get(map-get($tw_colors, #{$main-color}), 100);
+			background-color: map-get($main-color, 500);
+			color: map-get($main-color, 100);
 		}
 		&:checked {
 			& + .sub-check {
-				background-color: map-get(map-get($tw_colors, #{$main-color}), 600) !important;
-				color: map-get(map-get($tw_colors, #{$main-color}), 100) !important;
+				background-color: map-get($main-color, 600) !important;
+				color: map-get($main-color, 100) !important;
 			}
 		}
 		&:disabled {
@@ -100,24 +100,24 @@
 	}
 
 	#{$className} {
-		background-color: map-get(map-get($tw_colors, #{$color}), 400);
+		background-color: map-get($color, 400);
 
 		.sub-check {
-			background-color: map-get(map-get($tw_colors, #{$color}), 300);
-			color: map-get(map-get($tw_colors, #{$color}), 600);
+			background-color: map-get($color, 300);
+			color: map-get($color, 600);
 		}
 
 		input {
 			&:hover:enabled + .sub-check,
 			&:focus + .sub-check {
-				background-color: map-get(map-get($tw_colors, #{$color}), 500);
-				color: map-get(map-get($tw_colors, #{$color}), 100);
+				background-color: map-get($color, 500);
+				color: map-get($color, 100);
 			}
 
 			&:checked {
 				& + .sub-check {
-					background-color: map-get(map-get($tw_colors, #{$color}), 600) !important;
-					color: map-get(map-get($tw_colors, #{$color}), 100) !important;
+					background-color: map-get($color, 600) !important;
+					color: map-get($color, 100) !important;
 				}
 			}
 		}

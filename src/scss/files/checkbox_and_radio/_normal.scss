@@ -8,8 +8,8 @@
 		width: 20px;
 		height: 20px;
 		border-radius: 2px;
-		border-color: map-get(map-get($tw_colors, #{$main-color}), 400);
-		color: map-get(map-get($tw_colors, #{$main-color}), 100);
+		border-color: map-get($main-color, 400);
+		color: map-get($main-color, 100);
 		.sub-check {
 			height: 100%;
 			display: block;
@@ -24,7 +24,7 @@
 		@extend %chek_and_radio_input_hide;
 		& + .sub-box {
 			&::before {
-				background-color: rgba(map-get(map-get($tw_colors, #{$main-color}), 500), 0.5);
+				background-color: rgba(map-get($main-color, 500), 0.5);
 			}
 		}
 		&:focus + .sub-box {
@@ -44,8 +44,8 @@
 			}
 		}
 		&:checked + .sub-box {
-			background-color: map-get(map-get($tw_colors, #{$main-color}), 300) !important;
-			color: map-get(map-get($tw_colors, #{$main-color}), 600) !important;
+			background-color: map-get($main-color, 300) !important;
+			color: map-get($main-color, 600) !important;
 			border-color: currentColor;
 			&::before {
 				animation: checkanimate 0.4s;
@@ -127,20 +127,20 @@
 	$className: ".mnrf-checkbox.color-#{$name}";
 	#{$className} {
 		.sub-box {
-			border-color: map-get(map-get($tw_colors, #{$color}), 400);
-			color: map-get(map-get($tw_colors, #{$color}), 100);
+			border-color: map-get($color, 400);
+			color: map-get($color, 100);
 		}
 		input {
 			& + .sub-box {
 				&::before {
-					background-color: rgba(map-get(map-get($tw_colors, #{$color}), 500), 0.5);
+					background-color: rgba(map-get($color, 500), 0.5);
 				}
 			}
 			&:checked {
 				& + .sub-box {
-					// border-color: map-get(map-get($tw_colors, #{$color}), 600) !important;
-					background-color: map-get(map-get($tw_colors, #{$color}), 300) !important;
-					color: map-get(map-get($tw_colors, #{$color}), 600) !important;
+					// border-color: map-get($color, 600) !important;
+					background-color: map-get($color, 300) !important;
+					color: map-get($color, 600) !important;
 				}
 			}
 		}

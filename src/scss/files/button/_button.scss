@@ -1,6 +1,9 @@
-// @import "../../color";
+@use "sass:map";
 
-.mnrf-btn{
+$colors: map.set($colors, "dark", $tw_blueGray);
+
+
+.mnrf-btn {
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	&,
 	& *:not(svg),
@@ -8,36 +11,37 @@
 	& *::before {
 		transition: all 0.3s;
 	}
-	
+
 	display: inline-flex;
 	align-items: center;
 	position: relative;
 	z-index: 1;
-	.sub-btn{
-		outline:none;
-		// background-color: $tw-lightBlue-400;
+	.sub-btn {
+		outline: none;
+		background-color: map-get($main-color, 500);
 		text-decoration: none;
 		border: none;
 		color: $tw-blueGray-50;
 		display: inline-flex;
 		cursor: pointer;
-		padding: .5em;
+		padding: 0.5em;
 		line-height: normal;
 		align-items: center;
 		justify-content: center;
 		// border-radius: 2px;
-		&:first-child{
+		&:first-child {
 			// border-radius: 2px 0 0 2px;
 			border-bottom-left-radius: 2px;
 			border-top-left-radius: 2px;
 		}
-		&:last-child{
+		&:last-child {
 			border-bottom-right-radius: 2px;
 			border-top-right-radius: 2px;
 		}
 		position: relative;
-		&::before,&::after{
-			content: '';
+		&::before,
+		&::after {
+			content: "";
 			display: block;
 			position: absolute;
 			position: absolute;
@@ -46,40 +50,40 @@
 			transform: translate(-50%, -50%);
 			width: 100%;
 			height: 100%;
-			// background-color: rgba($tw-lightBlue-400,.5);
+			background-color: rgba(map-get($main-color, 500), 0.5);
 			z-index: -1;
 			border-radius: 3px;
 		}
-		&::after{
-			// background-color: rgba($tw-lightBlue-400,1);
+		&::after {
+			background-color: rgba(map-get($main-color, 500), 1);
 			transition: all 0.6s;
 			width: calc(100% + 2em);
 			height: calc(100% + 2em);
 			opacity: 0;
 		}
-		&:focus{
+		&:focus {
 			// background-color: $tw-lightBlue-500;
-			&::before{
-				width: calc(100% + .5em);
-				height: calc(100% + .5em);
+			&::before {
+				width: calc(100% + 0.5em);
+				height: calc(100% + 0.5em);
 			}
 		}
 		@media (pointer: fine) {
-			&:hover{
-				// background-color: $tw-lightBlue-500;
-				&::before{
-					width: calc(100% + .5em);
-					height: calc(100% + .5em);
+			&:hover {
+				background-color: map-get($main-color, 600);
+				&::before {
+					width: calc(100% + 0.5em);
+					height: calc(100% + 0.5em);
 				}
 			}
 		}
-		&:active{
-			// background-color: $tw-lightBlue-600;
-			&::before{
+		&:active {
+			background-color: map-get($main-color, 700);
+			&::before {
 				width: 0;
 				height: 0;
 			}
-			&::after{
+			&::after {
 				// animation: btnClickAnimate .5s;
 				width: 100%;
 				height: 100%;
@@ -87,71 +91,57 @@
 				transition: 0s;
 			}
 		}
-		&:disabled{
+		&:disabled {
 			opacity: 0.6;
 			cursor: no-drop;
 		}
 	}
-	&.opt-rtl{
-		.sub-btn{
+	&.opt-rtl {
+		.sub-btn {
 			border-radius: 0;
-			&:last-child{
+			&:last-child {
 				border-bottom-left-radius: 2px;
 				border-top-left-radius: 2px;
 			}
-			&:first-child{
+			&:first-child {
 				border-bottom-right-radius: 2px;
 				border-top-right-radius: 2px;
 			}
 		}
 	}
-	&.opt-block{
+	&.opt-block {
 		// width: 100%;
 		display: flex;
-		.sub-btn{
+		.sub-btn {
 			display: flex;
 			width: 100%;
 		}
 	}
 }
 
-$colors: (
-	"main": "lightBlue",
-	"red": "red",
-	"yellow": "yellow",
-	"green": "emerald",
-	"dark": "blueGray",
-);
-// map-get(map-get($tw_colors, #{$color}), 500)
-// @extend %tw-bg-#{$color}-100;
 @each $name, $color in ($colors) {
 	$className: ".mnrf-btn.color-#{$name}";
 	@if $name == "main" {
 		$className: ".mnrf-btn";
 	}
 	#{$className} {
-		.sub-btn{
-			// background-color: $tw-lightBlue-400;
-			background-color: map-get(map-get($tw_colors, #{$color}), 500);
-			&::before,&::after{
-				// background-color: rgba($tw-lightBlue-400, .5);
-				background-color: rgba(map-get(map-get($tw_colors, #{$color}), 500), .5);
+		.sub-btn {
+			background-color: map-get($color, 500);
+			&::before,
+			&::after {
+				background-color: rgba(map-get($color, 500), 0.5);
 			}
-			&::after{
-				// background-color: rgba($tw-lightBlue-400, 1);
-				background-color: rgba(map-get(map-get($tw_colors, #{$color}), 500), 1);
+			&::after {
+				background-color: rgba(map-get($color, 500), 1);
 			}
 			@media (pointer: fine) {
-				&:hover{
-					// background-color: $tw-lightBlue-500;
-					background-color: map-get(map-get($tw_colors, #{$color}), 600);
+				&:hover {
+					background-color: map-get($color, 600);
 				}
 			}
-			&:active{
-				// background-color: $tw-lightBlue-600;
-				background-color: map-get(map-get($tw_colors, #{$color}), 700);
+			&:active {
+				background-color: map-get($color, 700);
 			}
 		}
 	}
-	
 }

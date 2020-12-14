@@ -3,19 +3,19 @@
 @import 'files/basic/basic.scss';
 
 
-$main-color : "lightBlue";
+$main-color : $tw_lightBlue;
 $colors: (
-	"red": "red",
-	"yellow": "yellow",
-	"green": "emerald",
+	"red": $tw_red,
+	"yellow": $tw_yellow,
+	"green": $tw_emerald,
 );
 
 @import 'files/checkbox_and_radio/normal.scss';
 @import 'files/checkbox_and_radio/slider.scss';
 @import 'files/checkbox_and_radio/key.scss';
 
-// @import 'files/button/button.scss';
+@import 'files/button/button.scss';
 
-// @import 'files/input/input.scss';
-// @import 'files/multiple/multiple.scss';
-// @import 'files/textarea/textarea.scss';
+@import 'files/input/input.scss';
+@import 'files/multiple/multiple.scss';
+@import 'files/textarea/textarea.scss';

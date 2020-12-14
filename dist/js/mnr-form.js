@@ -7,6 +7,11 @@ $('.mnrf-checkbox,.mnrf-radio,.mnrf-radio-key,.mnrf-radio-slider,.mnrf-check-sli
 		$(this).find('input').blur()
 	}
 });
+$('.mnrf-btn').click(function (event) {
+	if(event.pageX != 0){
+		$(this).find('button').blur()
+	}
+});
 // console.log(mnrfObj);
 // if(mnrfObj == 'undefined'){
 // 	mnrfObj = {}

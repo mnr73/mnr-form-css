@@ -5,37 +5,28 @@
 	// align-items: center;
 	// justify-content: center;
 	display: block;
-	line-height: 1.6;
+	line-height: 2;
 	color: $tw-blueGray-700;
-	// *{
-	// 	height: 100%;
-	// 	display: inline;
-	// }
 	&.opt-bg {
 		padding: 5px;
-		// background-color: rgba($tw-lightBlue-500, 0.1);
+		background-color: rgba(map-get($main-color, 500), 0.1);
 	}
 
 	& > .sub-title {
-		display: block;
-		// color: $tw-lightBlue-500;
 		font-size: 1.2em;
 	}
-	& > .sub-info {
-		display: block;
-		// color: $tw-lightBlue-500;
-		margin-bottom: 2px;
-	}
+	& > .sub-title,
 	& > .sub-hint {
 		display: block;
-		// color: $tw-lightBlue-500;
-		margin-top: 2px;
+		color: map-get($main-color, 500);
+		margin-top: 0.2em;
+		margin-bottom: 0.2em;
 	}
 	.sub-frame {
 		line-height: normal;
 		display: flex;
 		background-color: white;
-		// border-color: $tw-lightBlue-300;
+		border-color: map-get($main-color, 300);
 		border-style: solid;
 		border-width: 1px;
 		border-radius: 2px;
@@ -48,7 +39,7 @@
 			padding: 0.4em 0.5em;
 			font-size: 0.9em;
 			margin-bottom: -0.6em;
-			// color: $tw-lightBlue-400;
+			color: map-get($main-color, 400);
 		}
 		.sub-pwst {
 			cursor: pointer;
@@ -66,7 +57,7 @@
 				color: $tw-blueGray-400;
 			}
 		}
-		.sub-toggleData{
+		.sub-toggleData {
 			cursor: pointer;
 			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 			svg {
@@ -77,37 +68,19 @@
 				fill: currentColor;
 				color: $tw-blueGray-400;
 			}
-			&.state-up{
-				svg{
+			&.state-up {
+				svg {
 					transform: rotate(180deg);
 				}
 			}
 		}
-		.sub-btn {
-			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-			border: none;
-			box-sizing: border-box;
-			outline: 0;
-			text-decoration: none;
-			transition: 0.3s;
-			// background-color: $tw-lightBlue-400;
-			color: $tw-blueGray-50;
-			cursor: pointer;
-			padding: 0 10px;
-			display: block;
-			height: 100%;
-			@media (pointer: fine){
-				&:hover{
-					// background-color: $tw-lightBlue-500;
-				}
-			}
-			&:active{
-				// background-color: $tw-lightBlue-600;
-			}
+		.mnrf-btn button{
+			white-space: nowrap;
+			border-radius: 1px;
 		}
 	}
-	
-	.sub-data{
+
+	.sub-data {
 		position: absolute;
 		display: none;
 		width: 100%;
@@ -125,27 +98,26 @@
 		border-radius: 2px;
 		padding: 5px 0;
 		z-index: 100;
-		&.state-show{
+		&.state-show {
 			display: block;
 		}
-		.sub-option{
+		.sub-option {
 			display: block;
 			cursor: pointer;
 			padding: 5px;
 			color: $tw-blueGray-400;
-			&:hover{
+			&:hover {
 				color: $tw-blueGray-600;
 				background-color: $tw-blueGray-100;
 			}
-			&.state-hide{
+			&.state-hide {
 				display: none;
 			}
-			&.state-select{
+			&.state-select {
 				background-color: $tw-blueGray-600;
 				color: $tw-blueGray-100;
 			}
 		}
-		
 	}
 
 	.sub-col {
@@ -153,7 +125,7 @@
 		flex-direction: column;
 		width: 100%;
 		position: relative;
-		input{
+		input {
 			width: 100%;
 		}
 	}
@@ -171,7 +143,7 @@
 		width: 2em;
 		padding: 0 0.5em;
 		fill: currentColor;
-		// color: $tw-lightBlue-400;
+		color: map-get($main-color, 400);
 	}
 
 	.sub-pr-0 {
@@ -180,7 +152,7 @@
 	.sub-pl-0 {
 		padding-left: 0 !important;
 	}
-	
+
 	.sub-pie-0 {
 		padding-inline-end: 0 !important;
 	}
@@ -190,7 +162,7 @@
 
 	.sub-psfix {
 		padding: 0.5em;
-		// color: $tw-lightBlue-400;
+		color: map-get($main-color, 400);
 		vertical-align: middle;
 		display: inline-flex;
 		align-items: center;
@@ -219,98 +191,92 @@
 		// 	}
 		// }
 	}
-	
-	.sub-select{
+
+	.sub-select {
 		display: block;
 		width: 100%;
 		box-sizing: border-box;
-		// color: $tw-lightBlue-600;
+		color: map-get($main-color, 600);
 		height: 100%;
 		// input{
 		// 	display: none;
 		// }
-		.sub-toggleData{
+		.sub-toggleData {
 			display: flex;
 			height: 100%;
 			width: 100%;
 			box-sizing: border-box;
-			.sub-seltext{
+			.sub-seltext {
 				display: block;
 				width: 100%;
 				padding: 0.5em;
 			}
-			svg{
+			svg {
 				// padding: 0;
 				color: inherit;
 				fill: currentColor;
 			}
 		}
-		.sub-data{
-			.sub-search{
+		.sub-data {
+			.sub-search {
 				display: block;
 				border-bottom-style: solid;
 				border-bottom-width: 1px;
 				border-bottom-color: $tw-blueGray-400;
 				margin-top: -5px;
-				input{
+				input {
 					display: block;
 					width: 100%;
 				}
 			}
-			.sub-option{
-				&::before{
-					content: '';
+			.sub-option {
+				&::before {
+					content: "";
 					display: inline-block;
-					width: .9em;
-					height: .9em;
+					width: 0.9em;
+					height: 0.9em;
 					margin-inline-end: 6px;
 					border-style: solid;
 					border-color: currentColor;
-					border-width: .25em;
+					border-width: 0.25em;
 					border-radius: 1000px;
 					box-sizing: border-box;
 					vertical-align: middle;
 				}
-				
 			}
 		}
 	}
 
 	&.state-hover:not(.state-disable) {
 		.sub-frame {
-			// border-color: $tw-lightBlue-400;
-			// box-shadow: 0 0 0 2px rgba($tw-lightBlue-500, 0.2);
+			border-color: map-get($main-color, 400);
+			box-shadow: 0 0 0 2px rgba(map-get($main-color, 500), 0.2);
 			input:hover:not(:focus) {
 				&::placeholder {
 					color: $tw-blueGray-500;
 				}
 			}
 			.sub-header {
-				// color: $tw-lightBlue-500;
+				color: map-get($main-color, 500);
 			}
 			.sub-icon {
-				// color: $tw-lightBlue-500;
+				color: map-get($main-color, 500);
 			}
 		}
 	}
 	&.state-focus:not(.state-disable) {
+		& > .sub-title,
 		& > .sub-hint {
-			// color: $tw-lightBlue-600;
-		}
-		& > .sub-title {
-			// color: $tw-lightBlue-600;
-		}
-		& > .sub-info {
-			// color: $tw-lightBlue-600;
+			color: map-get($main-color, 600);
 		}
 		.sub-frame {
-			// border-color: $tw-lightBlue-600;
-			// box-shadow: 0 0 0 2px rgba($tw-lightBlue-500, 0.4);
+			border-color: map-get($main-color, 600);
+			box-shadow: 0 0 0 2px rgba(map-get($main-color, 500), 0.4);
 			.sub-header {
-				// color: $tw-lightBlue-600;
+				color: map-get($main-color, 600);
 			}
 			.sub-icon {
-				// color: $tw-lightBlue-600;
+				color: map-get($main-color, 600);
 			}
 		}
 	}
@@ -319,10 +285,10 @@
 		opacity: 0.6;
 		cursor: no-drop;
 	}
-	.sub-vhr{
+	.sub-vhr {
 		width: 2px;
-        background-color: $tw-blueGray-300;
-        margin: .4em .5px;
+		background-color: $tw-blueGray-300;
+		margin: 0.4em 0.5px;
 	}
 }
 
@@ -332,12 +298,12 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-color: rgba($tw-blueGray-900, $alpha: .5);
+	background-color: rgba($tw-blueGray-900, $alpha: 0.5);
 	padding: 5px;
 	box-sizing: border-box;
 	z-index: 1000;
-	
-	.sub-wrap{
+
+	.sub-wrap {
 		display: block;
 		width: 100%;
 		height: 100%;
@@ -348,16 +314,16 @@
 		box-sizing: border-box;
 		position: relative;
 		transition: 0.3s;
-		button{
+		button {
 			position: absolute;
 			bottom: 0;
 			left: 0;
 			height: auto;
-			padding: .5em;
+			padding: 0.5em;
 			width: 100%;
 			display: block;
 			z-index: 100;
-			
+
 			-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 			border: none;
 			box-sizing: border-box;
@@ -367,32 +333,32 @@
 			background-color: $tw-blueGray-400;
 			color: $tw-blueGray-50;
 			cursor: pointer;
-			@media (pointer: fine){
-				&:hover{
+			@media (pointer: fine) {
+				&:hover {
 					background-color: $tw-blueGray-500;
 				}
 			}
-			&:active{
+			&:active {
 				background-color: $tw-blueGray-600;
 			}
 		}
 	}
-	.mnrf-input{
+	.mnrf-input {
 		padding: 0;
-		&>*:not(.sub-frame){
+		& > *:not(.sub-frame) {
 			display: none;
 		}
-		.sub-frame{
+		.sub-frame {
 			border-radius: 0;
 			border-top: none;
 			border-right: none;
 			border-left: none;
 			box-shadow: none !important;
 		}
-		.sub-col{
+		.sub-col {
 			position: static;
 		}
-		.sub-data{
+		.sub-data {
 			height: 100vh;
 			max-height: none;
 			padding-bottom: 200px;
@@ -403,100 +369,63 @@
 	}
 }
 
-$colors: (
-	"main": "lightBlue",
-	"red": "red",
-	"yellow": "yellow",
-	"green": "emerald",
-);
-// map-get(map-get($tw_colors, #{$color}), 500)
-// @extend %tw-bg-#{$color}-100;
 @each $name, $color in ($colors) {
 	$className: ".mnrf-input.color-#{$name}";
-	@if $name == "main" {
-		$className: ".mnrf-input";
-	}
 	#{$className} {
 		&.opt-bg {
-			background-color: rgba(map-get(map-get($tw_colors, #{$color}), 500), 0.1);
+			background-color: rgba(map-get($color, 500), 0.1);
 		}
-	
-		& > .sub-title {
-			@extend %tw-text-#{$color}-500;
-		}
-		& > .sub-info {
-			@extend %tw-text-#{$color}-500;
-		}
+
+		& > .sub-title,
 		& > .sub-hint {
-			@extend %tw-text-#{$color}-500;
+			color: map-get($color, 500);
 		}
 		.sub-frame {
-			@extend %tw-border-#{$color}-300;
+			border-color: map-get($color, 300);
 			.sub-header {
-				@extend %tw-text-#{$color}-400;
-			}
-			.sub-btn {
-				@extend %tw-bg-#{$color}-400;
-				@media (pointer: fine){
-					&:hover{
-						background-color: map-get(map-get($tw_colors, #{$color}), 500);
-					}
-				}
-				&:active{
-					background-color: map-get(map-get($tw_colors, #{$color}), 600);
-				}
+				color: map-get($color, 400);
 			}
 		}
-		
-	
-	
+
 		.sub-icon {
-			@extend %tw-text-#{$color}-400;
+			color: map-get($color, 400);
 		}
-	
-	
+
 		.sub-psfix {
-			@extend %tw-text-#{$color}-400;
+			color: map-get($color, 400);
 		}
-	
-		.sub-select{
-			@extend %tw-text-#{$color}-600;
+
+		.sub-select {
+			color: map-get($color, 600);
 		}
-	
+
 		&.state-hover:not(.state-disable) {
 			.sub-frame {
-				@extend %tw-border-#{$color}-400;
-				box-shadow: 0 0 0 2px rgba(map-get(map-get($tw_colors, #{$color}), 500), 0.2);
+				border-color: map-get($color, 400);
+				box-shadow: 0 0 0 2px rgba(map-get($color, 500), 0.2);
 				.sub-header {
-					@extend %tw-text-#{$color}-500;
+					color: map-get($color, 500);
 				}
 				.sub-icon {
-					@extend %tw-text-#{$color}-500;
+					color: map-get($color, 500);
 				}
 			}
 		}
 		&.state-focus:not(.state-disable) {
+			& > .sub-title,
 			& > .sub-hint {
-				@extend %tw-text-#{$color}-600;
-			}
-			& > .sub-title {
-				@extend %tw-text-#{$color}-600;
-			}
-			& > .sub-info {
-				@extend %tw-text-#{$color}-600;
+				color: map-get($color, 600);
 			}
 			.sub-frame {
-				@extend %tw-border-#{$color}-600;
-				box-shadow: 0 0 0 2px rgba(map-get(map-get($tw_colors, #{$color}), 500), 0.4);
+				border-color: map-get($color, 600);
+				box-shadow: 0 0 0 2px rgba(map-get($color, 500), 0.4);
 				.sub-header {
-					@extend %tw-text-#{$color}-600;
+					color: map-get($color, 600);
 				}
 				.sub-icon {
-					@extend %tw-text-#{$color}-600;
+					color: map-get($color, 600);
 				}
 			}
 		}
-	
 	}
-	
 }

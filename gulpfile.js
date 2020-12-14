@@ -68,6 +68,7 @@ function js() {
 	return src([
 		"./src/js/basic.js",
 		"./src/js/checkAndRadio.js",
+		"./src/js/button.js",
 		"./src/js/input.js",
 		"./src/js/multiple.js",
 		"./src/js/textarea.js",

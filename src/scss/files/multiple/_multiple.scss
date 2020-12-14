@@ -1,91 +1,80 @@
 // @use '../input/input.scss';
 // @import "../../color";
 
-
-.mnrf-multi{
+.mnrf-multi {
 	@extend .mnrf-input;
-	
-	.sub-tags{
+
+	.sub-tags {
 		flex: 100%;
 		padding-inline-start: 3px;
-		.sub-tag{
+		.sub-tag {
 			margin-inline-end: 3px;
 			margin-top: 3px;
 			border-style: solid;
 			border-width: 1px;
-			// border-color: $tw-lightBlue-500;
-			// background-color: $tw-lightBlue-200;
-			// color: $tw-lightBlue-600;
+			border-color: map-get($main-color, 500);
+			background-color: map-get($main-color, 200);
+			color: map-get($main-color, 600);
 			border-radius: 1000px;
 			display: inline-flex;
 			align-items: center;
 			padding-inline-end: 10px;
 			cursor: pointer;
-			
+
 			// float: left;
-			.sub-close{
+			.sub-close {
 				width: 1.3em;
 				height: 1.3em;
 				display: inline-flex;
 				align-items: center;
 				justify-content: center;
 				border-radius: 1000px;
-				// background-color: $tw-lightBlue-400;
-				margin-inline-start: .2em;
-				margin-inline-end: .4em;
-				svg{
+				background-color: map-get($main-color, 400);
+				margin-inline-start: 0.2em;
+				margin-inline-end: 0.4em;
+				svg {
 					height: 50%;
 					fill: white;
 				}
 			}
-			
-			&:hover{
-				// background-color: $tw-lightBlue-100;
-				// color: $tw-lightBlue-400;
-				.sub-close{
-					// background-color: $tw-lightBlue-600;
+
+			&:hover {
+				background-color: map-get($main-color, 100);
+				color: map-get($main-color, 400);
+				.sub-close {
+					background-color: map-get($main-color, 600);
 				}
 			}
 		}
 	}
-	
-	.sub-frame{
+
+	.sub-frame {
 		flex-wrap: wrap;
 	}
 }
 
-$colors: (
-	"main": "lightBlue",
-	"red": "red",
-	"yellow": "yellow",
-	"green": "emerald",
-);
 // map-get(map-get($tw_colors, #{$color}), 500)
 // @extend %tw-bg-#{$color}-100;
 @each $name, $color in ($colors) {
 	$className: ".mnrf-multi.color-#{$name}";
-	@if $name == "main" {
-		$className: ".mnrf-multi";
-	}
 	#{$className} {
-		.sub-tags{
-			.sub-tag{
-				@extend %tw-border-#{$color}-500;
-				@extend %tw-bg-#{$color}-200;
-				@extend %tw-text-#{$color}-600;
-				.sub-close{
-					@extend %tw-bg-#{$color}-400;
+		.sub-tags {
+			.sub-tag {
+				border-color: map-get($color, 500);
+				background-color: map-get($color, 200);
+				color: map-get($color, 600);
+				.sub-close {
+					background-color: map-get($color, 400);
 				}
-				
-				&:hover{
-					@extend %tw-bg-#{$color}-100;
-					@extend %tw-text-#{$color}-400;
-					.sub-close{
-						@extend %tw-bg-#{$color}-600;
+
+				&:hover {
+					background-color: map-get($color, 100);
+					color: map-get($color, 400);
+					.sub-close {
+						background-color: map-get($color, 600);
 					}
 				}
 			}
 		}
 	}
-	
 }
